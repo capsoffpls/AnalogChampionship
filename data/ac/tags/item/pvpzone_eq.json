@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+    "shield",
+    "stone_sword",
+    "#minecraft:enchantable/armor",
+    "wooden_axe"
+    ]
+}
