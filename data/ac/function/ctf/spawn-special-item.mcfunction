@@ -1,0 +1,12 @@
+execute store result score random AC_ctfItemGen run random value 1..10
+
+execute if score random AC_ctfItemGen matches 1 run summon item ~ ~ ~ {Item:{id:"snowball",components:{"minecraft:item_model":"ac:bomb_damage","minecraft:item_name":"Bomba szkody"}},Tags:["ctfGenerated"]}
+execute if score random AC_ctfItemGen matches 2 run summon item ~ ~ ~ {Item:{id:"snowball",components:{"minecraft:item_model":"ac:bomb_blind","minecraft:item_name":"Bomba oślepienia"}},Tags:["ctfGenerated"]}
+execute if score random AC_ctfItemGen matches 3 run summon item ~ ~ ~ {Item:{id:"snowball",components:{"minecraft:item_model":"ac:bomb_glow","minecraft:item_name":"Bomba świecenia"}},Tags:["ctfGenerated"]}
+execute if score random AC_ctfItemGen matches 4 run summon item ~ ~ ~ {Item:{id:"snowball",components:{"minecraft:item_model":"ac:bomb_levitate","minecraft:item_name":"Bomba lewitacji"}},Tags:["ctfGenerated"]}
+execute if score random AC_ctfItemGen matches 5 run summon item ~ ~ ~ {Item:{id:"snowball",components:{"minecraft:item_model":"ac:bomb_heal","minecraft:item_name":"Bomba regeneracji"}},Tags:["ctfGenerated"]}
+execute if score random AC_ctfItemGen matches 6 run summon item ~ ~ ~ {Item:{id:"flint",components:{"minecraft:item_model":"ac:regen_bubble","minecraft:item_name":"Bańka regeneracji",consumable:{consume_seconds:65535}}},Tags:["ctfGenerated"]}
+execute if score random AC_ctfItemGen matches 7 run summon item ~ ~ ~ {Item:{id:"flint",components:{"minecraft:item_model":"ac:invis_bubble","minecraft:item_name":"Bańka niewidzialności",consumable:{consume_seconds:65535}}},Tags:["ctfGenerated"]}
+execute if score random AC_ctfItemGen matches 8 run summon item ~ ~ ~ {Item:{id:"flint",components:{"minecraft:item_model":"ac:speed_bubble","minecraft:item_name":"Bańka prędkości",consumable:{consume_seconds:65535}}},Tags:["ctfGenerated"]}
+execute if score random AC_ctfItemGen matches 9 run summon item ~ ~ ~ {Item:{id:"flint",components:{"minecraft:item_model":"ac:levit_bubble","minecraft:item_name":"Bańka lewitacji",consumable:{consume_seconds:65535}}},Tags:["ctfGenerated"]}
+execute if score random AC_ctfItemGen matches 10 run summon item ~ ~ ~ {Item:{id:"flint",components:{"minecraft:item_model":"ac:res_bubble","minecraft:item_name":"Bańka odporności",consumable:{consume_seconds:65535}}},Tags:["ctfGenerated"]}

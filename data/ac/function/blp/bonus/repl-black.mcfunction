@@ -1,0 +1,15 @@
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace yellow_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace red_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace blue_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace cyan_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace gray_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace lime_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace pink_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace white_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace brown_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace green_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace purple_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace light_blue_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace light_gray_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace magenta_wool
+fill ~2 ~-2 ~2 ~-2 ~2 ~-2 black_wool replace orange_wool

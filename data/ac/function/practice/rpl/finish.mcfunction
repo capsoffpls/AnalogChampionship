@@ -1,0 +1,1 @@
+tellraw @s [{"text":"[PRACTICE] ","bold":true,"color":"green"},{"text":"Ukończono budowę. Zaczekaj na zmianę wzoru","color":"white","bold":false}]

@@ -1,0 +1,23 @@
+fill 1983 90 -901 1983 70 -897 barrier
+fill 1983 90 -901 2017 70 -901 barrier
+fill 2017 90 -897 2017 70 -901 barrier
+fill 2017 90 -897 1983 70 -897 barrier
+fill 1983 90 -901 2017 90 -897 barrier
+gamemode adventure @a[tag=InGame]
+
+execute if score IGOverall AC_playercount matches 1.. run summon happy_ghast 1985 71 -899 {Tags:["ttrGhast","spawn1"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 2.. run summon happy_ghast 1987 71 -899 {Tags:["ttrGhast","spawn2"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 3.. run summon happy_ghast 1989 71 -899 {Tags:["ttrGhast","spawn3"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 4.. run summon happy_ghast 1991 71 -899 {Tags:["ttrGhast","spawn4"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 5.. run summon happy_ghast 1993 71 -899 {Tags:["ttrGhast","spawn5"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 6.. run summon happy_ghast 1995 71 -899 {Tags:["ttrGhast","spawn6"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 7.. run summon happy_ghast 1997 71 -899 {Tags:["ttrGhast","spawn7"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 8.. run summon happy_ghast 1999 71 -899 {Tags:["ttrGhast","spawn8"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 9.. run summon happy_ghast 2001 71 -899 {Tags:["ttrGhast","spawn9"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 10.. run summon happy_ghast 2003 71 -899 {Tags:["ttrGhast","spawn10"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 11.. run summon happy_ghast 2005 71 -899 {Tags:["ttrGhast","spawn11"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 12.. run summon happy_ghast 2007 71 -899 {Tags:["ttrGhast","spawn12"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 13.. run summon happy_ghast 2009 71 -899 {Tags:["ttrGhast","spawn13"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 14.. run summon happy_ghast 2011 71 -899 {Tags:["ttrGhast","spawn14"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 15.. run summon happy_ghast 2013 71 -899 {Tags:["ttrGhast","spawn15"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}
+execute if score IGOverall AC_playercount matches 16.. run summon happy_ghast 2015 71 -899 {Tags:["ttrGhast","spawn16"],equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.1d},{id:"minecraft:flying_speed",base:0.1d}],Invulnerable:1b}

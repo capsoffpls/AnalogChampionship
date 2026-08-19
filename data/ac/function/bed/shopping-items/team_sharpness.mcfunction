@@ -1,0 +1,28 @@
+execute unless entity @s[scores={AC_bedSword=2..4}] run clear @s wooden_sword
+
+execute if entity @s[scores={AC_bedSword=2}] run clear @s stone_sword
+execute if entity @s[scores={AC_bedSword=2}] run give @s stone_sword[can_break={blocks:["red_bed","yellow_bed","lime_bed","blue_bed","red_wool","yellow_wool","lime_wool","blue_wool","end_stone","oak_planks","obsidian","red_terracotta","yellow_terracotta","lime_terracotta","blue_terracotta","ladder"]},unbreakable={},enchantments={"minecraft:sharpness":1}]
+
+execute if entity @s[scores={AC_bedSword=3}] run clear @s iron_sword
+execute if entity @s[scores={AC_bedSword=3}] run give @s iron_sword[can_break={blocks:["red_bed","yellow_bed","lime_bed","blue_bed","red_wool","yellow_wool","lime_wool","blue_wool","end_stone","oak_planks","obsidian","red_terracotta","yellow_terracotta","lime_terracotta","blue_terracotta","ladder"]},unbreakable={},enchantments={"minecraft:sharpness":1}]
+
+execute if entity @s[scores={AC_bedSword=4}] run clear @s diamond_sword
+execute if entity @s[scores={AC_bedSword=4}] run give @s diamond_sword[can_break={blocks:["red_bed","yellow_bed","lime_bed","blue_bed","red_wool","yellow_wool","lime_wool","blue_wool","end_stone","oak_planks","obsidian","red_terracotta","yellow_terracotta","lime_terracotta","blue_terracotta","ladder"]},unbreakable={},enchantments={"minecraft:sharpness":1}]
+
+execute if entity @s[team=ac_bedRed] run execute unless score redSharp AC_bedMessageControl matches 1.. run tag @a[team=ac_bedRed] add Sharp1
+execute if entity @s[team=ac_bedRed] run execute unless score redSharp AC_bedMessageControl matches 1.. run execute at @s run playsound minecraft:ac.jingles.buy record @s ~ ~ ~
+execute if entity @s[team=ac_bedYellow] run execute unless score yellowSharp AC_bedMessageControl matches 1.. run tag @a[team=ac_bedYellow] add Sharp1
+execute if entity @s[team=ac_bedYellow] run execute unless score yellowSharp AC_bedMessageControl matches 1.. run execute at @s run playsound minecraft:ac.jingles.buy record @s ~ ~ ~
+execute if entity @s[team=ac_bedGreen] run execute unless score greenSharp AC_bedMessageControl matches 1.. run tag @a[team=ac_bedGreen] add Sharp1
+execute if entity @s[team=ac_bedGreen] run execute unless score greenSharp AC_bedMessageControl matches 1.. run execute at @s run playsound minecraft:ac.jingles.buy record @s ~ ~ ~
+execute if entity @s[team=ac_bedBlue] run execute unless score redSharp AC_bedMessageControl matches 1.. run tag @a[team=ac_bedBlue] add Sharp1
+execute if entity @s[team=ac_bedBlue] run execute unless score redSharp AC_bedMessageControl matches 1.. run execute at @s run playsound minecraft:ac.jingles.buy record @s ~ ~ ~
+
+execute if entity @s[team=ac_bedRed] run execute store result score redSharp AC_bedMessageControl run execute unless score redSharp AC_bedMessageControl matches 1.. run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Twoja drużyna posiada teraz Ostry miecz","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedRed] run execute store result score redSharp AC_bedMessageControl run execute unless score redSharp AC_bedMessageControl matches 1.. run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Your team now has Sharpened Swords","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedYellow] run execute store result score yellowSharp AC_bedMessageControl run execute unless score yellowSharp AC_bedMessageControl matches 1.. run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Twoja drużyna posiada teraz Ostry miecz","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedYellow] run execute store result score yellowSharp AC_bedMessageControl run execute unless score yellowSharp AC_bedMessageControl matches 1.. run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Your team now has Sharpened Swords","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedGreen] run execute store result score greenSharp AC_bedMessageControl run execute unless score greenSharp AC_bedMessageControl matches 1.. run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Twoja drużyna posiada teraz Ostry miecz","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedGreen] run execute store result score greenSharp AC_bedMessageControl run execute unless score greenSharp AC_bedMessageControl matches 1.. run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Your team now has Sharpened Swords","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedBlue] run execute store result score blueSharp AC_bedMessageControl run execute unless score blueSharp AC_bedMessageControl matches 1.. run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Twoja drużyna posiada teraz Ostry miecz","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedBlue] run execute store result score blueSharp AC_bedMessageControl run execute unless score blueSharp AC_bedMessageControl matches 1.. run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Your team now has Sharpened Swords","color":"aqua","bold":false}]

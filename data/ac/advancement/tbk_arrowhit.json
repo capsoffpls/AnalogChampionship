@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": {
+                    "team": "gracz"
+                },
+                "entity": {
+                    "entity_type": "player",
+                    "team": "ac_tbkTobiko"
+                },
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "entity_type": "#minecraft:arrows"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sends_telemetry_event": false
+}

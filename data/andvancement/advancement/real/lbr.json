@@ -1,0 +1,19 @@
+{
+  "parent": "andvancement:mark/lbr",
+  "display": {
+    "icon": {
+      "id": "minecraft:bone"
+    },
+    "title": "placeholder (tm)",
+    "description": "Zabij szkieleta oraz ukończ labirynt.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+setblock -1518 77 2000 air
+setblock -1513 77 1987 air
+setblock -1500 77 1982 air
+setblock -1487 77 1987 air
+setblock -1482 77 2000 air
+setblock -1487 77 2013 air
+setblock -1500 77 2018 air
+setblock -1513 77 2013 air
+setblock -1509 77 1991 air
+setblock -1491 77 1991 air
+setblock -1491 77 2009 air
+setblock -1509 77 2009 air
+setblock -1505 77 2000 air
+setblock -1500 77 1995 air
+setblock -1495 77 2000 air
+setblock -1500 77 2005 air

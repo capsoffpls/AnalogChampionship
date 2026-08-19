@@ -1,0 +1,21 @@
+execute if score 1st AC_lbrFinishPlace matches 1 if score 2nd AC_lbrFinishPlace matches 1 if score 3rd AC_lbrFinishPlace matches 1 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[LBR] ","bold":true,"color":"dark_green"},{"selector":"@s"},{"text":" przeszedł labirynt.","bold":false}]
+execute if score 1st AC_lbrFinishPlace matches 1 if score 2nd AC_lbrFinishPlace matches 1 if score 3rd AC_lbrFinishPlace matches 1 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[LBR] ","bold":true,"color":"dark_green"},{"selector":"@s"},{"text":" completed the maze.","bold":false}]
+execute if score 1st AC_lbrFinishPlace matches 1 if score 2nd AC_lbrFinishPlace matches 1 if score 3rd AC_lbrFinishPlace matches 1 run execute as @a at @s run playsound minecraft:ac.jingles.ping2 record @s ~ ~ ~
+
+execute if score 1st AC_lbrFinishPlace matches 1 if score 2nd AC_lbrFinishPlace matches 1 if score 3rd AC_lbrFinishPlace matches 0 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[LBR] ","bold":true,"color":"dark_green"},{"selector":"@s"},{"text":" przeszedł labirynt jako trzeci!","bold":false}]
+execute if score 1st AC_lbrFinishPlace matches 1 if score 2nd AC_lbrFinishPlace matches 1 if score 3rd AC_lbrFinishPlace matches 0 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[LBR] ","bold":true,"color":"dark_green"},{"selector":"@s"},{"text":" completed the maze third!","bold":false}]
+execute if score 1st AC_lbrFinishPlace matches 1 if score 2nd AC_lbrFinishPlace matches 1 if score 3rd AC_lbrFinishPlace matches 0 run execute if score lbr AC_time matches 601.. run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[LBR] ","bold":true,"color":"dark_green"},{"text":"Czas został skrócony do 30 sekund.","bold":false,"color":"red"}]
+execute if score 1st AC_lbrFinishPlace matches 1 if score 2nd AC_lbrFinishPlace matches 1 if score 3rd AC_lbrFinishPlace matches 0 run execute if score lbr AC_time matches 601.. run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[LBR] ","bold":true,"color":"dark_green"},{"text":"The time has been shortened to 30 seconds.","bold":false,"color":"red"}]
+execute if score 1st AC_lbrFinishPlace matches 1 if score 2nd AC_lbrFinishPlace matches 1 if score 3rd AC_lbrFinishPlace matches 0 run execute if score lbr AC_time matches 601.. run worldborder set 16.5 30s
+execute if score 1st AC_lbrFinishPlace matches 1 if score 2nd AC_lbrFinishPlace matches 1 if score 3rd AC_lbrFinishPlace matches 0 run execute if score lbr AC_time matches 601.. run scoreboard players set lbr AC_time 601
+execute store success score 3rd AC_lbrFinishPlace run execute if score 1st AC_lbrFinishPlace matches 1 if score 2nd AC_lbrFinishPlace matches 1 if score 3rd AC_lbrFinishPlace matches 0 run execute as @a at @s run playsound minecraft:ac.jingles.ping5 record @s ~ ~ ~
+
+execute if score 1st AC_lbrFinishPlace matches 1 if score 2nd AC_lbrFinishPlace matches 0 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[LBR] ","bold":true,"color":"dark_green"},{"selector":"@s"},{"text":" przeszedł labirynt jako drugi!","bold":false}]
+execute if score 1st AC_lbrFinishPlace matches 1 if score 2nd AC_lbrFinishPlace matches 0 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[LBR] ","bold":true,"color":"dark_green"},{"selector":"@s"},{"text":" completed the maze second!","bold":false}]
+execute store success score 2nd AC_lbrFinishPlace run execute if score 1st AC_lbrFinishPlace matches 1 if score 2nd AC_lbrFinishPlace matches 0 run execute as @a at @s run playsound minecraft:ac.jingles.ping5 record @s ~ ~ ~
+
+execute if score 1st AC_lbrFinishPlace matches 0 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[LBR] ","bold":true,"color":"dark_green"},{"selector":"@s"},{"text":" przeszedł labirynt jako pierwszy!","bold":false}]
+execute if score 1st AC_lbrFinishPlace matches 0 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[LBR] ","bold":true,"color":"dark_green"},{"selector":"@s"},{"text":" completed the maze first!","bold":false}]
+execute store success score 1st AC_lbrFinishPlace run execute if score 1st AC_lbrFinishPlace matches 0 run execute as @a at @s run playsound minecraft:ac.jingles.ping5 record @s ~ ~ ~
+
+function ac:lbr/reward

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:flint",
+          "components": {
+            "minecraft:item_model": "ac:stun"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ac:prh/stun"
+  },
+  "sends_telemetry_event": false
+}

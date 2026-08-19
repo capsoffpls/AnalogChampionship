@@ -1,0 +1,6 @@
+fill -1559 46 987 -1559 46 984 iron_trapdoor[half=bottom,facing=east,open=false]
+fill -1558 46 987 -1558 46 984 iron_trapdoor[half=bottom,facing=west,open=false]
+fill -1559 47 976 -1555 47 976 iron_trapdoor[half=bottom,facing=north,open=false]
+setblock -1553 47 977 iron_trapdoor[half=bottom,facing=west,open=false]
+setblock -1554 47 980 iron_trapdoor[half=bottom,facing=west,open=false]
+setblock -1553 48 981 iron_trapdoor[half=bottom,facing=south,open=false]

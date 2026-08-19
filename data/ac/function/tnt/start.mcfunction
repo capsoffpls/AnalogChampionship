@@ -1,0 +1,15 @@
+execute if score tnt AC_running matches 1 run execute if score tnt AC_time matches 138 run clone 481 26 481 519 25 519 481 -25 481
+execute if score tnt AC_running matches 1 run execute if score tnt AC_time matches 138 run clone 490 52 490 510 51 510 490 1 490
+execute if score tnt AC_running matches 1 run execute if score tnt AC_time matches 138 run clone 487 38 487 513 39 513 487 -12 487
+execute if score tnt AC_running matches 1 run execute if score tnt AC_time matches 138 run clone 481 20 481 519 22 519 481 -38 481
+execute if score tnt AC_running matches 1 run execute if score tnt AC_time matches 60 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"Bloki zaczną znikać za 3...","color":"green","bold":false}]
+execute if score tnt AC_running matches 1 run execute if score tnt AC_time matches 60 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"Blocks will start to disappear in 3...","color":"green","bold":false}]
+execute if score tnt AC_running matches 1 run execute if score tnt AC_time matches 60 run execute as @a at @s run playsound minecraft:ac.jingles.countdown-aggressive record @s ~ ~ ~
+execute if score tnt AC_running matches 1 run execute if score tnt AC_time matches 40 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"Bloki zaczną znikać za 2...","color":"green","bold":false}]
+execute if score tnt AC_running matches 1 run execute if score tnt AC_time matches 40 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"Blocks will start to disappear in 2...","color":"green","bold":false}]
+execute if score tnt AC_running matches 1 run execute if score tnt AC_time matches 20 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"Bloki zaczną znikać za 1...","color":"green","bold":false}]
+execute if score tnt AC_running matches 1 run execute if score tnt AC_time matches 20 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"Blocks will start to disappear in 1...","color":"green","bold":false}]
+execute if score tnt AC_running matches 1 run execute if score tnt AC_time matches 0 run scoreboard players set tnt1 AC_functions 1
+execute if score tnt AC_running matches 1 run execute if score tnt AC_time matches 0 run item replace entity @a[tag=InGame] hotbar.8 with wind_charge[use_cooldown={seconds:10,cooldown_group:bsp}] 2
+
+execute if score tnt AC_running matches 1 if score tnt1 AC_functions matches 1 run kill @a[x=476,y=-45,z=476,dx=49,dz=49,gamemode=adventure,tag=InGame]

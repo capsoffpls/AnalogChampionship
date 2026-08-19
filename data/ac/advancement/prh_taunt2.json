@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:flint",
+          "components": {
+            "minecraft:item_model": "ac:minefatiguetrap"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ac:prh/taunt_firework"
+  },
+  "sends_telemetry_event": false
+}

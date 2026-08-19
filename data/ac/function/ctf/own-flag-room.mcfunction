@@ -1,0 +1,62 @@
+## mapa 1
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=1931,y=51,z=1927,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do pomieszczenia z własną flagą!","color":"#ff00ff","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=1931,y=51,z=1927,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your own flag room!","color":"#ff00ff","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=1931,y=51,z=1927,dx=7,dz=2,dy=4,tag=InGame] at @s run tp @s ~ ~ ~2
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=1960,y=52,z=1909,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do pomieszczenia z własną flagą!","color":"#ff00ff","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=1960,y=52,z=1909,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your own flag room!","color":"red","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=1960,y=52,z=1909,dx=7,dz=2,dy=4,tag=InGame] at @s run tp @s ~ ~ ~2
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=2034,y=52,z=1909,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do pomieszczenia z własną flagą!","color":"red","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=2034,y=52,z=1909,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your own flag room!","color":"gold","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=2034,y=52,z=1909,dx=7,dz=2,dy=4,tag=InGame] at @s run tp @s ~ ~ ~2
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=2063,y=51,z=1927,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do pomieszczenia z własną flagą!","color":"red","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=2063,y=51,z=1927,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your own flag room!","color":"yellow","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=2063,y=51,z=1927,dx=7,dz=2,dy=4,tag=InGame] at @s run tp @s ~ ~ ~2
+
+
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=2063,y=51,z=2072,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do pomieszczenia z własną flagą!","color":"green","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=2063,y=51,z=2072,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your own flag room!","color":"green","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=2063,y=51,z=2072,dx=7,dz=2,dy=4,tag=InGame] at @s run tp @s ~ ~ ~-2
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=2034,y=52,z=2090,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do pomieszczenia z własną flagą!","color":"dark_green","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=2034,y=52,z=2090,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your own flag room!","color":"dark_green","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=2034,y=52,z=2090,dx=7,dz=2,dy=4,tag=InGame] at @s run tp @s ~ ~ ~-2
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=1960,y=52,z=2090,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do pomieszczenia z własną flagą!","color":"#03b6fc","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=1960,y=52,z=2090,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your own flag room!","color":"#03b6fc","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=1960,y=52,z=2090,dx=7,dz=2,dy=4,tag=InGame] at @s run tp @s ~ ~ ~-2
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=1931,y=51,z=2072,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do pomieszczenia z własną flagą!","color":"blue","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=1931,y=51,z=2072,dx=7,dz=2,dy=4,tag=InGame] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your own flag room!","color":"blue","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=1931,y=51,z=2072,dx=7,dz=7,dy=4,tag=InGame] at @s run tp @s ~ ~ ~-2
+
+
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=1999,y=55,z=1904,dx=3,dz=2,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do bazy przeciwnika!","color":"gray","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=1999,y=55,z=1904,dx=3,dz=2,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your enemy's spawn!","color":"gray","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=1999,y=55,z=1904,dx=3,dz=2,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run tp @s ~ ~ ~2
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=1995,y=55,z=1899,dx=2,dz=3,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do bazy przeciwnika!","color":"gray","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=1995,y=55,z=1899,dx=2,dz=3,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your enemy's spawn!","color":"gray","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=1995,y=55,z=1899,dx=2,dz=3,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run tp @s ~-2 ~ ~
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=2004,y=55,z=1899,dx=2,dz=3,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do bazy przeciwnika!","color":"gray","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=2004,y=55,z=1899,dx=2,dz=3,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your enemy's spawn!","color":"gray","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfSouth,x=2004,y=55,z=1899,dx=2,dz=3,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run tp @s ~2 ~ ~
+
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=1999,y=55,z=2095,dx=3,dz=2,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do bazy przeciwnika!","color":"gray","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=1999,y=55,z=2095,dx=3,dz=2,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your enemy's spawn!","color":"gray","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=1999,y=55,z=2095,dx=3,dz=2,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run tp @s ~ ~ ~-2
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=1995,y=55,z=2101,dx=2,dz=3,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do bazy przeciwnika!","color":"gray","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=1995,y=55,z=2101,dx=2,dz=3,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your enemy's spawn!","color":"gray","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=1995,y=55,z=2101,dx=2,dz=3,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run tp @s ~-2 ~ ~
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=2004,y=55,z=2101,dx=2,dz=3,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Nie możesz wejść do bazy przeciwnika!","color":"gray","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=2004,y=55,z=2101,dx=2,dz=3,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"You cannot enter your enemy's spawn!","color":"gray","bold":false}]
+execute if score ctf AC_chosenMap matches 1 run execute as @a[team=ac_ctfNorth,x=2004,y=55,z=2101,dx=2,dz=3,dy=3,tag=InGame] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run tp @s ~2 ~ ~

@@ -1,0 +1,4 @@
+$execute if score game$(game) AC_autoControl matches -20 if score lang AC_lang matches 0 run tellraw @a [{"text":"[AUTO] ","bold":true,"color":"gold"},{"text":"Drodzy uczestnicy, teraz widzowie zagłosują na następny tryb gry! ","color":"yellow","bold":false}]
+$execute if score game$(game) AC_autoControl matches -20 if score lang AC_lang matches 1 run tellraw @a [{"text":"[AUTO] ","bold":true,"color":"gold"},{"text":"Dear contestants, now the viewers will choose the next gamemode! ","color":"yellow","bold":false}]
+
+$execute if score game$(game) AC_autoControl matches -20 run function ac:auto/vote-set-name with storage ac:auto

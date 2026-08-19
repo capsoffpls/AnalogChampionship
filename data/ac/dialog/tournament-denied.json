@@ -1,0 +1,40 @@
+{
+    "type": "notice",
+    "can_close_with_escape": false,
+    "title": [
+        {
+            "text": "[ANT] ",
+            "bold": true,
+            "color": "gold"
+        },
+        {
+            "text":"Banowanie trybów - Błąd",
+            "color":"red",
+            "bold":false
+        }
+    ],
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "stone",
+      "components": {
+        "item_model": "ac:cancel"
+      }
+    },
+    "show_tooltip": false,
+    "description": {
+        "contents": {
+      "text":"Nie masz uprawnień do wykonania tej akcji.",
+      "color":"red"
+        },
+        "width": 512
+    }
+    },
+    "action": {
+        "label": "Nosz kurwa",
+        "action": {
+        "type": "run_command",
+        "command": "trigger AC_banDetect set 9999"
+        }
+    }
+}

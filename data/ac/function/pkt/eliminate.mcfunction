@@ -1,0 +1,19 @@
+execute if score round AC_pktScores matches 1 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run scoreboard players add @a[tag=InGame,team=ac_pktClimbers] AC_pointsHeld 10
+execute if score round AC_pktScores matches 1 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run tellraw @a[tag=InGame,team=ac_pktClimbers] [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"+10≡","color":"gold","bold":false}]
+execute if score round AC_pktScores matches 3 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run scoreboard players add @a[tag=InGame,team=ac_pktClimbers] AC_pointsHeld 10
+execute if score round AC_pktScores matches 3 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run tellraw @a[tag=InGame,team=ac_pktClimbers] [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"+10≡","color":"gold","bold":false}]
+execute if score round AC_pktScores matches 5 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run scoreboard players add @a[tag=InGame,team=ac_pktClimbers] AC_pointsHeld 10
+execute if score round AC_pktScores matches 5 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run tellraw @a[tag=InGame,team=ac_pktClimbers] [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"+10≡","color":"gold","bold":false}]
+execute if score round AC_pktScores matches 2 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run scoreboard players add @a[tag=InGame,team=ac_pktJumpers] AC_pointsHeld 10
+execute if score round AC_pktScores matches 2 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run tellraw @a[tag=InGame,team=ac_pktJumpers] [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"+10≡","color":"gold","bold":false}]
+execute if score round AC_pktScores matches 4 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run scoreboard players add @a[tag=InGame,team=ac_pktJumpers] AC_pointsHeld 10
+execute if score round AC_pktScores matches 4 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run tellraw @a[tag=InGame,team=ac_pktJumpers] [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"+10≡","color":"gold","bold":false}]
+execute if score round AC_pktScores matches 6 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run scoreboard players add @a[tag=InGame,team=ac_pktJumpers] AC_pointsHeld 10
+execute if score round AC_pktScores matches 6 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run tellraw @a[tag=InGame,team=ac_pktJumpers] [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"+10≡","color":"gold","bold":false}]
+
+execute as @a[scores={AC_deathmessage=1..}] at @s if entity @s run scoreboard players add @p[tag=InGame,gamemode=adventure,scores={AC_killmessage=1..},tag=pktHunter] AC_pointsHeld 20
+execute as @a[scores={AC_deathmessage=1..}] at @s if entity @s run execute if score lang AC_lang matches 0 run tellraw @p[tag=InGame,gamemode=adventure,scores={AC_killmessage=1..}] [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"+20≡ (Bonus za eliminację)","color":"gold","bold":false}]
+execute as @a[scores={AC_deathmessage=1..}] at @s if entity @s run execute if score lang AC_lang matches 1 run tellraw @p[tag=InGame,gamemode=adventure,scores={AC_killmessage=1..}] [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"+20≡ (Bonus for elimination)","color":"gold","bold":false}]
+
+execute as @a[scores={AC_deathmessage=1..}] if entity @s run gamemode spectator @s
+execute as @a[scores={AC_deathmessage=1..}] if entity @s run execute as @a[tag=InGame,gamemode=adventure,scores={AC_killmessage=1..},tag=pktHunter] at @s run playsound minecraft:ac.jingles.success record @s ~ ~ ~

@@ -1,0 +1,9 @@
+fill -1484 51 534 -1516 63 466 air replace cobblestone
+fill -1484 51 534 -1516 63 466 air replace blackstone
+fill -1484 51 534 -1516 63 466 air replace cobbled_deepslate
+fill -1484 51 534 -1516 63 466 air replace white_wool
+fill -1484 51 534 -1516 63 466 air replace gold_block
+fill -1484 51 534 -1516 63 466 air replace oak_planks
+fill -1484 51 534 -1516 63 466 air replace netherrack
+fill -1484 51 534 -1516 63 466 air replace prismarine_bricks
+fill -1484 51 534 -1516 63 466 air replace end_stone

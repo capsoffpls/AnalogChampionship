@@ -1,0 +1,18 @@
+execute if score s AC_gamemode matches 1 run data modify storage ac_modes set set value "TNT Run"
+execute if score s AC_gamemode matches 2 run data modify storage ac_modes set set value "Block Party"
+execute if score s AC_gamemode matches 3 run data modify storage ac_modes set set value "Avalanche"
+execute if score s AC_gamemode matches 4 run data modify storage ac_modes set set value "Minefield"
+execute if score s AC_gamemode matches 5 run data modify storage ac_modes set set value "Dodgebolt"
+execute if score s AC_gamemode matches 6 run data modify storage ac_modes set set value "Musical Minecarts"
+execute if score s AC_gamemode matches 7 run data modify storage ac_modes set set value "Labyrinth"
+execute if score s AC_gamemode matches 8 run data modify storage ac_modes set set value "Popcorn"
+execute if score s AC_gamemode matches 9 run data modify storage ac_modes set set value "Replica"
+execute if score s AC_gamemode matches 10 run data modify storage ac_modes set set value "Traffic Lights"
+execute if score s AC_gamemode matches 11 run data modify storage ac_modes set set value "Pharaoh's Curse"
+execute if score s AC_gamemode matches 12 run data modify storage ac_modes set set value "Pig Fishing"
+execute if score s AC_gamemode matches 13 run data modify storage ac_modes set set value "The Lab"
+execute if score s AC_gamemode matches 14 run data modify storage ac_modes set set value "King Of The Hill"
+execute if score s AC_gamemode matches 15 run data modify storage ac_modes set set value "Mow The Lawn"
+execute if score s AC_gamemode matches 16 run data modify storage ac_modes set set value "Through The Rings"
+
+title @a actionbar {interpret:true,"storage":"ac_modes","nbt":"set","bold":true,"color":"gold"}

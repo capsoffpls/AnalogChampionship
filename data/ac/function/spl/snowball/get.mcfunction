@@ -1,0 +1,3 @@
+execute if score spl AC_running matches 1 if score spl2 AC_functions matches 1 run execute as @a[tag=InGame] if score @s AC_splDestroy matches 1.. run give @s snowball[custom_data={acSpleef:1}] 1
+execute if score spl AC_running matches 1 if score spl2 AC_functions matches 1 run execute as @a[tag=InGame] if score @s AC_splDestroy matches 1.. run scoreboard players set @s AC_splDestroy 0
+execute if score spl AC_running matches 1 if score spl2 AC_functions matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:snowball"}}] if entity @s run kill @s

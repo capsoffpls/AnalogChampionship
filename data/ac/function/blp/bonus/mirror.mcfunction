@@ -1,0 +1,1 @@
+effect give @s invisibility infinite 0

@@ -1,0 +1,4 @@
+tag @s add spbEliminated
+execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[SPB] ","bold":true,"color":"dark_green"},{"text":"Gracz ","color":"red","bold":false},{"selector":"@s"},{"text":" odpadł z rozgrywki! Zbudował jedynie ","color":"red","bold":false},{"score":{"name":"@s","objective":"AC_spbPercentage"},"color":"red","bold":true},{"text":"% wzoru.","color":"red","bold":false}]
+execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[SPB] ","bold":true,"color":"dark_green"},{"text":"Player ","color":"red","bold":false},{"selector":"@s"},{"text":" has been eliminated! They built ","color":"red","bold":false},{"score":{"name":"@s","objective":"AC_spbPercentage"},"color":"red","bold":true},{"text":"% of the pattern.","color":"red","bold":false}]
+gamemode spectator @s

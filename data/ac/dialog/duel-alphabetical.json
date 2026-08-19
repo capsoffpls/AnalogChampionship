@@ -1,0 +1,63 @@
+{
+  "type": "multi_action",
+  "title": [
+    {
+      "text": "[AC] ",
+      "bold": true,
+      "color": "white"
+    },
+    {
+      "text": "Kolejka pojedynków:",
+      "color": "yellow",
+      "bold": false
+    }
+  ],
+  "actions": [
+    {
+      "label": "Battle Box",
+      "tooltip": [{"text":"• Gracze po zatwierdzeniu swojej klasy walczą o środek mapy\n• Wypełnienie środka natychmiast kończy rundę, nawet jeżeli oponent żyje\n• Wygrywa gracz, który na swoim koncie zgromadzi 3 zwycięstwa","bold":false,"color":"yellow"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_DuelQueue set 2"
+      }
+    },
+    {
+      "label": "Classic",
+      "tooltip": [{"text":"• Gracze wyposażeni w zestaw przedmiotów trybu Team Fight walczą do 3 wygranych\n• Za każdą śmierć gracz traci życie\n• Gracz, który straci życia jako pierwszy przegrywa","bold":false,"color":"yellow"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_DuelQueue set 1"
+      }
+    },
+    {
+      "label": "Dodgebolt",
+      "tooltip": [{"text":"• Gracze stoją na przeciwnych stronach mapy i otrzymują po jednej strzale\n• Uczestnik ginie od jednego strzału\n• Gracz, który zabije przeciwnika 3 razy wygrywa","bold":false,"color":"yellow"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_DuelQueue set 4"
+      }
+    },
+    {
+      "label": "Parkour Knockout",
+      "tooltip": [{"text":"• Gracze rywalizują w nieskończonym wyścigu na losowo dobieranych wzorach trybu Parkour Knockout\n• Ukończenie serii 3 wzorów spowoduje, że przeciwnikowi zacznie spadać zdrowie\n• Gracz, któremu pierwszemu wyzeruje się zdrowie przegrywa","bold":false,"color":"yellow"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_DuelQueue set 3"
+      }
+    },
+    {
+      "label": "The Bridge",
+      "tooltip": [{"text":"• Zadaniem graczy jest wskoczyć do bramki przeciwnika 5 razy\n• Upadek do voida spowoduje respawn w bazie\n• Wygrywa gracz, który strzeli 5 bramek przeciwnikowi","bold":false,"color":"yellow"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_DuelQueue set 5"
+      }
+    }
+  ],
+  "columns": 3
+}

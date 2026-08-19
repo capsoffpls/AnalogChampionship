@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "source_entity": {
+              "entity_type": "minecraft:player"
+            }
+          }
+        },
+        "entity": {
+          "entity_type": "minecraft:horse",
+          "nbt": {
+            "Tags": [
+              "racing"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "sends_telemetry_event": false
+}

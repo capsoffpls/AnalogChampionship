@@ -1,0 +1,19 @@
+{
+  "parent": "andvancement:mark/trl",
+  "display": {
+    "icon": {
+      "id": "minecraft:lime_concrete"
+    },
+    "title": "Billie Jean",
+    "description": "Ukończ grę idąc tyłem od spawnu.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

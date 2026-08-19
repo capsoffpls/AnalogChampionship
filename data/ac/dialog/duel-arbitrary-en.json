@@ -1,0 +1,63 @@
+{
+  "type": "multi_action",
+  "title": [
+    {
+      "text": "[AC] ",
+      "bold": true,
+      "color": "white"
+    },
+    {
+      "text": "Duel Queue:",
+      "color": "yellow",
+      "bold": false
+    }
+  ],
+  "actions": [
+    {
+      "label": "Classic",
+      "tooltip": [{"text":"• Players equipped with Team Fight gamemode kits fight a best-of-5 match\n• Players lose a life when they die\n• The player, who loses all 3 lives loses the duel","bold":false,"color":"yellow"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_DuelQueue set 1"
+      }
+    },
+    {
+      "label": "Battle Box",
+      "tooltip": [{"text":"• Players, after locking their kits in, battle over the middle zone\n• Filling the middle ends the round, even if opponent is alive\n• The player, who wins 3 rounds wins the duel","bold":false,"color":"yellow"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_DuelQueue set 2"
+      }
+    },
+    {
+      "label": "Parkour Knockout",
+      "tooltip": [{"text":"• Players race in an endless race of Parkour Knockout patterns\n• Completing the series of 3 patterns makes your opponent start to lose health\n• The player, who depletes his health first loses the duel","bold":false,"color":"yellow"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_DuelQueue set 3"
+      }
+    },
+    {
+      "label": "Dodgebolt",
+      "tooltip": [{"text":"• Players stand on opposite sides of the map, and are given a single arrow\n• Players dies from a single arrow shot\n• The player, who kills his opponent 3 times wins the duel","bold":false,"color":"yellow"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_DuelQueue set 4"
+      }
+    },
+    {
+      "label": "The Bridge",
+      "tooltip": [{"text":"• The players' task is to score a goal in their enemy's base 5 times\n• Falling into the void respawns you\n• The player, who scores 5 goals first wins the duel","bold":false,"color":"yellow"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_DuelQueue set 5"
+      }
+    }
+  ],
+  "columns": 3
+}

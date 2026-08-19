@@ -1,0 +1,19 @@
+{
+  "parent": "andvancement:mark/bsp",
+  "display": {
+    "icon": {
+      "id": "minecraft:wind_charge"
+    },
+    "title": "Dno dna",
+    "description": "Powróć z najniższej warstwy na najwyższą.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

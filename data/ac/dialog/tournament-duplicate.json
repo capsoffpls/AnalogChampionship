@@ -1,0 +1,41 @@
+{
+    "type": "notice",
+    "can_close_with_escape": false,
+    "title": [
+        {
+            "text": "[ANT] ",
+            "bold": true,
+            "color": "gold"
+        },
+        {
+            "text":"Banowanie trybów - Błąd",
+            "color":"red",
+            "bold":false
+        }
+    ],
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "stone",
+      "components": {
+        "item_model": "ac:cancel"
+      }
+    },
+    "show_tooltip": false,
+    "description": {
+        "contents": {
+            "text":"Wykryliśmy, że próbujesz zbanować ten sam tryb 2 razy. Wybierz coś innego.",
+            "color":"red",
+            "bold":false
+        },
+        "width": 512
+    }
+    },
+    "action": {
+        "label": "Nosz kurwa",
+        "action": {
+        "type": "run_command",
+        "command": "trigger AC_banDetect set 9999"
+        }
+    }
+}

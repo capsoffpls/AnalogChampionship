@@ -1,0 +1,6 @@
+#tellraw @s [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[AC] ","bold":true,"color":"white"},{"text":"Dziękujemy za skorzystanie z interaktywnego systemu banowania trybów Analog Tournament. Teraz opuścisz symulację.","color":"gray","bold":false}]
+tp @s 106 69 61 -30 0
+
+execute unless entity @a[tag=InGame,scores={AC_hasBanned=0..1},tag=!staff] run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[AC] ","color":"white","bold":true},{"text":"Wszyscy gracze dokonali swojego wyboru.","color":"gray","bold":false}]
+execute unless entity @a[tag=InGame,scores={AC_hasBanned=0..1},tag=!staff] run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[AC] ","color":"white","bold":true},{"text":"All players have chosen their bans.","color":"gray","bold":false}]
+execute unless entity @a[tag=InGame,scores={AC_hasBanned=0..1},tag=!staff] run scoreboard players set status AC_hasBanned 0

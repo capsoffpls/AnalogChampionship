@@ -1,0 +1,12 @@
+execute if score bed AC_chosenMap matches 0 run fill 1425 53 -1075 1575 84 -925 air replace ladder
+execute if score bed AC_chosenMap matches 0 run fill 1425 53 -1075 1575 84 -925 air replace red_wool
+execute if score bed AC_chosenMap matches 0 run fill 1425 53 -1075 1575 84 -925 air replace yellow_wool
+execute if score bed AC_chosenMap matches 0 run fill 1425 53 -1075 1575 84 -925 air replace lime_wool
+execute if score bed AC_chosenMap matches 0 run fill 1425 53 -1075 1575 84 -925 air replace blue_wool
+execute if score bed AC_chosenMap matches 0 run fill 1425 53 -1075 1575 84 -925 air replace end_stone
+execute if score bed AC_chosenMap matches 0 run fill 1425 53 -1075 1575 84 -925 air replace oak_planks
+execute if score bed AC_chosenMap matches 0 run fill 1425 53 -1075 1575 84 -925 air replace obsidian
+execute if score bed AC_chosenMap matches 0 run fill 1425 53 -1075 1575 84 -925 air replace red_terracotta
+execute if score bed AC_chosenMap matches 0 run fill 1425 53 -1075 1575 84 -925 air replace yellow_terracotta
+execute if score bed AC_chosenMap matches 0 run fill 1425 53 -1075 1575 84 -925 air replace lime_terracotta
+execute if score bed AC_chosenMap matches 0 run fill 1425 53 -1075 1575 84 -925 air replace blue_terracotta

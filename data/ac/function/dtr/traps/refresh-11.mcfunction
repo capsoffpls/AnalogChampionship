@@ -1,0 +1,1 @@
+fill -1542 42 1070 -1530 42 1070 ladder[facing=south]

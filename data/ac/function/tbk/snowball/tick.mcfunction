@@ -1,0 +1,3 @@
+execute unless predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"vehicle":{}}} run return run function ac:tbk/snowball/landed
+execute on vehicle run data modify storage ac:tbk.data motion set from entity @s Motion
+data modify entity @s Motion set from storage ac:tbk.data motion

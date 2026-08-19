@@ -1,0 +1,439 @@
+{
+  "type": "multi_action",
+  "can_close_with_escape": false,
+  "title": [
+    {
+      "text": "[ANT] ",
+      "bold": true,
+      "color": "gold"
+    },
+    {
+      "text": "Banowanie trybów [1/2]",
+      "color": "red",
+      "bold": false
+    }
+  ],
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "stone",
+      "components": {
+        "item_model": "ac:banzone"
+      }
+    },
+    "show_tooltip": false,
+    "description": {
+      "contents": {
+      "text":"Wybierz tryb do zbanowania jako pierwszy:",
+      "color":"red"
+      },
+      "width": 512
+    }
+    },
+  "actions": [
+    {
+      "label": "TNT Run",
+      "tooltip": [{"text":"• Za tobą znikają bloki\n• Utrzymaj się jak najdłużej\n• Zajeżdżaj drogę przeciwnikom\n• Nie daj się odciąć","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "trigger AC_banDetect set 1"
+      }
+    },
+    {
+      "label": "Assassins",
+      "tooltip": [{"text":"• Musisz zabić swój cel. Jest on oznaczony cząsteczkami\n• Zabicie nieswojego celu jest ryzykowne\n• Zdobądź jak najwięcej zabójstw celów\n• Na mapie porozrzucane są przedmioty ze specjalnym użyciem","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 2"
+      }
+    },
+    {
+      "label": "Infection",
+      "tooltip": [{"text":"• Jedna osoba na początku gry staje się Zainfekowana\n• Ocaleni zabici przez Zainfekowanych sami stają się Zainfekowani\n• Przetrwaj jak najdłużej jako Ocalony\n• Zabij wszystkich Ocalonych jako Zainfekowany","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 3"
+      }
+    },
+    {
+      "label": "Spleef",
+      "tooltip": [{"text":"• Wszyscy otrzymują łopatę do szybkiego kopania podłoża\n• Każdy wykopany blok daje ci śnieżkę do rzucania\n• Śnieżki również niszczą podłoże\n• Nie daj się podkopać","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 4"
+      }
+    },
+    {
+      "label": "Horse Racing",
+      "tooltip": [{"text":"• Każdy gracz otrzymuje swojego konia\n• Omijaj przeszkody, nie omijaj punktów kontrolnych\n• Nie daj się wyprzedzić\n• Podium punktowane jest wyżej","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 5"
+      }
+    },
+    {
+      "label": "Block Party",
+      "tooltip": [{"text":"• Musisz stanąć na odpowiednim kolorze podłogi\n• Po wyznaczonym czasie wszystkie inne kolory znikną\n• Spadek z platformy oznacza koniec gry\n• Zabij w dzwon, który czasami pojawia się na mapie, aby otrzymać specjalny przedmiot","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 6"
+      }
+    },
+    {
+      "label": "One-Minute Craft",
+      "tooltip": [{"text":"• Mapa jest podzielona na 16 segmentów, każdy z innym rodzajem składników do craftingu\n• Masz minutę na znalezienie, wykopanie i użycie tych składników do utworzenia danego przedmiotu\n• Gra dzieli się na 5 rund. Nieutworzenie przedmiotu na czas oznacza przegraną\n• Czasami w grze pojawia się Modyfikator, który ułatwia, bądź utrudnia rundę","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 7"
+      }
+    },
+    {
+      "label": "Avalanche",
+      "tooltip": [{"text":"• Musisz schować się pod półblokiem, aby nie zasypała cię lawina\n• Im dłużej trwa gra, tym mniej kryjówek się pojawia\n• Zasypanie przez lawinę oznacza śmierć\n• Po rundzie 10 włącza się PVP","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 8"
+      }
+    },
+    {
+      "label": "Minefield",
+      "tooltip": [{"text":"• Dobiegnij do mety w nienaruszonym stanie\n• Wdepnięcie w minę cofnie cię na początek\n• Podążaj śladami innych graczy\n• Jest mało czasu na ukończenie","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 9"
+      }
+    },
+    {
+      "label": "Dodgebolt",
+      "tooltip": [{"text":"• Gracze dzieleni są na 2 drużyny\n• Zadaniem graczy jest zestrzelić wszystkich z drugiej drużyny\n• Co jakiś czas mapa się zmniejsza\n• Nie możesz przejść na przeciwną stronę mapy","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 10"
+      }
+    },
+    {
+      "label": "Bow Spleef",
+      "tooltip": [{"text":"• Zasady takie same jak w zwykłym Spleefie, ale bez śnieżek\n• Strzelaj w podłoże, nie w graczy\n• Utrzymuj się jak najwyżej\n• Nie daj się zrzucić","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 11"
+      }
+    },
+    {
+      "label": "Parkour Racing",
+      "tooltip": [{"text":"• Dobiegnij do końca w jak najkrótszym czasie\n• W grze przewidziane są punkty kontrolne\n• Skup się na skakaniu i nie daj się ponieść emocjom gdy spadniesz\n• Czas skraca się do 5 minut, gdy pierwsze 3 miejsca się zapełnią","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 12"
+      }
+    },
+    {
+      "label": "Bow Rush",
+      "tooltip": [{"text":"• Jest to tryb Battle Royale\n• Ostatnia osoba na mapie wygrywa\n• Możesz budować się blokami, ale te po minucie znikają\n• Uważaj na strefę","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 13"
+      }
+    },
+    {
+      "label": "Capture The Flag",
+      "tooltip": [{"text":"• Gracze dzieleni są na 4 drużyny. Każda ma dwie flagi, których muszą bronić\n• Aby przejąć flagę, gracz musi najpierw ją ukraść, a potem odnieść do swojej bazy\n• Drużyna bez flag nie odradza się po śmierci\n• Jeżeli ilość graczy jest niepodzielna przez 4, w grze pojawią się Junglerzy - drużyna neutralna okupująca środek mapy","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 14"
+      }
+    },
+    {
+      "label": "Musical Minecarts",
+      "tooltip": [{"text":"• Zadaniem gracza jest wsiąść do wagonika przed końcem czasu\n• Wagoników jest zawsze mniej niż graczy\n• Gracze, którzy nie wsiądą na czas odpadają z gry\n• Wygrywa gracz, który przetrwa jako ostatni","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 15"
+      }
+    },
+    {
+      "label": "Arrow Barrage",
+      "tooltip": [{"text":"• Gracze muszą ukończyć tor, podsadzając się blokami\n• W graczy od lewej strony strzelają strzały\n• Jeżeli strzała trafi w blok wełny, zniszczy go\n• Tryb jest ograniczony czasowo do 5 minut","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 16"
+      }
+    },
+    {
+      "label": "Labyrinth",
+      "tooltip": [{"text":"• Gracze muszą dostać się na środek mapy poprzez pozawijane korytarze\n• Im szybciej się dostaniesz na środek, tym lepiej\n• Gdy podium się zapełni, czas jest skracany do 30 sekund\n• Uważaj na zmniejszającą się granicę mapy","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 17"
+      }
+    },
+    {
+      "label": "Battle Box",
+      "tooltip": [{"text":"• Gracze w max. 4-osobowych drużynach mierzą się w szybkich rundach o przejęcie środka\n• Gra podzielona jest na 3 rundy, trwające minutę\n• Zapełnienie środka swoim kolorem oznacza zwycięstwo\n• Zwycięża ta drużyna, która wygra najwięcej rund","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 18"
+      }
+    },
+    {
+      "label": "The Bridge",
+      "tooltip": [{"text":"• Gracze podzieleni na 4 drużyny bronią swoich bramek\n• Jeżeli gracz z przeciwnej drużyny wpadnie do twojej bramki, przejmuje twojego gola\n• Każda drużyna zaczyna z 2 golami. Drużyna bez goli nie odrodzi się po śmierci\n• Po 5 minutach gry następuje Dogrywka, gdzie utracone gole nie trafiają na konto przeciwnej drużyny","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 19"
+      }
+    },
+    {
+      "label": "Bed Wars",
+      "tooltip": [{"text":"• Gracze podzieleni na 4 drużyny bronią swoich łóżek\n• Jeżeli gracz z przeciwnej drużyny zniszczy twoje łóżko, nie będziesz mógł się odrodzić\n• Ulepszaj ekwipunek swój oraz drużyny, zbierając materiały z generatorów\n• Gra trwa 30 minut. Po 25 minutach wszyscy tracą swoje łóżko","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 20"
+      }
+    },
+    {
+      "label": "Team Fight",
+      "tooltip": [{"text":"• Gracze dzieleni na dwuosobowe drużyny muszą zabijać siebie nawzajem\n• Każdy gracz ma 3 życia\n• Po 5 minutach gry rozpoczyna się Dogrywka - wszyscy dostają obrażenia co sekundę\n• Wygrywa ostatnia drużyna na arenie","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 21"
+      }
+    },
+    {
+      "label": "Prop Hunt",
+      "tooltip": [{"text":"• Gracze jako Propy muszą wtopić się w tło, a Łowcy muszą ich znaleźć i zabić\n• Pierwszy Łowca może przywołać max. 5 pomocników spośród martwych Propów\n• Propy mają do dyspozycji Ogłuszenie z 15-sekundowym czasem odnowienia\n• Nie daj się znaleźć Łowcom, aby wygrać","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 22"
+      }
+    },
+    {
+      "label": "Popcorn",
+      "tooltip": [{"text":"• Gracze znajdują się na platformie, która powoli znika\n• Celem gry jest przetrwać jak najdłużej\n• Kolor podłoża wskazuje na to, jak szybko ów blok zniknie\n• Białe pola są najbezpieczniejsze, natomiast czerwone - najniebezpieczniejsze","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 23"
+      }
+    },
+    {
+      "label": "Speed Builders",
+      "tooltip": [{"text":"• Celem tej gry jest odwzorowanie budowli ze środka w 2 minuty jak najdokładniej się da\n• Rund jest o jedną mniej niż graczy, minus jedna za każdy remis\n• Gracz może budować tylko na swoim wyznaczonym polu\n• Zwycięża ten gracz, który w ostatniej rundzie zbuduje dokładniej budowlę ze środka mapy","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 24"
+      }
+    },
+    {
+      "label": "Point Control",
+      "tooltip": [{"text":"• Gracze podzieleni na dwie drużyny mają za zadanie przejąć punkt krytyczny w bazie przeciwnika. Zanim jednak do niego dotrą, muszą przejąć resztę punktów kontrolnych\n• Aby przejąć punkt, należy stać na nim przez 5 sekund. Możesz przerwać przejmowanie punktu, wchodząc na jego środek podczas gdy stoi tam przeciwnik. Punkt krytyczny przejmuje się 15 sekund, a można przerwać jego przejęcie wejściem na środkowy punkt kontrolny\n• Przejęcie wszystkich punktów kontrolnych daje drużynie bonusowe AP, kosztem efektu Strength oraz Speed dla przeciwników\n• Zwycięża drużyna, która po 15 minutach gry będzie mieć pod kontrolą więcej punktów","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 25"
+      }
+    },
+    {
+      "label": "Replica",
+      "tooltip": [{"text":"• Gracze mają za zadanie skopiować mozaikę na swoją kanwę\n• Mozaika składa się z 9 rodzajów bloków.\n• Gracz, który jako ostatni skończy mozaikę nie dostaje punktów\n• Gra trwa tylko 1 minutę","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 26"
+      }
+    },
+    {
+      "label": "Death Run",
+      "tooltip": [{"text":"• Mapa składa się z pułapek aktywowanych przyciskiem\n• Im więcej razy zginiesz, tym więcej punktów zdobędą Śmierci\n• Gracz, który ukończy tor może zabić Śmierć i samemu się nią stać\n• Gra trwa 10 minut","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 27"
+      }
+    },
+    {
+      "label": "Turf Wars",
+      "tooltip": [{"text":"• Gracze są podzieleni na drużyny - Czerwoną i Niebieską\n• Każde zabójstwo przesuwa granicę mapy do przodu, a każda śmierć - do tyłu\n• Nie możesz wyjść na strefę przeciwnika\n• Wygrywa drużyna, która w 5 minut będzie mieć przewagę w ilości zabójstw, bądź zdobędzie przewagę 20-stu","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 28"
+      }
+    },
+    {
+      "label": "Parkour Tag",
+      "tooltip": [{"text":"• Gra jest podzielona na dwie rundy, a gracze są w max. 8-osobowych składach. Czas rundy wynosi 1,5 minuty\n• Celem gry jest przetrwanie jak najdłużej, lub uderzenie wszystkich graczy\n• Pojedyńcze uderzenie od łowcy oznacza koniec gry\n• Graczy-uciekinierów może być max. 6, a graczy-łowców - max. 2","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 29"
+      }
+    },
+    {
+      "label": "Parkour Knockout",
+      "tooltip": [{"text":"• Gra dzieli się na 7 minutowych rund, po 3 wzory każda, oraz runda finałowa z 5-oma wzorami\n• Z każdą rundą zmniejsza się o 2 limit graczy potrzebnych do wystartowania kolejnej rundy\n• Gdy jesteś w tyle, tracisz zdrowie. Każdy gracz na początku ma 30 zdrowia\n• Do finału może się dostać tylko dwóch graczy","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 30"
+      }
+    },
+    {
+      "label": "Traffic Lights",
+      "tooltip": [{"text":"• Gracze muszą dobiec do mety w czasie 3 minut\n• Można biec tylko gdy jest zielone i żółte światło\n• Żółte światło jest bardzo krótkie i oznacza, że zaraz pojawi się czerwone\n• Podczas światła czerwonego nie można się ruszać. Gracze, którzy się poruszą zostaną cofnięci na start","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 31"
+      }
+    },
+    {
+      "label": "Anvil Spleef",
+      "tooltip": [{"text":"• Celem graczy jest nie zginąć, czy to przez spadek do próżni, czy przez przygniecenie kowadłem\n• Kowadła, które dotykają ziemi zostawiają dziurę\n• Ostatni gracz na arenie wygrywa\n• Ta gra nie ma limitu czasowego, natomiast staje się coraz trudniejsza co 45 sekund","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 32"
+      }
+    },
+    {
+      "label": "Pharaoh's Curse",
+      "tooltip": [{"text":"• Celem graczy jest nie być zasypanym przez piasek\n• Gracze nie mają możliwości skoku\n• Ostatni gracz na arenie wygrywa\n• Ta gra nie ma limitu czasowego","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 33"
+      }
+    },
+    {
+      "label": "Overkill",
+      "tooltip": [{"text":"• Celem tej gry jest zebranie 15 zabójstw\n• Wyposażenie gracza pogarsza się co 3 zabójstwa\n• Gra trwa 10 minut. Jeżeli nikt nie uzyska 15 zabójstw przed jej końcem, zakończy się ona bez zwycięzcy\n• Po śmierci masz 5 sekund przed odrodzeniem się, a po odrodzeniu masz 5 sekund Wytrzymałości","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 34"
+      }
+    },
+    {
+      "label": "Pig Fishing",
+      "tooltip": [{"text":"• Gracze mają za zadanie złowić jak najwięcej świń wypadających na środku mapy\n• Małe świnki dają 3x więcej punktów niż duże\n• Gra trwa 90 sekund","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 35"
+      }
+    },
+    {
+      "label": "Horse Knockout",
+      "tooltip": [{"text":"• Gracze na losowo poprowadzonej trasie mają za zadanie ukończyć wyścig\n• Po każdym okrążeniu osoba, która została ostatnia odpada z wyścigu, natomiast nie jest to koniec jej gry\n• Po odpadnięciu gracza jego zadaniem jest spowolnić graczy, którzy jeszcze się ścigają. Otrzymują za to punkty na podstawie prędkości gracza przed uderzeniem\n• Gra trwa zawsze 10 minut, lub [ilość graczy]+1 okrążeń","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 36"
+      }
+    },
+    {
+      "label": "Castled",
+      "tooltip": [{"text":"• Gracze podzieleni są na drużynę Atakujących i Obrońców. Atakujący mają za zadanie zniszczyć Rdzeń w zamku Obrońców, natomiast Obrońcy nie mogą do tego dopuścić przez 20 minut\n• Gracze mają do wyboru rózne klasy postaci, pozwalające na różnorodny styl gry\n• Czas na odrodzenie się wydłuża się wraz z postępem gry\n• Gra skończy się wcześniej, jeśli cała drużyna zginie, a żaden z jej członków nie zdąży się odrodzić","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 37"
+      }
+    },
+    {
+      "label": "Tobiko",
+      "tooltip": [{"text":"• Jeden z graczy staje się tytułowym Tobiko. Może on latać i rzuca jajkami, które niszczą teren\n• Gracze mają za zadanie trafić Tobiko z łuku łącznie 20 razy\n• Czas gry wynosi 10 minut, i jeżeli dobiegnie on końca, wygrywają pozostali na mapie gracze\n• Zadaniem Tobiko jest zrzucić wszystkich graczy z mapy przed końcem czasu lub utratą całego zdrowia","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 38"
+      }
+    },
+    {
+      "label": "The Lab",
+      "tooltip": [{"text":"• Zawodnicy muszą przekopać 64 bloki, aby dostać się na sam dół jako pierwsi\n• Należy zmieniać narzędzie w zależności od bloku\n• Gra trwa 90 sekund","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 39"
+      }
+    },
+    {
+      "label": "King Of The Hill",
+      "tooltip": [{"text":"• Gracze muszą jak najdłużej utrzymać się na punkcie środkowym\n• Każdy jest wyposażony w Szprota z Knockbackiem 2, do wzajemnego spychania się\n• Gra trwa 90 sekund","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 40"
+      }
+    },
+    {
+      "label": "Juggernaut",
+      "tooltip": [{"text":"• Jeden z graczy staje się Juggernautem - jest większy, ma więcej zdrowia i większy zasięg\n• Reszta graczy to Łowcy, którzy muszą zabić Juggernauta, aby wygrać\n• Łowcy po śmierci nie odradzają się\n• Runda trwa maksymalnie 2,5 minuty, grane są 2 rundy. W przypadku końca czasu wygrywa Juggernaut","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 41"
+      }
+    },
+    {
+      "label": "Underwater Skewers",
+      "tooltip": [{"text":"• Uczestnicy otrzymują włócznię oraz Nautilusa do ujeżdżania\n• Zadaniem graczy jest zrzucanie się nawzajem ze swoich Nautilusów\n• Dopóki siedzisz na Nautilusie, nie tracisz oddechu\n• Gra trwa maksymalnie 5 minut, lub dopóki nie utoną wszyscy przeciwnicy","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 42"
+      }
+    },
+    {
+      "label": "Mow The Lawn",
+      "tooltip": [{"text":"• Gracze muszą zniszczyć jak najwięcej trawy\n• Gracze jadą na świniach\n• Osoba, która zniszczy najwięcej trawy wygrywa\n• Gra trwa jedną minutę","bold":false,"color":"gray"}],
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 43"
+      }
+    },
+    {
+      "label": "Through The Rings",
+      "tooltip": [{"text":"• Zadaniem graczy jest dotrzeć na koniec wyścigu na Happy Ghastach\n• Przelatywanie przez kółka przyspiesza cię i dodaje punkty\n• Ominięcie kółka spowolni cię\n• Gra jest ograniczona czasowo do 1,5 minuty","bold":false,"color":"gray"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 44"
+      }
+    }
+  ],
+  "columns": 4,
+  "exit_action": {
+    "label": "ADMIN: Skip",
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "function ac:base/ban-skip"
+    }
+  }
+}

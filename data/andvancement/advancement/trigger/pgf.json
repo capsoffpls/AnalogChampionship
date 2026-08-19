@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "fih": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:pufferfish"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "andvancement:game/pgf"
+  }
+}

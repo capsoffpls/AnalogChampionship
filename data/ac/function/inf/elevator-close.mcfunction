@@ -1,0 +1,8 @@
+fill 1562 50 962 1561 52 962 iron_block
+fill 1562 58 962 1561 60 962 iron_block
+fill 1562 66 962 1561 68 962 iron_block
+fill 1562 74 962 1561 76 962 iron_block
+fill 1562 82 962 1561 84 962 iron_block
+fill 1562 90 962 1561 92 962 iron_block
+fill 1562 98 962 1561 100 962 iron_block
+fill 1562 106 962 1561 108 962 iron_block

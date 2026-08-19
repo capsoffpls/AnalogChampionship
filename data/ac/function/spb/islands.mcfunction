@@ -1,0 +1,16 @@
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1491 44 -569 all run clone -925 -16 -1509 -907 -6 -1491 1491 44 -569
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1514 44 -564 all run clone -925 -16 -1509 -907 -6 -1491 1514 44 -564
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1531 44 -551 all run clone -925 -16 -1509 -907 -6 -1491 1533 44 -551
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1546 44 -532 all run clone -925 -16 -1509 -907 -6 -1491 1546 44 -532
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1551 44 -509 all run clone -925 -16 -1509 -907 -6 -1491 1551 44 -509
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1546 44 -486 all run clone -925 -16 -1509 -907 -6 -1491 1546 44 -486
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1533 44 -467 all run clone -925 -16 -1509 -907 -6 -1491 1533 44 -467
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1514 44 -454 all run clone -925 -16 -1509 -907 -6 -1491 1514 44 -454
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1491 44 -449 all run clone -925 -16 -1509 -907 -6 -1491 1491 44 -449
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1468 44 -454 all run clone -925 -16 -1509 -907 -6 -1491 1468 44 -454
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1449 44 -467 all run clone -925 -16 -1509 -907 -6 -1491 1449 44 -467
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1436 44 -486 all run clone -925 -16 -1509 -907 -6 -1491 1436 44 -486
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1431 44 -509 all run clone -925 -16 -1509 -907 -6 -1491 1431 44 -509
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1436 44 -532 all run clone -925 -16 -1509 -907 -6 -1491 1436 44 -532
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1449 44 -551 all run clone -925 -16 -1509 -907 -6 -1491 1449 44 -551
+execute unless blocks -925 -16 -1509 -907 -6 -1491 1468 44 -564 all run clone -925 -16 -1509 -907 -6 -1491 1468 44 -564

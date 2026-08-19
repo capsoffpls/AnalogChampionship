@@ -1,0 +1,4 @@
+scoreboard objectives remove AC_pointsHeld
+scoreboard objectives add AC_pointsHeld dummy [{"text":"≡","color":"yellow","bold":false},{"text":" P","bold":true,"color":"#ff3000"},{"text":"u","bold":true,"color":"#ff4000"},{"text":"n","bold":true,"color":"#ff5000"},{"text":"k","bold":true,"color":"#ff6000"},{"text":"t","bold":true,"color":"#ff7000"},{"text":"y ","bold":true,"color":"#ff8000"},{"text":"z ","bold":true,"color":"#ff9000"},{"text":"t","bold":true,"color":"#ffa000"},{"text":"r","bold":true,"color":"#ffb000"},{"text":"y","bold":true,"color":"#ffc000"},{"text":"b","bold":true,"color":"#ffd000"},{"text":"u ","bold":true,"color":"#ffe000"},{"text":"≡","color":"yellow","bold":false}]
+
+$$(return)

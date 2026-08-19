@@ -1,0 +1,16 @@
+execute if entity @s[tag=spawn1] run tp @s -2030 55 521 -90 0
+execute if entity @s[tag=spawn2] run tp @s -2021 55 512 0 0
+execute if entity @s[tag=spawn3] run tp @s -2012 55 521 90 0
+execute if entity @s[tag=spawn4] run tp @s -2021 55 530 180 0
+execute if entity @s[tag=spawn5] run tp @s -2030 55 479 -90 0
+execute if entity @s[tag=spawn6] run tp @s -2021 55 470 0 0
+execute if entity @s[tag=spawn7] run tp @s -2012 55 479 90 0
+execute if entity @s[tag=spawn8] run tp @s -2021 55 488 180 0
+execute if entity @s[tag=spawn9] run tp @s -1988 55 479 -90 0
+execute if entity @s[tag=spawn10] run tp @s -1979 55 470 0 0
+execute if entity @s[tag=spawn11] run tp @s -1970 55 479 90 0
+execute if entity @s[tag=spawn12] run tp @s -1979 55 488 180 0
+execute if entity @s[tag=spawn13] run tp @s -1988 55 521 -90 0
+execute if entity @s[tag=spawn14] run tp @s -1979 55 512 0 0
+execute if entity @s[tag=spawn15] run tp @s -1970 55 521 90 0
+execute if entity @s[tag=spawn16] run tp @s -1979 55 530 180 0

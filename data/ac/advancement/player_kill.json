@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "entity_type": "minecraft:player"
+        },
+        "killing_blow": {
+          "tags": [],
+          "source_entity": {
+            "entity_type": "minecraft:player"
+          }
+        }
+      }
+    }
+  },
+  "sends_telemetry_event": false
+}

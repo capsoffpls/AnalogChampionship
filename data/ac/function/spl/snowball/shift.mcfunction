@@ -1,0 +1,2 @@
+$execute positioned ~$(x) ~$(y) ~$(z) if block ~ ~ ~ snow_block run return run setblock ~ ~ ~ minecraft:air
+$execute positioned ~$(x) ~$(y) ~$(z) positioned ~$(x) ~$(y) ~$(z) if block ~ ~ ~ snow_block run return run setblock ~ ~ ~ minecraft:air

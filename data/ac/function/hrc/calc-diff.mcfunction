@@ -1,0 +1,2 @@
+execute as @a[tag=InGame] run scoreboard players operation @s AC_hrcDiffToLead = @s AC_hrcCheckpoints
+execute as @a[tag=InGame] run scoreboard players operation @s AC_hrcDiffToLead -= #lead AC_hrcCheckpoints

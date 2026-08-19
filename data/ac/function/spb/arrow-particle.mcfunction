@@ -1,0 +1,13 @@
+particle minecraft:trial_spawner_detection ~ ~1 ~ 0.2 0.2 0.2 0 15 force @s
+particle minecraft:trial_spawner_detection ~ ~2 ~ 0.2 0.2 0.2 0 15 force @s
+particle minecraft:trial_spawner_detection ~1 ~2 ~1 0.2 0.2 0.2 0 15 force @s
+particle minecraft:trial_spawner_detection ~-1 ~2 ~-1 0.2 0.2 0.2 0 15 force @s
+particle minecraft:trial_spawner_detection ~ ~3 ~ 0.2 0.2 0.2 0 15 force @s
+particle minecraft:trial_spawner_detection ~2 ~3 ~2 0.2 0.2 0.2 0 15 force @s
+particle minecraft:trial_spawner_detection ~-2 ~3 ~-2 0.2 0.2 0.2 0 15 force @s
+particle minecraft:trial_spawner_detection ~ ~4 ~ 0.2 0.2 0.2 0 15 force @s
+particle minecraft:trial_spawner_detection ~3 ~4 ~3 0.2 0.2 0.2 0 15 force @s
+particle minecraft:trial_spawner_detection ~-3 ~4 ~-3 0.2 0.2 0.2 0 15 force @s
+particle minecraft:trial_spawner_detection ~ ~5 ~ 0.2 0.2 0.2 0 15 force @s
+particle minecraft:trial_spawner_detection ~ ~6 ~ 0.2 0.2 0.2 0 15 force @s
+particle minecraft:trial_spawner_detection ~ ~7 ~ 0.2 0.2 0.2 0 15 force @s

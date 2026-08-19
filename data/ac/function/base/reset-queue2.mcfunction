@@ -1,0 +1,5 @@
+execute if score lang AC_lang matches 0 if score wait AC_running matches 1 as @a unless score queued_1 AC_QueuedCount matches 4.. unless score queued_3 AC_QueuedCount matches 4.. if score @s AC_Queue = Queue2 AC_QueuedCount run tellraw @s [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Za dużo graczy opuściło twoją kolejkę, więc zatrzymaliśmy odliczanie","color":"red","bold":false}]
+execute if score lang AC_lang matches 1 if score wait AC_running matches 1 as @a unless score queued_1 AC_QueuedCount matches 4.. unless score queued_3 AC_QueuedCount matches 4.. if score @s AC_Queue = Queue2 AC_QueuedCount run tellraw @s [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Too many players have left your queue, so we stopped the countdown","color":"red","bold":false}]
+
+execute if score queued_2 AC_QueuedCount matches 1.. unless score queued_1 AC_QueuedCount matches 4.. unless score queued_3 AC_QueuedCount matches 4.. run scoreboard players set wait AC_time 0
+execute if score queued_2 AC_QueuedCount matches 1.. unless score queued_1 AC_QueuedCount matches 4.. unless score queued_3 AC_QueuedCount matches 4.. run scoreboard players set wait AC_running 0

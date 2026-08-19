@@ -1,0 +1,41 @@
+{
+    "type": "notice",
+    "can_close_with_escape": false,
+    "title": [
+        {
+            "text": "[ANT] ",
+            "bold": true,
+            "color": "gold"
+        },
+        {
+            "text":"Banowanie trybów - Błąd",
+            "color":"red",
+            "bold":false
+        }
+    ],
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "stone",
+      "components": {
+        "item_model": "ac:cancel"
+      }
+    },
+    "show_tooltip": false,
+    "description": {
+        "contents": {
+            "text":"Nie możesz zbanować tego trybu, gdyż jest on chroniony w tym AN Tournament. Wybierz coś innego.",
+            "color":"gray",
+            "bold":false
+        },
+        "width": 512
+    }
+  },
+    "action": {
+        "label": "No dobra",
+        "action": {
+        "type": "run_command",
+        "command": "trigger AC_banDetect set 9999"
+      }
+    }
+}

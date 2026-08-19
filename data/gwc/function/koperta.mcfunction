@@ -1,0 +1,1 @@
+$give @s book[minecraft:consumable={consume_seconds:3,animation:"crossbow",has_consume_particles:false,sound:"item.book.page_turn"},minecraft:item_model="gwc:koperta$(koperta)",minecraft:item_name={"text":"Koperta $(koperta)","italic":false},minecraft:use_remainder={id:"minecraft:paper",count:1,components:{"minecraft:item_name":{"text":"$(czek)"}}}]

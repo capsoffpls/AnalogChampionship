@@ -1,0 +1,7 @@
+execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 0 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"Koniec gry! Brak zwycięzcy.","color":"green","bold":false}]
+execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 0 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"Game over! No winner determined.","color":"green","bold":false}]
+execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 0 run gamemode spectator @a
+execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 0 run scoreboard players set tnt AC_time 1060
+execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 0 run kill @e[type=falling_block]
+execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 0 run function ac:base/endsound
+execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 0 run scoreboard players set tnt1 AC_functions 0

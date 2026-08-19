@@ -1,0 +1,38 @@
+{
+    "type": "multi_action",
+    "title": "Ustaw stały tag spawnu dla gracza",
+    "body": {
+        "type": "item",
+        "item": {
+            "id":"stone",
+            "components": {
+                "item_model": "ac:information"
+            }
+        },
+        "description": {
+            "text": "Ta akcja usunie obecne dane dla wpisanego gracza oraz wybranego numeru taga"
+        }
+    },
+    "actions": [{
+        "action": {
+            "type": "dynamic/run_command",
+            "template": "function ac:base/set-fixed-spawntag {tag:\"$(tag)\",player:\"$(nickname)\"}"
+        },
+        "label": "Potwierdź"
+    }],
+    "inputs": [{
+        "type": "text",
+        "label": "Nick gracza",
+        "key": "nickname",
+        "max_length": 20
+    },
+    {
+        "type": "number_range",
+        "label": "Numer taga (1-16)",
+        "key": "tag",
+        "start": 1,
+        "end": 16,
+        "initial": 1,
+        "step": 1
+    }]
+}

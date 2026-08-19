@@ -1,0 +1,35 @@
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfNorth] run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Drużyna Północ","bold":true,"color":"red"},{"text":" przejmuje ","color":"gold","bold":true},{"text":"Jasnoniebieską Flagę","color":"#03b6fc","bold":true},{"text":"!","color":"gold","bold":true}]
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfNorth] run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Team North","bold":true,"color":"red"},{"text":" conquers ","color":"gold","bold":true},{"text":"Light Blue Flag","color":"#03b6fc","bold":true},{"text":"!","color":"gold","bold":true}]
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfSouth] run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Drużyna Południe","bold":true,"color":"dark_green"},{"text":" przejmuje ","color":"gold","bold":true},{"text":"Jasnoniebieską Flagę","color":"#03b6fc","bold":true},{"text":"!","color":"gold","bold":true}]
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfSouth] run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Team South","bold":true,"color":"dark_green"},{"text":" conquers ","color":"gold","bold":true},{"text":"Light Blue Flag","color":"#03b6fc","bold":true},{"text":"!","color":"gold","bold":true}]
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfEast] run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Drużyna Wschód","bold":true,"color":"yellow"},{"text":" przejmuje ","color":"gold","bold":true},{"text":"Jasnoniebieską Flagę","color":"#03b6fc","bold":true},{"text":"!","color":"gold","bold":true}]
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfEast] run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Team East","bold":true,"color":"yellow"},{"text":" conquers ","color":"gold","bold":true},{"text":"Light Blue Flag","color":"#03b6fc","bold":true},{"text":"!","color":"gold","bold":true}]
+
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfNorth] run scoreboard players add @a[team=ac_ctfNorth] AC_pointsHeld 30
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfNorth] run execute if score lang AC_lang matches 0 run tellraw @a[team=ac_ctfNorth] [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"+30≡ (Drużyna przejęłą flagę)","color":"gold","bold":false}]
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfNorth] run execute if score lang AC_lang matches 1 run tellraw @a[team=ac_ctfNorth] [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"+30≡ (Team conquered a flag)","color":"gold","bold":false}]
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfSouth] run scoreboard players add @a[team=ac_ctfSouth] AC_pointsHeld 30
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfSouth] run execute if score lang AC_lang matches 0 run tellraw @a[team=ac_ctfSouth] [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"+30≡ (Drużyna przejęłą flagę)","color":"gold","bold":false}]
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfSouth] run execute if score lang AC_lang matches 1 run tellraw @a[team=ac_ctfSouth] [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"+30≡ (Team conquered a flag)","color":"gold","bold":false}]
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfEast] run scoreboard players add @a[team=ac_ctfEast] AC_pointsHeld 30
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfEast] run execute if score lang AC_lang matches 0 run tellraw @a[team=ac_ctfEast] [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"+30≡ (Drużyna przejęłą flagę)","color":"gold","bold":false}]
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if entity @s[tag=ctfEast] run execute if score lang AC_lang matches 1 run tellraw @a[team=ac_ctfEast] [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"+30≡ (Team conquered a flag)","color":"gold","bold":false}]
+
+execute if score west1 AC_ctfFlagStatus matches 1 if score ctf AC_chosenMap matches 0 run execute if entity @s[tag=ctfNorth] run setblock 3 55 -1082 light_blue_wall_banner[facing=south]
+execute if score west1 AC_ctfFlagStatus matches 1 if score ctf AC_chosenMap matches 0 run execute if entity @s[tag=ctfSouth] run setblock 5 55 -918 light_blue_wall_banner[facing=north]
+execute if score west1 AC_ctfFlagStatus matches 1 if score ctf AC_chosenMap matches 0 run execute if entity @s[tag=ctfEast] run setblock 82 55 -1001 light_blue_wall_banner[facing=west]
+execute if score west1 AC_ctfFlagStatus matches 1 if score ctf AC_chosenMap matches 0 run setblock -75 54 -996 air
+
+execute if score west1 AC_ctfFlagStatus matches 1 if score ctf AC_chosenMap matches 1 run execute if entity @s[tag=ctfNorth] run setblock 1010 54 -1101 light_blue_banner
+execute if score west1 AC_ctfFlagStatus matches 1 if score ctf AC_chosenMap matches 1 run execute if entity @s[tag=ctfSouth] run setblock 1014 54 -899 light_blue_banner[rotation=8]
+execute if score west1 AC_ctfFlagStatus matches 1 if score ctf AC_chosenMap matches 1 run execute if entity @s[tag=ctfEast] run setblock 1101 54 -1006 light_blue_banner[rotation=4]
+execute if score west1 AC_ctfFlagStatus matches 1 if score ctf AC_chosenMap matches 1 run setblock 935 56 -990 air
+
+execute if score west1 AC_ctfFlagStatus matches 1 run scoreboard players add @s AC_pointsHeld 15
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"+15≡ (Bonus dla przejmującego)","color":"gold","bold":false}]
+execute if score west1 AC_ctfFlagStatus matches 1 run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"+15≡ (Bonus points for conqueror)","color":"gold","bold":false}]
+
+execute if score west1 AC_ctfFlagStatus matches 1 run tag @s remove ctfHoldFlag
+execute if score west1 AC_ctfFlagStatus matches 1 run clear @a minecraft:light_blue_banner
+execute if score west1 AC_ctfFlagStatus matches 1 run execute as @a[team=ac_ctfWest] at @s run playsound minecraft:ac.jingles.ping-a1 record @s ~ ~ ~ 1
+execute if score west1 AC_ctfFlagStatus matches 1 run scoreboard players set west1 AC_ctfFlagStatus 0

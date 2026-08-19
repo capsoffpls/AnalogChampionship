@@ -1,0 +1,2 @@
+execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute at @e[type=minecraft:falling_block] run particle minecraft:cloud ~ ~0.7 ~ 0.3 0.3 0.3 0 1
+execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run kill @e[type=minecraft:falling_block]

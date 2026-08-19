@@ -1,0 +1,2 @@
+execute if score bed AC_chosenMap matches 0 run particle minecraft:wax_off 1448 66 -941 6 6 6 1 1 force
+execute if score bed AC_chosenMap matches 0 run execute positioned 1448 66 -941 run effect give @a[team=ac_bedRed,distance=..15] regeneration 1 1 true

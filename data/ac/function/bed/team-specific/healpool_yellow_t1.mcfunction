@@ -1,0 +1,2 @@
+execute if score bed AC_chosenMap matches 0 run particle minecraft:happy_villager 1440 66 -1052 6 6 6 1 1 force
+execute if score bed AC_chosenMap matches 0 run execute positioned 1440 66 -1052 run effect give @a[team=ac_bedYellow,distance=..15] regeneration 1 0 true

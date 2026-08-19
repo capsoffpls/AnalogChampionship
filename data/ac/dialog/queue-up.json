@@ -1,0 +1,50 @@
+{
+  "type": "multi_action",
+  "title": [
+    {
+      "text": "[AC] ",
+      "bold": true,
+      "color": "white"
+    },
+    {
+      "text": "Kolejka gier:",
+      "color": "gray",
+      "bold": false
+    }
+  ],
+  "actions": [
+    {
+    "label": "Szybka gra",
+    "width": 200,
+    "action": {
+      "type": "run_command",
+      "command": "/trigger AC_Queue set 999"
+    }
+  },
+    {
+    "label": "Rankingowa",
+    "width": 200,
+    "action": {
+      "type": "run_command",
+      "command": "/trigger AC_Queue set 1000"
+    }
+  },
+    {
+    "label": "Lista gier",
+    "width": 200,
+    "action": {
+      "type": "run_command",
+      "command": "/trigger AC_trigger set -3"
+    }
+  },
+    {
+    "label": "Gry nieobiegowe",
+    "width": 200,
+    "action": {
+      "type": "run_command",
+      "command": "/trigger AC_trigger set -4"
+    }
+  }
+    ],
+    "columns": 2
+}

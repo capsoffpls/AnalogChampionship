@@ -1,0 +1,4 @@
+tellraw @s [{"text":"\n\n\n\n\n[ADMIN] ","bold":true,"color":"white"},{"text":"Ustaw pozycję kamery w studio\n\n","color":"gray","bold":false},\
+{"text":"[Lewo (1)] ","color":"white","bold":false,"click_event":{"action":"run_command","command":"/function ac:menu/mount-camera1"},"hover_event":{"action":"show_text","value":"Ustawia kamerę transmisji na lewo (od wejścia)"}},\
+{"text":"[Środek (2)] ","color":"white","bold":false,"click_event":{"action":"run_command","command":"/function ac:menu/mount-camera2"},"hover_event":{"action":"show_text","value":"Ustawia kamerę transmisji na środek"}},\
+{"text":"[Prawo (3)] ","color":"white","bold":false,"click_event":{"action":"run_command","command":"/function ac:menu/mount-camera3"},"hover_event":{"action":"show_text","value":"Ustawia kamerę transmisji na prawo (od wejścia)"}}]

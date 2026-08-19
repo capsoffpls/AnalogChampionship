@@ -1,0 +1,12 @@
+execute if score bed AC_chosenMap matches 0 run execute store result score redIron AC_bedBaseGenControl run execute at @s if entity @e[distance=..4,type=item,tag=genIronRed]
+execute if score bed AC_chosenMap matches 0 run execute store result score redGold AC_bedBaseGenControl run execute at @s if entity @e[distance=..4,type=item,tag=genGoldRed]
+execute if score bed AC_chosenMap matches 0 run execute if score second AC_bedTimer matches 18 store result score red AC_bedPlayersInGen run execute if entity @a[tag=InGame,x=1446,y=55,z=-933,dx=4,dz=2,dy=3,gamemode=!spectator]
+
+execute if score bed AC_chosenMap matches 0 run execute if score second AC_bedTimer matches 4 positioned 1500 60 -1000 if entity @s[distance=..200] unless score redIron AC_bedBaseGenControl matches 48.. run execute at @s run summon item ~ ~ ~ {Item:{id:"iron_ingot",count:1},Tags:["genIronRed"],Age:-32768}
+execute if score bed AC_chosenMap matches 0 run execute if score second AC_bedTimer matches 7 positioned 1500 60 -1000 if entity @s[distance=..200] unless score redIron AC_bedBaseGenControl matches 48.. run execute at @s run summon item ~ ~ ~ {Item:{id:"iron_ingot",count:1},Tags:["genIronRed"],Age:-32768}
+execute if score bed AC_chosenMap matches 0 run execute if score second AC_bedTimer matches 10 positioned 1500 60 -1000 if entity @s[distance=..200] unless score redIron AC_bedBaseGenControl matches 48.. run execute at @s run summon item ~ ~ ~ {Item:{id:"iron_ingot",count:1},Tags:["genIronRed"],Age:-32768}
+
+execute if score bed AC_chosenMap matches 0 run execute if score second AC_bedTimer matches 10 if score goldgen AC_bedTimer matches 5 positioned 1500 60 -1000 if entity @s[distance=..200] unless score redGold AC_bedBaseGenControl matches 16.. run execute at @s run summon item ~ ~ ~ {Item:{id:"gold_ingot",count:1},Tags:["genGoldRed"],Age:-32768}
+
+execute if score bed AC_chosenMap matches 0 run execute as @a[tag=InGame,x=1446,y=55,z=-933,dx=2,dz=4,dy=3] if score red AC_bedPlayersInGen matches 2.. if score @s AC_bedPickingIron matches 1.. run execute as @a[tag=InGame,x=1446,y=55,z=-933,dx=4,dz=2,dy=3,gamemode=!spectator] if score @s AC_bedPickingIron matches ..0 run give @s iron_ingot 1
+execute if score bed AC_chosenMap matches 0 run execute as @a[tag=InGame,x=1446,y=55,z=-933,dx=2,dz=4,dy=3] if score red AC_bedPlayersInGen matches 2.. if score @s AC_bedPickingGold matches 1.. run execute as @a[tag=InGame,x=1446,y=55,z=-933,dx=4,dz=2,dy=3,gamemode=!spectator] if score @s AC_bedPickingGold matches ..0 run give @s gold_ingot 1

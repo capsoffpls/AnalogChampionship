@@ -1,0 +1,1 @@
+execute store result score pattern AC_arbRNG run random value 0..18

@@ -1,0 +1,1 @@
+$item modify entity @s $(slot) {function:"minecraft:set_enchantments",enchantments:{"minecraft:$(enchant)":1},add:1b,conditions:[]}

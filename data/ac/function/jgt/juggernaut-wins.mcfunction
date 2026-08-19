@@ -1,0 +1,2 @@
+execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[JGT] ","bold":true,"color":"dark_green"},{"text":"Koniec rundy! Zwycięża Juggernaut.","color":"green","bold":false}]
+execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[JGT] ","bold":true,"color":"dark_green"},{"text":"Round has ended! Juggernaut wins.","color":"green","bold":false}]

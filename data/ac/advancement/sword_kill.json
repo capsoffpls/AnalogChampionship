@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": [],
+        "entity": {
+          "entity_type": "minecraft:player"
+        },
+        "killing_blow": {
+          "source_entity": {
+            "entity_type": "minecraft:player",
+            "equipment": {
+              "mainhand": {
+                "items": [
+                  "minecraft:diamond_sword",
+                  "minecraft:golden_sword",
+                  "minecraft:iron_sword",
+                  "minecraft:netherite_sword",
+                  "minecraft:stone_sword",
+                  "minecraft:wooden_sword",
+                  "minecraft:copper_sword"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,25 @@
+{
+	"values": [
+		"ac:camera/camera",
+		"ac:base/timeflow",
+		"ac:base/30seconds",
+		"ac:base/ingametester",
+		"ac:base/main",
+		"ac:base/pvpzone",
+		"ac:base/gm-roll",
+		"ac:base/s-roll",
+		"ac:base/m-roll",
+		"ac:base/l-roll",
+		"ac:base/xl-roll",
+		"ac:base/gm-countdown",
+		"ac:base/gm-running",
+		"ac:practice/main",
+		"ac:base/lobbyparkour-checkpoints",
+		"ac:base/lobbyparkour-backtocheckpoint",
+		"gwc:tick",
+		"gwc:stol",
+		"slowoklucz:main",
+		"1z10:main",
+		"wwtbam:main"
+	]
+}

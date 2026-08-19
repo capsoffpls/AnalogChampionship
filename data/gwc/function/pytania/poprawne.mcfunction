@@ -1,0 +1,1 @@
+execute in wwtbam if score @s gwc_trigger = correct-elim gwc_scores run fill ~ ~-2 ~1 ~ ~3 ~1 waxed_copper_bulb[lit=true] replace waxed_copper_bulb[lit=false]

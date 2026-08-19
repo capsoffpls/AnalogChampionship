@@ -1,0 +1,1 @@
+fill -1513 52 1124 -1537 40 1112 white_terracotta replace barrier

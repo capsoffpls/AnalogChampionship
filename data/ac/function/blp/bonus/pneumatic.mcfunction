@@ -1,0 +1,3 @@
+execute as @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:item_model":"ac:pneumatic"}}}] store result score @s AC_blpPneumaticChair run data get entity @s Owner[0]
+execute as @a store result score @s AC_blpPlayerUUID run data get entity @s UUID[0]
+execute as @a at @s if score @s AC_blpPlayerUUID = @e[type=minecraft:snowball,limit=1,sort=nearest] AC_blpPneumaticChair run ride @s mount @e[type=minecraft:snowball,limit=1,sort=nearest]

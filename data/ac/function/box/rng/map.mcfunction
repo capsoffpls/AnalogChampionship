@@ -1,0 +1,1 @@
+execute unless score forcemap AC_misc matches 1 store result score box AC_chosenMap run random value 0..4

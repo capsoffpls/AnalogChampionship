@@ -1,0 +1,2 @@
+$execute if score isRanked AC_CurrentlyPlayed matches 0 run discord broadcast <:gamemode:1521490486995456000> Rozpoczęto grę w trybie **$(set)** (Nierankingowa)
+$execute if score isRanked AC_CurrentlyPlayed matches 1 run discord broadcast <:gamemode:1521490486995456000> Rozpoczęto grę w trybie **$(set)** (Rankingowa)

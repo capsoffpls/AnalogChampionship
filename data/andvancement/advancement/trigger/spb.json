@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "s": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:ender_dragon_spawn_egg"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "andvancement:game/spb"
+  }
+}

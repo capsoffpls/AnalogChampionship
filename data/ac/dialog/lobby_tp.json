@@ -1,0 +1,66 @@
+{
+  "type": "multi_action",
+  "title": [
+    {
+      "text": "[AC] ",
+      "bold": true,
+      "color": "white"
+    },
+    {
+      "text": "Teleportuj się do:",
+      "color": "gray",
+      "bold": false
+    }
+  ],
+  "actions": [
+    {
+      "label": "Spawn",
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "trigger AC_trigger set 1"
+      }
+    },
+    {
+      "label": "Hala sław",
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_trigger set 2"
+      }
+    },
+    {
+      "label": "Strefa eventowa",
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_trigger set 3"
+      }
+    },
+    {
+      "label": "Komnata wyboru",
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_trigger set 4"
+      }
+    },
+    {
+      "label": "Strefa PVP",
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_trigger set 5"
+      }
+    },
+    {
+      "label": "Pomnik TwelveMana",
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_trigger set 6"
+      }
+    }
+  ],
+  "columns": 3
+}

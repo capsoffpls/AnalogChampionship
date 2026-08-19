@@ -1,0 +1,422 @@
+{
+  "type": "multi_action",
+  "title": [
+    {
+      "text": "[AC] ",
+      "bold": true,
+      "color": "white"
+    },
+    {
+      "text": "Choose mode to queue in:",
+      "color": "gray",
+      "bold": false
+    }
+  ],
+  "actions": [
+    {
+      "label": "Anvil Spleef",
+      "tooltip": [{"text":"• The objective is to not die, whether by falling to the void, or by being squished by an anvil\n• Anvils that touched the ground leave a hole\n• The last player on the arena wins\n• This game has no time limit, but it gets harder every 45 seconds","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 32"
+      }
+    },
+    {
+      "label": "Arrow Barrage",
+      "tooltip": [{"text":"• Players have to complete a course, placing blocks under themselves\n• Players are being shot at from the left side\n• If an arrow hits a wool block, it disappears\n• The game time is limited to 5 minutes","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 16"
+      }
+    },
+    {
+      "label": "Assassins",
+      "tooltip": [{"text":"• You need to kill your target. It's marked with particles\n• Killing a non-target is risky\n• Kill as many targets as you possibly can\n• There are items with special usage on the map","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 2"
+      }
+    },
+    {
+      "label": "Avalanche",
+      "tooltip": [{"text":"• You need to hide under a slab before you get buried in an avalanche\n• The longer the game runs, the lesser amount of hiding spots appears\n• If the avalanche gets you, you die\n• PVP turns on after Round 10","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 8"
+      }
+    },
+    {
+      "label": "Battle Box",
+      "tooltip": [{"text":"• Players in max. 4-player teams face each other in fast rounds, where you have to conquer the middle point\n• The game is split into 3 rounds, each lasting a minute\n• Filling the middle point with your color is a victory\n• The team, who won the most matchups wins","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 18"
+      }
+    },
+    {
+      "label": "Bed Wars",
+      "tooltip": [{"text":"• Players split into 4 teams defend their beds\n• If an enemy team player destroys your bed, you'll be unable to respawn\n• Get better inventory for yourself and your team, by collecting materials from generators\n• The game lasts 30 minutes. After 25 minutes all teams lose their bed","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 20"
+      }
+    },
+    {
+      "label": "Block Party",
+      "tooltip": [{"text":"• You need to stand on a specified floor color\n• After a set time, every other color will disappear\n• Falling off the platform is a game over for you\n• Ring the bell, that sometimes appears, to get a item with special usage","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 6"
+      }
+    },
+    {
+      "label": "Bow Rush",
+      "tooltip": [{"text":"• This is a Battle Royale gamemode\n• The last person alive wins\n• You may build, but your placed blocks will disappear after 1 minute\n• Beware the border","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 13"
+      }
+    },
+    {
+      "label": "Bow Spleef",
+      "tooltip": [{"text":"• Rules are identical to Spleef, but without snowballs\n• Shoot the floor, not the players\n• Stay on top as long as you can\n• Don't let anyone take you down","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 11"
+      }
+    },
+    {
+      "label": "Capture The Flag",
+      "tooltip": [{"text":"• Players are split into 4 teams. Every one has two flags, which they have to defend\n• To conquer an enemy flag, player has to steal it first, and then take it back to their base\n• A team with no flags will not respawn after dying\n• If the player number isn't divisible by 4, there will be a 5th team - the Junglers, occupying the middle of the map","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 14"
+      }
+    },
+    {
+      "label": "Castled",
+      "tooltip": [{"text":"• Players are split into Attackers and Defenders. The Attackers have to destroy the Core inside Defenders' castle, Defenders have to prevent this from happening for 20 minutes\n• Players can choose a handful of kits, allowing for a diverse playstyle\n• Respawn time extends the longer you play\n• The game will end earlier, if the entire team dies, and none of its members respawns in time","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 37"
+      }
+    },
+    {
+      "label": "Death Run",
+      "tooltip": [{"text":"• The map is made of several button-activated traps\n• The more you die, the more points will the Deaths get\n• Players, who complete the course have a chance to kill Death and become one in its place\n• The game lasts 10 minutes","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 27"
+      }
+    },
+    {
+      "label": "Dodgebolt",
+      "tooltip": [{"text":"• Players are split into 2 teams\n• The task is to shoot the enemy team out\n• The map shrinks every now and then\n• You cannot step into the enemy side","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 10"
+      }
+    },
+    {
+      "label": "Horse Knockout",
+      "tooltip": [{"text":"• Players have to race on a randomly generated map\n• After each lap, the last player is eliminated from the race, but not from the game\n• From now on, that player has a task of slowing down the remaining racers. They get rewarded based on the racer's velocity before the hit\n• The game lasts 10 minutes, or [number of players]+1 laps","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 36"
+      }
+    },
+    {
+      "label": "Horse Racing",
+      "tooltip": [{"text":"• Every player receives their own horse\n• Avoid obstacles on the map, do not avoid checkpoints\n• Don't get overtaken\n• First three places are awarded more","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 5"
+      }
+    },
+    {
+      "label": "Infection",
+      "tooltip": [{"text":"• At the beginning, a random person becomes Infected\n• Survivors killed by the Infected become Infected too\n• As a Survivor, your task is to stay alive\n• As the Infected, your task is to kill and Infect every Survivor","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 3"
+      }
+    },
+    {
+      "label": "Juggernaut",
+      "tooltip": [{"text":"• One of the players becomes the Juggernaut - they're bigger, have more HP and bigger reach\n• The rest of the players are Hunters, and they have to kill the Juggernaut to win\n• The Hunters do not respawn\n• There are two rounds, each lasting 2,5 minutes. In case of timeout the Juggernaut wins","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 41"
+      }
+    },
+    {
+      "label": "King Of The Hill",
+      "tooltip": [{"text":"• Players have to stay on the middle point for the longest time\n• Everyone is equipped with a Szprot with Knockback 2, for, well, knocking back each other\n• The game lasts 90 seconds","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 40"
+      }
+    },
+    {
+      "label": "Labyrinth",
+      "tooltip": [{"text":"• Players have to reach the middle of the map through a labirynth\n• The faster you reach the middle, the better\n• When the first 3 players finish, time is shortened to 30 seconds\n• Beware the shrinking map border","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 17"
+      }
+    },
+    {
+      "label": "Minefield",
+      "tooltip": [{"text":"• Run to the finish line untouched\n• Stepping in a mine will teleport you back to the start line\n• Follow other players' tracks\n• There's little time to finish","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 9"
+      }
+    },
+    {
+      "label": "Mow The Lawn",
+      "tooltip": [{"text":"• The players have to destroy as many grass as possible\n• Players are mounted on pigs\n• The player with the most broken grass wins\n• The game lasts 1 minute","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 43"
+      }
+    },
+    {
+      "label": "Musical Minecarts",
+      "tooltip": [{"text":"• The task is to get in a minecart before time runs out\n• There are always less minecarts than players\n• Players who don't mount a minecart in time are eliminated\n• The last player on the map wins the game","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 15"
+      }
+    },
+    {
+      "label": "One-Minute Craft",
+      "tooltip": [{"text":"• The map is split into 16 segments, each with its individual crafting ingredients\n• You have one minute to find, mine and use those ingredients to craft a set item\n• The game is split into 5 rounds. If one minute is too little time for you, it's game over\n• Sometimes a Modifier appears, that either makes the round easier or harder","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 7"
+      }
+    },
+    {
+      "label": "Overkill",
+      "tooltip": [{"text":"• This game's task is to gather 15 kills\n• The player's gear worsens every 3 kills\n• The game lasts 10 minutes. If nobody hits the 15 kill mark, the game will end without a winner\n• After death you have a 5 second cooldown before respawning, and after respawning you receive 5 seconds of Resistance","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 34"
+      }
+    },
+    {
+      "label": "Parkour Knockout",
+      "tooltip": [{"text":"• The game is split into 7 1-minute rounds with 3 patterns, and a final round with 5 patterns\n• With each round, the player limit needed to start the next round decreases by 2\n• You lose Health when you're falling behind. Each player has 30 Health at the start\n• Only two players can compete in the final round","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 30"
+      }
+    },
+    {
+      "label": "Parkour Racing",
+      "tooltip": [{"text":"• Rush to the finish line in the shortest time possible\n• There are checkpoints, don't worry\n• Focus on jumping and don't get carried away in case you fall off\n• The time is shortened to 5 minutes when the 3rd player completes the course","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 12"
+      }
+    },
+    {
+      "label": "Parkour Tag",
+      "tooltip": [{"text":"• The game is split into 2 rounds, with players in max. 8-person teams\n• The point of the game is to survive the longest without being tagged, or tagging all players\n• If you are hit by a hunter, you become tagged, and thus, you lose\n• There can be max. 6 runners, and max. 2 hunters","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 29"
+      }
+    },
+    {
+      "label": "Pharaoh's Curse",
+      "tooltip": [{"text":"• The task is to not be squished by falling sand\n• Players are unable to jump\n• The last player on the arena wins\n• This game has no time limit","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 33"
+      }
+    },
+    {
+      "label": "Pig Fishing",
+      "tooltip": [{"text":"• Players have to fish out the most pigs from the middle of the map\n• Small pigs are worth 3x more\n• The game lasts 90 seconds","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 35"
+      }
+    },
+    {
+      "label": "Point Control",
+      "tooltip": [{"text":"• Players split into 2 teams have to conquer the critical point at the enemy base. Before that though, they have to take over the remaining checkpoints\n• To conquer a point, you have to stand on its middle for 5 seconds. You can interrupt conquering by entering the point while an enemy player tries to take it. The critical point is conquered in 15 seconds, and one can interrupt its conquering by standing in the middle checkpoint\n• Conquering all 3 checkpoints gives the team more AP at the cost of buffing the enemy team with Strength and Speed effects\n• A team wins if it has more points controlled after 15 minutes","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 25"
+      }
+    },
+    {
+      "label": "Popcorn",
+      "tooltip": [{"text":"• Players are placed on a platform, which slowly disappears\n• The task is to survive the longest\n• The floor coloring points to how fast this tile will disappear\n• White tiles are the most safe, while red - the most unsafe","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 23"
+      }
+    },
+    {
+      "label": "Prop Hunt",
+      "tooltip": [{"text":"• Players disguised as Props have to blend with the map. Hunters have to find and kill them\n• The first Hunter may summon up to 5 helpers from dead Props\n• Props have a Stun at their disposal, which has a 15-second cooldown\n• To win, you mustn't be found by the Hunters","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 22"
+      }
+    },
+    {
+      "label": "Replica",
+      "tooltip": [{"text":"• Players have to copy a mosaic of blocks onto their canvas\n• The pattern consists of 9 types of blocks\n• The last player to complete their task gets no points\n• The game lasts only 1 minute","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 26"
+      }
+    },
+    {
+      "label": "Speed Builders",
+      "tooltip": [{"text":"• The task is to copy the build from the middle in 2 minutes\n• The round number is one less than the players count, minus one for each draw\n• Player can build only on their building field\n• The player, who has a more detailed build in the last round wins the game","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 24"
+      }
+    },
+    {
+      "label": "Spleef",
+      "tooltip": [{"text":"• Every player receives a shovel for quick floor mining\n• Every mined block gives you a throwable snowball\n• Snowballs destroy the floor too\n• Don't let anyone undermine you","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 4"
+      }
+    },
+    {
+      "label": "Team Fight",
+      "tooltip": [{"text":"• Players split into 2-member teams have to kill each other\n• Each player has 3 lives\n• After 5 minutes Deathmatch occurs - everyone takes damage every second\n• The last team alive wins","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 21"
+      }
+    },
+    {
+      "label": "The Bridge",
+      "tooltip": [{"text":"• Players split into 4 teams defend their goals\n• If an enemy team player scores a goal, they steal it\n• Every team starts with two goals. Losing both makes your team unrespawnable\n• After 5 minutes Deathmatch occurs, where lost goals disappear, instead of being stolen by the enemy team","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 19"
+      }
+    },
+    {
+      "label": "The Lab",
+      "tooltip": [{"text":"• Contestants have to mine a total of 64 blocks, to get to the bottom of the map first\n• You need to switch your tools to match the mined block\n• The game lasts 90 seconds","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 39"
+      }
+    },
+    {
+      "label": "Through The Rings",
+      "tooltip": [{"text":"• Players are tasked with finishing a Happy Ghast race\n• Flying through rings will boost your speed and give you points\n• Missing a ring will slow you down\n• Game time is limited to 1,5 minutes","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 44"
+      }
+    },
+    {
+      "label": "TNT Run",
+      "tooltip": [{"text":"• Blocks disappear behind you\n• Stay on top as long as you can\n• Get in your opponents' way\n• Don't let anyone cut you off","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "trigger AC_Queue set 1"
+      }
+    },
+    {
+      "label": "Tobiko",
+      "tooltip": [{"text":"• Randomly chosen player is the Tobiko. They can fly and throw eggs, that dissolve terrain\n• Players have to shoot Tobiko a total of 20 times\n• The game lasts 10 minutes. The remaining players win if time expires\n• Tobiko's task is to spleef every remaining player out of the map before the time, or their health, ends","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 38"
+      }
+    },
+    {
+      "label": "Traffic Lights",
+      "tooltip": [{"text":"• Players have to finish before the 3 minute mark\n• You can move only during green and yellow lights\n• Yellow light is very short, and it signalizes, that a red light will appear\n• During red light, you cannot move. Those who do will be teleported back to the start line","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 31"
+      }
+    },
+    {
+      "label": "Turf Wars",
+      "tooltip": [{"text":"• Players are split into the Red and Blue teams\n• Every kill pushes the boundary forwards, and every death - backwards\n• You cannot cross the border to the enemy team\n• Whichever team has more kills in 5 minutes, or has a 20-kill advantage before time's up, wins","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 28"
+      }
+    },
+    {
+      "label": "Underwater Skewers",
+      "tooltip": [{"text":"• Players get a spear and a Nautilus to ride on\n• The task is to dismount each other's Nautili\n• You retain your breath level until you're dismounted\n• The game lasts 5 minutes, or until your enemies drown","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 42"
+      }
+    },
+    {
+    "label": "Sort by: Alphabetical order",
+    "width": 500,
+    "action": {
+      "type": "run_command",
+      "command": "trigger AC_trigger set -1"
+    }
+  }
+  ],
+  "columns": 4
+}

@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "surv_kill_inf": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "ac_prhProp"
+            }
+          }
+        ],
+        "entity": {
+          "entity_type": "minecraft:player",
+          "team": "ac_prhHunter"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "andvancement:game/prh2"
+  }
+}

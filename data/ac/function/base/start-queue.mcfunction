@@ -1,0 +1,17 @@
+execute if score ranked AC_misc matches 0 if score @s AC_Queue matches 1000 run scoreboard players set @s AC_Queue 999
+
+execute if score Queue1 AC_QueuedCount matches -16384..16384 if score Queue2 AC_QueuedCount matches -16384..16384 if score Queue3 AC_QueuedCount matches -16384..16384 unless score @s AC_Queue = Queue1 AC_QueuedCount unless score @s AC_Queue = Queue2 AC_QueuedCount unless score @s AC_Queue = Queue3 AC_QueuedCount if score lang AC_lang matches 0 run tellraw @s [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Serwer nie jest w stanie obsłużyć więcej niż 3 kolejki. Dołącz do istniejącej kolejki.","color":"red","bold":false}]
+execute if score Queue1 AC_QueuedCount matches -16384..16384 if score Queue2 AC_QueuedCount matches -16384..16384 if score Queue3 AC_QueuedCount matches -16384..16384 unless score @s AC_Queue = Queue1 AC_QueuedCount unless score @s AC_Queue = Queue2 AC_QueuedCount unless score @s AC_Queue = Queue3 AC_QueuedCount if score lang AC_lang matches 1 run tellraw @s [{"text":"[AC] ","bold":true,"color":"white"},{"text":"The server cannot handle more than 3 queues. Please join an existing queue.","color":"red","bold":false}]
+execute if score Queue1 AC_QueuedCount matches -16384..16384 if score Queue2 AC_QueuedCount matches -16384..16384 if score Queue3 AC_QueuedCount matches -16384..16384 unless score @s AC_Queue = Queue1 AC_QueuedCount unless score @s AC_Queue = Queue2 AC_QueuedCount unless score @s AC_Queue = Queue3 AC_QueuedCount run return run function ac:menu/leave-queue
+
+execute if score Queue1 AC_QueuedCount matches -16384..16384 if score Queue2 AC_QueuedCount matches -16384..16384 unless score Queue3 AC_QueuedCount matches -16384..-1 unless score Queue3 AC_QueuedCount matches 1..16384 unless score @s AC_Queue = Queue1 AC_QueuedCount unless score @s AC_Queue = Queue2 AC_QueuedCount store result storage ac:queue.3 mode int 1 run scoreboard players get @s AC_Queue
+execute if score Queue1 AC_QueuedCount matches -16384..16384 if score Queue2 AC_QueuedCount matches -16384..16384 unless score Queue3 AC_QueuedCount matches -16384..-1 unless score Queue3 AC_QueuedCount matches 1..16384 unless score @s AC_Queue = Queue1 AC_QueuedCount unless score @s AC_Queue = Queue2 AC_QueuedCount run scoreboard players operation Queue3 AC_QueuedCount = @s AC_Queue
+
+execute if score Queue1 AC_QueuedCount matches -16384..16384 unless score Queue2 AC_QueuedCount matches -16384..16384 unless score @s AC_Queue = Queue1 AC_QueuedCount store result storage ac:queue.2 mode int 1 run scoreboard players get @s AC_Queue
+execute if score Queue1 AC_QueuedCount matches -16384..16384 unless score Queue2 AC_QueuedCount matches -16384..16384 unless score @s AC_Queue = Queue1 AC_QueuedCount run scoreboard players operation Queue2 AC_QueuedCount = @s AC_Queue
+
+execute unless score Queue1 AC_QueuedCount matches -16384..-1 unless score Queue1 AC_QueuedCount matches 1..16384 store result storage ac:queue.1 mode int 1 run scoreboard players get @s AC_Queue
+execute unless score Queue1 AC_QueuedCount matches -16384..-1 unless score Queue1 AC_QueuedCount matches 1..16384 run scoreboard players operation Queue1 AC_QueuedCount = @s AC_Queue
+
+function ac:base/queue-items
+tag @s add InQueue

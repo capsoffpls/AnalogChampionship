@@ -1,0 +1,27 @@
+execute if entity @s[x=-4,y=56,z=1320,dx=9,dy=15,scores={AC_pknCrediting=0}] run function ac:pkn/crediting {"pos":"1"}
+execute if entity @s[x=-4,y=56,z=1374,dx=9,dy=15,scores={AC_pknCrediting=1}] run function ac:pkn/crediting {"pos":"2"}
+execute if entity @s[x=-4,y=56,z=1428,dx=9,dy=15,scores={AC_pknCrediting=2}] run function ac:pkn/crediting {"pos":"3"}
+execute if entity @s[x=-4,y=56,z=1480,dx=9,dy=15,scores={AC_pknCrediting=3}] run function ac:pkn/crediting {"pos":"4"}
+execute if entity @s[x=-4,y=56,z=1534,dx=9,dy=15,scores={AC_pknCrediting=4}] run function ac:pkn/crediting {"pos":"5"}
+execute if entity @s[x=-4,y=56,z=1588,dx=9,dy=15,scores={AC_pknCrediting=5}] run function ac:pkn/crediting {"pos":"6"}
+execute if entity @s[x=-4,y=56,z=1640,dx=9,dy=15,scores={AC_pknCrediting=6}] run function ac:pkn/crediting {"pos":"7"}
+execute if entity @s[x=-4,y=56,z=1694,dx=9,dy=15,scores={AC_pknCrediting=7}] run function ac:pkn/crediting {"pos":"8"}
+execute if entity @s[x=-4,y=56,z=1748,dx=9,dy=15,scores={AC_pknCrediting=8}] run function ac:pkn/crediting {"pos":"9"}
+execute if entity @s[x=-4,y=56,z=1800,dx=9,dy=15,scores={AC_pknCrediting=9}] run function ac:pkn/crediting {"pos":"10"}
+execute if entity @s[x=-4,y=56,z=1854,dx=9,dy=15,scores={AC_pknCrediting=10}] run function ac:pkn/crediting {"pos":"11"}
+execute if entity @s[x=-4,y=56,z=1908,dx=9,dy=15,scores={AC_pknCrediting=11}] run function ac:pkn/crediting {"pos":"12"}
+execute if entity @s[x=-4,y=56,z=1960,dx=9,dy=15,scores={AC_pknCrediting=12}] run function ac:pkn/crediting {"pos":"13"}
+execute if entity @s[x=-4,y=56,z=2014,dx=9,dy=15,scores={AC_pknCrediting=13}] run function ac:pkn/crediting {"pos":"14"}
+execute if entity @s[x=-4,y=56,z=2068,dx=9,dy=15,scores={AC_pknCrediting=14}] run function ac:pkn/crediting {"pos":"15"}
+execute if entity @s[x=-4,y=56,z=2120,dx=9,dy=15,scores={AC_pknCrediting=15}] run function ac:pkn/crediting {"pos":"16"}
+execute if entity @s[x=-4,y=56,z=2174,dx=9,dy=15,scores={AC_pknCrediting=16}] run function ac:pkn/crediting {"pos":"17"}
+execute if entity @s[x=-4,y=56,z=2228,dx=9,dy=15,scores={AC_pknCrediting=17}] run function ac:pkn/crediting {"pos":"18"}
+execute if entity @s[x=-4,y=56,z=2280,dx=9,dy=15,scores={AC_pknCrediting=18}] run function ac:pkn/crediting {"pos":"19"}
+execute if entity @s[x=-4,y=56,z=2334,dx=9,dy=15,scores={AC_pknCrediting=19}] run function ac:pkn/crediting {"pos":"20"}
+execute if entity @s[x=-4,y=56,z=2388,dx=9,dy=15,scores={AC_pknCrediting=20}] run function ac:pkn/crediting {"pos":"21"}
+execute if entity @s[x=-4,y=56,z=2440,dx=9,dy=15,scores={AC_pknCrediting=21}] run function ac:pkn/crediting {"pos":"22"}
+execute if entity @s[x=-4,y=56,z=2494,dx=9,dy=15,scores={AC_pknCrediting=22}] run function ac:pkn/crediting {"pos":"23"}
+execute if entity @s[x=-4,y=56,z=2548,dx=9,dy=15,scores={AC_pknCrediting=23}] run function ac:pkn/crediting {"pos":"24"}
+execute if entity @s[x=-4,y=56,z=2602,dx=9,dy=15,scores={AC_pknCrediting=24}] run function ac:pkn/crediting {"pos":"25"}
+execute if entity @s[x=-4,y=56,z=2656,dx=9,dy=15,scores={AC_pknCrediting=25}] run function ac:pkn/crediting {"pos":"26"}
+tag @s add pknCreditStop

@@ -1,0 +1,16 @@
+tp @a[tag=spawn1] 1500 55 -560
+tp @a[tag=spawn2] 1523 55 -555
+tp @a[tag=spawn3] 1542 55 -542
+tp @a[tag=spawn4] 1555 55 -523
+tp @a[tag=spawn5] 1560 55 -500
+tp @a[tag=spawn6] 1555 55 -477
+tp @a[tag=spawn7] 1542 55 -458
+tp @a[tag=spawn8] 1523 55 -445
+tp @a[tag=spawn9] 1500 55 -440
+tp @a[tag=spawn10] 1477 55 -444
+tp @a[tag=spawn11] 1458 55 -458
+tp @a[tag=spawn12] 1445 55 -477
+tp @a[tag=spawn13] 1440 55 -500
+tp @a[tag=spawn14] 1445 55 -523
+tp @a[tag=spawn15] 1458 55 -542
+tp @a[tag=spawn16] 1477 55 -554

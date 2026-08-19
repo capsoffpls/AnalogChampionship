@@ -1,0 +1,44 @@
+scoreboard players reset redArmor1 AC_bedMessageControl
+scoreboard players reset yellowArmor1 AC_bedMessageControl
+scoreboard players reset greenArmor1 AC_bedMessageControl
+scoreboard players reset blueArmor1 AC_bedMessageControl
+
+scoreboard players reset redArmor2 AC_bedMessageControl
+scoreboard players reset yellowArmor2 AC_bedMessageControl
+scoreboard players reset greenArmor2 AC_bedMessageControl
+scoreboard players reset blueArmor2 AC_bedMessageControl
+
+scoreboard players reset redArmor3 AC_bedMessageControl
+scoreboard players reset yellowArmor3 AC_bedMessageControl
+scoreboard players reset greenArmor3 AC_bedMessageControl
+scoreboard players reset blueArmor3 AC_bedMessageControl
+
+scoreboard players reset redArmor4 AC_bedMessageControl
+scoreboard players reset yellowArmor4 AC_bedMessageControl
+scoreboard players reset greenArmor4 AC_bedMessageControl
+scoreboard players reset blueArmor4 AC_bedMessageControl
+
+scoreboard players reset redHaste1 AC_bedMessageControl
+scoreboard players reset yellowHaste1 AC_bedMessageControl
+scoreboard players reset greenHaste1 AC_bedMessageControl
+scoreboard players reset blueHaste1 AC_bedMessageControl
+
+scoreboard players reset redHaste2 AC_bedMessageControl
+scoreboard players reset yellowHaste2 AC_bedMessageControl
+scoreboard players reset greenHaste2 AC_bedMessageControl
+scoreboard players reset blueHaste2 AC_bedMessageControl
+
+scoreboard players reset redHeal1 AC_bedMessageControl
+scoreboard players reset yellowHeal1 AC_bedMessageControl
+scoreboard players reset greenHeal1 AC_bedMessageControl
+scoreboard players reset blueHeal1 AC_bedMessageControl
+
+scoreboard players reset redHeal2 AC_bedMessageControl
+scoreboard players reset yellowHeal2 AC_bedMessageControl
+scoreboard players reset greenHeal2 AC_bedMessageControl
+scoreboard players reset blueHeal2 AC_bedMessageControl
+
+scoreboard players reset redSharp AC_bedMessageControl
+scoreboard players reset yellowSharp AC_bedMessageControl
+scoreboard players reset greenSharp AC_bedMessageControl
+scoreboard players reset blueSharp AC_bedMessageControl

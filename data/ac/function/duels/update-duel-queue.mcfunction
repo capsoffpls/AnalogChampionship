@@ -1,0 +1,3 @@
+$execute if data storage ac:queue.duels.1 {mode:$(mode)} store result score duel_1 AC_QueuedCount run execute if entity @a[tag=InQueue,scores={AC_DuelQueue=$(mode)}]
+$execute unless data storage ac:queue.duels.1 {mode:$(mode)} if data storage ac:queue.duels.2 {mode:$(mode)} store result score duel_2 AC_QueuedCount run execute if entity @a[tag=InQueue,scores={AC_DuelQueue=$(mode)}]
+$execute unless data storage ac:queue.duels.1 {mode:$(mode)} unless data storage ac:queue.duels.2 {mode:$(mode)} if data storage ac:queue.duels.3 {mode:$(mode)} store result score duel_3 AC_QueuedCount run execute if entity @a[tag=InQueue,scores={AC_DuelQueue=$(mode)}]

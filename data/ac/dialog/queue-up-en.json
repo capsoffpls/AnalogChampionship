@@ -1,0 +1,50 @@
+{
+  "type": "multi_action",
+  "title": [
+    {
+      "text": "[AC] ",
+      "bold": true,
+      "color": "white"
+    },
+    {
+      "text": "Gamemode Queue:",
+      "color": "gray",
+      "bold": false
+    }
+  ],
+  "actions": [
+    {
+    "label": "Quickplay",
+    "width": 200,
+    "action": {
+      "type": "run_command",
+      "command": "/trigger AC_Queue set 999"
+    }
+  },
+    {
+    "label": "Ranked",
+    "width": 200,
+    "action": {
+      "type": "run_command",
+      "command": "/trigger AC_Queue set 1000"
+    }
+  },
+    {
+    "label": "All games",
+    "width": 200,
+    "action": {
+      "type": "run_command",
+      "command": "/trigger AC_trigger set -3"
+    }
+  },
+    {
+    "label": "Unlisted games",
+    "width": 200,
+    "action": {
+      "type": "run_command",
+      "command": "/trigger AC_trigger set -4"
+    }
+  }
+    ],
+    "columns": 2
+}

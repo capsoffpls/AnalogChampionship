@@ -1,0 +1,3 @@
+fill -1503 53 1068 -1497 50 1077 air
+fill -1503 54 1068 -1497 54 1077 white_terracotta
+fill -1503 55 1068 -1497 57 1077 gravel

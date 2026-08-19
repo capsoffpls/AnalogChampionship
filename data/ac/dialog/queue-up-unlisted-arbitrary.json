@@ -1,0 +1,63 @@
+{
+  "type": "multi_action",
+  "title": [
+    {
+      "text": "[AC] ",
+      "bold": true,
+      "color": "white"
+    },
+    {
+      "text": "Wybierz tryb nieobiegowy do zakolejkowania się",
+      "color": "gray",
+      "bold": false
+    }
+  ],
+  "actions": [
+    {
+      "label": "Arrow Barrage (Legacy)",
+      "tooltip": [{"text":"• Do graczy strzelają strzały\n• Utrzymaj się jak najdłużej\n• Co minutę znikają bloki\n• Wygrywa ostatnia osoba, która nie spadnie","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "trigger AC_Queue set -1"
+      }
+    },
+    {
+      "label": "Hoe Hoe Hoe",
+      "tooltip": [{"text":"• Gracze wyposażeni w motyki muszą zaznaczyć jak najwięcej pola\n• Każdy gracz ma unikalny kolor\n• Nie ma możliwości zaznaczenia bloku, który przejął przeciwnik\n• Czas gry wynosi 1:30","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set -2"
+      }
+    },
+    {
+      "label": "Capture The Flag (4v12)",
+      "tooltip": [{"text":"• Gracze dzieleni są na 4 drużyny. Każda ma dwie flagi, których muszą bronić\n• Aby przejąć flagę, gracz musi najpierw ją ukraść, a potem odnieść do swojej bazy\n• Drużyna bez flag nie odradza się po śmierci\n• Jeżeli ilość graczy jest niepodzielna przez 4, w grze pojawią się Junglerzy - drużyna neutralna okupująca środek mapy","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set -3"
+      }
+    },
+    {
+      "label": "Bed Wars (4v12)",
+      "tooltip": [{"text":"• Gracze podzieleni na 4 drużyny bronią swoich łóżek\n• Jeżeli gracz z przeciwnej drużyny zniszczy twoje łóżko, nie będziesz mógł się odrodzić\n• Ulepszaj ekwipunek swój oraz drużyny, zbierając materiały z generatorów\n• Gra trwa 30 minut. Po 25 minutach wszyscy tracą swoje łóżko","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set -4"
+      }
+    },
+    {
+      "label": "Parkour Knockout Endless",
+      "tooltip": [{"text":"• Chuj dupa i kamieni kupa","bold":false,"color":"gray"}],
+      "width": 125,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set -5"
+      }
+    }
+  ],
+  "columns": 4
+}

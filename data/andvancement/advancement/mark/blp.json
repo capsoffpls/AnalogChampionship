@@ -1,0 +1,22 @@
+{
+  "parent": "andvancement:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:clay_ball",
+      "components": {
+        "minecraft:item_model": "ac:mode/block_party"
+      }
+    },
+    "title": "Block Party",
+    "description": "",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "impossible"
+    }
+  }
+}

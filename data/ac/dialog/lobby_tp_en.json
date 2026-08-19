@@ -1,0 +1,66 @@
+{
+  "type": "multi_action",
+  "title": [
+    {
+      "text": "[AC] ",
+      "bold": true,
+      "color": "white"
+    },
+    {
+      "text": "Teleport to:",
+      "color": "gray",
+      "bold": false
+    }
+  ],
+  "actions": [
+    {
+      "label": "Spawn",
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "trigger AC_trigger set 1"
+      }
+    },
+    {
+      "label": "Hall of Fame",
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_trigger set 2"
+      }
+    },
+    {
+      "label": "Event Zone",
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_trigger set 3"
+      }
+    },
+    {
+      "label": "Choice Chamber",
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_trigger set 4"
+      }
+    },
+    {
+      "label": "PVP Zone",
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_trigger set 5"
+      }
+    },
+    {
+      "label": "Monument of TwelveMan",
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_trigger set 6"
+      }
+    }
+  ],
+  "columns": 3
+}

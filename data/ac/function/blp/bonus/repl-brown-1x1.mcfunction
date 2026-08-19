@@ -1,0 +1,15 @@
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace yellow_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace red_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace blue_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace cyan_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace gray_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace lime_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace pink_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace black_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace white_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace green_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace purple_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace light_blue_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace light_gray_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace magenta_wool
+fill ~0.5 ~2 ~0.5 ~-0.5 ~-10 ~-0.5 brown_wool replace orange_wool

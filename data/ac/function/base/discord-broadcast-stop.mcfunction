@@ -1,0 +1,1 @@
+$$(d)iscord broadcast <:cancel:1521490482327457915> **Rozgrywka została zatrzymana przez administratora**

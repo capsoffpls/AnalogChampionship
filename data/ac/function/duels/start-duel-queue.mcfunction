@@ -1,0 +1,15 @@
+execute if score Duel1 AC_QueuedCount matches 1..16384 if score Duel2 AC_QueuedCount matches 1..16384 if score Duel3 AC_QueuedCount matches 1..16384 unless score @s AC_DuelQueue = Duel1 AC_QueuedCount unless score @s AC_DuelQueue = Duel2 AC_QueuedCount unless score @s AC_DuelQueue = Duel3 AC_QueuedCount if score lang AC_lang matches 0 run tellraw @s [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Serwer nie jest w stanie obsłużyć więcej niż 3 kolejki. Dołącz do istniejącej kolejki.","color":"red","bold":false}]
+execute if score Duel1 AC_QueuedCount matches 1..16384 if score Duel2 AC_QueuedCount matches 1..16384 if score Duel3 AC_QueuedCount matches 1..16384 unless score @s AC_DuelQueue = Duel1 AC_QueuedCount unless score @s AC_DuelQueue = Duel2 AC_QueuedCount unless score @s AC_DuelQueue = Duel3 AC_QueuedCount if score lang AC_lang matches 1 run tellraw @s [{"text":"[AC] ","bold":true,"color":"white"},{"text":"The server cannot handle more than 3 queues. Please join an existing queue.","color":"red","bold":false}]
+execute if score Duel1 AC_QueuedCount matches 1..16384 if score Duel2 AC_QueuedCount matches 1..16384 if score Duel3 AC_QueuedCount matches 1..16384 unless score @s AC_DuelQueue = Duel1 AC_QueuedCount unless score @s AC_DuelQueue = Duel2 AC_QueuedCount unless score @s AC_DuelQueue = Duel3 AC_QueuedCount run return run function ac:menu/leave-queue
+
+execute if score Duel1 AC_QueuedCount matches 1..16384 if score Duel2 AC_QueuedCount matches 1..16384 unless score Duel3 AC_QueuedCount matches 1..16384 unless score @s AC_DuelQueue = Duel1 AC_QueuedCount unless score @s AC_DuelQueue = Duel2 AC_QueuedCount store result storage ac:queue.3 mode int 1 run scoreboard players get @s AC_DuelQueue
+execute if score Duel1 AC_QueuedCount matches 1..16384 if score Duel2 AC_QueuedCount matches 1..16384 unless score Duel3 AC_QueuedCount matches 1..16384 unless score @s AC_DuelQueue = Duel1 AC_QueuedCount unless score @s AC_DuelQueue = Duel2 AC_QueuedCount run scoreboard players operation Duel3 AC_QueuedCount = @s AC_DuelQueue
+
+execute if score Duel1 AC_QueuedCount matches 1..16384 unless score Duel2 AC_QueuedCount matches 1..16384 unless score @s AC_DuelQueue = Duel1 AC_QueuedCount store result storage ac:queue.2 mode int 1 run scoreboard players get @s AC_DuelQueue
+execute if score Duel1 AC_QueuedCount matches 1..16384 unless score Duel2 AC_QueuedCount matches 1..16384 unless score @s AC_DuelQueue = Duel1 AC_QueuedCount run scoreboard players operation Duel2 AC_QueuedCount = @s AC_DuelQueue
+
+execute unless score Duel1 AC_QueuedCount matches 1..16384 store result storage ac:queue.1 mode int 1 run scoreboard players get @s AC_DuelQueue
+execute unless score Duel1 AC_QueuedCount matches 1..16384 run scoreboard players operation Duel1 AC_QueuedCount = @s AC_DuelQueue
+
+function ac:base/queue-items
+tag @s add InDuel

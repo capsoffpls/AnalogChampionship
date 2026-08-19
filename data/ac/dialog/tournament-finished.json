@@ -1,0 +1,37 @@
+{
+    "type": "notice",
+    "can_close_with_escape": true,
+    "title": [
+        {
+            "text": "[ANT] ",
+            "bold": true,
+            "color": "gold"
+        },
+        {
+            "text":"Banowanie trybów",
+            "color":"red",
+            "bold":false
+        }
+    ],
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "stone",
+      "components": {
+        "item_model": "ac:confirm"
+      }
+    },
+    "show_tooltip": false,
+    "description": {
+        "contents": {
+            "text":"Dziękujemy za skorzystanie z interaktywnego systemu banowania trybów Analog Tournament. Teraz opuścisz symulację.",
+            "color":"green",
+            "bold":false
+        },
+        "width": 512
+    }
+},
+    "action": {
+        "label": "No i zajebiście"
+    }
+}

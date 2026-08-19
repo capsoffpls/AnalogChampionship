@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:flint",
+          "components": {
+            "minecraft:item_model": "ac:speed_bubble"
+          }
+        }
+      }
+    }
+  },
+  "sends_telemetry_event": false
+}

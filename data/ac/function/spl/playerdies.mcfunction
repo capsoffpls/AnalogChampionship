@@ -1,0 +1,3 @@
+execute if score spl AC_running matches 1 if score spl1 AC_functions matches 1 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run gamemode spectator @s
+execute if score spl AC_running matches 1 if score spl1 AC_functions matches 1 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run scoreboard players add @a[tag=InGame,gamemode=adventure] AC_pointsHeld 5
+execute if score spl AC_running matches 1 if score spl1 AC_functions matches 1 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run tellraw @a[tag=InGame,gamemode=adventure] [{"text":"[SPL] ","bold":true,"color":"dark_green"},{"text":"+5≡","color":"gold","bold":false}]

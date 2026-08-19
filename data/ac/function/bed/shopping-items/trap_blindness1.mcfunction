@@ -1,0 +1,9 @@
+tag @s add Trap2-1
+execute if score lang AC_lang matches 0 run item replace entity @s container.21 with carrot_on_a_stick[custom_name={"italic":false,"text":"Pułapka: Ślepota"},item_model="ac:blindnesstrap-inert"]
+execute if score lang AC_lang matches 1 run item replace entity @s container.21 with carrot_on_a_stick[custom_name={"italic":false,"text":"Trap: Blindness"},item_model="ac:blindnesstrap-inert"]
+
+$execute as @a[tag=InGame] if items entity @s[team=ac_bed$(team)] player.cursor carrot_on_a_stick[minecraft:item_model="ac:blindnesstrap"] if entity @e[type=chest_minecart,tag=bedTeamShop,tag=team$(team),tag=Trap2-1] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Twoja drużyna posiada teraz Pułapkę: Ślepotę [Slot 1]","color":"aqua","bold":false}]
+$execute as @a[tag=InGame] if items entity @s[team=ac_bed$(team)] player.cursor carrot_on_a_stick[minecraft:item_model="ac:blindnesstrap"] if entity @e[type=chest_minecart,tag=bedTeamShop,tag=team$(team),tag=Trap2-1] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Your team now has a Trap: Blindness [Slot 1]","color":"aqua","bold":false}]
+$execute as @a[tag=InGame] if items entity @s[team=ac_bed$(team)] player.cursor carrot_on_a_stick[minecraft:item_model="ac:blindnesstrap"] if entity @e[type=chest_minecart,tag=bedTeamShop,tag=team$(team),tag=Trap2-1] run execute at @s run playsound minecraft:ac.jingles.buy record @s ~ ~ ~
+
+$execute as @a[tag=InGame] if items entity @s[team=ac_bed$(team)] player.cursor carrot_on_a_stick[minecraft:item_model="ac:blindnesstrap"] run clear @s diamond 1

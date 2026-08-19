@@ -1,0 +1,3 @@
+execute as @a[tag=tobiko] if predicate {condition:"entity_properties",entity:this,predicate:{"type_specific/player":{input:{jump:true}}}} run attribute @s minecraft:gravity base set -0.04
+execute as @a[tag=tobiko] if predicate {condition:"entity_properties",entity:this,predicate:{"type_specific/player":{input:{sneak:true}}}} run attribute @s minecraft:gravity base set 0.04
+execute as @a[tag=tobiko] unless predicate {condition:"entity_properties",entity:this,predicate:{"type_specific/player":{input:{sneak:true}}}} unless predicate {condition:"entity_properties",entity:this,predicate:{"type_specific/player":{input:{jump:true}}}} run attribute @s minecraft:gravity base set 0.00306122443021609948361760888957406

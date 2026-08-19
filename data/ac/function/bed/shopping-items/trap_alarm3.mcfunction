@@ -1,0 +1,9 @@
+tag @s add Trap3-3
+execute if score lang AC_lang matches 0 run item replace entity @s container.23 with carrot_on_a_stick[custom_name={"italic":false,"text":"Pułapka: Alarm"},item_model="ac:alarmtrap-inert"]
+execute if score lang AC_lang matches 1 run item replace entity @s container.23 with carrot_on_a_stick[custom_name={"italic":false,"text":"Trap: Alarm"},item_model="ac:alarmtrap-inert"]
+
+$execute as @a[tag=InGame] if items entity @s[team=ac_bed$(team)] player.cursor carrot_on_a_stick[minecraft:item_model="ac:alarmtrap"] if entity @e[type=chest_minecart,tag=bedTeamShop,tag=team$(team),tag=Trap3-3] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Twoja drużyna posiada teraz Pułapkę: Alarm [Slot 3]","color":"aqua","bold":false}]
+$execute as @a[tag=InGame] if items entity @s[team=ac_bed$(team)] player.cursor carrot_on_a_stick[minecraft:item_model="ac:alarmtrap"] if entity @e[type=chest_minecart,tag=bedTeamShop,tag=team$(team),tag=Trap3-3] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Your team now has a Trap: Alarm [Slot 3]","color":"aqua","bold":false}]
+$execute as @a[tag=InGame] if items entity @s[team=ac_bed$(team)] player.cursor carrot_on_a_stick[minecraft:item_model="ac:alarmtrap"] if entity @e[type=chest_minecart,tag=bedTeamShop,tag=team$(team),tag=Trap3-3] run execute at @s run playsound minecraft:ac.jingles.buy record @s ~ ~ ~
+
+$execute as @a[tag=InGame] if items entity @s[team=ac_bed$(team)] player.cursor carrot_on_a_stick[minecraft:item_model="ac:alarmtrap"] run clear @s diamond 4

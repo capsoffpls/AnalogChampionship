@@ -1,0 +1,6 @@
+execute if score arb2 AC_functions matches 1 run scoreboard players add attack AC_arbAttack 1
+execute if score arb2 AC_functions matches 1 run execute if score attack AC_arbAttack = interval AC_arbAttack run execute at @e[type=minecraft:armor_stand,name=arbAuto1,sort=random,limit=1] run summon arrow ~ ~-1 ~ {Motion:[-2.2,0.2,0.0],PierceLevel:1b}
+execute if score arb2 AC_functions matches 1 run execute if score attack AC_arbAttack = interval AC_arbAttack run execute at @e[type=minecraft:armor_stand,name=arbAuto3,sort=random,limit=1] run summon arrow ~ ~-1 ~ {Motion:[2.2,0.2,0.0],PierceLevel:1b}
+execute if score arb2 AC_functions matches 1 run execute if score attack AC_arbAttack = interval AC_arbAttack run execute at @e[type=minecraft:armor_stand,name=arbAuto4,sort=random,limit=1] run summon arrow ~ ~-1 ~ {Motion:[0.0,0.2,-2.2],PierceLevel:1b}
+execute if score arb2 AC_functions matches 1 run execute if score attack AC_arbAttack >= interval AC_arbAttack run scoreboard players reset attack AC_arbAttack
+execute if score arb2 AC_functions matches 1 run scoreboard players set interval AC_arbAttack 8
