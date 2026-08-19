@@ -1,1 +1,0 @@
-execute as @a[tag=InGame,tag=!spbEliminated] if score @s AC_spbPercentage <= detect AC_spbPercentage run function ac:spb/eliminate

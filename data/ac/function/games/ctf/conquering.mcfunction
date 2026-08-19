@@ -1,0 +1,9 @@
+execute if score ctf AC_chosenMap matches 1 run execute as @a[tag=ctfNorth,tag=ctfHoldFlag,x=2000,y=54,z=1897,dy=1,gamemode=adventure] if items entity @s armor.head minecraft:lime_banner run function ac:games/ctf/flag-rooms/conquer/south1
+execute if score ctf AC_chosenMap matches 1 run execute as @a[tag=ctfNorth,tag=ctfHoldFlag,x=2000,y=54,z=1897,dy=1,gamemode=adventure] if items entity @s armor.head minecraft:green_banner run function ac:games/ctf/flag-rooms/conquer/south2
+execute if score ctf AC_chosenMap matches 1 run execute as @a[tag=ctfNorth,tag=ctfHoldFlag,x=2000,y=54,z=1897,dy=1,gamemode=adventure] if items entity @s armor.head minecraft:light_blue_banner run function ac:games/ctf/flag-rooms/conquer/south3
+execute if score ctf AC_chosenMap matches 1 run execute as @a[tag=ctfNorth,tag=ctfHoldFlag,x=2000,y=54,z=1897,dy=1,gamemode=adventure] if items entity @s armor.head minecraft:blue_banner run function ac:games/ctf/flag-rooms/conquer/south4
+
+execute if score ctf AC_chosenMap matches 1 run execute as @a[tag=ctfSouth,tag=ctfHoldFlag,x=2000,y=54,z=2103,dy=1,gamemode=adventure] if items entity @s armor.head minecraft:magenta_banner run function ac:games/ctf/flag-rooms/conquer/north1
+execute if score ctf AC_chosenMap matches 1 run execute as @a[tag=ctfSouth,tag=ctfHoldFlag,x=2000,y=54,z=2103,dy=1,gamemode=adventure] if items entity @s armor.head minecraft:red_banner run function ac:games/ctf/flag-rooms/conquer/north2
+execute if score ctf AC_chosenMap matches 1 run execute as @a[tag=ctfSouth,tag=ctfHoldFlag,x=2000,y=54,z=2103,dy=1,gamemode=adventure] if items entity @s armor.head minecraft:orange_banner run function ac:games/ctf/flag-rooms/conquer/north3
+execute if score ctf AC_chosenMap matches 1 run execute as @a[tag=ctfSouth,tag=ctfHoldFlag,x=2000,y=54,z=2103,dy=1,gamemode=adventure] if items entity @s armor.head minecraft:yellow_banner run function ac:games/ctf/flag-rooms/conquer/north4

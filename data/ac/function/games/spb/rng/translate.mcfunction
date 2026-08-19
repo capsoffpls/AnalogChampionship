@@ -1,0 +1,10 @@
+execute if score checker AC_spbCheck matches 1 run function ac:games/spb/rng/correct {"mapcheck":"1"}
+execute if score checker AC_spbCheck matches 2 run function ac:games/spb/rng/correct {"mapcheck":"2"}
+execute if score checker AC_spbCheck matches 3 run function ac:games/spb/rng/correct {"mapcheck":"3"}
+execute if score checker AC_spbCheck matches 4 run function ac:games/spb/rng/correct {"mapcheck":"4"}
+execute if score checker AC_spbCheck matches 5 run function ac:games/spb/rng/correct {"mapcheck":"5"}
+execute if score checker AC_spbCheck matches 6 run function ac:games/spb/rng/correct {"mapcheck":"6"}
+execute if score checker AC_spbCheck matches 7 run function ac:games/spb/rng/correct {"mapcheck":"7"}
+execute if score checker AC_spbCheck matches 8 run function ac:games/spb/rng/correct {"mapcheck":"8"}
+execute if score checker AC_spbCheck matches 9 run function ac:games/spb/rng/correct {"mapcheck":"9"}
+execute if score checker AC_spbCheck matches 10 run function ac:games/spb/rng/correct {"mapcheck":"10"}

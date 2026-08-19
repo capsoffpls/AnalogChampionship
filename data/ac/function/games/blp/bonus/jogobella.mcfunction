@@ -1,0 +1,17 @@
+particle minecraft:explosion ~ ~ ~ 1 1 1 1 5
+execute if score rng AC_blpColorRNG matches 0 run function ac:games/blp/bonus/repl-white
+execute if score rng AC_blpColorRNG matches 1 run function ac:games/blp/bonus/repl-orange
+execute if score rng AC_blpColorRNG matches 2 run function ac:games/blp/bonus/repl-magenta
+execute if score rng AC_blpColorRNG matches 3 run function ac:games/blp/bonus/repl-lightblue
+execute if score rng AC_blpColorRNG matches 4 run function ac:games/blp/bonus/repl-yellow
+execute if score rng AC_blpColorRNG matches 5 run function ac:games/blp/bonus/repl-lime
+execute if score rng AC_blpColorRNG matches 6 run function ac:games/blp/bonus/repl-pink
+execute if score rng AC_blpColorRNG matches 7 run function ac:games/blp/bonus/repl-gray
+execute if score rng AC_blpColorRNG matches 8 run function ac:games/blp/bonus/repl-lightgray
+execute if score rng AC_blpColorRNG matches 9 run function ac:games/blp/bonus/repl-cyan
+execute if score rng AC_blpColorRNG matches 10 run function ac:games/blp/bonus/repl-purple
+execute if score rng AC_blpColorRNG matches 11 run function ac:games/blp/bonus/repl-blue
+execute if score rng AC_blpColorRNG matches 12 run function ac:games/blp/bonus/repl-brown
+execute if score rng AC_blpColorRNG matches 13 run function ac:games/blp/bonus/repl-green
+execute if score rng AC_blpColorRNG matches 14 run function ac:games/blp/bonus/repl-red
+execute if score rng AC_blpColorRNG matches 15 run function ac:games/blp/bonus/repl-black

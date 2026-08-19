@@ -1,12 +1,12 @@
 {
 	"values": [
-		"ac:ctf/flag-rooms/map1/north1",
-		"ac:ctf/flag-rooms/map1/north2",
-		"ac:ctf/flag-rooms/map1/north3",
-		"ac:ctf/flag-rooms/map1/north4",
-		"ac:ctf/flag-rooms/map1/south1",
-		"ac:ctf/flag-rooms/map1/south2",
-		"ac:ctf/flag-rooms/map1/south3",
-		"ac:ctf/flag-rooms/map1/south4"
+		"ac:games/ctf/flag-rooms/map1/north1",
+		"ac:games/ctf/flag-rooms/map1/north2",
+		"ac:games/ctf/flag-rooms/map1/north3",
+		"ac:games/ctf/flag-rooms/map1/north4",
+		"ac:games/ctf/flag-rooms/map1/south1",
+		"ac:games/ctf/flag-rooms/map1/south2",
+		"ac:games/ctf/flag-rooms/map1/south3",
+		"ac:games/ctf/flag-rooms/map1/south4"
 	]
 }

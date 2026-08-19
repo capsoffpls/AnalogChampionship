@@ -1,6 +1,0 @@
-execute if score jedzie AC_infCount matches 1 if score interval AC_infCount matches 1 run execute if score obecnepietro AC_infCount < pietro AC_infCount run execute as @a[x=1560,y=50,z=963,dx=3,dz=3,dy=61] at @s run tp @s ~ ~8 ~
-execute if score jedzie AC_infCount matches 1 if score interval AC_infCount matches 1 run execute if score obecnepietro AC_infCount < pietro AC_infCount run scoreboard players add obecnepietro AC_infCount 1
-execute if score jedzie AC_infCount matches 1 if score interval AC_infCount matches 1 run execute if score obecnepietro AC_infCount > pietro AC_infCount run execute as @a[x=1560,y=58,z=963,dx=3,dz=3,dy=61] at @s run tp @s ~ ~-8 ~
-execute if score jedzie AC_infCount matches 1 if score interval AC_infCount matches 1 run execute if score obecnepietro AC_infCount > pietro AC_infCount run scoreboard players remove obecnepietro AC_infCount 1
-execute if score jedzie AC_infCount matches 1 if score interval AC_infCount matches 1 run execute if score obecnepietro AC_infCount = pietro AC_infCount run function ac:inf/elevator-open
-execute if score jedzie AC_infCount matches 1 if score interval AC_infCount matches 1 run execute if score obecnepietro AC_infCount = pietro AC_infCount run scoreboard players set jedzie AC_infCount 0
