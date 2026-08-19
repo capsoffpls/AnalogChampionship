@@ -1,8 +1,8 @@
 execute if score lang AC_lang matches 0 unless score @s AC_DuelQueue matches 1.. run item replace entity @s hotbar.7 with carrot_on_a_stick[item_model="ac:pvpzone",item_name={"text":"Pojedynek","italic":false},custom_data={"chuj":-1,lobbyPersistent:1}]
 execute if score lang AC_lang matches 1 unless score @s AC_DuelQueue matches 1.. run item replace entity @s hotbar.7 with carrot_on_a_stick[item_model="ac:pvpzone",item_name={"text":"Duels","italic":false},custom_data={"chuj":-1,lobbyPersistent:1}]
 
-execute if score lang AC_lang matches 0 unless score @s AC_DuelQueue matches 1.. run item replace entity @s hotbar.7 with carrot_on_a_stick[item_model="ac:cancel",item_name={"text":"Anuluj pojedynek","italic":false},custom_data={"chuj":-1,lobbyPersistent:1}]
-execute if score lang AC_lang matches 1 unless score @s AC_DuelQueue matches 1.. run item replace entity @s hotbar.7 with carrot_on_a_stick[item_model="ac:cancel",item_name={"text":"Cancel Duel","italic":false},custom_data={"chuj":-1,lobbyPersistent:1}]
+execute if score lang AC_lang matches 0 if score @s AC_DuelQueue matches 1.. run item replace entity @s hotbar.7 with carrot_on_a_stick[item_model="ac:cancel",item_name={"text":"Anuluj pojedynek","italic":false},custom_data={"chuj":-1,lobbyPersistent:1}]
+execute if score lang AC_lang matches 1 if score @s AC_DuelQueue matches 1.. run item replace entity @s hotbar.7 with carrot_on_a_stick[item_model="ac:cancel",item_name={"text":"Cancel Duel","italic":false},custom_data={"chuj":-1,lobbyPersistent:1}]
 
 execute if score lang AC_lang matches 0 unless score @s AC_Queue matches 1.. unless score @s AC_Queue matches ..-1 run item replace entity @s hotbar.8 with carrot_on_a_stick[item_model="ac:play",item_name={"text":"Wejdź do kolejki","italic":false},custom_data={"chuj":-1,lobbyPersistent:1}]
 execute if score lang AC_lang matches 1 unless score @s AC_Queue matches 1.. unless score @s AC_Queue matches ..-1 run item replace entity @s hotbar.8 with carrot_on_a_stick[item_model="ac:play",item_name={"text":"Enter Queue","italic":false},custom_data={"chuj":-1,lobbyPersistent:1}]

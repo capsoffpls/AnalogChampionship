@@ -94,10 +94,13 @@ bossbar set ac_queue2 max 16
 bossbar add ac_queue3 [{"text":"Tryb","color":"white","bold":true},{"text":" - 0 osób w kolejce","color":"gray","bold":false}]
 bossbar set ac_queue3 max 16
 bossbar add ac_duel1 [{"text":"Pojedynek","color":"yellow","bold":true},{"text":" - oczekiwanie na gracza","color":"gold","bold":false}]
+bossbar set ac_duel1 color yellow
 bossbar set ac_duel1 max 2
 bossbar add ac_duel2 [{"text":"Pojedynek","color":"yellow","bold":true},{"text":" - oczekiwanie na gracza","color":"gold","bold":false}]
+bossbar set ac_duel2 color yellow
 bossbar set ac_duel2 max 2
 bossbar add ac_duel3 [{"text":"Pojedynek","color":"yellow","bold":true},{"text":" - oczekiwanie na gracza","color":"gold","bold":false}]
+bossbar set ac_duel3 color yellow
 bossbar set ac_duel3 max 2
 team add gracz "Gracze"
 team modify gracz color green
