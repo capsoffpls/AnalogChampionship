@@ -1,4 +1,4 @@
 {
-  "type": "minecraft:killed_by_player",
-  "inverse": true
+  "inverse": true,
+  "condition": "minecraft:killed_by_player"
 }

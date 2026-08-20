@@ -104,15 +104,15 @@ execute if score mtl AC_running matches 1 run function ac:games/mtl/main
 execute if score ttr AC_running matches 1 run function ac:games/ttr/main
 
 ##wycofane
-execute if score tcb AC_running matches 1 run function ac:tcb/start
-execute if score tcb AC_running matches 1 run function ac:tcb/streak
-execute if score tcb AC_running matches 1 run function ac:tcb/playerdies
-execute if score tcb AC_running matches 1 run function ac:tcb/death-cooldown
-execute if score tcb AC_running matches 1 run function ac:tcb/arrowkiller
-execute if score tcb AC_running matches 1 run function ac:tcb/finished
-execute if score tcb AC_running matches 1 run function ac:tcb/timeend
-execute if score tcb AC_running matches 1 run function ac:tcb/end
-execute if score tcb AC_running matches 1 run function ac:tcb/grenade/main
-execute if score tcb AC_running matches 1 run function ac:tcb/grenade/timer
+#execute if score tcb AC_running matches 1 run function ac:games/tcb/start
+#execute if score tcb AC_running matches 1 run function ac:games/tcb/streak
+#execute if score tcb AC_running matches 1 run function ac:games/tcb/playerdies
+#execute if score tcb AC_running matches 1 run function ac:games/tcb/death-cooldown
+#execute if score tcb AC_running matches 1 run function ac:games/tcb/arrowkiller
+#execute if score tcb AC_running matches 1 run function ac:games/tcb/finished
+#execute if score tcb AC_running matches 1 run function ac:games/tcb/timeend
+#execute if score tcb AC_running matches 1 run function ac:games/tcb/end
+#execute if score tcb AC_running matches 1 run function ac:games/tcb/grenade/main
+#execute if score tcb AC_running matches 1 run function ac:games/tcb/grenade/timer
 
-execute if score hhh AC_running matches 1 run function ac:hhh/main
+execute if score hhh AC_running matches 1 run function ac:games/legacy/hhh/main

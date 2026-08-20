@@ -102,5 +102,5 @@ execute if score cst AC_running matches 1 if score cst AC_time matches -60 run d
 execute if score cst AC_running matches 1 if score cst AC_time matches -60 run function ac:auto/invoke
 execute if score cst AC_running matches 1 if score cst AC_time matches -60 run scoreboard players set cst AC_running 0
 
-execute as @e[type=item,tag=!pickupdelayed] run data modify entity @s pickupDelay set value 32767s
+execute as @e[type=item,tag=!pickupdelayed] run data modify entity @s PickupDelay set value 32767s
 execute as @e[type=item,tag=!pickupdelayed] run tag @s add pickupdelayed

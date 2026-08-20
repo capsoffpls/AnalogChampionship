@@ -1,6 +1,17 @@
 {
 	"env": {
+		"customResources": {},
+		"dependencies": ["@va"],
 		"gameVersion": "Auto",
 		"permissionLevel": 4
-	}
+		
+	},
+	"lint": {
+    "undeclaredSymbol": [
+        {
+            "if": { "category": "sound_event" },
+            "then": { "declare": "block" }
+        }
+    ]
+}
 }

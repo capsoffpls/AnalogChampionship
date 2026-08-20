@@ -6,8 +6,8 @@ execute as @e[type=item_display,tag=bonus,tag=!collected] at @s run execute as @
 execute as @e[type=item_display,tag=bonus,tag=!collected] at @s run execute as @e[type=horse,dy=1,limit=1] on passengers if score hrc AC_chosenMap matches 2 if score @s AC_hrcVelocity matches 400 run function ac:games/hrc/bonus-activate
 
 execute as @e[type=item_display,tag=bonus,tag=collected] run scoreboard players add @s AC_hrcBonusBackend 1
-execute as @e[type=item_display,tag=bonus,tag=collected] if score @s AC_hrcBonusBackend matches 1 run data modify entity @s item.id set value "air"
+execute as @e[type=item_display,tag=bonus,tag=collected] if score @s AC_hrcBonusBackend matches 1 run data modify entity @s transformation.scale set value [0.0f,0.0f,0.0f]
 
-execute as @e[type=item_display,tag=bonus,tag=collected] if score @s AC_hrcBonusBackend matches 200.. run data modify entity @s item.id set value "minecraft:diamond_block"
+execute as @e[type=item_display,tag=bonus,tag=collected] if score @s AC_hrcBonusBackend matches 200.. run data modify entity @s transformation.scale set value [1.0f,1.0f,1.0f]
 execute as @e[type=item_display,tag=bonus,tag=collected] if score @s AC_hrcBonusBackend matches 200.. run tag @s remove collected
 execute as @e[type=item_display,tag=bonus,tag=!collected] if score @s AC_hrcBonusBackend matches 1.. run scoreboard players reset @s AC_hrcBonusBackend
