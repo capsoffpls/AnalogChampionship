@@ -1,1 +1,0 @@
-execute if score @s AC_practiceMode matches 2 run function ac:practice/pkn/load

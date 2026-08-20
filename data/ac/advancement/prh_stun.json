@@ -13,7 +13,7 @@
     }
   },
   "rewards": {
-    "function": "ac:prh/stun"
+    "function": "ac:games/prh/stun"
   },
   "sends_telemetry_event": false
 }

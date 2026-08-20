@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-    "function": "ac:cst/passives/warrior"
+    "function": "ac:games/cst/passives/warrior"
   }
 }

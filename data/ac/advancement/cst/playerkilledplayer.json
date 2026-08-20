@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-    "function": "ac:cst/passives/_on_pkp"
+    "function": "ac:games/cst/passives/_on_pkp"
   }
 }

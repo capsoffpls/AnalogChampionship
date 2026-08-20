@@ -68,11 +68,11 @@ execute if score gm AC_gamemode matches 29 run execute as AnalogMC if entity @s[
 execute if score gm AC_gamemode matches 31 run execute as AnalogMC if entity @s[tag=anc] run function ac:camera/trl
 execute if score gm AC_gamemode matches 32 run execute as AnalogMC if entity @s[tag=anc] run function ac:camera/asp
 
-execute if score gm AC_gamemode matches -1 run function ac:legacy/arb/init
-execute if score gm AC_gamemode matches -2 run function ac:legacy/hhh/init
-execute if score gm AC_gamemode matches -3 run function ac:legacy/ctf/init
-execute if score gm AC_gamemode matches -4 run function ac:legacy/bed/init
-execute if score gm AC_gamemode matches -5 run function ac:legacy/pkn-inf/init
+execute if score gm AC_gamemode matches -1 run function ac:games/legacy/arb/init
+execute if score gm AC_gamemode matches -2 run function ac:games/legacy/hhh/init
+execute if score gm AC_gamemode matches -3 run function ac:games/legacy/ctf/init
+execute if score gm AC_gamemode matches -4 run function ac:games/legacy/bed/init
+execute if score gm AC_gamemode matches -5 run function ac:games/legacy/pkn-inf/init
 
 execute as @a run scoreboard players operation @s AC_pointsBackup = @s AC_points
 execute as @a run scoreboard players operation @s AC_pointsRankedBackup = @s AC_pointsRanked

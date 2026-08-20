@@ -1,7 +1,0 @@
-tellraw @s [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[AUTO] ","bold":true,"color":"gold"},{"text":"Konfiguracja Trybu Auto - Analog Tournament \n\nWybierz grę nr 3\n\n","color":"yellow","bold":false}]
-tellraw @s [{"text":">> Losowa, bez warunków","color":"gold","bold":true,"click_event":{"action":"run_command","command":"/function ac:auto/setup/random {\"for\":\"3\",\"next_page\":\"t4\"}"}}]
-tellraw @s [{"text":">> Losowa z kategorii S","color":"gold","bold":true,"click_event":{"action":"run_command","command":"/function ac:auto/setup/random-s {\"for\":\"3\",\"next_page\":\"t4\"}"}}]
-tellraw @s [{"text":">> Losowa z kategorii M","color":"gold","bold":true,"click_event":{"action":"run_command","command":"/function ac:auto/setup/random-m {\"for\":\"3\",\"next_page\":\"t4\"}"}}]
-tellraw @s [{"text":">> Losowa z kategorii L","color":"gold","bold":true,"click_event":{"action":"run_command","command":"/function ac:auto/setup/random-l {\"for\":\"3\",\"next_page\":\"t4\"}"}}]
-tellraw @s [{"text":">> Losowa z kategorii XL","color":"gold","bold":true,"click_event":{"action":"run_command","command":"/function ac:auto/setup/random-xl {\"for\":\"3\",\"next_page\":\"t4\"}"}}]
-tellraw @s [{"text":">> Konkretny tryb gry","color":"green","bold":true,"click_event":{"action":"run_command","command":"/function ac:auto/setup/specific-gamemode {\"event\":\"Tournament\",\"for\":\"3\",\"next_page\":\"t4\"}"}}]

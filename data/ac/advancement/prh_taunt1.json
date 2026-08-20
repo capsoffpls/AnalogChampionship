@@ -13,7 +13,7 @@
     }
   },
   "rewards": {
-    "function": "ac:prh/taunt_sound"
+    "function": "ac:games/prh/taunt_sound"
   },
   "sends_telemetry_event": false
 }
