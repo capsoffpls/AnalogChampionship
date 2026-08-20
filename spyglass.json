@@ -1,7 +1,5 @@
 {
 	"env": {
-		"customResources": {},
-		"dependencies": ["@va"],
 		"gameVersion": "Auto",
 		"permissionLevel": 4
 		
