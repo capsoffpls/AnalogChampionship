@@ -1,7 +1,6 @@
 {
 	"values": [
 		"ac:load",
-		"gwc:laduj",
-		"andvancement:init"
+		"gwc:laduj"
 	]
 }
