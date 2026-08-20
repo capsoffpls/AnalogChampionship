@@ -1,4 +1,4 @@
-# advancement injection :D
+# advancement injection :D (doesnt work for now)
 function andvancement:game/mfl
 
 kill @a[distance=..3,gamemode=adventure,tag=InGame]

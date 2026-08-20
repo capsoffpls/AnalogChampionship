@@ -1,1 +1,0 @@
-# nie mam pojecia jak to napisac

@@ -1,2 +1,0 @@
-advancement/root.json
-advancement/real/omc2.json
