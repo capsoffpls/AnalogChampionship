@@ -49,6 +49,7 @@ scoreboard objectives add AC_placeReward dummy
 scoreboard objectives add AC_combatlog dummy
 scoreboard objectives add AC_protip dummy
 scoreboard objectives add AC_onFire dummy
+scoreboard objectives add AC_hasFallen minecraft.custom:fall_one_cm
 scoreboard objectives add AC_LeftGame minecraft.custom:leave_game
 #live koordynaty
 scoreboard objectives add AC_CurrentX dummy

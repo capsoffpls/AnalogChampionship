@@ -11,7 +11,7 @@
           }
         },
         "entity": {
-          "entity_type": "minecraft:horse",
+          "type": "minecraft:horse",
           "nbt": {
             "Tags": [
               "racing"

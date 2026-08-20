@@ -3,9 +3,9 @@
     "requirement": {
       "trigger": "minecraft:placed_block",
       "conditions": {
-        "location": [
+        "location": 
           {
-            "condition": "minecraft:location_check",
+            "type": "minecraft:location_check",
             "predicate": {
               "position": {
                 "y": {
@@ -15,7 +15,7 @@
               }
             }
           }
-        ]
+        
       }
     }
   }

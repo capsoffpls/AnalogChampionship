@@ -4,7 +4,7 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "entity_type": "minecraft:player"
+          "entity_type": "player"
         },
         "killing_blow": {
           "source_entity": {
@@ -12,13 +12,13 @@
             "equipment": {
               "mainhand": {
                 "items": [
-                  "minecraft:diamond_sword",
-                  "minecraft:golden_sword",
-                  "minecraft:iron_sword",
-                  "minecraft:netherite_sword",
-                  "minecraft:stone_sword",
-                  "minecraft:wooden_sword",
-                  "minecraft:copper_sword"
+                  "minecraft:diamond_spear",
+                  "minecraft:golden_spear",
+                  "minecraft:iron_spear",
+                  "minecraft:netherite_spear",
+                  "minecraft:stone_spear",
+                  "minecraft:wooden_spear",
+                  "minecraft:copper_spear"
                 ]
               }
             }
