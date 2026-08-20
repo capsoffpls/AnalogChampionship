@@ -1,9 +1,5 @@
 {
 	"values": [
-		"ac:tick",
-		"gwc:tick",
-		"gwc:stol",
-		"slowoklucz:main",
-		"1z10:main"
+		"ac:tick"
 	]
 }
