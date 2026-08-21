@@ -14,7 +14,6 @@ execute as @a[scores={AC_overtimePersonal=1..}] run function ac:base/overtime-pe
 
 execute as @a unless score @s AC_QueueSort matches 1..2 run scoreboard players set @s AC_QueueSort 1
 
-execute if score deathmessage AC_misc matches 1 run function ac:base/kills/generic
 execute if score queues AC_misc matches 1 if score NowPlaying AC_CurrentlyPlayed matches 0 run function ac:base/queues
 execute if score combatlog AC_misc matches 1 run function ac:base/combatlog-main
 

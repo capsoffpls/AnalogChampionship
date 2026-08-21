@@ -13,6 +13,7 @@ function ac:base/l-roll
 function ac:base/xl-roll
 function ac:base/gm-countdown
 function ac:base/gm-running
+execute if score deathmessage AC_misc matches 1 run function ac:base/kills/generic
 function ac:base/lobby/practice/main
 function ac:base/lobby/parkour-backtocheckpoint
 function ac:base/lobby/parkour-checkpoints
