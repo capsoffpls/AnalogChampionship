@@ -3,7 +3,8 @@ execute if score spb AC_running matches 1 if score spb1 AC_functions matches 1 r
 execute if score spb AC_running matches 1 if score spb1 AC_functions matches 1 run execute if score islands AC_spbCheck matches 20.. run scoreboard players set islands AC_spbCheck 0
 execute if score spb AC_running matches 1 if score spb1 AC_functions matches 1 run execute if score spb AC_time matches 0..2400 run function ac:games/spb/gamemode
 
-execute if score spb AC_running matches 1 run kill @e[type=tnt]
+execute if score spb AC_running matches 1 run kill @e[type=tnt,x=1430,y=50,z=-569,dx=140,dy=20,dz=140]
+execute if score spb AC_running matches 1 run kill @e[type=end_crystal,x=1430,y=50,z=-569,dx=140,dy=20,dz=140]
 
 execute if score spb AC_running matches 1 if score spb3 AC_functions matches 1 run execute if score spb AC_time matches 2599 run execute if score lang AC_lang matches 0 run tellraw @a[tag=InGame,tag=!spbEliminated] [{"text":"[SPB] ","bold":true,"color":"dark_green"},{"text":"Za 10 sekund rozpoczniesz kopiowanie budowli ze środkowej wyspy. Przygotuj się.","color":"green","bold":false}]
 execute if score spb AC_running matches 1 if score spb3 AC_functions matches 1 run execute if score spb AC_time matches 2599 run execute if score lang AC_lang matches 1 run tellraw @a[tag=InGame,tag=!spbEliminated] [{"text":"[SPB] ","bold":true,"color":"dark_green"},{"text":"In 10 seconds, you will start copying the building from the middle island. Get ready.","color":"green","bold":false}]
