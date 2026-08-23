@@ -9,8 +9,9 @@ item replace entity @s armor.legs with diamond_leggings[enchantments={binding_cu
 item replace entity @s armor.feet with iron_boots[enchantments={binding_curse:1,protection:1},unbreakable={}]
 
 item replace entity @s hotbar.0 with iron_sword[unbreakable={}]
-item replace entity @s hotbar.1 with bow[unbreakable={}]
-item replace entity @s hotbar.2 with arrow 8
+item replace entity @s hotbar.1 with wooden_axe[unbreakable={}]
+item replace entity @s hotbar.2 with bow[unbreakable={}]
+item replace entity @s hotbar.3 with arrow 8
 item replace entity @s hotbar.7 with cooked_beef 16
 item replace entity @s hotbar.8 with golden_apple 5
 

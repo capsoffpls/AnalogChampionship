@@ -12,7 +12,7 @@ item replace entity @s hotbar.0 with stone_sword[unbreakable={},enchantments={sh
 item replace entity @s hotbar.1 with bow[unbreakable={},enchantments={flame:1}]
 item replace entity @s hotbar.2 with crossbow[unbreakable={},enchantments={quick_charge:3}]
 item replace entity @s hotbar.3 with splash_potion[potion_contents={potion:fire_resistance}]
-item replace entity @s hotbar.4 with arrow 16
+item replace entity @s hotbar.4 with arrow 32
 item replace entity @s hotbar.7 with cooked_beef 16
 item replace entity @s hotbar.8 with golden_apple 3
 

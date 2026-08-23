@@ -34,6 +34,7 @@ tag @a remove cstShooter
 tag @a remove cstSniper
 tag @a remove cstTank
 tag @a remove cstWarrior
+tag @a remove cstHogRider
 tag @a remove cstLockedIn
 
 scoreboard players set baseHealth AC_cstScores 500
@@ -47,8 +48,6 @@ bossbar set minecraft:ac_cst players @a
 scoreboard players reset @a AC_cstItemDroppedCheck
 scoreboard players set @a[tag=InGame] AC_CurrentlyPlayed 37
 scoreboard players set NowPlaying AC_CurrentlyPlayed 37
-
-scoreboard players set no-q AC_misc 1
 
 advancement revoke @a only ac:cst/blockhit
 advancement revoke @a only ac:cst/playerkilledplayer

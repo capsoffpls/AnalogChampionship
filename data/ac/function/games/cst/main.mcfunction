@@ -40,11 +40,11 @@ execute if score cst AC_running matches 1 run execute as @a[tag=InGame] at @s if
 
 execute if score cst AC_running matches 1 run execute as @a[tag=!cstLockedIn] if score @s AC_cstItemDroppedCheck matches 1.. run tag @s add cstLockedIn
 
-execute if score cst AC_running matches 1 run execute as @a[team=ac_cstAttack,x=-2055,y=51,z=1606,dx=111,dy=50,dz=-250] if entity @s[tag=!cstArsonist,tag=!cstRebel,tag=!cstScout,tag=!cstSniper,tag=!cstWarrior,tag=!cstAssassin,gamemode=adventure] run function ac:games/cst/attacker-no-kit
-execute if score cst AC_running matches 1 run execute as @a[team=ac_cstDefend,x=-2010,y=70,z=1372,dx=24,dy=50,dz=24] if entity @s[tag=!cstWarrior,tag=!cstTank,tag=!cstAssassin,tag=!cstShooter,tag=!cstScout,tag=!cstSniper,gamemode=adventure] run function ac:games/cst/defender-no-kit
+execute if score cst AC_running matches 1 run execute as @a[team=ac_cstAttack,x=-2055,y=51,z=1606,dx=111,dy=50,dz=-250] if entity @s[tag=!cstArsonist,tag=!cstRebel,tag=!cstScout,tag=!cstSniper,tag=!cstWarrior,tag=!cstAssassin,tag=!cstHogRider,gamemode=adventure] run function ac:games/cst/attacker-no-kit
+execute if score cst AC_running matches 1 run execute as @a[team=ac_cstDefend,x=-2010,y=70,z=1372,dx=24,dy=50,dz=24] if entity @s[tag=!cstWarrior,tag=!cstTank,tag=!cstAssassin,tag=!cstShooter,tag=!cstScout,tag=!cstSniper,tag=!cstHogRider,gamemode=adventure] run function ac:games/cst/defender-no-kit
 
-execute if score cst AC_running matches 1 run execute as @a[team=ac_cstAttack,x=-2055,y=51,z=1606,dx=111,dy=50,dz=-250] unless entity @s[tag=!cstArsonist,tag=!cstRebel,tag=!cstScout,tag=!cstSniper,tag=!cstWarrior,tag=!cstAssassin] run tag @s add cstLockedIn
-execute if score cst AC_running matches 1 run execute as @a[team=ac_cstDefend,x=-2010,y=70,z=1372,dx=24,dy=50,dz=24] unless entity @s[tag=!cstWarrior,tag=!cstTank,tag=!cstAssassin,tag=!cstShooter,tag=!cstScout,tag=!cstSniper] run tag @s add cstLockedIn
+execute if score cst AC_running matches 1 run execute as @a[team=ac_cstAttack,x=-2055,y=51,z=1606,dx=111,dy=50,dz=-250] unless entity @s[tag=!cstArsonist,tag=!cstRebel,tag=!cstScout,tag=!cstSniper,tag=!cstWarrior,tag=!cstAssassin,tag=!cstHogRider,] run tag @s add cstLockedIn
+execute if score cst AC_running matches 1 run execute as @a[team=ac_cstDefend,x=-2010,y=70,z=1372,dx=24,dy=50,dz=24] unless entity @s[tag=!cstWarrior,tag=!cstTank,tag=!cstAssassin,tag=!cstShooter,tag=!cstScout,tag=!cstSniper,tag=!cstHogRider,] run tag @s add cstLockedIn
 
 execute if score cst AC_running matches 1 run execute as @a[scores={AC_deathmessage=1..}] run function ac:games/cst/death
 execute if score cst AC_running matches 1 run execute as @a[tag=cstCooldown] run function ac:games/cst/death-cooldown
@@ -61,6 +61,10 @@ execute if score cst AC_running matches 1 if score cst AC_time matches 1..24000 
 execute if score cst AC_running matches 1 if score cst AC_time matches 1..24000 unless entity @a[team=ac_cstDefend,tag=!cstCooldown] run function ac:games/cst/end-defenders-aced {condition:2}
 execute if score cst AC_running matches 1 if score cst AC_time matches 1..24000 if score baseHealth AC_cstScores matches ..0 run function ac:games/cst/end-core-destroyed {condition:3}
 execute if score cst AC_running matches 1 if score cst AC_time matches 1 run function ac:games/cst/end-timeout {condition:4}
+
+
+# funny
+execute if score cst AC_running matches 1 unless entity @a[tag=cstHogRider] run kill @e[type=pig,tag=hog]
 
 execute if score cst AC_running matches 1 if score cst AC_time matches 0 run gamemode spectator @a
 execute if score cst AC_running matches 1 if score cst AC_time matches 0 run clear @a
@@ -101,6 +105,3 @@ execute if score cst AC_running matches 1 if score cst AC_time matches -60 run f
 execute if score cst AC_running matches 1 if score cst AC_time matches -60 run difficulty peaceful
 execute if score cst AC_running matches 1 if score cst AC_time matches -60 run function ac:auto/invoke
 execute if score cst AC_running matches 1 if score cst AC_time matches -60 run scoreboard players set cst AC_running 0
-
-execute as @e[type=item,tag=!pickupdelayed] run data modify entity @s PickupDelay set value 32767s
-execute as @e[type=item,tag=!pickupdelayed] run tag @s add pickupdelayed

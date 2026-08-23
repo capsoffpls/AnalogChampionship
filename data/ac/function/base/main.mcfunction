@@ -101,7 +101,7 @@ scoreboard players reset @a AC_LeftGame
 execute if score no-q AC_misc matches 1 run execute as @e[type=item] run data merge entity @s {PickupDelay:0}
 
 # w lobby natural_health_regeneration bedzie wylaczone, na potrzeby strefy pvp. jako rekompensate gracze dostaja regeneration, a gracze w strefie pvp co kazdy kill heala
-execute if score NowPlaying AC_CurrentlyPlayed matches 0 run effect give @a[tag=!pvpZone,tag=!practice] instant_health 1 10 true
+execute if score NowPlaying AC_CurrentlyPlayed matches 0 run effect give @a[tag=!pvpZone,tag=!practice,distance=..256] instant_health 1 10 true
 execute if score NowPlaying AC_CurrentlyPlayed matches 0 run gamerule natural_health_regeneration false
 
 # anty niesmialy

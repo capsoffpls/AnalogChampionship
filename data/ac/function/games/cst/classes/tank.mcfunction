@@ -2,6 +2,7 @@ function ac:games/cst/remove-kit
 tag @s add cstTank
 attribute @s scale base set 1.75
 attribute @s max_health base set 40
+attribute @s knockback_resistance base set 0.4
 
 item replace entity @s armor.head with diamond_helmet[enchantments={binding_curse:1,protection:1},unbreakable={}]
 item replace entity @s armor.chest with netherite_chestplate[enchantments={binding_curse:1,projectile_protection:2},unbreakable={}]
