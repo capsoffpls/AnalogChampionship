@@ -293,5 +293,6 @@ execute if score lang AC_lang matches 1 as @e[type=interaction,tag=cstKitInterac
 execute if score lang AC_lang matches 0 as @e[type=interaction,tag=cstKitInteraction,tag=cstClass8] on target if entity @s[tag=cstLockedIn] run tellraw @s [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"Aby zmienić klasę, musisz zginąć.","color":"red","bold":false}]
 execute if score lang AC_lang matches 1 as @e[type=interaction,tag=cstKitInteraction,tag=cstClass8] on target if entity @s[tag=cstLockedIn] run tellraw @s [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"You have to die in order to change class.","color":"red","bold":false}]
 
-execute as @e[type=interaction,tag=cstKitInteraction] run data remove entity @s attack
-execute as @e[type=interaction,tag=cstKitInteraction] run data remove entity @s interaction
+execute as @e[type=interaction,tag=cstNexus] run data remove entity @s attack
+execute as @e[type=interaction,tag=cstKitInteractionrun] run data remove entity @s attack
+execute as @e[type=interaction,tag=cstKitInteractionrun] run data remove entity @s interaction
