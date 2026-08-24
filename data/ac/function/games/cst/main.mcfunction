@@ -12,21 +12,39 @@ execute if score cst AC_running matches 1 if score cst AC_time matches 24000 run
 execute if score cst AC_running matches 1 if score cst AC_time matches 24000 run scoreboard players set respawnTimerTick AC_cstScores 100
 execute if score cst AC_running matches 1 if score cst AC_time matches 0..23000 if score second AC_misc matches 19 run scoreboard players add respawnTimerTick AC_cstScores 1
 
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2011 70.5 1384.0 0 0 1 0.2 15 normal
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2011 71.5 1384.0 0 0 1 0.2 15 normal
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2011 72.5 1384.0 0 0 1 0.2 15 normal
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2011 73.5 1384.0 0 0 1 0.2 15 normal
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1986 70.5 1384.0 0 0 1 0.2 15 normal
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1986 71.5 1384.0 0 0 1 0.2 15 normal
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1986 72.5 1384.0 0 0 1 0.2 15 normal
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1986 73.5 1384.0 0 0 1 0.2 15 normal
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2011 70.5 1384.0 0 0 1 0.2 15 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2011 71.5 1384.0 0 0 1 0.2 15 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2011 72.5 1384.0 0 0 1 0.2 15 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2011 73.5 1384.0 0 0 1 0.2 15 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1986 70.5 1384.0 0 0 1 0.2 15 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1986 71.5 1384.0 0 0 1 0.2 15 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1986 72.5 1384.0 0 0 1 0.2 15 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1986 73.5 1384.0 0 0 1 0.2 15 force
 
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2000 53.5 1607 10 0 0 0.2 150 normal
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2000 54.5 1607 10 0 0 0.2 150 normal
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2000 55.5 1607 10 0 0 0.2 150 normal
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2000 56.5 1607 10 0 0 0.2 150 normal
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2000 57.5 1607 10 0 0 0.2 150 normal
-execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2000 58.5 1607 10 0 0 0.2 150 normal
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2008 52.5 1603 2 0 0 0.2 20 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2008 53.5 1603 2 0 0 0.2 20 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2008 54.5 1603 2 0 0 0.2 20 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2008 55.5 1603 2 0 0 0.2 20 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2008 56.5 1603 2 0 0 0.2 20 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2008 57.5 1603 2 0 0 0.2 20 force
+
+# /execute in minecraft:overworld run tp @s -1972.87 67.00 1605.68 -158.35 1.82
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1971 68.50 1603 2 0 0 0.2 20 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1971 69.50 1603 2 0 0 0.2 20 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1971 70.50 1603 2 0 0 0.2 20 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1971 71.50 1603 2 0 0 0.2 20 force
+
+# /execute in minecraft:overworld run tp @s -1976.24 61.94 1604.99 -180.28 0.57
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1976 63.50 1603 1 0 0 0.2 20 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -1976 62.50 1603 1 0 0 0.2 20 force
+
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2040 61.5 1603 3.4 0 0 0.2 150 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2040 62.5 1603 3.4 0 0 0.2 150 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2040 63.5 1603 3.4 0 0 0.2 150 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2040 64.5 1603 3.4 0 0 0.2 150 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2040 65.5 1603 3.4 0 0 0.2 150 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2040 66.5 1603 3.4 0 0 0.2 150 force
+execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2040 67.5 1603 3.4 0 0 0.2 150 force
 
 execute if score cst AC_running matches 1 run execute as @a[tag=InGame] at @s if biome ~ ~ ~ swamp if block ~ ~ ~ water run damage @s 4 indirect_magic
 execute if score cst AC_running matches 1 run execute as @a[tag=InGame,tag=cstArsonist] at @s if block ~ ~ ~ water run damage @s 8 indirect_magic
@@ -34,8 +52,8 @@ execute if score cst AC_running matches 1 run execute as @a[tag=cstScout] run ef
 execute if score cst AC_running matches 1 run execute as @a[tag=cstSniper] run effect give @s slowness 1 0 true
 execute if score cst AC_running matches 1 run execute as @a[tag=cstArsonist] run effect give @s fire_resistance 1 1 true
 execute if score cst AC_running matches 1 run execute as @a[tag=InGame,team=ac_cstAttack] at @s if entity @s[x=-2025,y=70,z=1372,dx=15,dy=5,dz=24] run damage @s 9 indirect_magic
-execute if score cst AC_running matches 1 run execute as @a[tag=InGame,team=ac_cstAttack] at @s if entity @s[x=-1986,y=70,z=1372,dx=15,dy=5,dz=24] run damage @s 9 indirect_magic
-execute if score cst AC_running matches 1 run execute as @a[tag=InGame,team=ac_cstDefend] at @s if entity @s[x=-2055,y=51,z=1607,dx=111,dy=31,dz=49] run damage @s 9 indirect_magic
+execute if score cst AC_running matches 1 run execute as @a[tag=InGame,team=ac_cstAttack] at @s if entity @s[x=-1970,y=70,z=1372,dx=15,dy=5,dz=24] run damage @s 9 indirect_magic
+execute if score cst AC_running matches 1 run execute as @a[tag=InGame,team=ac_cstDefend] at @s if entity @s[x=-2055,y=51,z=1603,dx=111,dy=51,dz=49] run damage @s 9 indirect_magic
 execute if score cst AC_running matches 1 run execute as @a[tag=InGame] at @s if entity @s[x=-2055,y=43,z=1345,dx=111,dy=-15,dz=310] run damage @s 100 indirect_magic
 
 execute if score cst AC_running matches 1 run execute as @a[tag=!cstLockedIn] if score @s AC_cstItemDroppedCheck matches 1.. run tag @s add cstLockedIn
