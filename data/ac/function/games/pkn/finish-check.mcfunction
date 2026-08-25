@@ -72,6 +72,7 @@ execute if score round AC_pknScores matches 7 if score round7 AC_pknScores match
 execute if score round AC_pknScores matches 7 if score round7 AC_pknScores matches 1 if score pkn AC_time matches ..0 run execute as @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=..20}] run function ac:games/pkn/eliminate
 execute if score round AC_pknScores matches 7 if score round7 AC_pknScores matches 1 if score pkn AC_time matches ..0 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[PKN] ","bold":true,"color":"dark_green"},{"text":"Tylko jeden gracz ukończył rundę 7! Gra zostaje zakończona","color":"red","bold":false}]
 execute if score round AC_pknScores matches 7 if score round7 AC_pknScores matches 1 if score pkn AC_time matches ..0 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[PKN] ","bold":true,"color":"dark_green"},{"text":"Only one player has completed round 7! The game will end now","color":"red","bold":false}]
+execute if score round AC_pknScores matches 7 if score round7 AC_pknScores matches 1 if score pkn AC_time matches ..0 as @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=21}] run scoreboard players set @s AC_rankedPlaceFinished 1
 execute if score round AC_pknScores matches 7 if score round7 AC_pknScores matches 1 if score pkn AC_time matches ..0 run function ac:games/pkn/end
 execute if score round AC_pknScores matches 7 if score round7 AC_pknScores matches 1 if score pkn AC_time matches ..0 run scoreboard players set pkn2 AC_functions 0
 

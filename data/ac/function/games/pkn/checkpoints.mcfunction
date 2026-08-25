@@ -257,5 +257,5 @@ execute as @a[x=-2,y=57,z=2691,dy=15,dx=5,dz=3,tag=InGame,gamemode=adventure,sco
 scoreboard players set @a[x=-2,y=57,z=2691,dy=15,dx=5,dz=3,tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=25}] AC_rankedPlaceFinished 1
 scoreboard players add @a[x=-2,y=57,z=2691,dy=15,dx=5,dz=3,tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=25}] AC_pknCheckpoint 1
 
-execute if score round AC_pknScores matches 8 if entity @a[tag=InGame,scores={AC_pknCheckpoint=26}] as @a[scores={AC_pknCheckpoint=..25}] run function ac:games/pkn/eliminate
+execute if score round AC_pknScores matches 8 if entity @a[tag=InGame,scores={AC_pknCheckpoint=26}] as @a[tag=!pknEliminated,tag=InGame,scores={AC_pknCheckpoint=..25}] run function ac:games/pkn/eliminate
 execute if score round AC_pknScores matches 8 if entity @a[tag=InGame,scores={AC_pknCheckpoint=26}] run function ac:games/pkn/end

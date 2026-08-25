@@ -1,6 +1,5 @@
 summon marker ~ ~ ~ {Tags:["border-center"]}
 execute if score ctf AC_chosenMap matches 1 run spreadplayers 2000 2000 0 90 false @e[type=minecraft:area_effect_cloud,tag=border-center]
-worldborder set 300 0t
 
 scoreboard players set north1 AC_ctfFlagStatus 0
 scoreboard players set north2 AC_ctfFlagStatus 0
