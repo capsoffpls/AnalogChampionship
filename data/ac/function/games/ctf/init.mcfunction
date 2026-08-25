@@ -18,6 +18,15 @@ scoreboard players set north AC_ctfTeamStatus 0
 scoreboard players set south AC_ctfTeamStatus 0
 scoreboard players set ctfNorthTotal AC_playercount 1
 scoreboard players set ctfSouthTotal AC_playercount 1
+scoreboard players set north1 AC_ctfFlagStatus 1
+scoreboard players set north2 AC_ctfFlagStatus 1
+scoreboard players set north3 AC_ctfFlagStatus 1
+scoreboard players set north4 AC_ctfFlagStatus 1
+scoreboard players set south1 AC_ctfFlagStatus 1
+scoreboard players set south2 AC_ctfFlagStatus 1
+scoreboard players set south3 AC_ctfFlagStatus 1
+scoreboard players set south4 AC_ctfFlagStatus 1
+
 kill @e[type=item,tag=ctfGenerated]
 
 function ac:base/protip

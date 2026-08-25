@@ -21,21 +21,12 @@ execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run
 execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run scoreboard players set ctf2 AC_functions 1
 execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run scoreboard players set ctf3 AC_functions 1
 
-execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run scoreboard players set north1 AC_ctfFlagStatus 1
-execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run scoreboard players set north2 AC_ctfFlagStatus 1
-execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run scoreboard players set north3 AC_ctfFlagStatus 1
-execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run scoreboard players set north4 AC_ctfFlagStatus 1
-execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run scoreboard players set south1 AC_ctfFlagStatus 1
-execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run scoreboard players set south2 AC_ctfFlagStatus 1
-execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run scoreboard players set south3 AC_ctfFlagStatus 1
-execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run scoreboard players set south4 AC_ctfFlagStatus 1
-
 execute if score ctf AC_running matches 1 run execute store result score ctfNorth AC_playercount run execute if entity @a[tag=InGame,gamemode=adventure,tag=ctfNorth]
 execute if score ctf AC_running matches 1 run execute store result score ctfSouth AC_playercount run execute if entity @a[tag=InGame,gamemode=adventure,tag=ctfSouth]
 execute if score ctf AC_running matches 1 run execute unless score ctfNorthTotal AC_playercount matches 0 store result score ctfNorthTotal AC_playercount run execute if entity @a[tag=InGame,team=ac_ctfNorth]
 execute if score ctf AC_running matches 1 run execute unless score ctfSouthTotal AC_playercount matches 0 store result score ctfSouthTotal AC_playercount run execute if entity @a[tag=InGame,team=ac_ctfSouth]
 
-execute if score ctf AC_running matches 1 if score deathmatch AC_ctfConqDetect matches 0 run execute store success score deathmatch AC_ctfConqDetect unless score ctf AC_time matches ..600 if score north1 AC_ctfFlagStatus matches 0 if score north2 AC_ctfFlagStatus matches 0 if score north3 AC_ctfFlagStatus matches 0 if score north4 AC_ctfFlagStatus matches 0 if score south1 AC_ctfFlagStatus matches 0 if score south2 AC_ctfFlagStatus matches 0 if score south3 AC_ctfFlagStatus matches 0 if score south4 AC_ctfFlagStatus matches 0 run scoreboard players set ctf AC_time 601
+execute if score ctf AC_running matches 1 if score deathmatch AC_ctfConqDetect matches 0 run execute store success score deathmatch AC_ctfConqDetect if score ctf AC_time matches 601..24000 if score north1 AC_ctfFlagStatus matches 0 if score north2 AC_ctfFlagStatus matches 0 if score north3 AC_ctfFlagStatus matches 0 if score north4 AC_ctfFlagStatus matches 0 if score south1 AC_ctfFlagStatus matches 0 if score south2 AC_ctfFlagStatus matches 0 if score south3 AC_ctfFlagStatus matches 0 if score south4 AC_ctfFlagStatus matches 0 run scoreboard players set ctf AC_time 601
 #execute if score ctf AC_running matches 1 if score ctf AC_chosenMap matches 2 if score deathmatch AC_ctfConqDetect matches 0 run execute store success score deathmatch AC_ctfConqDetect unless score ctf AC_time matches ..600 unless block 990 56 -1065 magenta_wall_banner unless block 1010 56 -1065 red_wall_banner unless block 1065 56 -1010 yellow_wall_banner unless block 1065 56 -990 orange_wall_banner unless block 1010 56 -935 lime_wall_banner unless block 990 56 -935 green_wall_banner unless block 935 56 -990 blue_wall_banner unless block 935 56 -1010 light_blue_wall_banner run scoreboard players set ctf AC_time 601
 execute if score ctf AC_running matches 1 if score deathmatch AC_ctfConqDetect matches 1 if score ctf AC_time matches 600 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Brak flag! Za 30 sekund rozpocznie się Nagła Śmierć.","color":"red","bold":false}]
 execute if score ctf AC_running matches 1 if score deathmatch AC_ctfConqDetect matches 1 if score ctf AC_time matches 600 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"No flags left! Deathmatch begins in 30 seconds.","color":"red","bold":false}]
@@ -44,7 +35,7 @@ execute if score ctf AC_running matches 1 if score ctf AC_time matches 0 run fun
 execute if score ctf AC_running matches 1 if score ctf AC_time matches -6000..-2400 run function ac:games/ctf/deathmatch-border
 execute if score ctf AC_running matches 1 if score ctf AC_time matches -6000 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Czas przeznaczony na Nagłą Śmierć zakończył się. Wszystkie drużyny przegrały!","color":"red","bold":false}]
 execute if score ctf AC_running matches 1 if score ctf AC_time matches -6000 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Deathmatch time has ended. All teams have lost the game!","color":"red","bold":false}]
-execute if score ctf AC_running matches 1 if score ctf AC_time matches -6000 run function ac:games/ctf/end
+execute if score ctf AC_running matches 1 if score ctf AC_time matches -6000 run function ac:games/ctf/end {team:"none"}
 execute if score ctf AC_running matches 1 if score ctf AC_time matches -6061 run tp @a 0 50 0
 execute if score ctf AC_running matches 1 if score ctf AC_time matches -6061 run gamemode adventure @a
 execute if score ctf AC_running matches 1 if score ctf AC_time matches -6061 run spawnpoint @a 0 50 0

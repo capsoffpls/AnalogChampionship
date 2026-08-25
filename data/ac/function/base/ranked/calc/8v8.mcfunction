@@ -15,6 +15,9 @@ execute if score NowPlaying AC_CurrentlyPlayed matches 14 if entity @s[tag=InGam
 
 execute if score NowPlaying AC_CurrentlyPlayed matches 14 if entity @s[tag=InGame,team=ac_ctfSouth] if data storage ac:ranked {ctf_winner:"south"} run scoreboard players set @s AC_pointsRankedHeld 10
 execute if score NowPlaying AC_CurrentlyPlayed matches 14 if entity @s[tag=InGame,team=ac_ctfNorth] if data storage ac:ranked {ctf_winner:"south"} run scoreboard players set @s AC_pointsRankedHeld -10
+
+execute if score NowPlaying AC_CurrentlyPlayed matches 14 if entity @s[tag=InGame,team=ac_ctfSouth] if data storage ac:ranked {ctf_winner:"none"} run scoreboard players set @s AC_pointsRankedHeld -15
+execute if score NowPlaying AC_CurrentlyPlayed matches 14 if entity @s[tag=InGame,team=ac_ctfNorth] if data storage ac:ranked {ctf_winner:"none"} run scoreboard players set @s AC_pointsRankedHeld -15
 execute if score NowPlaying AC_CurrentlyPlayed matches 14 if score @s AC_rankedTimeFinished matches 9001..12000 run scoreboard players set @s AC_pointsRankedTimeMultiplier 11
 execute if score NowPlaying AC_CurrentlyPlayed matches 14 if score @s AC_rankedTimeFinished matches 12001..15000 run scoreboard players set @s AC_pointsRankedTimeMultiplier 12
 execute if score NowPlaying AC_CurrentlyPlayed matches 14 if score @s AC_rankedTimeFinished matches 15001..18000 run scoreboard players set @s AC_pointsRankedTimeMultiplier 13

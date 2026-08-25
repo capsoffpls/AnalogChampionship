@@ -1,6 +1,8 @@
 scoreboard players operation @a[tag=InGame] AC_rankedTimeFinished = ctf AC_time
 $data modify storage ac:ranked ctf_winner set value "$(team)"
 
+kill @e[type=marker,tag=border-center]
+gamemode spectator @a[tag=InGame]
 function ac:base/endsound
 scoreboard players set deathmatch AC_ctfConqDetect 0
 tag @a remove ctfNorth

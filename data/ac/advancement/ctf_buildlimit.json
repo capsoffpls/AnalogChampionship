@@ -5,7 +5,7 @@
       "conditions": {
         "location": 
           {
-            "type": "minecraft:location_check",
+            "entity_type": "minecraft:location_check",
             "predicate": {
               "position": {
                 "y": {
