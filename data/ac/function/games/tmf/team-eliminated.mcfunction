@@ -1,0 +1,2 @@
+$scoreboard players operation team$(team) AC_tmfRankedTeamPlace = current AC_tmfRankedTeamPlace
+$tellraw @a [{"text":"[TMF] ","bold":true,"color":"dark_green"},{"text":"Drużyna $(team) została wyeliminowana!","color":"red","bold":false}]

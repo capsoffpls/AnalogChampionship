@@ -24,6 +24,22 @@ scoreboard players set @a[tag=InGame,tag=!spawn17] AC_tmfLives 3
 bossbar set minecraft:ac_tmf visible true
 bossbar set minecraft:ac_tmf players @a
 
+scoreboard players reset team1 AC_tmfRankedTeamPlace
+scoreboard players reset team2 AC_tmfRankedTeamPlace
+scoreboard players reset team3 AC_tmfRankedTeamPlace
+scoreboard players reset team4 AC_tmfRankedTeamPlace
+scoreboard players reset team5 AC_tmfRankedTeamPlace
+scoreboard players reset team6 AC_tmfRankedTeamPlace
+scoreboard players reset team7 AC_tmfRankedTeamPlace
+scoreboard players reset team8 AC_tmfRankedTeamPlace
+execute if score IGOverall AC_playercount matches 4 run scoreboard players set current AC_tmfRankedTeamPlace 2
+execute if score IGOverall AC_playercount matches 5..6 run scoreboard players set current AC_tmfRankedTeamPlace 3
+execute if score IGOverall AC_playercount matches 7..8 run scoreboard players set current AC_tmfRankedTeamPlace 4
+execute if score IGOverall AC_playercount matches 9..10 run scoreboard players set current AC_tmfRankedTeamPlace 5
+execute if score IGOverall AC_playercount matches 11..12 run scoreboard players set current AC_tmfRankedTeamPlace 6
+execute if score IGOverall AC_playercount matches 13..14 run scoreboard players set current AC_tmfRankedTeamPlace 7
+execute if score IGOverall AC_playercount matches 15..16 run scoreboard players set current AC_tmfRankedTeamPlace 8
+
 function ac:games/tmf/rng/map
 execute if score tmf AC_chosenMap matches 0 run tp @a 1500 50 1500
 execute if score tmf AC_chosenMap matches 0 run spawnpoint @a 1500 52 1500

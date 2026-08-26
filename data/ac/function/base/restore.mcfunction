@@ -762,6 +762,7 @@ scoreboard objectives add AC_tmfRespawnTimer dummy
 scoreboard objectives add AC_tmfCheck dummy
 scoreboard objectives add AC_tmfAlive dummy
 scoreboard objectives add AC_tmfLives dummy
+scoreboard objectives add AC_tmfRankedTeamPlace dummy
 team add ac_tmf1 "TMF - Drużyna 1"
 team modify ac_tmf1 color aqua
 team modify ac_tmf1 friendlyFire false
