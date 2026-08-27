@@ -47,7 +47,7 @@ execute if score cst AC_running matches 1 run particle minecraft:electric_spark 
 execute if score cst AC_running matches 1 run particle minecraft:electric_spark -2040 67.5 1603 3.4 0 0 0.2 150 force
 
 execute if score cst AC_running matches 1 run execute as @a[tag=InGame] at @s if biome ~ ~ ~ swamp if block ~ ~ ~ water run damage @s 4 indirect_magic
-execute if score cst AC_running matches 1 run execute as @a[tag=InGame,tag=cstArsonist] at @s if block ~ ~ ~ water run damage @s 8 indirect_magic
+execute if score cst AC_running matches 1 run execute as @a[tag=InGame,tag=cstArsonist] at @s if block ~ ~ ~ water run damage @s 2 indirect_magic
 execute if score cst AC_running matches 1 run execute as @a[tag=cstScout] run effect give @s speed 1 0 true
 execute if score cst AC_running matches 1 run execute as @a[tag=cstSniper] run effect give @s slowness 1 0 true
 execute if score cst AC_running matches 1 run execute as @a[tag=cstArsonist] run effect give @s fire_resistance 1 1 true
@@ -80,9 +80,8 @@ execute if score cst AC_running matches 1 if score cst AC_time matches 1..24000 
 execute if score cst AC_running matches 1 if score cst AC_time matches 1..24000 if score baseHealth AC_cstScores matches ..0 run function ac:games/cst/end-core-destroyed {condition:3}
 execute if score cst AC_running matches 1 if score cst AC_time matches 1 run function ac:games/cst/end-timeout {condition:4}
 
-
 # funny
-execute if score cst AC_running matches 1 unless entity @a[tag=cstHogRider] run kill @e[type=pig,tag=hog]
+execute if score cst AC_running matches 1 as @e[type=pig,tag=hog] at @s unless entity @a[tag=cstHogRider,distance=..4] run kill @s
 
 execute if score cst AC_running matches 1 if score cst AC_time matches 0 run gamemode spectator @a
 execute if score cst AC_running matches 1 if score cst AC_time matches 0 run clear @a
