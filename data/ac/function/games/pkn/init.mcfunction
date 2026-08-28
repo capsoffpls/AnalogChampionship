@@ -68,7 +68,7 @@ function ac:games/pkn/generate
 tellraw @a[tag=debug] [{text:"[DEBUG] ",color:red,bold:true},{text:"gen_stopped_at: ",color:red,bold:true},{score:{name:"gen",objective:"AC_pknScores"},color:red,bold:false}]
 
 scoreboard players reset @a AC_rankedPlaceFinished
-scoreboard players operation current AC_rankedPlaceFinished = IGOverall AC_playercount
+scoreboard players set current AC_rankedPlaceFinished 1
 
 tellraw @a[tag=debug] [{text:"[DEBUG] ",color:red,bold:true},{text:"ranked_current: ",color:red,bold:true},{score:{name:"current",objective:"AC_rankedPlaceFinished"},color:red,bold:false}]
 

@@ -2,7 +2,7 @@ execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[PKN] ","bold":
 execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[PKN] ","bold":true,"color":"dark_green"},{"text":"You've been eliminated!","color":"red","bold":false}]
 
 scoreboard players operation @s AC_rankedPlaceFinished = current AC_rankedPlaceFinished
-scoreboard players remove current AC_rankedPlaceFinished 1
+scoreboard players add current AC_rankedPlaceFinished 1
 
 gamemode spectator @s
 execute if score @s AC_overtimePersonal matches 1.. run function ac:base/overtime-personal-end
