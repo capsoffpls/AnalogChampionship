@@ -1,0 +1,27 @@
+{
+ "name": "ac:mzg/rooms",
+ "fallback": "minecraft:empty",
+ "elements": [
+    {
+        "element": {
+            "element_type": "list_pool_element",
+            "elements": [
+                {
+                    "element_type": "single_pool_element",
+                    "location": "ac:mzg/rooms/end",
+                    "projection": "rigid",
+                    "processors": "empty"
+                },
+                {
+                    "element_type": "single_pool_element",
+                    "location": "ac:mzg/rooms/easy1",
+                    "projection": "rigid",
+                    "processors": "empty"
+                }
+            ],
+            "projection": "rigid"
+        },
+        "weight": 1
+    }
+ ]
+}
