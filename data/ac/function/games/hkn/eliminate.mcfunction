@@ -13,4 +13,4 @@ give @s lightning_rod[item_name={"text":"Pałka teleskopowa"},enchantments={knoc
 execute on vehicle run data modify entity @s Variant set value 0
 execute on vehicle run tag @s remove racing
 execute on vehicle run tag @s add police
-execute on vehicle at @r[tag=!hknEliminated] run tp @s ~ ~15 ~
+execute on vehicle at @r[tag=!hknEliminated,gamemode=adventure] run tp @s ~ ~15 ~
