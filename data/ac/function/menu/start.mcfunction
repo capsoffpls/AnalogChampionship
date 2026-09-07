@@ -74,7 +74,8 @@ tellraw @s [{"text":"Event: ","color":"gold","bold":false},\
 tellraw @s [{"text":"Inne: ","color":"gray","bold":false},\
 {"text":"[Język gry] ","color":"white","bold":false,"click_event":{"action":"run_command","command":"/function ac:base/lang-switch"},"hover_event":{"action":"show_text","value":"Zmienia język datapacka"}},\
 {"text":"[Przełączniki] ","color":"white","bold":false,"click_event":{"action":"run_command","command":"/function ac:menu/switches {\"return\":\"function ac:menu/start\"}"},"hover_event":{"action":"show_text","value":{"text":"Pokaż listę przełączników","color":"white"}}},\
-{"text":"[Wymuś mapę] ","color":"white","bold":false,"click_event":{"action":"run_command","command":"/function ac:menu/force-map-menu {\"return\":\"function ac:menu/start\"}"},"hover_event":{"action":"show_text","value":{"text":"Uruchamia listę map do wybranego trybu.\nUstawienie tam czegokolwiek resetuje się po zagraniu gry!","color":"white"}}}]
+{"text":"[Wymuś mapę] ","color":"white","bold":false,"click_event":{"action":"run_command","command":"/function ac:menu/force-map-menu {\"return\":\"function ac:menu/start\"}"},"hover_event":{"action":"show_text","value":{"text":"Uruchamia listę map do wybranego trybu.\nUstawienie tam czegokolwiek resetuje się po zagraniu gry!","color":"white"}}},\
+{"text":"[Wymuś tag] ","color":"white","bold":false,"click_event":{"action":"run_command","command":"/dialog show @s ac:set-fixed-spawntag"},"hover_event":{"action":"show_text","value":{"text":"Pozwala ustalić konkretnego spawntaga wyznaczonemu graczowi","color":"white"}}}]
 
 tellraw @s [{"text":"\nGra: ","color":"gray","bold":false},\
 {"text":"[START] ","color":"green","bold":false,"click_event":{"action":"run_command","command":"/function ac:menu/game-start"}},\

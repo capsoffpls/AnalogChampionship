@@ -45,6 +45,7 @@ scoreboard objectives add AC_QueueSort dummy
 scoreboard objectives add AC_QueuedCount dummy
 scoreboard objectives add AC_chosenMap dummy
 scoreboard objectives add AC_placeReward dummy
+scoreboard objectives add AC_spawnIndex dummy
 #misc
 scoreboard objectives add AC_combatlog dummy
 scoreboard objectives add AC_protip dummy
