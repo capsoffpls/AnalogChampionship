@@ -1,0 +1,1 @@
+give @s bat_spawn_egg[entity_data={id:"minecraft:marker",Tags:["slotsCore","slotsBuild"]},custom_name={"italic":false,"text":"Slot Machine"}] 1

@@ -73,6 +73,8 @@ scoreboard objectives add AC_lobbyBackToCheckpoint minecraft.used:minecraft.carr
 scoreboard objectives add AC_lobbyTeleporters minecraft.used:minecraft.carrot_on_a_stick
 ## uzywane do heala przy zabojstwie na strefie pvp
 scoreboard objectives add AC_lobbyPvpKill playerKillCount
+## rozne dane slotow (timer, id itemow)
+scoreboard objectives add AC_lobbySlots dummy
 
 worldborder center 0 0
 worldborder set 6000 0
