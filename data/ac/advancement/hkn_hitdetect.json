@@ -6,12 +6,12 @@
         "damage": {
           "type": {
             "source_entity": {
-              "type": "minecraft:player"
+              "entity_type": "minecraft:player"
             }
           }
         },
         "entity": {
-          "type": "minecraft:horse",
+          "entity_type": "minecraft:horse",
           "nbt": {
             "Tags": [
               "racing"
