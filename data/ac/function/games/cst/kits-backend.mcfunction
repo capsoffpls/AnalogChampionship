@@ -95,32 +95,32 @@ execute if score lang AC_lang matches 0 as @e[type=interaction,tag=cstKitInterac
 {"text":"Zdrowie: ",bold:true,color:dark_green},{text:"20\n",bold:false,color:red},\
 {"text":"Skala: ",bold:true,color:dark_green},{text:"1\n",bold:false,color:red},\
 {"text":"Efekty: ",bold:true,color:dark_green},{text:"Slowness I\n",bold:false,color:red},\
-{"text":"Pasywne: ",bold:true,color:dark_green},{text:"Ataki Snajpera posiadają 30% przebicia zbroi\n",bold:false,color:red},\
+{"text":"Pasywne: ",bold:true,color:dark_green},{text:"Za każde zabójstwo Snajper otrzymuje 8 dodatkowych strzał\n",bold:false,color:red},\
 {"text":"\nZbroja: ",bold:true,color:dark_green},\
-{text:"\n- Hełm: Kolczuga",bold:false,color:red,hover_event:{action:"show_item",id:iron_helmet,components:{enchantments:{binding_curse:1,projectile_protection:1},unbreakable:{}}}},\
+{text:"\n- Hełm: Kolczuga",bold:false,color:red,hover_event:{action:"show_item",id:chainmail_helmet,components:{enchantments:{binding_curse:1,projectile_protection:1},unbreakable:{}}}},\
 {text:"\n- Klata: Diament",bold:false,color:red,hover_event:{action:"show_item",id:diamond_chestplate,components:{enchantments:{binding_curse:1,projectile_protection:2},unbreakable:{}}}},\
-{text:"\n- Spodnie: Diament",bold:false,color:red,hover_event:{action:"show_item",id:diamond_leggings,components:{enchantments:{binding_curse:1,projectile_protection:1},unbreakable:{}}}},\
-{text:"\n- Buty: Diament",bold:false,color:red,hover_event:{action:"show_item",id:diamond_boots,components:{enchantments:{binding_curse:1,protection:1},unbreakable:{}}}},\
+{text:"\n- Spodnie: Kolczuga",bold:false,color:red,hover_event:{action:"show_item",id:chainmail_leggings,components:{enchantments:{binding_curse:1,projectile_protection:1},unbreakable:{}}}},\
+{text:"\n- Buty: Kolczuga",bold:false,color:red,hover_event:{action:"show_item",id:chainmail_boots,components:{enchantments:{binding_curse:1,protection:1},unbreakable:{}}}},\
 {"text":"\nWyposażenie: ",bold:true,color:dark_green},\
-{text:"\n- Kamienny miecz",bold:false,color:red,hover_event:{action:"show_item",id:stone_sword,components:{unbreakable:{},enchantments:{sharpness:2,breach:2}}}},\
-{text:"\n- Kusza",bold:false,color:red,hover_event:{action:"show_item",id:crossbow,components:{enchantments:{power:3,breach:2}}}},\
-{text:"\n- Strzała x32",bold:false,color:red,hover_event:{action:"show_item",id:arrow,count:32}},\
+{text:"\n- Drewniany miecz",bold:false,color:red,hover_event:{action:"show_item",id:stone_sword,components:{unbreakable:{},enchantments:{knockback:2,breach:1}}}},\
+{text:"\n- Kusza",bold:false,color:red,hover_event:{action:"show_item",id:crossbow,components:{enchantments:{power:4,breach:1}}}},\
+{text:"\n- Spektralna strzała x32",bold:false,color:red,hover_event:{action:"show_item",id:arrow,count:64}},\
 {text:"\n- Pieczona wołowina x16",bold:false,color:red,hover_event:{action:"show_item",id:cooked_beef,count:16}},\
 {text:"\n- Złote jabłko x5",bold:false,color:red,hover_event:{action:"show_item",id:golden_apple,count:5}}]
 execute if score lang AC_lang matches 1 as @e[type=interaction,tag=cstKitInteraction,tag=cstClass4] on attacker run tellraw @s [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"Common class: Sniper.\n","color":"green","bold":false},\
 {"text":"Health: ",bold:true,color:dark_green},{text:"20\n",bold:false,color:red},\
 {"text":"Scale: ",bold:true,color:dark_green},{text:"1\n",bold:false,color:red},\
 {"text":"Effect: ",bold:true,color:dark_green},{text:"Slowness I\n",bold:false,color:red},\
-{"text":"Passive: ",bold:true,color:dark_green},{text:"Sniper's attacks have 30% armor penetration\n",bold:false,color:red},\
+{"text":"Passive: ",bold:true,color:dark_green},{text:"Sniper's kills give him additional 8 arrows\n",bold:false,color:red},\
 {"text":"\nArmor: ",bold:true,color:dark_green},\
-{text:"\n- Helmet: Chainmail",bold:false,color:red,hover_event:{action:"show_item",id:iron_helmet,components:{enchantments:{binding_curse:1,projectile_protection:1},unbreakable:{}}}},\
+{text:"\n- Helmet: Chainmail",bold:false,color:red,hover_event:{action:"show_item",id:chainmail_helmet,components:{enchantments:{binding_curse:1,projectile_protection:1},unbreakable:{}}}},\
 {text:"\n- Chestplate: Diamond",bold:false,color:red,hover_event:{action:"show_item",id:diamond_chestplate,components:{enchantments:{binding_curse:1,projectile_protection:2},unbreakable:{}}}},\
-{text:"\n- Leggings: Diamond",bold:false,color:red,hover_event:{action:"show_item",id:diamond_leggings,components:{enchantments:{binding_curse:1,projectile_protection:1},unbreakable:{}}}},\
-{text:"\n- Boots: Diamond",bold:false,color:red,hover_event:{action:"show_item",id:diamond_boots,components:{enchantments:{binding_curse:1,protection:1},unbreakable:{}}}},\
+{text:"\n- Leggings: Chainmail",bold:false,color:red,hover_event:{action:"show_item",id:chainmail_leggings,components:{enchantments:{binding_curse:1,projectile_protection:1},unbreakable:{}}}},\
+{text:"\n- Boots: Chainmail",bold:false,color:red,hover_event:{action:"show_item",id:chainmail_boots,components:{enchantments:{binding_curse:1,protection:1},unbreakable:{}}}},\
 {"text":"\nEquipment: ",bold:true,color:dark_green},\
-{text:"\n- Stone Sword",bold:false,color:red,hover_event:{action:"show_item",id:stone_sword,components:{unbreakable:{},enchantments:{sharpness:2,breach:2}}}},\
-{text:"\n- Crossbow",bold:false,color:red,hover_event:{action:"show_item",id:crossbow,components:{enchantments:{power:3,breach:2}}}},\
-{text:"\n- Arrow x32",bold:false,color:red,hover_event:{action:"show_item",id:arrow,count:32}},\
+{text:"\n- Wooden Sword",bold:false,color:red,hover_event:{action:"show_item",id:stone_sword,components:{unbreakable:{},enchantments:{knockback:2,breach:1}}}},\
+{text:"\n- Crossbow",bold:false,color:red,hover_event:{action:"show_item",id:crossbow,components:{enchantments:{power:4,breach:1}}}},\
+{text:"\n- Spectral Arrow x32",bold:false,color:red,hover_event:{action:"show_item",id:arrow,count:64}},\
 {text:"\n- Cooked Beef x16",bold:false,color:red,hover_event:{action:"show_item",id:cooked_beef,count:16}},\
 {text:"\n- Golden Apple x5",bold:false,color:red,hover_event:{action:"show_item",id:golden_apple,count:5}}]
 

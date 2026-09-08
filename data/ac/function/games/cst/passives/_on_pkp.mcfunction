@@ -1,6 +1,7 @@
 advancement revoke @s only ac:cst/playerkilledplayer
 
 execute if entity @s[tag=cstAssassin] run function ac:games/cst/passives/assassin
+execute if entity @s[tag=cstSniper] run function ac:games/cst/passives/sniper
 
 execute if entity @s[tag=cstShooter] run scoreboard players add @s AC_cstPowerUp 1
 execute if entity @s[tag=cstRebel] run scoreboard players add @s AC_cstPowerUp 1

@@ -17,12 +17,12 @@ tag @a remove spawn16
 tag @a remove spawn17
 
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 1
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 1
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame] AC_pointsRanked
@@ -33,12 +33,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=1}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 2
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 2
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 2
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 2
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -49,12 +49,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=2}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 3
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 3
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 3
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 3
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -65,12 +65,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=3}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 4
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 4
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 4
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 4
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -81,12 +81,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=4}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 5
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 5
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 5
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 5
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -97,12 +97,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=5}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 6
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 6
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 6
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 6
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -113,12 +113,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=6}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 7
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 7
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 7
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 7
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -129,12 +129,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=7}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 8
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 8
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 8
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 8
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -145,12 +145,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=8}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 9
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 9
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 9
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 9
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -161,12 +161,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=9}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 10
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 10
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 10
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 10
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -177,12 +177,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=10}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 11
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 11
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 11
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 11
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -193,12 +193,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=11}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 12
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 12
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 12
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 12
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -209,12 +209,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=12}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 13
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 13
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 13
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 13
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -225,12 +225,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=13}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 14
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 14
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 14
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 14
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -241,12 +241,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=14}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 15
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 15
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 15
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 15
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
@@ -257,12 +257,12 @@ execute if score spawntag AC_misc matches 2 run execute if score #draw AC_points
 tag @a[scores={AC_spawnIndex=15}] add spawned
 tag @a remove spawntied
 scoreboard players reset #draw AC_points
-execute if score spawntag AC_misc matches 1 run scoreboard players set top AC_points -2147483647
-execute if score spawntag AC_misc matches 1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
-execute if score spawntag AC_misc matches 1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 16
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
-execute if score spawntag AC_misc matches 1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 16
+execute if score spawntag AC_misc matches 0..1 run scoreboard players set top AC_points -2147483647
+execute if score spawntag AC_misc matches 0..1 run scoreboard players operation top AC_points > @a[tag=InGame,tag=!spawned] AC_points
+execute if score spawntag AC_misc matches 0..1 run execute as @a[tag=!spawned] if score @s AC_points = top AC_points run scoreboard players add #draw AC_points 1
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 1 as @a[tag=InGame,tag=!spawned] if score @s AC_points = top AC_points run scoreboard players set @s AC_spawnIndex 16
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. as @a[tag=InGame] if score @s AC_points = top AC_points run tag @s add spawntied
+execute if score spawntag AC_misc matches 0..1 run execute if score #draw AC_points matches 2.. run scoreboard players set @r[tag=spawntied] AC_spawnIndex 16
 
 execute if score spawntag AC_misc matches 2 run scoreboard players set top AC_pointsRanked -2147483647
 execute if score spawntag AC_misc matches 2 run scoreboard players operation top AC_pointsRanked > @a[tag=InGame,tag=!spawned] AC_pointsRanked
