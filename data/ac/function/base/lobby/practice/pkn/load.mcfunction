@@ -57,6 +57,9 @@ execute if score pattern AC_practicePKNOptions matches 51 run function ac:base/l
 execute if score pattern AC_practicePKNOptions matches 52 run function ac:base/lobby/practice/pkn/patterns/easy/130
 execute if score pattern AC_practicePKNOptions matches 53 run function ac:base/lobby/practice/pkn/patterns/easy/131
 execute if score pattern AC_practicePKNOptions matches 54 run function ac:base/lobby/practice/pkn/patterns/easy/135
+execute if score pattern AC_practicePKNOptions matches 55 run function ac:base/lobby/practice/pkn/patterns/easy/136
+execute if score pattern AC_practicePKNOptions matches 56 run function ac:base/lobby/practice/pkn/patterns/easy/137
+execute if score pattern AC_practicePKNOptions matches 57 run function ac:base/lobby/practice/pkn/patterns/easy/139
 
 execute if score pattern AC_practicePKNOptions matches 1001 run function ac:base/lobby/practice/pkn/patterns/medium/3
 execute if score pattern AC_practicePKNOptions matches 1002 run function ac:base/lobby/practice/pkn/patterns/medium/10
@@ -108,6 +111,12 @@ execute if score pattern AC_practicePKNOptions matches 1047 run function ac:base
 execute if score pattern AC_practicePKNOptions matches 1048 run function ac:base/lobby/practice/pkn/patterns/medium/121
 execute if score pattern AC_practicePKNOptions matches 1049 run function ac:base/lobby/practice/pkn/patterns/medium/125-128
 execute if score pattern AC_practicePKNOptions matches 1050 run function ac:base/lobby/practice/pkn/patterns/medium/133
+execute if score pattern AC_practicePKNOptions matches 1051 run function ac:base/lobby/practice/pkn/patterns/medium/138
+execute if score pattern AC_practicePKNOptions matches 1052 run function ac:base/lobby/practice/pkn/patterns/medium/140-143
+execute if score pattern AC_practicePKNOptions matches 1053 run function ac:base/lobby/practice/pkn/patterns/medium/145
+execute if score pattern AC_practicePKNOptions matches 1054 run function ac:base/lobby/practice/pkn/patterns/medium/147
+execute if score pattern AC_practicePKNOptions matches 1055 run function ac:base/lobby/practice/pkn/patterns/medium/148
+execute if score pattern AC_practicePKNOptions matches 1056 run function ac:base/lobby/practice/pkn/patterns/medium/149
 
 execute if score pattern AC_practicePKNOptions matches 2001 run function ac:base/lobby/practice/pkn/patterns/hard/49-51
 execute if score pattern AC_practicePKNOptions matches 2002 run function ac:base/lobby/practice/pkn/patterns/hard/55
@@ -125,6 +134,9 @@ execute if score pattern AC_practicePKNOptions matches 2013 run function ac:base
 execute if score pattern AC_practicePKNOptions matches 2014 run function ac:base/lobby/practice/pkn/patterns/hard/124
 execute if score pattern AC_practicePKNOptions matches 2015 run function ac:base/lobby/practice/pkn/patterns/hard/132
 execute if score pattern AC_practicePKNOptions matches 2016 run function ac:base/lobby/practice/pkn/patterns/hard/134
+execute if score pattern AC_practicePKNOptions matches 2017 run function ac:base/lobby/practice/pkn/patterns/hard/144
+execute if score pattern AC_practicePKNOptions matches 2018 run function ac:base/lobby/practice/pkn/patterns/hard/146
+execute if score pattern AC_practicePKNOptions matches 2019 run function ac:base/lobby/practice/pkn/patterns/hard/150
 
 execute store result storage ac:pkn_practice loaded.id int 1 run scoreboard players get pattern AC_practicePKNOptions
 function ac:base/lobby/practice/pkn/leaderboard-update with storage ac:pkn_practice loaded
