@@ -12,9 +12,9 @@ execute if score @s AC_practiceSelection matches 3 if score @s AC_practiceMode m
 execute if score acid AC_practiceBLPOptions matches 2.. run scoreboard players set acid AC_practiceBLPOptions 0
 # Ustawienia Parkour Knockout
 execute if score @s AC_practiceSelection matches 1 if score @s AC_practiceMode matches 2 run scoreboard players add pattern AC_practicePKNOptions 1
-execute if score pattern AC_practicePKNOptions matches 55..1000 run scoreboard players set pattern AC_practicePKNOptions 1001
-execute if score pattern AC_practicePKNOptions matches 1051..2000 run scoreboard players set pattern AC_practicePKNOptions 2001
-execute if score pattern AC_practicePKNOptions matches 2017.. run scoreboard players set pattern AC_practicePKNOptions 2016
+execute if score pattern AC_practicePKNOptions matches 58..1000 run scoreboard players set pattern AC_practicePKNOptions 1001
+execute if score pattern AC_practicePKNOptions matches 1057..2000 run scoreboard players set pattern AC_practicePKNOptions 2001
+execute if score pattern AC_practicePKNOptions matches 2020.. run scoreboard players set pattern AC_practicePKNOptions 2019
 
 execute if score @s AC_practiceSelection matches 1 if score @s AC_practiceMode matches 2 run function ac:base/lobby/practice/pkn/storage-update
 

@@ -53,6 +53,9 @@ $execute if score $(pos) AC_pknScores matches 51 run title @s subtitle [{"text":
 $execute if score $(pos) AC_pknScores matches 52 run title @s subtitle [{"text":"Schizofrenia","bold":true,"color":"green"},{"text":" ~ apom","bold":false,"color":"gray"}]
 $execute if score $(pos) AC_pknScores matches 53 run title @s subtitle [{"text":"Parkour Civilisation","bold":true,"color":"green"},{"text":" ~ apom","bold":false,"color":"gray"}]
 $execute if score $(pos) AC_pknScores matches 54 run title @s subtitle [{"text":"Ty jesteś poj***ny","bold":true,"color":"green"},{"text":" ~ Miko","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 55 run title @s subtitle [{"text":"Moss Cave","bold":true,"color":"green"},{"text":" ~ apom","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 56 run title @s subtitle [{"text":"Torowisko","bold":true,"color":"green"},{"text":" ~ apom","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 57 run title @s subtitle [{"text":"WD-40","bold":true,"color":"green"},{"text":" ~ cappuchi","bold":false,"color":"gray"}]
 
 $execute if score $(pos) AC_pknScores matches 1001 run title @s subtitle [{"text":"Lodowy tunel","bold":true,"color":"yellow"},{"text":" ~ Analog","bold":false,"color":"gray"}]
 $execute if score $(pos) AC_pknScores matches 1002 run title @s subtitle [{"text":"Chmurki","bold":true,"color":"yellow"},{"text":" ~ Analog","bold":false,"color":"gray"}]
@@ -104,6 +107,12 @@ $execute if score $(pos) AC_pknScores matches 1047 run title @s subtitle [{"text
 $execute if score $(pos) AC_pknScores matches 1048 run title @s subtitle [{"text":"Jak chcesz","bold":true,"color":"yellow"},{"text":" ~ Davidowskyy","bold":false,"color":"gray"}]
 $execute if score $(pos) AC_pknScores matches 1049 run title @s subtitle [{"text":"Golem Playground","bold":true,"color":"yellow"},{"text":" ~ apom","bold":false,"color":"gray"}]
 $execute if score $(pos) AC_pknScores matches 1050 run title @s subtitle [{"text":"Tik tak","bold":true,"color":"yellow"},{"text":" ~ Miko","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 1051 run title @s subtitle [{"text":"Żarówki","bold":true,"color":"yellow"},{"text":" ~ apom","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 1052 run title @s subtitle [{"text":"Na lewo, na prawo","bold":true,"color":"yellow"},{"text":" ~ Analog","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 1053 run title @s subtitle [{"text":"Kto pozwolił mu gotować?","bold":true,"color":"yellow"},{"text":" ~ Analog","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 1054 run title @s subtitle [{"text":"Filary ziemne","bold":true,"color":"yellow"},{"text":" ~ apom","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 1055 run title @s subtitle [{"text":"Filary ametystowe","bold":true,"color":"yellow"},{"text":" ~ apom","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 1056 run title @s subtitle [{"text":"Plastry miodu","bold":true,"color":"yellow"},{"text":" ~ apom","bold":false,"color":"gray"}]
 
 $execute if score $(pos) AC_pknScores matches 2001 run title @s subtitle [{"text":"Ametyst","bold":true,"color":"red"},{"text":" ~ Analog","bold":false,"color":"gray"}]
 $execute if score $(pos) AC_pknScores matches 2002 run title @s subtitle [{"text":"Mineshaft","bold":true,"color":"red"},{"text":" ~ Davidowskyy","bold":false,"color":"gray"}]
@@ -121,5 +130,8 @@ $execute if score $(pos) AC_pknScores matches 2013 run title @s subtitle [{"text
 $execute if score $(pos) AC_pknScores matches 2014 run title @s subtitle [{"text":"Ender Temple","bold":true,"color":"red"},{"text":" ~ apom","bold":false,"color":"gray"}]
 $execute if score $(pos) AC_pknScores matches 2015 run title @s subtitle [{"text":"Parkour Box","bold":true,"color":"red"},{"text":" ~ apom","bold":false,"color":"gray"}]
 $execute if score $(pos) AC_pknScores matches 2016 run title @s subtitle [{"text":"Poj***ło mnie do reszty","bold":true,"color":"red"},{"text":" ~ Analog","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 2016 run title @s subtitle [{"text":"L Jumper","bold":true,"color":"red"},{"text":" ~ apom","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 2016 run title @s subtitle [{"text":"Diorytowe sople","bold":true,"color":"red"},{"text":" ~ apom","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 2016 run title @s subtitle [{"text":"Plus Jeden","bold":true,"color":"red"},{"text":" ~ apom","bold":false,"color":"gray"}]
 
 scoreboard players add @s AC_pknCrediting 1
