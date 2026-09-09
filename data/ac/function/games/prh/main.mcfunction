@@ -124,21 +124,7 @@ execute if score prh AC_running matches 1 if score prh AC_time matches 0 run sco
 execute if score prh AC_running matches 1 if score prh AC_time matches -1 run scoreboard players set prh2 AC_functions 0
 execute if score prh AC_running matches 1 if score prh AC_time matches -1 run gamerule natural_health_regeneration true
 execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove hunter
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn1
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn2
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn3
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn4
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn5
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn6
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn7
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn8
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn9
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn10
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn11
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn12
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn13
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn14
-execute if score prh AC_running matches 1 if score prh AC_time matches -1 run tag @a remove spawn15
+execute if score prh AC_running matches 1 if score prh AC_time matches -1 run function ac:base/remove-spawn-tags
 execute if score prh AC_running matches 1 if score prh AC_time matches -1 run kill @e[type=block_display,tag=prh]
 execute if score prh AC_running matches 1 if score prh AC_time matches -2 run function ac:base/endsound
 execute if score prh AC_running matches 1 if score prh AC_time matches -100 run tp @a 0 50 0

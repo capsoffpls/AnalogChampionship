@@ -37,6 +37,7 @@ attribute @s submerged_mining_speed base reset
 attribute @s sweeping_damage_ratio base reset
 attribute @s water_movement_efficiency base reset
 
+# tutaj wyjatkowo zostaje bo nie chce zmieniac funkcji remove spawn tags na @s dla tej jednej funkcji
 tag @s remove spawn1
 tag @s remove spawn2
 tag @s remove spawn3

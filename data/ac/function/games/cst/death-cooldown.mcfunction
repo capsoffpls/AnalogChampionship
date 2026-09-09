@@ -27,14 +27,14 @@ execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=spawn14] run 
 execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=spawn15] run tp @s -1974 70 1379 90 0
 execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=spawn16] run tp @s -2020 54 1624 -135 0
 
-execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstArsonist] run function ac:games/cst/classes/arsonist
-execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstAssassin] run function ac:games/cst/classes/assassin
-execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstRebel] run function ac:games/cst/classes/rebel
-execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstScout] run function ac:games/cst/classes/scout
-execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstShooter] run function ac:games/cst/classes/shooter
-execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstSniper] run function ac:games/cst/classes/sniper
-execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstTank] run function ac:games/cst/classes/tank
-execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstWarrior] run function ac:games/cst/classes/warrior
+execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstArsonist] run function ac:games/cst/kits/arsonist
+execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstAssassin] run function ac:games/cst/kits/assassin
+execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstRebel] run function ac:games/cst/kits/rebel
+execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstScout] run function ac:games/cst/kits/scout
+execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstShooter] run function ac:games/cst/kits/shooter
+execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstSniper] run function ac:games/cst/kits/sniper
+execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstTank] run function ac:games/cst/kits/tank
+execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=cstWarrior] run function ac:games/cst/kits/warrior
 
 execute if score @s AC_cstRespawnTime matches ..0 run tag @s remove cstLockedIn
 execute if score @s AC_cstRespawnTime matches ..0 run tag @s remove cstCooldown

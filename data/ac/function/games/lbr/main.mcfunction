@@ -34,23 +34,7 @@ execute if score lbr AC_running matches 1 run execute if score lbr AC_time match
 execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run gamemode spectator @a
 execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run function ac:base/endsound
 execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run kill @e[tag=lbr]
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn1
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn2
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn3
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn4
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn5
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn6
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn7
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn8
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn9
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn10
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn11
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn12
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn13
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn14
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn15
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn16
-execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove spawn17
+execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run function ac:base/remove-spawn-tags
 execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove lbrDead
 execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -1 run tag @a remove lbrFinished
 execute if score lbr AC_running matches 1 run execute if score lbr AC_time matches -61 run tp @a 0 50 0

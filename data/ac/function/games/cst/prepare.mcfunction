@@ -24,11 +24,11 @@ tp @a[tag=spawn16] -2020 54 1624 -135 0
 execute as @n[tag=cstCoreTexture] run data modify entity @s item.components set value {"minecraft:item_model":"ac:core"}
 execute as @a[tag=InGame] at @s run spawnpoint @s ~ ~ ~
 
-execute as @e[type=armor_stand,tag=cstWarrior] run function ac:games/cst/classes/warrior
-execute as @e[type=armor_stand,tag=cstAssassin] run function ac:games/cst/classes/assassin
-execute as @e[type=armor_stand,tag=cstScout] run function ac:games/cst/classes/scout
-execute as @e[type=armor_stand,tag=cstSniper] run function ac:games/cst/classes/sniper
-execute as @e[type=armor_stand,tag=cstTank] run function ac:games/cst/classes/tank
-execute as @e[type=armor_stand,tag=cstShooter] run function ac:games/cst/classes/shooter
-execute as @e[type=armor_stand,tag=cstRebel] run function ac:games/cst/classes/rebel
-execute as @e[type=armor_stand,tag=cstArsonist] run function ac:games/cst/classes/arsonist
+execute as @e[type=armor_stand,tag=cstWarrior] run function ac:games/cst/kits/warrior
+execute as @e[type=armor_stand,tag=cstAssassin] run function ac:games/cst/kits/assassin
+execute as @e[type=armor_stand,tag=cstScout] run function ac:games/cst/kits/scout
+execute as @e[type=armor_stand,tag=cstSniper] run function ac:games/cst/kits/sniper
+execute as @e[type=armor_stand,tag=cstTank] run function ac:games/cst/kits/tank
+execute as @e[type=armor_stand,tag=cstShooter] run function ac:games/cst/kits/shooter
+execute as @e[type=armor_stand,tag=cstRebel] run function ac:games/cst/kits/rebel
+execute as @e[type=armor_stand,tag=cstArsonist] run function ac:games/cst/kits/arsonist

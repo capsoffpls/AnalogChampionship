@@ -1,20 +1,5 @@
-tag @a remove spawn1
-tag @a remove spawn2
-tag @a remove spawn3
-tag @a remove spawn4
-tag @a remove spawn5
-tag @a remove spawn6
-tag @a remove spawn7
-tag @a remove spawn8
-tag @a remove spawn9
-tag @a remove spawn10
-tag @a remove spawn11
-tag @a remove spawn12
-tag @a remove spawn13
-tag @a remove spawn14
-tag @a remove spawn15
-tag @a remove spawn16
-tag @a remove spawn17
+function ac:base/remove-spawn-tags
+
 tag @a remove target1
 tag @a remove target2
 tag @a remove target3

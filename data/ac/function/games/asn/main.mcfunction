@@ -106,22 +106,7 @@ execute if score asn AC_running matches 1 run execute if score asn AC_time match
 execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run clear @a
 execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run bossbar set minecraft:ac_asn visible false
 execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run team modify gracz friendlyFire false
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn1
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn2
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn3
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn4
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn5
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn6
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn7
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn8
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn9
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn10
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn11
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn12
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn13
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn14
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn15
-execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove spawn16
+execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run function ac:base/remove-spawn-tags
 execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove target1
 execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove target2
 execute if score asn AC_running matches 1 run execute if score asn AC_time matches -361 run tag @a remove target3

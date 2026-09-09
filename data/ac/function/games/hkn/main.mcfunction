@@ -59,22 +59,7 @@ execute if score hkn AC_running matches 1 if score hkn AC_time matches 0 run exe
 execute if score hkn AC_running matches 1 if score hkn AC_time matches 0 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[HKN] ","bold":true,"color":"dark_green"},{"text":"Race time has ended!","color":"red","bold":false}]
 
 execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run scoreboard players set hkn1 AC_functions 0
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn1
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn2
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn3
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn4
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn5
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn6
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn7
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn8
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn9
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn10
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn11
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn12
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn13
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn14
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn15
-execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove spawn16
+execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run function ac:base/remove-spawn-tags
 execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove hknEliminated
 execute if score hkn AC_running matches 1 if score hkn AC_time matches -1 run tag @a remove hknTimer
 

@@ -92,23 +92,7 @@ execute if score ddb AC_running matches 1 if score ddb AC_time matches -1 run ga
 execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tp @a 0 50 0
 execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run gamemode adventure @a
 execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run spawnpoint @a 0 50 0
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn1
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn2
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn3
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn4
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn5
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn6
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn7
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn8
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn9
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn10
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn11
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn12
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn13
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn14
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn15
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn16
-execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run tag @a remove spawn17
+execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run function ac:base/remove-spawn-tags
 execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run execute as @a[tag=InGame] run attribute @s max_health base set 20
 execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run kill @e[type=arrow]
 execute if score ddb AC_running matches 1 if score ddb AC_time matches -101 run kill @e[type=item]

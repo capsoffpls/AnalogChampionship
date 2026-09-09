@@ -90,11 +90,7 @@ execute if score brg AC_running matches 1 if score brg AC_time matches -2400 run
 execute if score brg AC_running matches 1 if score brg AC_time matches -2400 run tag @a remove brgYellow
 execute if score brg AC_running matches 1 if score brg AC_time matches -2400 run tag @a remove brgGreen
 execute if score brg AC_running matches 1 if score brg AC_time matches -2400 run tag @a remove brgBlue
-execute if score brg AC_running matches 1 if score brg AC_time matches -2400 run tag @a remove spawn1
-execute if score brg AC_running matches 1 if score brg AC_time matches -2400 run tag @a remove spawn2
-execute if score brg AC_running matches 1 if score brg AC_time matches -2400 run tag @a remove spawn3
-execute if score brg AC_running matches 1 if score brg AC_time matches -2400 run tag @a remove spawn4
-execute if score brg AC_running matches 1 if score brg AC_time matches -2400 run tag @a remove spawn17
+execute if score brg AC_running matches 1 if score brg AC_time matches -2400 run function ac:base/remove-spawn-tags
 execute if score brg AC_running matches 1 if score brg AC_time matches -2400 run scoreboard players set brg1 AC_functions 0
 execute if score brg AC_running matches 1 if score brg AC_time matches -2400 run scoreboard players set brg2 AC_functions 0
 execute if score brg AC_running matches 1 if score brg AC_time matches -2460 run tp @a 0 50 0

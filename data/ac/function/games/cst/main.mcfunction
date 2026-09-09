@@ -67,7 +67,7 @@ execute if score cst AC_running matches 1 run execute as @a[team=ac_cstDefend,x=
 execute if score cst AC_running matches 1 run execute as @a[scores={AC_deathmessage=1..}] run function ac:games/cst/death
 execute if score cst AC_running matches 1 run execute as @a[tag=cstCooldown] run function ac:games/cst/death-cooldown
 
-execute if score cst AC_running matches 1 run execute as @e[tag=cstNexus] on attacker if entity @s[team=ac_cstAttack] run function ac:games/cst/attack-core
+execute if score cst AC_running matches 1 run execute as @e[type=interaction,tag=cstNexus] on attacker if entity @s[team=ac_cstAttack] run function ac:games/cst/attack-core
 execute if score cst AC_running matches 1 run function ac:games/cst/base-healthbar
 execute if score cst AC_running matches 1 run function ac:games/cst/kits-backend
 execute if score cst AC_running matches 1 run execute if score baseHealth AC_cstScores matches 1..499 if score second AC_misc matches 19 run scoreboard players add baseHealth AC_cstScores 1
@@ -95,23 +95,7 @@ execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag
 execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove cstSniper
 execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove cstTank
 execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove cstWarrior
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn1
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn2
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn3
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn4
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn5
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn6
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn7
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn8
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn9
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn10
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn11
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn12
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn13
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn14
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn15
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn16
-execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove spawn17
+execute if score cst AC_running matches 1 if score cst AC_time matches 0 run function ac:base/remove-spawn-tags
 execute if score cst AC_running matches 1 if score cst AC_time matches 0 run function ac:base/endsound
 execute if score cst AC_running matches 1 if score cst AC_time matches -60 run tp @a 0 50 0
 execute if score cst AC_running matches 1 if score cst AC_time matches -60 run spawnpoint @a 0 50 0

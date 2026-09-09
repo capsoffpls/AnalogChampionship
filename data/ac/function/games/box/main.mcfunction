@@ -49,11 +49,7 @@ execute if score box AC_running matches 1 run execute if score box AC_time match
 execute if score box AC_running matches 1 run execute if score box AC_time matches -1000 run scoreboard players set box1 AC_functions 0
 execute if score box AC_running matches 1 run execute if score box AC_time matches -1000 run gamerule natural_health_regeneration true
 execute if score box AC_running matches 1 run execute if score box AC_time matches -1000 run bossbar set ac_box visible false
-execute if score box AC_running matches 1 run execute if score box AC_time matches -1060 run tag @a remove spawn1
-execute if score box AC_running matches 1 run execute if score box AC_time matches -1060 run tag @a remove spawn2
-execute if score box AC_running matches 1 run execute if score box AC_time matches -1060 run tag @a remove spawn3
-execute if score box AC_running matches 1 run execute if score box AC_time matches -1060 run tag @a remove spawn4
-execute if score box AC_running matches 1 run execute if score box AC_time matches -1060 run tag @a remove spawn17
+execute if score box AC_running matches 1 run execute if score box AC_time matches -1060 run function ac:base/remove-spawn-tags
 execute if score box AC_running matches 1 run execute if score box AC_time matches -1060 run tp @a 0 50 0
 execute if score box AC_running matches 1 run execute if score box AC_time matches -1060 run spawnpoint @a 0 50 0
 execute if score box AC_running matches 1 run execute if score box AC_time matches -1060 run gamemode adventure @a

@@ -38,23 +38,7 @@ execute if score pkt AC_running matches 1 run execute if score pkt AC_time match
 
 execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run execute as @a run attribute @s attack_damage base set 1
 execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run scoreboard players set pkt1 AC_functions 0
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn1
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn2
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn3
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn4
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn5
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn6
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn7
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn8
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn9
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn10
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn11
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn12
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn13
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn14
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn15
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn16
-execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove spawn17
+execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run function ac:base/remove-spawn-tags
 execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove pktCooldown
 execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run tag @a remove pktHunter
 execute if score pkt AC_running matches 1 run execute if score pkt AC_time matches -1000 run function ac:base/endsound

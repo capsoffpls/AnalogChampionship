@@ -88,23 +88,7 @@ execute if score spb AC_running matches 1 run execute if score spb AC_time match
 execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1000 run tag @a remove spbEliminated
 execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1000 run gamemode spectator @a
 execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1000 run function ac:base/endsound
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn1
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn2
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn3
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn4
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn5
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn6
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn7
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn8
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn9
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn10
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn11
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn12
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn13
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn14
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn15
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn16
-execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tag @a remove spawn17
+execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run function ac:base/remove-spawn-tags
 execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run tp @a 0 50 0
 execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run gamemode adventure @a
 execute if score spb AC_running matches 1 run execute if score spb AC_time matches -1060 run clear @a

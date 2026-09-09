@@ -265,16 +265,16 @@ execute if score lang AC_lang matches 1 as @e[type=interaction,tag=cstKitInterac
 {text:"\n- Golden Apple x5",bold:false,color:red,hover_event:{action:"show_item",id:golden_apple,count:5}}]
 
 
-execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass1] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/classes/warrior
-execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass2] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/classes/assassin
-execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass3] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/classes/scout
-execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass4] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/classes/sniper
+execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass1] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/kits/warrior
+execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass2] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/kits/assassin
+execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass3] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/kits/scout
+execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass4] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/kits/sniper
 
-execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass5] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/classes/rebel
-execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass6] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/classes/arsonist
+execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass5] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/kits/rebel
+execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass6] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/kits/arsonist
 
-execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass7] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/classes/tank
-execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass8] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/classes/shooter
+execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass7] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/kits/tank
+execute as @e[type=interaction,tag=cstKitInteraction,tag=cstClass8] on target unless entity @s[tag=cstLockedIn] run function ac:games/cst/kits/shooter
 
 execute if score lang AC_lang matches 0 as @e[type=interaction,tag=cstKitInteraction,tag=cstClass1] on target if entity @s[tag=cstLockedIn] run tellraw @s [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"Aby zmienić klasę, musisz zginąć.","color":"red","bold":false}]
 execute if score lang AC_lang matches 1 as @e[type=interaction,tag=cstKitInteraction,tag=cstClass1] on target if entity @s[tag=cstLockedIn] run tellraw @s [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"You have to die in order to change class.","color":"red","bold":false}]

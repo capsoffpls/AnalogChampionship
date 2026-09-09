@@ -19,23 +19,7 @@ execute if score hhh AC_running matches 1 if score hhh AC_time matches -1 run te
 execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run execute as @a[tag=InGame] run scoreboard players operation @s AC_pointBuffer = @s AC_hhhTotalWool
 execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run execute as @a[tag=InGame] run scoreboard players operation @s AC_pointBuffer /= #dupa AC_pointBuffer
 execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run execute as @a[tag=InGame] run scoreboard players operation @s AC_pointsHeld = @s AC_pointBuffer
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn1
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn2
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn3
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn4
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn5
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn6
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn7
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn8
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn9
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn10
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn11
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn12
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn13
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn14
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn15
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn16
-execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run tag @a remove spawn17
+execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run function ac:base/remove-spawn-tags
 execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run function ac:base/endsound
 execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[HHH] ","bold":true,"color":"dark_green"},{"text":"Gra zakończyła się! Zwycięża(ją): ","color":"green","bold":false},{"selector":"@a[tag=hhhWinner]"}]
 execute if score hhh AC_running matches 1 if score hhh AC_time matches -1000 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[HHH] ","bold":true,"color":"dark_green"},{"text":"The game has ended! The winner(s) is/are: ","color":"green","bold":false},{"selector":"@a[tag=hhhWinner]"}]

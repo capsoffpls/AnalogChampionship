@@ -101,23 +101,7 @@ execute if score pkn AC_running matches 1 if score pkn1 AC_functions matches 1 r
 
 execute if score pkn AC_running matches 1 as @a[scores={AC_pknHealth=0..30}] run title @s actionbar [{"text":"Zdrowie: "},{"score":{"name":"@s","objective":"AC_pknHealth"}}]
 
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn1
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn2
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn3
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn4
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn5
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn6
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn7
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn8
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn9
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn10
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn11
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn12
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn13
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn14
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn15
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn16
-execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove spawn17
+execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run function ac:base/remove-spawn-tags
 execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove pknDamage
 execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove pknEliminated
 execute if score pkn AC_running matches 1 if score pkn AC_time matches -1060 run tag @a remove pknCreditStop

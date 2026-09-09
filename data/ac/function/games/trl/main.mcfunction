@@ -31,23 +31,7 @@ execute if score trl AC_running matches 1 if score trl2 AC_functions matches 1 r
 execute if score trl AC_running matches 1 if score trl AC_time matches -1 run scoreboard players set trl1 AC_functions 0
 execute if score trl AC_running matches 1 if score trl AC_time matches -1 run bossbar set minecraft:ac_trl visible false
 execute if score trl AC_running matches 1 if score trl AC_time matches -1 run function ac:base/endsound
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn1
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn2
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn3
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn4
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn5
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn6
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn7
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn8
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn9
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn10
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn11
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn12
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn13
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn14
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn15
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn16
-execute if score trl AC_running matches 1 if score trl AC_time matches -1 run tag @a[tag=InGame] remove spawn17
+execute if score trl AC_running matches 1 if score trl AC_time matches -1 run function ac:base/remove-spawn-tags
 execute if score trl AC_running matches 1 if score trl AC_time matches -61 run tp @a 0 50 0
 execute if score trl AC_running matches 1 if score trl AC_time matches -61 run gamemode adventure @a
 execute if score trl AC_running matches 1 if score trl AC_time matches -61 run spawnpoint @a 0 50 0

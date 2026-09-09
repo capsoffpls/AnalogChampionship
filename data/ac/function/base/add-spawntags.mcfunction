@@ -1,20 +1,4 @@
-tag @a remove spawn1
-tag @a remove spawn2
-tag @a remove spawn3
-tag @a remove spawn4
-tag @a remove spawn5
-tag @a remove spawn6
-tag @a remove spawn7
-tag @a remove spawn8
-tag @a remove spawn9
-tag @a remove spawn10
-tag @a remove spawn11
-tag @a remove spawn12
-tag @a remove spawn13
-tag @a remove spawn14
-tag @a remove spawn15
-tag @a remove spawn16
-tag @a remove spawn17
+function ac:base/remove-spawn-tags
 
 execute if score spawntag AC_misc matches 0 run execute unless entity @a[tag=spawn1] run tag @r[tag=InGame] add spawn1
 execute if score spawntag AC_misc matches 0 run execute unless entity @a[tag=spawn2] run tag @r[tag=InGame,tag=!spawn1] add spawn2

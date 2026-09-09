@@ -1,15 +1,24 @@
 {
-	"env": {
-		"gameVersion": "26.2",
-		"permissionLevel": 4
-		
-	},
-	"lint": {
-    "undeclaredSymbol": [
-        {
-            "if": { "category": "sound_event" },
-            "then": { "declare": "block" }
+    "env": {
+        "gameVersion": "26.2",
+        "permissionLevel": 4,
+        "mcmetaSummaryOverrides": {
+            "commands": {
+                "path": "./commands.json",
+                "replace": false
+            }
         }
-    ]
-}
+    },
+    "lint": {
+        "undeclaredSymbol": [
+            {
+                "if": {
+                    "category": "sound_event"
+                },
+                "then": {
+                    "declare": "block"
+                }
+            }
+        ]
+    }
 }

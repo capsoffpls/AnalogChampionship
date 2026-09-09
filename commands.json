@@ -1,0 +1,160 @@
+{
+  "type": "root",
+  "children": {
+    "heal": {
+      "type": "literal",
+      "children": {
+        "targets": {
+          "type": "argument",
+          "parser": "minecraft:entity",
+          "properties": {
+            "amount": "multiple",
+            "type": "entities"
+          },
+          "children": {
+            "value": {
+              "type": "argument",
+              "parser": "brigadier:double",
+              "properties": {
+                "min": 0.0
+              },
+              "executable": true
+            }
+          }
+        }
+      }
+    },
+    "motion": {
+      "type": "literal",
+      "children": {
+        "targets": {
+          "type": "argument",
+          "parser": "minecraft:entity",
+          "properties": {
+            "amount": "multiple",
+            "type": "entities"
+          },
+          "children": {
+            "set": {
+              "type": "literal",
+              "children": {
+                "vector": {
+                  "type": "argument",
+                  "parser": "brigadier:string",
+                  "properties": {
+                    "type": "greedy"
+                  },
+                  "executable": true
+                }
+              }
+            },
+            "add": {
+              "type": "literal",
+              "children": {
+                "vector": {
+                  "type": "argument",
+                  "parser": "brigadier:string",
+                  "properties": {
+                    "type": "greedy"
+                  },
+                  "executable": true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "skin": {
+      "type": "literal",
+      "executable": true,
+      "children": {
+        "skin": {
+          "type": "argument",
+          "parser": "brigadier:string",
+          "properties": {
+            "type": "single_word"
+          },
+          "executable": true
+        },
+        "clear": {
+          "type": "literal",
+          "executable": true,
+          "children": {
+            "targets": {
+              "type": "argument",
+              "parser": "minecraft:entity",
+              "properties": {
+                "amount": "multiple",
+                "type": "players"
+              },
+              "executable": true
+            }
+          }
+        },
+        "update": {
+          "type": "literal",
+          "executable": true,
+          "children": {
+            "targets": {
+              "type": "argument",
+              "parser": "minecraft:entity",
+              "properties": {
+                "amount": "multiple",
+                "type": "players"
+              },
+              "executable": true
+            }
+          }
+        },
+        "set": {
+          "type": "literal",
+          "children": {
+            "skin": {
+              "type": "argument",
+              "parser": "brigadier:string",
+              "properties": {
+                "type": "single_word"
+              },
+              "executable": true,
+              "children": {
+                "targets": {
+                  "type": "argument",
+                  "parser": "minecraft:entity",
+                  "properties": {
+                    "amount": "multiple",
+                    "type": "players"
+                  },
+                  "executable": true
+                }
+              }
+            }
+          }
+        },
+        "url": {
+          "type": "literal",
+          "children": {
+            "url": {
+              "type": "argument",
+              "parser": "brigadier:string",
+              "properties": {
+                "type": "single_word"
+              },
+              "executable": true,
+              "children": {
+                "variant": {
+                  "type": "argument",
+                  "parser": "brigadier:string",
+                  "properties": {
+                    "type": "single_word"
+                  },
+                  "executable": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -81,15 +81,7 @@ execute if score tmf AC_running matches 1 if score tmf AC_time matches -12000..0
 execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run scoreboard players set tmf1 AC_functions 0
 execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run difficulty peaceful
 execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run bossbar set minecraft:ac_tmf visible false
-execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run tag @a remove spawn1
-execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run tag @a remove spawn2
-execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run tag @a remove spawn3
-execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run tag @a remove spawn4
-execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run tag @a remove spawn5
-execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run tag @a remove spawn6
-execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run tag @a remove spawn7
-execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run tag @a remove spawn8
-execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run tag @a remove spawn17
+execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run function ac:base/remove-spawn-tags
 execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run tag @a remove tmfDead
 execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run tag @a remove tmfEliminated
 execute if score tmf AC_running matches 1 if score tmf AC_time matches -12001 run tag @a remove tmfChuj
