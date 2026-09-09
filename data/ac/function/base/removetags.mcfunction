@@ -137,5 +137,7 @@ tag @a remove cstTankProtected
 execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Usunięto graczom online tagi z trybów gry.","color":"gray","bold":false}]
 execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Removed player tags from online players.","color":"gray","bold":false}]
 tag @a remove ovkCloseToWin
+tag @a remove jgtRound1
+tag @a remove jgtRound2
 tag @a remove jgtJuggernaut
 tag @a remove pknEliminated
