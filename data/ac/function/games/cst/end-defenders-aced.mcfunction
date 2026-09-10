@@ -7,3 +7,5 @@ tellraw @a[team=ac_cstAttack] [{"text":"[CST] ","bold":true,"color":"dark_green"
 scoreboard players add @a[team=ac_cstAttack] AC_pointsHeld 75
 
 scoreboard players set cst AC_time 0
+
+scoreboard players add $GamesWonObrAce dev_cstStats 1

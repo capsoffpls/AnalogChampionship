@@ -56,13 +56,16 @@ execute if score cst AC_running matches 1 run execute as @a[tag=InGame,team=ac_c
 execute if score cst AC_running matches 1 run execute as @a[tag=InGame,team=ac_cstDefend] at @s if entity @s[x=-2055,y=51,z=1603,dx=111,dy=51,dz=49] run damage @s 9 indirect_magic
 execute if score cst AC_running matches 1 run execute as @a[tag=InGame] at @s if entity @s[x=-2055,y=43,z=1345,dx=111,dy=-15,dz=310] run damage @s 100 indirect_magic
 
+execute if score cst AC_running matches 1 run execute as @a[tag=!cstLockedIn] if score @s AC_cstItemDroppedCheck matches 1.. run function ac:dev/low/cst_append_usage
 execute if score cst AC_running matches 1 run execute as @a[tag=!cstLockedIn] if score @s AC_cstItemDroppedCheck matches 1.. run tag @s add cstLockedIn
 
 execute if score cst AC_running matches 1 run execute as @a[team=ac_cstAttack,x=-2055,y=51,z=1606,dx=111,dy=50,dz=-250] if entity @s[tag=!cstArsonist,tag=!cstRebel,tag=!cstScout,tag=!cstSniper,tag=!cstWarrior,tag=!cstAssassin,tag=!cstHogRider,gamemode=adventure] run function ac:games/cst/attacker-no-kit
 execute if score cst AC_running matches 1 run execute as @a[team=ac_cstDefend,x=-2010,y=70,z=1372,dx=24,dy=50,dz=24] if entity @s[tag=!cstWarrior,tag=!cstTank,tag=!cstAssassin,tag=!cstShooter,tag=!cstScout,tag=!cstSniper,tag=!cstHogRider,gamemode=adventure] run function ac:games/cst/defender-no-kit
 
-execute if score cst AC_running matches 1 run execute as @a[team=ac_cstAttack,x=-2055,y=51,z=1606,dx=111,dy=50,dz=-250] unless entity @s[tag=!cstArsonist,tag=!cstRebel,tag=!cstScout,tag=!cstSniper,tag=!cstWarrior,tag=!cstAssassin,tag=!cstHogRider,] run tag @s add cstLockedIn
-execute if score cst AC_running matches 1 run execute as @a[team=ac_cstDefend,x=-2010,y=70,z=1372,dx=24,dy=50,dz=24] unless entity @s[tag=!cstWarrior,tag=!cstTank,tag=!cstAssassin,tag=!cstShooter,tag=!cstScout,tag=!cstSniper,tag=!cstHogRider,] run tag @s add cstLockedIn
+execute if score cst AC_running matches 1 run execute as @a[team=ac_cstAttack,x=-2055,y=51,z=1606,dx=111,dy=50,dz=-250] unless entity @s[tag=!cstArsonist,tag=!cstRebel,tag=!cstScout,tag=!cstSniper,tag=!cstWarrior,tag=!cstAssassin,tag=!cstHogRider] run tag @s add cstLockedIn
+execute if score cst AC_running matches 1 run execute as @a[team=ac_cstAttack,x=-2055,y=51,z=1606,dx=111,dy=50,dz=-250] unless entity @s[tag=!cstArsonist,tag=!cstRebel,tag=!cstScout,tag=!cstSniper,tag=!cstWarrior,tag=!cstAssassin,tag=!cstHogRider] run function ac:dev/low/cst_append_usage
+execute if score cst AC_running matches 1 run execute as @a[team=ac_cstDefend,x=-2010,y=70,z=1372,dx=24,dy=50,dz=24] unless entity @s[tag=!cstWarrior,tag=!cstTank,tag=!cstAssassin,tag=!cstShooter,tag=!cstScout,tag=!cstSniper,tag=!cstHogRider] run tag @s add cstLockedIn
+execute if score cst AC_running matches 1 run execute as @a[team=ac_cstDefend,x=-2010,y=70,z=1372,dx=24,dy=50,dz=24] unless entity @s[tag=!cstWarrior,tag=!cstTank,tag=!cstAssassin,tag=!cstShooter,tag=!cstScout,tag=!cstSniper,tag=!cstHogRider] run function ac:dev/low/cst_append_usage
 
 execute if score cst AC_running matches 1 run execute as @a[scores={AC_deathmessage=1..}] run function ac:games/cst/death
 execute if score cst AC_running matches 1 run execute as @a[tag=cstCooldown] run function ac:games/cst/death-cooldown
@@ -83,6 +86,7 @@ execute if score cst AC_running matches 1 if score cst AC_time matches 1 run fun
 # funny
 execute if score cst AC_running matches 1 as @e[type=pig,tag=hog] at @s unless entity @a[tag=cstHogRider,distance=..4] run kill @s
 
+execute if score cst AC_running matches 1 if score cst AC_time matches 0 run scoreboard players add $GamesPlayed dev_cstStats 1
 execute if score cst AC_running matches 1 if score cst AC_time matches 0 run gamemode spectator @a
 execute if score cst AC_running matches 1 if score cst AC_time matches 0 run clear @a
 execute if score cst AC_running matches 1 if score cst AC_time matches 0 run tag @a remove cstArsonist

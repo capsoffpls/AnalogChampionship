@@ -8,3 +8,6 @@ scoreboard players reset @s AC_cstItemDroppedCheck
 scoreboard players reset @s AC_cstPowerUp
 
 scoreboard players operation @s AC_cstRespawnTime = respawnTimerTick AC_cstScores
+
+function ac:dev/low/cst_append_death
+execute as @a[scores={AC_killmessage=1..}] run function ac:dev/low/cst_append_kill
