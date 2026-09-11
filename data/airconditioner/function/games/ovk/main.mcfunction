@@ -1,0 +1,58 @@
+execute if score ovk AC_running matches 1 if score ovk AC_time matches 12000 run function airconditioner:games/ovk/start
+
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCheck=1..},tag=InGame,gamemode=adventure] if entity @s run scoreboard players add @s AC_sillyPointsHeld 10
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCheck=1..},tag=InGame,gamemode=adventure] if entity @s run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[OVK] ","bold":true,"color":"dark_green"},{"text":"+10≡ (Zabito gracza)","color":"gold","bold":false}]
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCheck=1..},tag=InGame,gamemode=adventure] if entity @s run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[OVK] ","bold":true,"color":"dark_green"},{"text":"+10≡ (Killed a player)","color":"gold","bold":false}]
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCheck=1..},tag=InGame,gamemode=adventure] if entity @s run function airconditioner:games/ovk/compare-players
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCheck=1..}] if entity @s run effect give @s minecraft:instant_health 1 0
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCheck=1..}] if entity @s run function airconditioner:games/ovk/give-items
+
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkDeathCheck=1..}] if entity @s run gamemode spectator @s
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkDeathCheck=1..}] if entity @s run tag @s add ovkCooldown
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run scoreboard players reset @a AC_ovkKillCheck
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run scoreboard players reset @a AC_ovkDeathCheck
+
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 if score regen AC_misc matches 4 run effect give @a regeneration 1 3 true
+
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[tag=ovkCooldown] run function airconditioner:games/ovk/death-cooldown
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[tag=InGame] if score @s AC_ovkHitDetect matches 1.. run scoreboard players set @s AC_ovkHitTimer 0
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run scoreboard players add @a[tag=InGame] AC_ovkHitTimer 1
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[tag=InGame] if score @s AC_ovkHitTimer matches 600.. run attribute @s movement_speed base set 0.033
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run scoreboard players set @a[tag=InGame] AC_ovkHitDetect 0
+
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCount=14},tag=!ovkCloseToWin] if entity @s run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[OVK] ","bold":true,"color":"dark_green"},{"text":"Uwaga! Gracz ","color":"yellow","bold":false},{"selector":"@a[scores={AC_ovkKillCount=14}]","bold":true,"color":"gold"},{"text":" jest bliski zwycięstwa!","color":"yellow","bold":false}]
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCount=14},tag=!ovkCloseToWin] if entity @s run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[OVK] ","bold":true,"color":"dark_green"},{"text":"Attention! ","color":"yellow","bold":false},{"selector":"@a[scores={AC_ovkKillCount=14}]","bold":true,"color":"gold"},{"text":" is close to victory!","color":"yellow","bold":false}]
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCount=14},tag=!ovkCloseToWin] if entity @s run execute as @a at @s run playsound minecraft:ac.jingles.important record @s ~ ~ ~
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCount=14},tag=!ovkCloseToWin] if entity @s run tag @s add ovkCloseToWin
+
+
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCount=15}] run execute if entity @s run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[OVK] ","bold":true,"color":"dark_green"},{"text":"Koniec gry! Wygrywa ","color":"green","bold":false},{"selector":"@a[scores={AC_ovkKillCount=15}]","bold":true,"color":"green"}]
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCount=15}] run execute if entity @s run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[OVK] ","bold":true,"color":"dark_green"},{"text":"Game over! The winner is ","color":"green","bold":false},{"selector":"@a[scores={AC_ovkKillCount=15}]","bold":true,"color":"green"}]
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCount=15}] run execute if entity @s run scoreboard players add @a[scores={AC_ovkKillCount=15},tag=InGame,gamemode=adventure] AC_sillyPointsHeld 25
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCount=15}] run execute if entity @s run execute if score lang AC_lang matches 0 run tellraw @a[scores={AC_ovkKillCount=15},tag=InGame,gamemode=adventure] [{"text":"[OVK] ","bold":true,"color":"dark_green"},{"text":"+25≡ (Zwycięstwo)","color":"gold","bold":false}]
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCount=15}] run execute if entity @s run execute if score lang AC_lang matches 1 run tellraw @a[scores={AC_ovkKillCount=15},tag=InGame,gamemode=adventure] [{"text":"[OVK] ","bold":true,"color":"dark_green"},{"text":"+25≡ (Victory)","color":"gold","bold":false}]
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 run execute as @a[scores={AC_ovkKillCount=15}] run execute if entity @s run scoreboard players set ovk AC_time -1
+
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 if score ovk AC_time matches 0 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[OVK] ","bold":true,"color":"dark_green"},{"text":"Koniec czasu! Nikt nie uzbierał 15 zabójstw.","color":"red","bold":false}]
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 if score ovk AC_time matches 0 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[OVK] ","bold":true,"color":"dark_green"},{"text":"Game time over! No one accumulated 15 kills.","color":"red","bold":false}]
+execute if score ovk AC_running matches 1 if score ovk1 AC_functions matches 1 if score ovk AC_time matches 0 run scoreboard players set ovk1 AC_functions 0
+
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -1 run clear @a
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -1 run gamemode spectator @a
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -1 run bossbar set minecraft:ac_ovk visible false
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -1 run team modify gracz friendlyFire false
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -1 run scoreboard players set ovk1 AC_functions 0
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -1 run function airconditioner:base/endsound
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -1 run title @a reset
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -61 run tp @a 0 50 0
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -61 run gamemode adventure @a
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -61 run spawnpoint @a 0 50 0
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -61 run function airconditioner:base/remove-spawn-tags
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -61 run tag @a remove ovkCooldown
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -61 run tag @a remove ovkCloseToWin
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -61 run gamerule natural_health_regeneration true
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -61 run scoreboard players reset @a AC_ovkDeathCheck
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -61 run execute as @a run attribute @s movement_speed base reset
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -61 run effect clear @a
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -61 run function airconditioner:auto/invoke
+execute if score ovk AC_running matches 1 if score ovk AC_time matches -61 run scoreboard players set ovk AC_running 0

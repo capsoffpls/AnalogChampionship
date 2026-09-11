@@ -1,0 +1,1 @@
+execute if score @s AC_practiceMode matches 2 run function airconditioner:base/lobby/practice/pkn/load

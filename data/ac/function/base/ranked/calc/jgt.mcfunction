@@ -1,2 +1,0 @@
-execute if score @s AC_jgtRankedWinner matches 0 run scoreboard players set @s AC_pointsRankedHeld -10
-execute if score @s AC_jgtRankedWinner matches 1 run scoreboard players set @s AC_pointsRankedHeld 10

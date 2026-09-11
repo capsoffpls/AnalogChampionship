@@ -1,1 +1,0 @@
-execute if block ~ ~ ~ grass_block run execute positioned ~ ~ ~ run function ac:hhh/place
