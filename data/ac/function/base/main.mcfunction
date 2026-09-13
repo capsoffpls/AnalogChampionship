@@ -59,12 +59,12 @@ execute as @a[scores={AC_lobbyTeleporters=1..}] if items entity @s weapon.* carr
 
 execute if score auto AC_autoControl matches 1 run execute as @a[scores={AC_lobbyTeleporters=1..}] if items entity @s weapon.* carrot_on_a_stick[item_model="ac:arrow_up",custom_data={chuj:1}] run execute at @s anchored eyes run function ac:auto/playervote/raycast
 
-execute as @a if score @s AC_CurrentlyPlayed matches 0 if score @s AC_trigger matches 1 run tp @s 0 50 0 0 0
-execute as @a if score @s AC_CurrentlyPlayed matches 0 if score @s AC_trigger matches 2 run tp @s -76 43 0 90 0
-execute as @a if score @s AC_CurrentlyPlayed matches 0 if score @s AC_trigger matches 3 run tp @s 0 43 -90 -180 0
-execute as @a if score @s AC_CurrentlyPlayed matches 0 if score @s AC_trigger matches 4 run tp @s 28 44 -124 -90 0
-execute as @a if score @s AC_CurrentlyPlayed matches 0 if score @s AC_trigger matches 5 run tp @s 42 48 0 -90 0
-execute as @a if score @s AC_CurrentlyPlayed matches 0 if score @s AC_trigger matches 6 run tp @s 118 60 1.0 -90 0
+execute as @a unless score @s AC_CurrentlyPlayed matches 1.. unless score @s AC_CurrentlyPlayed matches ..-1 if score @s AC_trigger matches 1 run tp @s 0 50 0 0 0
+execute as @a unless score @s AC_CurrentlyPlayed matches 1.. unless score @s AC_CurrentlyPlayed matches ..-1 if score @s AC_trigger matches 2 run tp @s -76 43 0 90 0
+execute as @a unless score @s AC_CurrentlyPlayed matches 1.. unless score @s AC_CurrentlyPlayed matches ..-1 if score @s AC_trigger matches 3 run tp @s 0 43 -90 -180 0
+execute as @a unless score @s AC_CurrentlyPlayed matches 1.. unless score @s AC_CurrentlyPlayed matches ..-1 if score @s AC_trigger matches 4 run tp @s 28 44 -124 -90 0
+execute as @a unless score @s AC_CurrentlyPlayed matches 1.. unless score @s AC_CurrentlyPlayed matches ..-1 if score @s AC_trigger matches 5 run tp @s 42 48 0 -90 0
+execute as @a unless score @s AC_CurrentlyPlayed matches 1.. unless score @s AC_CurrentlyPlayed matches ..-1 if score @s AC_trigger matches 6 run tp @s 118 60 1.0 -90 0
 execute unless score NowPlaying AC_CurrentlyPlayed matches 0 run clear @a *[custom_data={chuj:1}]
 execute unless score NowPlaying AC_CurrentlyPlayed matches 0 run clear @a *[custom_data={chuj:2}]
 execute unless score NowPlaying AC_CurrentlyPlayed matches 0 run clear @a *[custom_data={chuj:-1}]
