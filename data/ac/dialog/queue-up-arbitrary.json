@@ -410,6 +410,42 @@
       }
     },
     {
+      "label": "Sector Shootout",
+      "tooltip": [{"text":"• Gracze umieszczeni są na lodowym torze dla łódek\n• Zadaniem gracza jest zebrać jak najwięcej punktów, które nieustannie spadają\n• Do twojego rekordu wliczy się tylko wynik lepszy od poprzedniego\n• Gracze są spawnowani pojedyńczo, by nie przeszkadzali sobie nawzajem","bold":false,"color":"gray"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 45"
+      }
+    },
+    {
+      "label": "-----",
+      "tooltip": [{"text":"• Ten tryb zostanie udostępniony wkrótce!","bold":false,"color":"red"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 46"
+      }
+    },
+    {
+      "label": "-----",
+      "tooltip": [{"text":"• Ten tryb zostanie udostępniony wkrótce!","bold":false,"color":"red"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 47"
+      }
+    },
+    {
+      "label": "-----",
+      "tooltip": [{"text":"• Ten tryb zostanie udostępniony wkrótce!","bold":false,"color":"red"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 48"
+      }
+    },
+    {
     "label": "Sortuj: Kolejność utworzenia",
     "width": 500,
     "action": {

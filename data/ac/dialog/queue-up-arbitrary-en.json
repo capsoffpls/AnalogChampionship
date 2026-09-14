@@ -410,8 +410,8 @@
       }
     },
     {
-      "label": "-----",
-      "tooltip": [{"text":"• This gamemode is coming soon!","bold":false,"color":"red"}],
+      "label": "Sector Shootout",
+      "tooltip": [{"text":"• Players are placed on an ice track for boats\n• The task is to gather as much points as you can, as fast as you can - because they're constantly dropping\n• You need to score better than in the rounds before to gather more points\n• Players are spawned individually, so they don't interrupt each other","bold":false,"color":"gray"}],
       "width": 150,
       "action": {
         "type": "run_command",

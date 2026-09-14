@@ -311,6 +311,15 @@
       }
     },
     {
+      "label": "Sector Shootout",
+      "tooltip": [{"text":"• Players are placed on an ice track for boats\n• The task is to gather as much points as you can, as fast as you can - because they're constantly dropping\n• You need to score better than in the rounds before to gather more points\n• Players are spawned individually, so they don't interrupt each other","bold":false,"color":"gray"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 45"
+      }
+    },
+    {
       "label": "Speed Builders",
       "tooltip": [{"text":"• The task is to copy the build from the middle in 2 minutes\n• The round number is one less than the players count, minus one for each draw\n• Player can build only on their building field\n• The player, who has a more detailed build in the last round wins the game","bold":false,"color":"gray"}],
       "width": 125,
@@ -407,6 +416,33 @@
       "action": {
         "type": "run_command",
         "command": "/trigger AC_Queue set 42"
+      }
+    },
+    {
+      "label": "-----",
+      "tooltip": [{"text":"• This gamemode is coming soon!","bold":false,"color":"red"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 46"
+      }
+    },
+    {
+      "label": "-----",
+      "tooltip": [{"text":"• This gamemode is coming soon!","bold":false,"color":"red"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 47"
+      }
+    },
+    {
+      "label": "-----",
+      "tooltip": [{"text":"• This gamemode is coming soon!","bold":false,"color":"red"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 48"
       }
     },
     {
