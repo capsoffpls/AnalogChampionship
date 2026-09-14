@@ -709,6 +709,20 @@ scoreboard objectives add AC_splSnowball dummy
 scoreboard players set .-1 AC_splSnowball -1
 scoreboard players set .global AC_splSnowball 1
 scoreboard objectives add AC_splDestroy minecraft.mined:minecraft.snow_block
+bossbar add ac_sso [{"text":"Sector Shootout","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
+bossbar set ac_sso color blue
+bossbar set ac_sso max 12000
+bossbar set ac_sso style notched_10
+scoreboard objectives add AC_ssoTemp dummy
+scoreboard objectives add AC_ssoScore dummy
+scoreboard objectives add AC_ssoSector1 dummy
+scoreboard objectives add AC_ssoSector2 dummy
+scoreboard objectives add AC_ssoSector3 dummy
+scoreboard objectives add AC_ssoSector4 dummy
+scoreboard objectives add AC_ssoBoatDamage dummy
+scoreboard objectives add AC_ssoPointsAtStake dummy
+scoreboard objectives add AC_ssoCheckpoints dummy
+scoreboard objectives add AC_ssoLaps dummy
 bossbar add ac_tcb [{"text":"The Chamber","color":"white","bold":true},{"text":" - Czas do końca gry","color":"gray","bold":false}]
 bossbar set ac_tcb color white
 bossbar set ac_tcb max 12000

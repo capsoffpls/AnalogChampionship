@@ -47,6 +47,7 @@ scoreboard players reset JGT AC_voteban
 scoreboard players reset UWS AC_voteban
 scoreboard players reset MTL AC_voteban
 scoreboard players reset TTR AC_voteban
+scoreboard players reset SSO AC_voteban
 
 execute in minecraft:overworld run tp @a 0 45 -130 -180 0
 execute as @a[tag=InGame] run dialog show @s ac:tournament-ban1

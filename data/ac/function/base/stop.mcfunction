@@ -252,3 +252,6 @@ bossbar set minecraft:ac_mtl visible false
 # // Through The Rings //
 scoreboard players set ttr AC_running 0
 bossbar set minecraft:ac_ttr visible false
+# // Sector Shootout //
+scoreboard players set sso AC_running 0
+bossbar set minecraft:ac_sso visible false

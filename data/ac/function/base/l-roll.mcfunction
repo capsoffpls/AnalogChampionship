@@ -1,4 +1,4 @@
-execute if score draw-l AC_misc matches 1..59 run execute store result score l AC_gamemode run random value 1..10
+execute if score draw-l AC_misc matches 1..59 run execute store result score l AC_gamemode run random value 1..11
 execute if score draw-l AC_misc matches 1..60 run scoreboard players add draw-l AC_misc 1
 
 execute if score draw-l AC_misc matches 60 run function ac:base/l-correct

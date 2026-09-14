@@ -68,6 +68,8 @@ execute if score rpl AC_running matches 1 if score rpl AC_time matches 300 run f
 
 execute if score spl AC_running matches 1 if score spl AC_time matches 600 run function ac:base/overtime-global-start {time:30,mode:1}
 
+execute if score sso AC_running matches 1 if score sso AC_time matches 1200 run function ac:base/overtime-global-start {time:60,mode:1}
+
 execute if score tbk AC_running matches 1 if score tbk AC_time matches 1200 run function ac:base/overtime-global-start {time:60,mode:1}
 
 execute if score tcb AC_running matches 1 if score tcb AC_time matches 600 run function ac:base/overtime-global-start {time:30,mode:1}

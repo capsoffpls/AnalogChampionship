@@ -521,6 +521,18 @@ execute if score gm AC_gamemode matches 44 run execute if score lang AC_lang mat
 • Missing a ring will slow you down\n\
 • Game time is limited to 1,5 minutes","bold":false,"color":"gray"}]
 
+# // Sector Shootout //
+execute if score gm AC_gamemode matches 45 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Sector Shootout","bold":true},{"text":"\n\
+• Gracze umieszczeni są na lodowym torze dla łódek\n\
+• Zadaniem gracza jest zebrać jak najwięcej punktów, które nieustannie spadają\n\
+• Do twojego rekordu wliczy się tylko wynik lepszy od poprzedniego\n\
+• Gracze są spawnowani pojedyńczo, by nie przeszkadzali sobie nawzajem","bold":false,"color":"gray"}]
+execute if score gm AC_gamemode matches 45 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Sector Shootout","bold":true},{"text":"\n\
+• Players are placed on an ice track for boats\n\
+• The task is to gather as much points as you can, as fast as you can - because they're constantly dropping\n\
+• You need to score better than in the rounds before to gather more points\n\
+• Players are spawned individually, so they don't interrupt each other","bold":false,"color":"gray"}]
+
 
 # // Obstacle Course //
 # execute if block -23 58 48 calcite run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Obstacle Course","bold":false},{"text":"\n\

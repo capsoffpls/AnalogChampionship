@@ -260,6 +260,11 @@ $execute if score game$(game) AC_autoControl matches -10 if score playervote$(ga
 $execute if score game$(game) AC_autoControl matches -10 if score playervote$(game)-3 AC_autoControl matches 44 run data modify storage ac:auto.vote option3 set value "Through The Rings"
 $execute if score game$(game) AC_autoControl matches -10 if score playervote$(game)-4 AC_autoControl matches 44 run data modify storage ac:auto.vote option4 set value "Through The Rings"
 
+$execute if score game$(game) AC_autoControl matches -10 if score playervote$(game)-1 AC_autoControl matches 45 run data modify storage ac:auto.vote option1 set value "Sector Shootout"
+$execute if score game$(game) AC_autoControl matches -10 if score playervote$(game)-2 AC_autoControl matches 45 run data modify storage ac:auto.vote option2 set value "Sector Shootout"
+$execute if score game$(game) AC_autoControl matches -10 if score playervote$(game)-3 AC_autoControl matches 45 run data modify storage ac:auto.vote option3 set value "Sector Shootout"
+$execute if score game$(game) AC_autoControl matches -10 if score playervote$(game)-4 AC_autoControl matches 45 run data modify storage ac:auto.vote option4 set value "Sector Shootout"
+
 
 $execute if score game$(game) AC_autoControl matches -20 if score publicvote$(game)-1 AC_autoControl matches 1 run data modify storage ac:auto.vote option1 set value "TNT Run"
 $execute if score game$(game) AC_autoControl matches -20 if score publicvote$(game)-2 AC_autoControl matches 1 run data modify storage ac:auto.vote option2 set value "TNT Run"
@@ -480,6 +485,11 @@ $execute if score game$(game) AC_autoControl matches -20 if score publicvote$(ga
 $execute if score game$(game) AC_autoControl matches -20 if score publicvote$(game)-2 AC_autoControl matches 44 run data modify storage ac:auto.vote option2 set value "Through The Rings"
 $execute if score game$(game) AC_autoControl matches -20 if score publicvote$(game)-3 AC_autoControl matches 44 run data modify storage ac:auto.vote option3 set value "Through The Rings"
 $execute if score game$(game) AC_autoControl matches -20 if score publicvote$(game)-4 AC_autoControl matches 44 run data modify storage ac:auto.vote option4 set value "Through The Rings"
+
+$execute if score game$(game) AC_autoControl matches -20 if score publicvote$(game)-1 AC_autoControl matches 45 run data modify storage ac:auto.vote option1 set value "Sector Shootout"
+$execute if score game$(game) AC_autoControl matches -20 if score publicvote$(game)-2 AC_autoControl matches 45 run data modify storage ac:auto.vote option2 set value "Sector Shootout"
+$execute if score game$(game) AC_autoControl matches -20 if score publicvote$(game)-3 AC_autoControl matches 45 run data modify storage ac:auto.vote option3 set value "Sector Shootout"
+$execute if score game$(game) AC_autoControl matches -20 if score publicvote$(game)-4 AC_autoControl matches 45 run data modify storage ac:auto.vote option4 set value "Sector Shootout"
 
 
 $execute if score game$(game) AC_autoControl matches -20..-10 if score lang AC_lang matches 0 run tellraw @a [{"text":"[AUTO] ","bold":true,"color":"gold"},{"text":"Tryby do wybrania w tym głosowaniu to:\n","color":"yellow","bold":false},{"text":">> ",bold:true,color:yellow},{interpret:true,"storage":"ac:auto.vote","nbt":"option1",bold:true,color:gold,click_event:{action:"run_command",command:"function ac:auto/vote-choose {game:$(game),chosen:1}"}},{"text":"\n>> ",bold:true,color:yellow},{interpret:true,"storage":"ac:auto.vote","nbt":"option2",bold:true,color:gold,click_event:{action:"run_command",command:"function ac:auto/vote-choose {game:$(game),chosen:2}"}},{"text":"\n>> ",bold:true,color:yellow},{interpret:true,"storage":"ac:auto.vote","nbt":"option3",bold:true,color:gold,click_event:{action:"run_command",command:"function ac:auto/vote-choose {game:$(game),chosen:3}"}},{"text":"\n>> ",bold:true,color:yellow},{interpret:true,"storage":"ac:auto.vote","nbt":"option4",bold:true,color:gold,click_event:{action:"run_command",command:"function ac:auto/vote-choose {game:$(game),chosen:4}"}}]

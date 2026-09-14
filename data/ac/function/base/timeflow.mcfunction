@@ -34,6 +34,7 @@ execute store result bossbar minecraft:ac_prh value run scoreboard players get p
 execute store result bossbar minecraft:ac_rpl value run scoreboard players get rpl AC_time
 execute store result bossbar minecraft:ac_spb value run scoreboard players get spb AC_time
 execute store result bossbar minecraft:ac_spl value run scoreboard players get spl AC_time
+execute store result bossbar minecraft:ac_sso value run scoreboard players get sso AC_time
 execute store result bossbar minecraft:ac_tbk value run scoreboard players get tbk AC_time
 execute store result bossbar minecraft:ac_tcb value run scoreboard players get tcb AC_time
 execute store result bossbar minecraft:ac_tfw value run scoreboard players get tfw AC_time
@@ -83,6 +84,7 @@ execute if score prh AC_running matches 1 run scoreboard players remove prh AC_t
 execute if score rpl AC_running matches 1 run scoreboard players remove rpl AC_time 1
 execute if score spb AC_running matches 1 run scoreboard players remove spb AC_time 1
 execute if score spl AC_running matches 1 run scoreboard players remove spl AC_time 1
+execute if score sso AC_running matches 1 run scoreboard players remove sso AC_time 1
 execute if score tbk AC_running matches 1 run scoreboard players remove tbk AC_time 1
 execute if score tcb AC_running matches 1 run scoreboard players remove tcb AC_time 1
 execute if score tfw AC_running matches 1 run scoreboard players remove tfw AC_time 1

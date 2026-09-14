@@ -44,6 +44,7 @@ scoreboard players operation 41 AC_gamemode = 41 AC_gamemodeStorage
 scoreboard players operation 42 AC_gamemode = 42 AC_gamemodeStorage
 scoreboard players operation 43 AC_gamemode = 43 AC_gamemodeStorage
 scoreboard players operation 44 AC_gamemode = 44 AC_gamemodeStorage
+scoreboard players operation 45 AC_gamemode = 45 AC_gamemodeStorage
 
 execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[AUTO] ","bold":true,"color":"gold"},{"text":"Tryb automatyczny został wyłączony.","color":"yellow","bold":false}]
 execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[AUTO] ","bold":true,"color":"gold"},{"text":"Auto mode has been turned off.","color":"yellow","bold":false}]

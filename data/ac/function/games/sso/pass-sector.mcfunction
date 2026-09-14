@@ -1,0 +1,11 @@
+$execute if score @s AC_ssoPointsAtStake <= @s AC_ssoSector$(sector) run scoreboard players operation @s AC_ssoTemp = @s AC_ssoSector$(sector)
+$execute if score @s AC_ssoPointsAtStake <= @s AC_ssoSector$(sector) run scoreboard players operation @s AC_ssoTemp -= @s AC_ssoPointsAtStake
+$execute if score @s AC_ssoPointsAtStake <= @s AC_ssoSector$(sector) if score lang AC_lang matches 0 run tellraw @s [{"text":"[SSO] ","bold":true,"color":"dark_green"},{"text":"Do pobicia rekordu zabrakło ","color":"red","bold":false},{score:{name:"@s",objective:"AC_ssoTemp"},"color":"dark_red","bold":true},{"text":" punktów","color":"red","bold":false}]
+$execute if score @s AC_ssoPointsAtStake <= @s AC_ssoSector$(sector) if score lang AC_lang matches 1 run tellraw @s [{"text":"[SSO] ","bold":true,"color":"dark_green"},{"text":"You missed your record by ","color":"red","bold":false},{score:{name:"@s",objective:"AC_ssoTemp"},"color":"dark_red","bold":true},{"text":" points","color":"red","bold":false}]
+
+$execute if score @s AC_ssoPointsAtStake > @s AC_ssoSector$(sector) run scoreboard players operation @s AC_ssoSector$(sector) = @s AC_ssoPointsAtStake
+$execute if score @s AC_ssoPointsAtStake = @s AC_ssoSector$(sector) run scoreboard players operation @s AC_ssoScore += @s AC_ssoPointsAtStake
+$execute if score @s AC_ssoPointsAtStake = @s AC_ssoSector$(sector) if score lang AC_lang matches 0 run tellraw @s [{"text":"[SSO] ","bold":true,"color":"dark_green"},{"text":"Nowy rekord sektoru! - ","color":"green","bold":false},{score:{name:"@s",objective:"AC_ssoSector$(sector)"},"color":"dark_green","bold":true},{"text":" punktów","color":"green","bold":false}]
+$execute if score @s AC_ssoPointsAtStake = @s AC_ssoSector$(sector) if score lang AC_lang matches 1 run tellraw @s [{"text":"[SSO] ","bold":true,"color":"dark_green"},{"text":"New sector record! - ","color":"green","bold":false},{score:{name:"@s",objective:"AC_ssoSector$(sector)"},"color":"dark_green","bold":true},{"text":" points","color":"green","bold":false}]
+
+scoreboard players set @s AC_ssoPointsAtStake 750

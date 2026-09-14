@@ -42,7 +42,7 @@ $execute if score Queue$(queue) AC_QueuedCount matches 41 run data modify storag
 $execute if score Queue$(queue) AC_QueuedCount matches 42 run data modify storage ac:queue.$(queue) mode_name set value "Underwater Skewers"
 $execute if score Queue$(queue) AC_QueuedCount matches 43 run data modify storage ac:queue.$(queue) mode_name set value "Mow The Lawn"
 $execute if score Queue$(queue) AC_QueuedCount matches 44 run data modify storage ac:queue.$(queue) mode_name set value "Through The Rings"
-$execute if score Queue$(queue) AC_QueuedCount matches 45 run data modify storage ac:queue.$(queue) mode_name set value "Już wkrótce"
+$execute if score Queue$(queue) AC_QueuedCount matches 45 run data modify storage ac:queue.$(queue) mode_name set value "Sector Shootout"
 $execute if score Queue$(queue) AC_QueuedCount matches 46 run data modify storage ac:queue.$(queue) mode_name set value "Już wkrótce"
 $execute if score Queue$(queue) AC_QueuedCount matches 47 run data modify storage ac:queue.$(queue) mode_name set value "Już wkrótce"
 $execute if score Queue$(queue) AC_QueuedCount matches 48 run data modify storage ac:queue.$(queue) mode_name set value "Już wkrótce"

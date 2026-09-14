@@ -46,6 +46,7 @@ scoreboard players operation 41 AC_gamemodeStorage = 41 AC_gamemode
 scoreboard players operation 42 AC_gamemodeStorage = 42 AC_gamemode
 scoreboard players operation 43 AC_gamemodeStorage = 43 AC_gamemode
 scoreboard players operation 44 AC_gamemodeStorage = 44 AC_gamemode
+scoreboard players operation 45 AC_gamemodeStorage = 45 AC_gamemode
 
 execute unless score banned1 AC_autoControl matches 1 unless score banned2 AC_autoControl matches 1 unless score banned3 AC_autoControl matches 1 run scoreboard players set 01 AC_gamemode 0
 execute unless score banned1 AC_autoControl matches 2 unless score banned2 AC_autoControl matches 2 unless score banned3 AC_autoControl matches 2 run scoreboard players set 02 AC_gamemode 0
@@ -91,6 +92,7 @@ execute unless score banned1 AC_autoControl matches 41 unless score banned2 AC_a
 execute unless score banned1 AC_autoControl matches 42 unless score banned2 AC_autoControl matches 42 unless score banned3 AC_autoControl matches 42 run scoreboard players set 42 AC_gamemode 0
 execute unless score banned1 AC_autoControl matches 43 unless score banned2 AC_autoControl matches 43 unless score banned3 AC_autoControl matches 43 run scoreboard players set 43 AC_gamemode 0
 execute unless score banned1 AC_autoControl matches 44 unless score banned2 AC_autoControl matches 44 unless score banned3 AC_autoControl matches 44 run scoreboard players set 44 AC_gamemode 0
+execute unless score banned1 AC_autoControl matches 45 unless score banned2 AC_autoControl matches 45 unless score banned3 AC_autoControl matches 45 run scoreboard players set 45 AC_gamemode 0
 
 execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[AUTO] ","bold":true,"color":"gold"},{"text":"Tryb automatyczny został uruchomiony!","color":"yellow","bold":false}]
 execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[AUTO] ","bold":true,"color":"gold"},{"text":"Auto mode has been turned on!","color":"yellow","bold":false}]

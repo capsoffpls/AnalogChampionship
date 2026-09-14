@@ -42,3 +42,4 @@ scoreboard players set 41 AC_gamemode 0
 scoreboard players set 42 AC_gamemode 0
 scoreboard players set 43 AC_gamemode 0
 scoreboard players set 44 AC_gamemode 0
+scoreboard players set 45 AC_gamemode 0

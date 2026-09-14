@@ -103,6 +103,8 @@ execute if score mtl AC_running matches 1 run function ac:games/mtl/main
 
 execute if score ttr AC_running matches 1 run function ac:games/ttr/main
 
+execute if score sso AC_running matches 1 run function ac:games/sso/main
+
 ##wycofane
 #execute if score tcb AC_running matches 1 run function ac:games/tcb/start
 #execute if score tcb AC_running matches 1 run function ac:games/tcb/streak

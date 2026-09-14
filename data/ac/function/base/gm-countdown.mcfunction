@@ -1,5 +1,7 @@
 execute if score wait AC_running matches 1 if score wait AC_time matches ..-1 run scoreboard players set wait AC_time 61
 
+execute if score wait AC_running matches 1 if score wait AC_time matches 60 run clear @a *[custom_data~{chuj:-1}]
+execute if score wait AC_running matches 1 if score wait AC_time matches 60 run dialog clear @a
 execute if score wait AC_running matches 1 if score wait AC_time matches 60 if score gm AC_gamemode matches ..999 run scoreboard players set isRanked AC_CurrentlyPlayed 0
 execute if score wait AC_running matches 1 if score wait AC_time matches 60 if score gm AC_gamemode matches ..999 run scoreboard players set @a[tag=InGame] AC_IsGameRanked 0
 execute if score wait AC_running matches 1 if score wait AC_time matches 60 if score gm AC_gamemode matches 999 run scoreboard players set draw AC_misc 39

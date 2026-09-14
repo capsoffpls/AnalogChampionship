@@ -42,3 +42,4 @@ execute if score gm AC_gamemode matches 41 if score 41 AC_gamemode matches 0 run
 execute if score gm AC_gamemode matches 42 if score 42 AC_gamemode matches 0 run scoreboard players set 42 AC_gamemode -1
 execute if score gm AC_gamemode matches 43 if score 43 AC_gamemode matches 0 run scoreboard players set 43 AC_gamemode -1
 execute if score gm AC_gamemode matches 44 if score 44 AC_gamemode matches 0 run scoreboard players set 44 AC_gamemode -1
+execute if score gm AC_gamemode matches 45 if score 45 AC_gamemode matches 0 run scoreboard players set 45 AC_gamemode -1

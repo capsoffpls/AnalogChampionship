@@ -53,3 +53,4 @@ execute if score gm AC_gamemode matches 41 run scoreboard players set game-lengt
 execute if score gm AC_gamemode matches 42 run scoreboard players set game-length AC_autoControl 1
 execute if score gm AC_gamemode matches 43 run scoreboard players set game-length AC_autoControl 0
 execute if score gm AC_gamemode matches 44 run scoreboard players set game-length AC_autoControl 0
+execute if score gm AC_gamemode matches 45 run scoreboard players set game-length AC_autoControl 2

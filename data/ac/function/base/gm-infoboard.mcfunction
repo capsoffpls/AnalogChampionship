@@ -510,13 +510,25 @@ execute if score info AC_misc matches 43 run execute if score lang AC_lang match
 • The game lasts 1 minute","bold":false,"color":"yellow"}]
 
 # // Through The Rings //
-execute if score info AC_misc matches 43 run execute if score lang AC_lang matches 0 run data modify entity @e[tag=lobbyInfoboard,limit=1] text set value [{"text":"Through The Rings","bold":true,color:gold},{"text":"\n\
+execute if score info AC_misc matches 44 run execute if score lang AC_lang matches 0 run data modify entity @e[tag=lobbyInfoboard,limit=1] text set value [{"text":"Through The Rings","bold":true,color:gold},{"text":"\n\
 • Zadaniem graczy jest dotrzeć na koniec wyścigu na Happy Ghastach\n\
 • Przelatywanie przez kółka przyspiesza cię i dodaje punkty\n\
 • Ominięcie kółka spowolni cię\n\
 • Gra jest ograniczona czasowo do 1,5 minuty","bold":false,"color":"yellow"}]
-execute if score info AC_misc matches 43 run execute if score lang AC_lang matches 1 run data modify entity @e[tag=lobbyInfoboard,limit=1] text set value [{"text":"Through The Rings","bold":true,color:gold},{"text":"\n\
+execute if score info AC_misc matches 44 run execute if score lang AC_lang matches 1 run data modify entity @e[tag=lobbyInfoboard,limit=1] text set value [{"text":"Through The Rings","bold":true,color:gold},{"text":"\n\
 • Players are tasked with finishing a Happy Ghast race\n\
 • Flying through rings will boost your speed and give you points\n\
 • Missing a ring will slow you down\n\
 • Game time is limited to 1,5 minutes","bold":false,"color":"yellow"}]
+
+# // Sector Shootout //
+execute if score info AC_misc matches 45 run execute if score lang AC_lang matches 0 run data modify entity @e[tag=lobbyInfoboard,limit=1] text set value [{"text":"Sector Shootout","bold":true,color:gold},{"text":"\n\
+• Gracze umieszczeni są na lodowym torze dla łódek\n\
+• Zadaniem gracza jest zebrać jak najwięcej punktów, które nieustannie spadają\n\
+• Do twojego rekordu wliczy się tylko wynik lepszy od poprzedniego\n\
+• Gracze są spawnowani pojedyńczo, by nie przeszkadzali sobie nawzajem","bold":false,"color":"yellow"}]
+execute if score info AC_misc matches 45 run execute if score lang AC_lang matches 1 run data modify entity @e[tag=lobbyInfoboard,limit=1] text set value [{"text":"Sector Shootout","bold":true,color:gold},{"text":"\n\
+• Players are placed on an ice track for boats\n\
+• The task is to gather as much points as you can, as fast as you can - because they're constantly dropping\n\
+• You need to score better than in the rounds before to gather more points\n\
+• Players are spawned individually, so they don't interrupt each other","bold":false,"color":"yellow"}]

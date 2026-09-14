@@ -41,7 +41,8 @@ execute unless score 40 AC_gamemode matches 0 if score gm AC_gamemode matches 40
 execute unless score 41 AC_gamemode matches 0 if score gm AC_gamemode matches 41 run scoreboard players add gm AC_gamemode 1
 execute unless score 42 AC_gamemode matches 0 if score gm AC_gamemode matches 42 run scoreboard players add gm AC_gamemode 1
 execute unless score 43 AC_gamemode matches 0 if score gm AC_gamemode matches 43 run scoreboard players add gm AC_gamemode 1
-execute unless score 44 AC_gamemode matches 0 if score gm AC_gamemode matches 44 run scoreboard players set gm AC_gamemode 1
+execute unless score 44 AC_gamemode matches 0 if score gm AC_gamemode matches 44 run scoreboard players add gm AC_gamemode 1
+execute unless score 45 AC_gamemode matches 0 if score gm AC_gamemode matches 45 run scoreboard players set gm AC_gamemode 1
 
 execute unless score 01 AC_gamemode matches 0 if score gm AC_gamemode matches 1 run scoreboard players add gm AC_gamemode 1
 execute unless score 02 AC_gamemode matches 0 if score gm AC_gamemode matches 2 run scoreboard players add gm AC_gamemode 1
