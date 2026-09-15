@@ -1,3 +1,6 @@
+## ta funkcja nie jest nawet używana, tylko służy za ściągę do id kolorów
+
+
 execute as @e[limit=10] run summon minecraft:area_effect_cloud 0 0 0 {Tags:["colorrng"],Duration:10,Radius:0,WaitTime:0}
 spreadplayers 1000 -500 0 31 under 53 false @e[type=area_effect_cloud,tag=colorrng]
 tag @e[type=area_effect_cloud,tag=colorrng,limit=1,sort=random] add chosen
