@@ -3,14 +3,14 @@
 
 # modifiery
 
-arrow barrage:
+arrow barrage: (done)
     1 -> pvp jest wlaczone
     2 -> niszczenie blokow jest wlaczone, i jest szybkie. bardzo.
     3 -> strzaly strzelaja z kazdej strony
     4 -> wind charge
 
 assassins:
-    empty
+    murder mystery ???
 
 anvil spleef:
     1 -> kowadla nie maja zadnego cooldownu

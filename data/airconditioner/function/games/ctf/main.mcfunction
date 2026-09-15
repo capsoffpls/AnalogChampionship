@@ -45,10 +45,10 @@ execute if score ctf AC_running matches 1 if score ctf AC_time matches -6061 run
 execute if score ctf AC_running matches 1 if score ctf AC_time matches -6061 run function airconditioner:auto/invoke
 execute if score ctf AC_running matches 1 if score ctf AC_time matches -6061 run scoreboard players set ctf AC_running 0
 
-execute if score ctf AC_running matches 1 run execute as @a[tag=InGame] if entity @s[tag=!ctfBuildLimit,advancements={ac:ctf_buildlimit=true}] run function airconditioner:games/ctf/warn-buildlimit
-execute if score ctf AC_running matches 1 run execute as @a[tag=InGame] if entity @s[tag=ctfBuildLimit,advancements={ac:ctf_buildlimit=true}] run scoreboard players add @s AC_BuildLimitTimer 1
-execute if score ctf AC_running matches 1 run execute as @a[tag=InGame] if score @s[tag=ctfBuildLimit,advancements={ac:ctf_buildlimit=true}] AC_BuildLimitTimer matches 100.. run advancement revoke @s only ac:ctf_buildlimit
-execute if score ctf AC_running matches 1 run execute as @a[tag=InGame] if entity @s[tag=ctfBuildLimit,advancements={ac:ctf_buildlimit=false}] run tag @s remove ctfBuildLimit
+#execute if score ctf AC_running matches 1 run execute as @a[tag=InGame] if entity @s[tag=!ctfBuildLimit,advancements={ac:ctf_buildlimit=true}] run function airconditioner:games/ctf/warn-buildlimit
+#execute if score ctf AC_running matches 1 run execute as @a[tag=InGame] if entity @s[tag=ctfBuildLimit,advancements={ac:ctf_buildlimit=true}] run scoreboard players add @s AC_BuildLimitTimer 1
+#execute if score ctf AC_running matches 1 run execute as @a[tag=InGame] if score @s[tag=ctfBuildLimit,advancements={ac:ctf_buildlimit=true}] AC_BuildLimitTimer matches 100.. run advancement revoke @s only ac:ctf_buildlimit
+#execute if score ctf AC_running matches 1 run execute as @a[tag=InGame] if entity @s[tag=ctfBuildLimit,advancements={ac:ctf_buildlimit=false}] run tag @s remove ctfBuildLimit
 
 execute if score ctf AC_running matches 1 if score ctf1 AC_functions matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:red_wool"}}] unless data entity @s {Item:{components:{can_place_on:{blocks:"#ac:allblocks"}}}} run data merge entity @s {Item:{components:{can_place_on:{blocks:"#ac:allblocks"}}}}
 execute if score ctf AC_running matches 1 if score ctf1 AC_functions matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:blue_wool"}}] unless data entity @s {Item:{components:{can_place_on:{blocks:"#ac:allblocks"}}}} run data merge entity @s {Item:{components:{can_place_on:{blocks:"#ac:allblocks"}}}}

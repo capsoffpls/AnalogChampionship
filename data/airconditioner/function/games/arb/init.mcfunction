@@ -50,3 +50,5 @@ scoreboard players set current AC_rankedPlaceFinished 1
 
 scoreboard players set @a[tag=InGame] AC_CurrentlyPlayed 16
 scoreboard players set NowPlaying AC_CurrentlyPlayed 16
+
+function airconditioner:games/arb/setuppp

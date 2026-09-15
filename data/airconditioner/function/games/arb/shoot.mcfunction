@@ -52,3 +52,59 @@ execute if score shootside AC_arbRNG matches 2 positioned -2014 ~ ~ if score ske
 execute if score shootside AC_arbRNG matches 2 positioned -2014 ~ ~ if score skew1 AC_arbRNG matches 0 if score skew2 AC_arbRNG matches 2 run summon arrow ~ ~2.5 ~ {Motion:[10d,0d,0d],damage:0.1,Rotation:[90f,0f]}
 execute if score shootside AC_arbRNG matches 2 positioned -2014 ~ ~ if score skew1 AC_arbRNG matches 1 if score skew2 AC_arbRNG matches 2 run summon arrow ~ ~2.5 ~1 {Motion:[10d,0d,0d],damage:0.1,Rotation:[90f,0f]}
 execute if score shootside AC_arbRNG matches 2 positioned -2014 ~ ~ if score skew1 AC_arbRNG matches 2 if score skew2 AC_arbRNG matches 2 run summon arrow ~ ~2.5 ~2 {Motion:[10d,0d,0d],damage:0.1,Rotation:[90f,0f]}
+
+
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches -2 if score skew2 AC_arbRNG matches -2 run summon arrow ~ ~ ~-2 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches -1 if score skew2 AC_arbRNG matches -2 run summon arrow ~ ~ ~-1 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 0 if score skew2 AC_arbRNG matches -2 run summon arrow ~ ~ ~ {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 1 if score skew2 AC_arbRNG matches -2 run summon arrow ~ ~ ~1 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 2 if score skew2 AC_arbRNG matches -2 run summon arrow ~ ~ ~2 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches -2 if score skew2 AC_arbRNG matches -1 run summon arrow ~ ~ ~-2 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches -1 if score skew2 AC_arbRNG matches -1 run summon arrow ~ ~ ~-1 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 0 if score skew2 AC_arbRNG matches -1 run summon arrow ~ ~ ~ {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 1 if score skew2 AC_arbRNG matches -1 run summon arrow ~ ~ ~1 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 2 if score skew2 AC_arbRNG matches -1 run summon arrow ~ ~ ~2 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches -2 if score skew2 AC_arbRNG matches 0 run summon arrow ~ ~ ~-2 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches -1 if score skew2 AC_arbRNG matches 0 run summon arrow ~ ~ ~-1 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 0 if score skew2 AC_arbRNG matches 0 run summon arrow ~ ~ ~ {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 1 if score skew2 AC_arbRNG matches 0 run summon arrow ~ ~ ~1 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 2 if score skew2 AC_arbRNG matches 0 run summon arrow ~ ~ ~2 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches -2 if score skew2 AC_arbRNG matches 1 run summon arrow ~ ~ ~-2 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches -1 if score skew2 AC_arbRNG matches 1 run summon arrow ~ ~ ~-1 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 0 if score skew2 AC_arbRNG matches 1 run summon arrow ~ ~ ~ {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 1 if score skew2 AC_arbRNG matches 1 run summon arrow ~ ~ ~1 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 2 if score skew2 AC_arbRNG matches 1 run summon arrow ~ ~ ~2 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches -2 if score skew2 AC_arbRNG matches 2 run summon arrow ~ ~ ~-2 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches -1 if score skew2 AC_arbRNG matches 2 run summon arrow ~ ~ ~-1 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 0 if score skew2 AC_arbRNG matches 2 run summon arrow ~ ~ ~ {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 1 if score skew2 AC_arbRNG matches 2 run summon arrow ~ ~ ~1 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+execute if score shootside2 AC_arbRNG matches 1 positioned ~ 120 ~ if score skew1 AC_arbRNG matches 2 if score skew2 AC_arbRNG matches 2 run summon arrow ~ ~ ~2 {Motion:[0d,-10d,0d],damage:0.1,Rotation:[0f,90f]}
+
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches -2 if score skew2 AC_arbRNG matches -2 run summon arrow ~ ~ ~-2 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches -1 if score skew2 AC_arbRNG matches -2 run summon arrow ~ ~ ~-1 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 0 if score skew2 AC_arbRNG matches -2 run summon arrow ~ ~ ~ {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 1 if score skew2 AC_arbRNG matches -2 run summon arrow ~ ~ ~1 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 2 if score skew2 AC_arbRNG matches -2 run summon arrow ~ ~ ~2 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches -2 if score skew2 AC_arbRNG matches -1 run summon arrow ~ ~ ~-2 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches -1 if score skew2 AC_arbRNG matches -1 run summon arrow ~ ~ ~-1 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 0 if score skew2 AC_arbRNG matches -1 run summon arrow ~ ~ ~ {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 1 if score skew2 AC_arbRNG matches -1 run summon arrow ~ ~ ~1 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 2 if score skew2 AC_arbRNG matches -1 run summon arrow ~ ~ ~2 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches -2 if score skew2 AC_arbRNG matches 0 run summon arrow ~ ~ ~-2 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches -1 if score skew2 AC_arbRNG matches 0 run summon arrow ~ ~ ~-1 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 0 if score skew2 AC_arbRNG matches 0 run summon arrow ~ ~ ~ {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 1 if score skew2 AC_arbRNG matches 0 run summon arrow ~ ~ ~1 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 2 if score skew2 AC_arbRNG matches 0 run summon arrow ~ ~ ~2 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches -2 if score skew2 AC_arbRNG matches 1 run summon arrow ~ ~ ~-2 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches -1 if score skew2 AC_arbRNG matches 1 run summon arrow ~ ~ ~-1 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 0 if score skew2 AC_arbRNG matches 1 run summon arrow ~ ~ ~ {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 1 if score skew2 AC_arbRNG matches 1 run summon arrow ~ ~ ~1 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 2 if score skew2 AC_arbRNG matches 1 run summon arrow ~ ~ ~2 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches -2 if score skew2 AC_arbRNG matches 2 run summon arrow ~ ~ ~-2 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches -1 if score skew2 AC_arbRNG matches 2 run summon arrow ~ ~ ~-1 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 0 if score skew2 AC_arbRNG matches 2 run summon arrow ~ ~ ~ {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 1 if score skew2 AC_arbRNG matches 2 run summon arrow ~ ~ ~1 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+execute if score shootside2 AC_arbRNG matches 2 positioned ~ 0 ~ if score skew1 AC_arbRNG matches 2 if score skew2 AC_arbRNG matches 2 run summon arrow ~ ~ ~2 {Motion:[0d,10d,0d],damage:0.1,Rotation:[0f,-90f]}
+
+
+scoreboard players set shootside2 AC_arbRNG 0
