@@ -9,7 +9,7 @@
                "projection": "rigid",
                 "processors": "empty"
             },
-            "weight": 4
+            "weight": 55
         },
         {
             "element": {
@@ -18,7 +18,7 @@
                 "projection": "rigid",
                 "processors": "empty"
             },
-            "weight": 4
+            "weight": 55
         },
         {
             "element": {
@@ -27,9 +27,9 @@
                 "projection": "rigid",
                 "processors": "empty"
             },
-            "weight": 4
+            "weight": 55
         },
-        
+
         {
             "element": {
                 "element_type": "single_pool_element",
@@ -37,9 +37,18 @@
                 "projection": "rigid",
                 "processors": "empty"
             },
-            "weight": 3
+            "weight": 25
         },
-
+        {
+            "element": {
+                "element_type": "single_pool_element",
+                "location": "ac:mzg/rooms/medium2",
+                "projection": "rigid",
+                "processors": "empty"
+            },
+            "weight": 25
+        },
+        
         {
             "element": {
                 "element_type": "single_pool_element",
@@ -47,7 +56,7 @@
                 "projection": "rigid",
                 "processors": "empty"
             },
-            "weight": 2
+            "weight": 15
         },
 
         {

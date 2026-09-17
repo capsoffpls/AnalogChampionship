@@ -1,0 +1,8 @@
+{
+    "amount": 2,
+    "trades": [
+        "ac:mzg/common_1"
+    ],
+    "allow_duplicates": false,
+    "random_sequence": "ac:mzg_1/level_1"
+}
