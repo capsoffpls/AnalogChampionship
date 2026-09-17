@@ -2,26 +2,59 @@
  "name": "ac:mzg/corridors",
  "fallback": "ac:mzg/end",
  "elements": [
-    {
-        "element": {
-            "element_type": "list_pool_element",
-            "elements": [
-                {
-                    "element_type": "single_pool_element",
-                    "location": "ac:mzg/corridors/cor1",
-                    "projection": "rigid",
-                    "processors": "empty"
-                },
-                {
-                    "element_type": "single_pool_element",
-                    "location": "ac:mzg/corridors/cor2",
-                    "projection": "rigid",
-                    "processors": "empty"
-                }
-            ],
-            "projection": "rigid"
+        {
+            "element": {
+                "element_type": "single_pool_element",
+                "location": "ac:mzg/corridors/cor1",
+               "projection": "rigid",
+                "processors": "empty"
+            },
+            "weight": 1
         },
-        "weight": 1
-    }
- ]
+        {
+            "element": {
+                "element_type": "single_pool_element",
+                "location": "ac:mzg/corridors/cor2",
+                "projection": "rigid",
+                "processors": "empty"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "single_pool_element",
+                "location": "ac:mzg/corridors/cor3",
+                "projection": "rigid",
+                "processors": "empty"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "single_pool_element",
+                "location": "ac:mzg/corridors/cor4",
+                "projection": "rigid",
+                "processors": "empty"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "single_pool_element",
+                "location": "ac:mzg/corridors/cor5",
+                "projection": "rigid",
+                "processors": "empty"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "single_pool_element",
+                "location": "ac:mzg/corridors/cor6",
+                "projection": "rigid",
+                "processors": "empty"
+            },
+            "weight": 1
+        }
+    ]
 }

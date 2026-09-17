@@ -10,5 +10,21 @@
     },
     "start_pool": "ac:mzg/spawn",
     "project_start_to_heightmap": "WORLD_SURFACE",
-    "use_expansion_hack": false
+    "use_expansion_hack": false,
+    "pool_aliases": [
+        {
+            "type": "minecraft:random",
+            "alias": "ac:mzg/corridors",
+            "targets": [
+                {
+                    "data": "ac:mzg/rooms",
+                    "weight": 1
+                },
+                {
+                    "data": "ac:mzg/corridors",
+                    "weight": 2
+                }
+            ]
+        }
+    ]
 }
