@@ -29,6 +29,15 @@
             },
             "weight": 55
         },
+        {
+            "element": {
+                "element_type": "single_pool_element",
+                "location": "ac:mzg/rooms/easy4",
+                "projection": "rigid",
+                "processors": "empty"
+            },
+            "weight": 55
+        },
 
         {
             "element": {
@@ -48,6 +57,15 @@
             },
             "weight": 25
         },
+        {
+            "element": {
+                "element_type": "single_pool_element",
+                "location": "ac:mzg/rooms/medium3",
+                "projection": "rigid",
+                "processors": "empty"
+            },
+            "weight": 25
+        },
         
         {
             "element": {
@@ -57,6 +75,16 @@
                 "processors": "empty"
             },
             "weight": 15
+        },
+
+        {
+            "element": {
+                "element_type": "single_pool_element",
+                "location": "ac:mzg/rooms/secret1",
+                "projection": "rigid",
+                "processors": "empty"
+            },
+            "weight": 1
         },
 
         {

@@ -1,0 +1,1 @@
+$place jigsaw ac:mzg/spawn minecraft:empty 11 $(x) 50 $(z)

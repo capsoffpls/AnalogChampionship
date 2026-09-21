@@ -7,8 +7,11 @@ execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[MZG] ","bold":
 
 tp @a 2500 53 1000
 forceload add 2350 850 2650 1150
+
+execute store result storage ac:mzg.generate x int 1 run random value 2458..2498
+execute store result storage ac:mzg.generate z int 1 run random value 980..1020
 fill 2350 -63 850 2650 319 1150 air
-place jigsaw ac:mzg/spawn minecraft:empty 11 2478 50 1000
+function ac:games/mzg/generate with storage ac:mzg.generate
 
 function ac:games/mzg/fill-chests
 function ac:base/add-spawntags

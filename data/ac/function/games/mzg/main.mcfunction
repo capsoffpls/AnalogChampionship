@@ -43,6 +43,7 @@ execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run cle
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run gamerule fall_damage false
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run team modify gracz friendlyFire false
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run team modify gracz nametagVisibility always
+execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run kill @e[type=marker,x=2500,z=1000,y=50,distance=..40]
 execute if score mzg AC_running matches 1 if score mzg AC_time matches -60 run gamemode adventure @a
 execute if score mzg AC_running matches 1 if score mzg AC_time matches -60 run tp @a 0 50 0
 execute if score mzg AC_running matches 1 if score mzg AC_time matches -60 run spawnpoint @a 0 50 0
