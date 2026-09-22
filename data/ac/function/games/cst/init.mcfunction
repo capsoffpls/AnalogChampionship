@@ -26,6 +26,7 @@ tp @a -2000 80 1500
 difficulty normal
 clear @a
 
+advancement revoke @a only ac:cst/blockhit
 tag @a remove cstArsonist
 tag @a remove cstAssassin
 tag @a remove cstRebel
