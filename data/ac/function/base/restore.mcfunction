@@ -855,7 +855,8 @@ forceload add -1549 -558 -1448 -450
 forceload add 650 1380 472 1622
 forceload add 457 1380 356 1622
 forceload add 5 1317 -5 2693
-forceload add 2350 850 2650 1150
+forceload add 2340 840 2500 1160
+forceload add 2500 840 2660 1160
 
 forceload add -1532 1527 -1462 1477
 forceload add 1432 566 1565 434
