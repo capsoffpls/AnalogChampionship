@@ -16,6 +16,8 @@ execute store result storage ac:mzg.generate z int 1 run random value 980..1020
 fill 2350 -63 850 2650 319 1150 air
 function ac:games/mzg/generate with storage ac:mzg.generate
 
+# mzg_i uzywane jest do iteracji przez petle fill chests
+scoreboard players set mzg_i AC_misc 0
 function ac:games/mzg/fill-chests
 function ac:base/add-spawntags
 function ac:base/protip

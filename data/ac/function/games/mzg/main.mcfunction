@@ -21,6 +21,7 @@ execute if score mzg AC_running matches 1 if score mzg AC_time matches 22800 if 
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 22800 if score lang AC_lang matches 1 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"Grace period has ended! Players may kill each other now","color":"yellow","bold":false}]
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 22800 run team modify gracz friendlyFire true
 
+execute if score mzg AC_running matches 1 if score mzg AC_time matches 12000 run scoreboard players set mzg_i AC_misc 0
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 12000 run function ac:games/mzg/fill-chests
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 12000 as @a at @s run playsound minecraft:ac.jingles.important record @s ~ ~ ~
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 12000 if score lang AC_lang matches 0 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"Skrzynki zostały uzupełnione o nowy loot!","color":"green","bold":false}]
