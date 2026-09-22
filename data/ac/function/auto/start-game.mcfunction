@@ -12,6 +12,7 @@ execute if score auto AC_running matches 1 if score wait AC_time matches 20 run 
 execute if score auto AC_running matches 1 if score wait AC_time matches 20 run tp @a[tag=practice] 0 50 0 0 0
 execute if score auto AC_running matches 1 if score wait AC_time matches 20 run tag @a[tag=practice] remove practiceBLP
 execute if score auto AC_running matches 1 if score wait AC_time matches 20 run tag @a[tag=practice] remove practicePKN
+execute if score auto AC_running matches 1 if score wait AC_time matches 20 run tag @a[tag=practice] remove practiceRPL
 execute if score auto AC_running matches 1 if score wait AC_time matches 20 run tag @a[tag=practice] remove practice
 execute if score auto AC_running matches 1 if score wait AC_time matches 20 run fill 138 78 -34 138 82 -30 barrier
 

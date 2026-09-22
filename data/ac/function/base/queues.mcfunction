@@ -1,5 +1,9 @@
 execute as @a[scores={AC_LeftGame=1..},tag=!practice] run function ac:base/queue-items
 
+execute as @a[tag=!InQueue] if score @s AC_Queue matches -999 if score gm AC_gamemode = Queue1 AC_QueuedCount run scoreboard players operation @s AC_Queue = Queue1 AC_QueuedCount
+execute as @a[tag=!InQueue] if score @s AC_Queue matches -999 if score gm AC_gamemode = Queue2 AC_QueuedCount run scoreboard players operation @s AC_Queue = Queue2 AC_QueuedCount
+execute as @a[tag=!InQueue] if score @s AC_Queue matches -999 if score gm AC_gamemode = Queue3 AC_QueuedCount run scoreboard players operation @s AC_Queue = Queue3 AC_QueuedCount
+
 execute as @a[tag=!InQueue] if score @s AC_Queue matches -1000..-1 run function ac:base/start-queue
 execute as @a[tag=!InQueue] if score @s AC_Queue matches 1..1000 run function ac:base/start-queue
 
@@ -22,12 +26,12 @@ execute as @a if score @s AC_Queue matches 1.. run execute if score Queue2 AC_Qu
 execute as @a if score @s AC_Queue matches 1.. run execute if score Queue3 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue3 visible true
 execute as @a if score @s AC_Queue matches 1.. run execute if score Queue3 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue3 players @a
 
-execute as @a if score @s AC_Queue matches ..-1 run execute if score Queue1 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue1 visible true
-execute as @a if score @s AC_Queue matches ..-1 run execute if score Queue1 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue1 players @a
-execute as @a if score @s AC_Queue matches ..-1 run execute if score Queue2 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue2 visible true
-execute as @a if score @s AC_Queue matches ..-1 run execute if score Queue2 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue2 players @a
-execute as @a if score @s AC_Queue matches ..-1 run execute if score Queue3 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue3 visible true
-execute as @a if score @s AC_Queue matches ..-1 run execute if score Queue3 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue3 players @a
+execute as @a if score @s AC_Queue matches -998..-1 run execute if score Queue1 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue1 visible true
+execute as @a if score @s AC_Queue matches -998..-1 run execute if score Queue1 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue1 players @a
+execute as @a if score @s AC_Queue matches -998..-1 run execute if score Queue2 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue2 visible true
+execute as @a if score @s AC_Queue matches -998..-1 run execute if score Queue2 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue2 players @a
+execute as @a if score @s AC_Queue matches -998..-1 run execute if score Queue3 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue3 visible true
+execute as @a if score @s AC_Queue matches -998..-1 run execute if score Queue3 AC_QueuedCount = @s AC_Queue run bossbar set ac_queue3 players @a
 
 execute if score Queue1 AC_QueuedCount = Queue2 AC_QueuedCount run scoreboard players reset Queue2 AC_QueuedCount
 execute if score Queue1 AC_QueuedCount = Queue3 AC_QueuedCount run scoreboard players reset Queue3 AC_QueuedCount

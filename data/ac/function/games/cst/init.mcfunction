@@ -51,3 +51,5 @@ scoreboard players set NowPlaying AC_CurrentlyPlayed 37
 
 advancement revoke @a only ac:cst/blockhit
 advancement revoke @a only ac:cst/playerkilledplayer
+
+function ac:base/protip

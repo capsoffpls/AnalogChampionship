@@ -419,8 +419,8 @@
       }
     },
     {
-      "label": "-----",
-      "tooltip": [{"text":"• This gamemode is coming soon!","bold":false,"color":"red"}],
+      "label": "Maze Games",
+      "tooltip": [{"text":"• These are Survival Games on a procedurally generated map\n• Players have to get the best gear in order to be the last in the corridor maze\n• The game offers rooms with varying difficulty levels - the harder they are, the better loot they provide\n• Search for special orange rooms, where you can craft, enchant and trade with villagers","bold":false,"color":"gray"}],
       "width": 150,
       "action": {
         "type": "run_command",

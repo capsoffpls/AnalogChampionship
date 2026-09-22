@@ -532,3 +532,15 @@ execute if score info AC_misc matches 45 run execute if score lang AC_lang match
 • The task is to gather as much points as you can, as fast as you can - because they're constantly dropping\n\
 • You need to score better than in the rounds before to gather more points\n\
 • Players are spawned individually, so they don't interrupt each other","bold":false,"color":"yellow"}]
+
+# // Maze Games //
+execute if score info AC_misc matches 46 run execute if score lang AC_lang matches 0 run data modify entity @e[tag=lobbyInfoboard,limit=1] text set value [{"text":"Maze Games","bold":true,color:gold},{"text":"\n\
+• Są to Survival Games z proceduralnie generowaną mapą\n\
+• Gracz musi zebrać jak najlepszy set, by pozostać ostatnim w labiryncie korytarzy\n\
+• W grze znajdują się pokoje o różnym poziomie trudności - im trudniejsze, tym lepsze przedmioty\n\
+• Szukaj pomarańczowych pokoi specjalnych, gdzie możesz tworzyć przedmioty, enchantować je lub wymieniać się z wieśniakami","bold":false,"color":"yellow"}]
+execute if score info AC_misc matches 46 run execute if score lang AC_lang matches 1 run data modify entity @e[tag=lobbyInfoboard,limit=1] text set value [{"text":"Maze Games","bold":true,color:gold},{"text":"\n\
+• These are Survival Games on a procedurally generated map\n\
+• Players have to get the best gear in order to be the last in the corridor maze\n\
+• The game offers rooms with varying difficulty levels - the harder they are, the better loot they provide\n\
+• Search for special orange rooms, where you can craft, enchant and trade with villagers","bold":false,"color":"yellow"}]

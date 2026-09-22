@@ -43,6 +43,7 @@ execute if score @s AC_CurrentlyPlayed matches 42 run tellraw @s [{"text":"[LEAV
 execute if score @s AC_CurrentlyPlayed matches 43 run tellraw @s [{"text":"[LEAVERBUSTER] ","bold":true,"color":"red"},{"text":"Wykryliśmy opuszczenie serwera podczas twojej ostatniej gry w: ","color":"red","bold":false},{"text":"[MTL] Mow The Lawn","color":"dark_red","bold":true}]
 execute if score @s AC_CurrentlyPlayed matches 44 run tellraw @s [{"text":"[LEAVERBUSTER] ","bold":true,"color":"red"},{"text":"Wykryliśmy opuszczenie serwera podczas twojej ostatniej gry w: ","color":"red","bold":false},{"text":"[TTR] Through The Rings","color":"dark_red","bold":true}]
 execute if score @s AC_CurrentlyPlayed matches 45 run tellraw @s [{"text":"[LEAVERBUSTER] ","bold":true,"color":"red"},{"text":"Wykryliśmy opuszczenie serwera podczas twojej ostatniej gry w: ","color":"red","bold":false},{"text":"[SSO] Sector Shootout","color":"dark_red","bold":true}]
+execute if score @s AC_CurrentlyPlayed matches 46 run tellraw @s [{"text":"[LEAVERBUSTER] ","bold":true,"color":"red"},{"text":"Wykryliśmy opuszczenie serwera podczas twojej ostatniej gry w: ","color":"red","bold":false},{"text":"[MZG] Maze Games","color":"dark_red","bold":true}]
 
 execute if score @s AC_CurrentlyPlayed matches 1 run scoreboard players remove @s AC_points 50
 execute if score @s AC_CurrentlyPlayed matches 1 run tellraw @s [{"text":"[AC] ","bold":true,"color":"white"},{"text":"-50≡","color":"red","bold":false}]
@@ -134,6 +135,8 @@ execute if score @s AC_CurrentlyPlayed matches 44 run scoreboard players remove 
 execute if score @s AC_CurrentlyPlayed matches 44 run tellraw @s [{"text":"[AC] ","bold":true,"color":"white"},{"text":"-50≡","color":"red","bold":false}]
 execute if score @s AC_CurrentlyPlayed matches 45 run scoreboard players remove @s AC_points 200
 execute if score @s AC_CurrentlyPlayed matches 45 run tellraw @s [{"text":"[AC] ","bold":true,"color":"white"},{"text":"-200≡","color":"red","bold":false}]
+execute if score @s AC_CurrentlyPlayed matches 46 run scoreboard players remove @s AC_points 400
+execute if score @s AC_CurrentlyPlayed matches 46 run tellraw @s [{"text":"[AC] ","bold":true,"color":"white"},{"text":"-400≡","color":"red","bold":false}]
 
 execute if score @s AC_IsGameRanked matches 1.. run tellraw @s [{"text":"[R] ","bold":true,"color":"white"},{"text":"Ponieważ twoja ostatnia gra była rankingowa, tracisz dodatkowo ","color":"#0059ff","bold":false},{"text":"100Ⓡ","color":"#00bfff","bold":true}]
 execute if score @s AC_IsGameRanked matches 1.. run scoreboard players remove @s AC_pointsRanked 100

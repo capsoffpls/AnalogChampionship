@@ -1,0 +1,43 @@
+{
+    "type": "minecraft:confirmation",
+    "can_close_with_escape": true,
+  "title": [
+    {
+      "text": "[AC] ",
+      "bold": true,
+      "color": "white"
+    },
+    {
+      "text": "Kolejka - Komunikat",
+      "color": "gray",
+      "bold": false
+    }
+  ],
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "stone",
+      "components": {
+        "item_model": "ac:information"
+      }
+    },
+    "show_tooltip": false,
+    "description": {
+        "contents": {
+      "text":"Za 15 sekund rozpocznie się gra. Czy chcesz dołączyć do gry?",
+      "color":"yellow"
+        },
+        "width": 512
+    }
+    },
+    "yes": {
+        "label": "Dołącz",
+        "action": {
+        "type": "run_command",
+        "command": "trigger AC_Queue set -999"
+        }
+    },
+    "no": {
+        "label": "Obserwuj"
+    }
+}

@@ -6,18 +6,28 @@ execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[MZG] ","bold":
 execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"⚠ The map is generating - lag might be present.","color":"yellow","bold":false}]
 
 tp @a 2500 53 1000
-forceload add 2350 850 2650 1150
+gamemode spectator @a
+team join gracz @a[tag=InGame]
+execute positioned 2500 50 1000 run kill @e[type=marker,distance=..40]
+execute positioned 2500 50 1000 run kill @e[type=item,distance=..200]
 
-execute store result storage ac:mzg.generate x int 1 run random value 2458..2498
+execute store result storage ac:mzg.generate x int 1 run random value 2468..2488
 execute store result storage ac:mzg.generate z int 1 run random value 980..1020
 fill 2350 -63 850 2650 319 1150 air
 function ac:games/mzg/generate with storage ac:mzg.generate
 
 function ac:games/mzg/fill-chests
 function ac:base/add-spawntags
+function ac:base/protip
 
+difficulty normal
+bossbar set ac_mzg players @a
+bossbar set ac_mzg visible true
 gamerule fall_damage true
+gamerule keep_inventory false
 team modify gracz friendlyFire false
 team modify gracz nametagVisibility never
 
-scoreboard players set mzg AC_time 24400
+scoreboard players set mzg AC_time 24500
+scoreboard players set @a[tag=InGame] AC_CurrentlyPlayed 46
+scoreboard players set NowPlaying AC_CurrentlyPlayed 46

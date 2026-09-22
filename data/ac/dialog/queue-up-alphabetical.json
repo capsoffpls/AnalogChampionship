@@ -185,6 +185,15 @@
       }
     },
     {
+      "label": "Maze Games",
+      "tooltip": [{"text":"• Są to Survival Games z proceduralnie generowaną mapą\n• Gracz musi zebrać jak najlepszy set, by pozostać ostatnim w labiryncie korytarzy\n• W grze znajdują się pokoje o różnym poziomie trudności - im trudniejsze, tym lepsze przedmioty\n• Szukaj pomarańczowych pokoi specjalnych, gdzie możesz tworzyć przedmioty, enchantować je lub wymieniać się z wieśniakami","bold":false,"color":"gray"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 46"
+      }
+    },
+    {
       "label": "Minefield",
       "tooltip": [{"text":"• Dobiegnij do mety w nienaruszonym stanie\n• Wdepnięcie w minę cofnie cię na początek\n• Podążaj śladami innych graczy\n• Jest mało czasu na ukończenie","bold":false,"color":"gray"}],
       "width": 150,
@@ -416,15 +425,6 @@
       "action": {
         "type": "run_command",
         "command": "/trigger AC_Queue set 42"
-      }
-    },
-    {
-      "label": "-----",
-      "tooltip": [{"text":"• Ten tryb zostanie udostępniony wkrótce!","bold":false,"color":"red"}],
-      "width": 150,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger AC_Queue set 46"
       }
     },
     {

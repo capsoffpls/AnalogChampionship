@@ -1,5 +1,5 @@
-execute if score draw AC_misc matches 1..59 run execute store result score gm AC_gamemode run random value 1..45
-#execute if score draw AC_misc matches 1..59 if score isRanked AC_CurrentlyPlayed matches 0 run execute store result score gm AC_gamemode run random value 1..44
+execute if score draw AC_misc matches 1..59 run execute store result score gm AC_gamemode run random value 1..46
+#execute if score draw AC_misc matches 1..59 if score isRanked AC_CurrentlyPlayed matches 0 run execute store result score gm AC_gamemode run random value 1..46
 #execute if score draw AC_misc matches 1..59 if score isRanked AC_CurrentlyPlayed matches 1 run execute store result score ranked AC_gamemode run random value 1..20
 execute if score isRanked AC_CurrentlyPlayed matches 0 run execute if score draw AC_misc matches 1..59 run scoreboard players add draw AC_misc 1
 execute if score isRanked AC_CurrentlyPlayed matches 1 run execute if score draw AC_misc matches 1..60 run scoreboard players add draw AC_misc 1

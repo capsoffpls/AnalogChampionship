@@ -46,6 +46,8 @@ execute if score mfl AC_running matches 1 if score mfl AC_time matches 600 run f
 
 execute if score mtl AC_running matches 1 if score mtl AC_time matches 400 run function ac:base/overtime-global-start {time:20,mode:1}
 
+execute if score mzg AC_running matches 1 if score mzg AC_time matches 6000 run function ac:base/overtime-global-start {time:5,mode:2}
+
 execute if score ovk AC_running matches 1 if score ovk AC_time matches 1200 run function ac:base/overtime-global-start {time:60,mode:1}
 
 execute if score pct AC_running matches 1 if score pct AC_time matches 1200 run function ac:base/overtime-global-start {time:60,mode:1}

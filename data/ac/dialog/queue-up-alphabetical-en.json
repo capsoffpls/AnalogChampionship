@@ -185,6 +185,15 @@
       }
     },
     {
+      "label": "Maze Games",
+      "tooltip": [{"text":"• These are Survival Games on a procedurally generated map\n• Players have to get the best gear in order to be the last in the corridor maze\n• The game offers rooms with varying difficulty levels - the harder they are, the better loot they provide\n• Search for special orange rooms, where you can craft, enchant and trade with villagers","bold":false,"color":"gray"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 46"
+      }
+    },
+    {
       "label": "Minefield",
       "tooltip": [{"text":"• Run to the finish line untouched\n• Stepping in a mine will teleport you back to the start line\n• Follow other players' tracks\n• There's little time to finish","bold":false,"color":"gray"}],
       "width": 125,
@@ -416,15 +425,6 @@
       "action": {
         "type": "run_command",
         "command": "/trigger AC_Queue set 42"
-      }
-    },
-    {
-      "label": "-----",
-      "tooltip": [{"text":"• This gamemode is coming soon!","bold":false,"color":"red"}],
-      "width": 150,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger AC_Queue set 46"
       }
     },
     {

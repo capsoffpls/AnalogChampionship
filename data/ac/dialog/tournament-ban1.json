@@ -426,6 +426,24 @@
         "type": "run_command",
         "command": "/trigger AC_banDetect set 44"
       }
+    },
+    {
+      "label": "Sector Shootout",
+      "tooltip": [{"text":"• Gracze umieszczeni są na lodowym torze dla łódek\n• Zadaniem gracza jest zebrać jak najwięcej punktów, które nieustannie spadają\n• Do twojego rekordu wliczy się tylko wynik lepszy od poprzedniego\n• Gracze są spawnowani pojedyńczo, by nie przeszkadzali sobie nawzajem","bold":false,"color":"gray"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 45"
+      }
+    },
+    {
+      "label": "Maze Games",
+      "tooltip": [{"text":"• Są to Survival Games z proceduralnie generowaną mapą\n• Gracz musi zebrać jak najlepszy set, by pozostać ostatnim w labiryncie korytarzy\n• W grze znajdują się pokoje o różnym poziomie trudności - im trudniejsze, tym lepsze przedmioty\n• Szukaj pomarańczowych pokoi specjalnych, gdzie możesz tworzyć przedmioty, enchantować je lub wymieniać się z wieśniakami","bold":false,"color":"gray"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_banDetect set 46"
+      }
     }
   ],
   "columns": 4,

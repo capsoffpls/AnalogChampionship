@@ -23,6 +23,7 @@ execute store result bossbar minecraft:ac_lbr value run scoreboard players get l
 execute store result bossbar minecraft:ac_mfl value run scoreboard players get mfl AC_time
 execute store result bossbar minecraft:ac_mtl value run scoreboard players get mtl AC_time
 execute store result bossbar minecraft:ac_mmc value run scoreboard players get mmc AC_time
+execute store result bossbar minecraft:ac_mzg value run scoreboard players get mzg AC_time
 execute store result bossbar minecraft:ac_omc value run scoreboard players get omc AC_time
 execute store result bossbar minecraft:ac_ovk value run scoreboard players get ovk AC_time
 execute store result bossbar minecraft:ac_pct value run scoreboard players get pct AC_time
@@ -71,6 +72,7 @@ execute if score lbr AC_running matches 1 run scoreboard players remove lbr AC_t
 execute if score mfl AC_running matches 1 run scoreboard players remove mfl AC_time 1
 execute if score mtl AC_running matches 1 run scoreboard players remove mtl AC_time 1
 execute if score mmc AC_running matches 1 run scoreboard players remove mmc AC_time 1
+execute if score mzg AC_running matches 1 run scoreboard players remove mzg AC_time 1
 execute if score omc AC_running matches 1 run scoreboard players remove omc AC_time 1
 execute if score ovk AC_running matches 1 run scoreboard players remove ovk AC_time 1
 execute if score pop AC_running matches 1 run scoreboard players remove pop AC_time 1

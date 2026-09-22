@@ -524,6 +524,10 @@ scoreboard objectives add AC_mrdKillCheck minecraft.custom:minecraft.player_kill
 scoreboard objectives add AC_mrdPositionX dummy
 scoreboard objectives add AC_mrdPositionZ dummy
 scoreboard objectives add AC_mrdReloading dummy
+bossbar add ac_mzg [{"text":"Maze Games","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
+bossbar set ac_mzg color purple
+bossbar set ac_mzg max 24000
+bossbar set ac_mzg style notched_20
 bossbar add ac_omc [{"text":"One-Minute Craft","color":"light_purple","bold":true},{"text":" - Czas do końca rundy","color":"dark_purple","bold":false}]
 bossbar set ac_omc color pink
 bossbar set ac_omc max 1200
@@ -851,6 +855,7 @@ forceload add -1549 -558 -1448 -450
 forceload add 650 1380 472 1622
 forceload add 457 1380 356 1622
 forceload add 5 1317 -5 2693
+forceload add 2350 850 2650 1150
 
 forceload add -1532 1527 -1462 1477
 forceload add 1432 566 1565 434

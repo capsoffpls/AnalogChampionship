@@ -27,6 +27,7 @@ execute as @a run waypoint modify @s color reset
 execute as @a run waypoint modify @s style reset
 gamerule locator_bar false
 gamerule fall_damage false
+gamerule keep_inventory true
 # // TNT Run //
 scoreboard players set tnt AC_running 0
 scoreboard players set tnt1 AC_functions 0
@@ -255,3 +256,6 @@ bossbar set minecraft:ac_ttr visible false
 # // Sector Shootout //
 scoreboard players set sso AC_running 0
 bossbar set minecraft:ac_sso visible false
+# // Maze Games //
+scoreboard players set mzg AC_running 0
+bossbar set minecraft:ac_mzg visible false

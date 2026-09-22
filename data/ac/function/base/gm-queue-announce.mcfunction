@@ -1,4 +1,3 @@
 $execute as @a unless entity @s[scores={AC_Queue=$(mode)}] run scoreboard players enable @s AC_Queue
-
-$execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Za 15 sekund gra się rozpocznie. ","color":"gold","bold":false},{"text":"[Dołącz]",bold:true,color:"yellow",click_event:{action:"run_command",command:"trigger AC_Queue set $(mode)"}},{"text":" teraz do kolejki, aby zagrać!","color":"gold","bold":false}]
-$execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"This game will begin in 15 seconds. ","color":"gold","bold":false},{"text":"[Join]",bold:true,color:"yellow",click_event:{action:"run_command",command:"trigger AC_Queue set $(mode)"}},{"text":" the queue now to play!","color":"gold","bold":false}]
+$execute if score lang AC_lang matches 0 as @a unless entity @s[scores={AC_Queue=$(mode)}] run dialog show @s ac:queue-notice
+$execute if score lang AC_lang matches 1 as @a unless entity @s[scores={AC_Queue=$(mode)}] run dialog show @s ac:queue-notice-en

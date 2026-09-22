@@ -8,7 +8,7 @@ execute if score mzg AC_running matches 1 if score mzg AC_time matches 24020 if 
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24020 if score lang AC_lang matches 1 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"Game begins in 1 seconds...","color":"green","bold":false}]
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24000 if score lang AC_lang matches 0 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"Gra rozpoczyna się! Za 60 sekund zakończy się okres pokoju!","color":"green","bold":false}]
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24000 if score lang AC_lang matches 1 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"The game has begun! Grace period ends in 60 seconds","color":"green","bold":false}]
-execute if score mzg AC_running matches 1 if score mzg AC_time matches 24000 run fill 2479 48 979 2521 48 1021 air replace polished_cinnabar_wall
+execute if score mzg AC_running matches 1 if score mzg AC_time matches 24000 run fill 2459 48 959 2541 48 1041 air replace polished_cinnabar_wall
 
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 22860 as @a at @s run playsound minecraft:ac.jingles.countdown-aggressive record @s ~ ~ ~
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 22860 if score lang AC_lang matches 0 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"Okres pokoju zakończy się za 3 sekundy...","color":"yellow","bold":false}]
@@ -35,6 +35,7 @@ execute if score mzg AC_running matches 1 if score mzg AC_time matches ..1200 as
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 1..24000 as @a[scores={AC_deathmessage=1..},gamemode=adventure] if entity @s run function ac:games/mzg/death
 
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 1..24000 if score InGame AC_playercount matches 1 run function ac:games/mzg/win
+execute if score mzg AC_running matches 1 if score mzg AC_time matches 1..24000 if score InGame AC_playercount matches 0 run scoreboard players set mzg AC_time 0
 
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run function ac:base/endsound
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run function ac:base/remove-spawn-tags
@@ -46,7 +47,7 @@ execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run tea
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run kill @e[type=marker,x=2500,z=1000,y=50,distance=..40]
 execute if score mzg AC_running matches 1 if score mzg AC_time matches -60 run gamemode adventure @a
 execute if score mzg AC_running matches 1 if score mzg AC_time matches -60 run tp @a 0 50 0
+execute if score mzg AC_running matches 1 if score mzg AC_time matches -60 run bossbar set ac_mzg visible false
 execute if score mzg AC_running matches 1 if score mzg AC_time matches -60 run spawnpoint @a 0 50 0
-execute if score mzg AC_running matches 1 if score mzg AC_time matches -60 run forceload remove 2350 850 2650 1150
 execute if score mzg AC_running matches 1 if score mzg AC_time matches -60 run function ac:auto/invoke
 execute if score mzg AC_running matches 1 if score mzg AC_time matches -60 run scoreboard players set mzg AC_running 0

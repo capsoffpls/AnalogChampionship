@@ -53,6 +53,7 @@ execute if score gm AC_gamemode matches 42 run function ac:games/uws/init
 execute if score gm AC_gamemode matches 43 run function ac:games/mtl/init
 execute if score gm AC_gamemode matches 44 run function ac:games/ttr/init
 execute if score gm AC_gamemode matches 45 run function ac:games/sso/init
+execute if score gm AC_gamemode matches 46 run function ac:games/mzg/init
 
 execute if score gm AC_gamemode matches 1 run execute as AnalogMC if entity @s[tag=anc] run function ac:camera/tnt
 execute if score gm AC_gamemode matches 5 run execute as AnalogMC if entity @s[tag=anc] run function ac:camera/hrc
