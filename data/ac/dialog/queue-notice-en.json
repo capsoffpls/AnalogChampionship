@@ -8,7 +8,7 @@
       "color": "white"
     },
     {
-      "text": "Kolejka - Komunikat",
+      "text": "Queue - Notice",
       "color": "gray",
       "bold": false
     }
@@ -24,20 +24,20 @@
     "show_tooltip": false,
     "description": {
         "contents": {
-      "text":"Za 15 sekund rozpocznie się gra. Czy chcesz dołączyć do gry?",
+      "text":"A game will begin in 15 seconds. Do you want to join?",
       "color":"yellow"
         },
         "width": 200
     }
     },
     "yes": {
-        "label": "Dołącz",
+        "label": "Join",
         "action": {
         "type": "run_command",
         "command": "trigger AC_Queue set -999"
         }
     },
     "no": {
-        "label": "Obserwuj"
+        "label": "Spectate"
     }
 }
