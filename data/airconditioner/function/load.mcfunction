@@ -3,6 +3,5 @@
 # tick podaza za tym samym schematem w ac
 
 scoreboard objectives add dev_silly dummy
-scoreboard players set randomizer AC_silly 0
 
 function airconditioner:base/restore

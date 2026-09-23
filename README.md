@@ -21,6 +21,7 @@
 3. **Kowadła są niewidzialne** *(problematyczne do stworzenia)*
 4. **Jesteś ślepy**
 5. **Spleef**
+6. ** pvp ??**
 
 ## Avalanche `(Done)`
 1. **Śnieżki spadają 0.000002s**
