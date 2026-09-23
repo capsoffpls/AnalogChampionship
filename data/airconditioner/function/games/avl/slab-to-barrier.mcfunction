@@ -1,0 +1,1 @@
+fill -1010 56 1010 -990 56 990 barrier replace spruce_slab

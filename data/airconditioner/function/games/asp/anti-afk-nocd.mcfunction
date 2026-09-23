@@ -1,0 +1,2 @@
+execute at @r[tag=InGame,gamemode=adventure] run summon minecraft:marker ~ 57 ~ {Tags:["aspMarker"]}
+execute at @r[tag=InGame,gamemode=adventure] run summon minecraft:marker ~ 57 ~ {Tags:["aspMarker"]}

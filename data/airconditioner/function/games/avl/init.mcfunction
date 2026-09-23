@@ -19,3 +19,6 @@ function airconditioner:base/protip
 
 scoreboard players set @a[tag=InGame] AC_CurrentlyPlayed 8
 scoreboard players set NowPlaying AC_CurrentlyPlayed 8
+
+###########################################
+function airconditioner:games/avl/setuppp

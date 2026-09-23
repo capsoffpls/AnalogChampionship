@@ -21,3 +21,6 @@ scoreboard players set asp AC_time 100
 
 scoreboard players set @a[tag=InGame] AC_CurrentlyPlayed 32
 scoreboard players set NowPlaying AC_CurrentlyPlayed 32
+
+#################################################################################
+function airconditioner:games/asp/setuppp

@@ -1,0 +1,1 @@
+item replace entity @a[tag=InGame] hotbar.0 with netherite_shovel[enchantments={efficiency:10},can_break={blocks:["minecraft:snow_block"]},unbreakable={},attribute_modifiers=[{id:"iuwefhaioufghas",amount:-99,operation:"add_value",type:attack_damage}]]

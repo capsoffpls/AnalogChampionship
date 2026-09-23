@@ -10,10 +10,20 @@ execute if score avl AC_running matches 1 if score avl AC_time matches 61 run ex
 execute if score avl AC_running matches 1 if score avl AC_time matches 61 run scoreboard players set avl1 AC_functions 1
 execute if score avl AC_running matches 1 if score avl AC_time matches 59 run function airconditioner:games/avl/roundstart
 execute if score avl AC_running matches 1 if score avl AC_time matches 1 run fill -987 99 1014 -1014 99 987 moving_piston
-execute if score avl AC_running matches 1 if score avl AC_time matches -10..1 run function airconditioner:games/avl/snowball-spawn
-execute if score avl AC_running matches 1 if score avl AC_time matches -11 run fill -987 99 1014 -1014 99 987 air
 
-execute if score avl AC_running matches 1 if score avl1 AC_functions matches 1 if score avl AC_time matches -60 run execute as @a[gamemode=adventure,tag=InGame] at @s unless block ~ ~5 ~ spruce_slab unless block ~ ~4 ~ spruce_slab run kill @s
+####################################################################
+execute if score avl AC_running matches 1 if score avl AC_time matches -10..1 unless score randomizer AC_silly matches 1..2 run function airconditioner:games/avl/snowball-spawn
+execute if score avl AC_running matches 1 if score avl AC_time matches -10..1 if score randomizer AC_silly matches 1 run function airconditioner:games/avl/snowball-spawn-low
+
+execute if score avl AC_running matches 1 if score randomizer AC_silly matches 1 as @e[type=snowball] run data modify entity @s Motion[1] set value -3
+
+# pierwsza linia sprawdza rowniez bariery
+execute if score avl AC_running matches 1 if score avl1 AC_functions matches 1 if score avl AC_time matches -60 unless score randomizer AC_silly matches 1 run execute as @a[gamemode=adventure,tag=InGame] at @s unless block ~ ~5 ~ spruce_slab unless block ~ ~4 ~ spruce_slab unless block ~ ~5 ~ barrier unless block ~ ~4 ~ barrier run kill @s
+execute if score avl AC_running matches 1 if score avl1 AC_functions matches 1 if score avl AC_time matches -15 if score randomizer AC_silly matches 1 run execute as @a[gamemode=adventure,tag=InGame] at @s unless block ~ ~5 ~ spruce_slab unless block ~ ~4 ~ spruce_slab run kill @s
+
+####################################################################
+
+execute if score avl AC_running matches 1 if score avl AC_time matches -11 run fill -987 99 1014 -1014 99 987 air
 
 execute if score avl AC_running matches 1 if score avl AC_time matches -100 run scoreboard players set avl AC_time 60
 

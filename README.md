@@ -1,41 +1,45 @@
-# zmiany globalne
-    - punkty sa osobne od main ac
+# Zmiany Globalne
 
-# modifiery
+- Punkty są osobne od main AC
 
-arrow barrage: (done)
-    1 -> pvp jest wlaczone
-    2 -> niszczenie blokow jest wlaczone, i jest szybkie. bardzo.
-    3 -> strzaly strzelaja z kazdej strony
-    4 -> wind charge
+---
 
-assassins:
-    murder mystery ???
+# Modyfikatory
 
-anvil spleef:
-    1 -> kowadla nie maja zadnego cooldownu
-    2 -> kowadla spadaja z wysokosci 3 blokow
-    3 -> kowadla sa niewidzialne
-    4 -> jestes slepy
+## Arrow Barrage `(Done)`
+1. **PvP jest włączone**
+2. **Niszczenie bloków jest włączone** i jest bardzo szybkie
+3. **Strzały strzelają z każdej strony**
+4. **Wind Charge**
 
-avalanche:
-    1 -> sniezki spadaja 0.000002s
-    2 -> sniezki sa niewidzialne
-    3 -> slab zamienia sie w bariere po jakims czasie
+## Assassins
+- *murder mystery ???*
 
-bedwars:
-    1 -> respawn jest kompletnie losowy (+32 welny)
-    2 -> generatory daja losowe itemy
+## Anvil Spleef `(Done 4/5)`
+1. **Kowadła nie mają żadnego cooldownu**
+2. **Kowadła spadają z wysokości 3 bloków**
+3. **Kowadła są niewidzialne** *(problematyczne do stworzenia)*
+4. **Jesteś ślepy**
+5. **Spleef**
 
-block party:
-    1 > kolory welny sa b2b
-    2 > dostajesz kilka weln, czesc nie istnieje na patternie
-    3 > dzwon sprawia ze wszyscy dostaja itemy
+## Avalanche `(Done)`
+1. **Śnieżki spadają 0.000002s**
+2. **Śnieżki są niewidzialne**
+3. **Slab zamienia się w barierę po jakimś czasie**
 
-battle box:
-    empty
+## Bedwars
+1. **Respawn jest kompletnie losowy** *(+32 wełny)*
+2. **Generatory dają losowe itemy**
 
-the bridge:
-    1 > infinite reach
-    2 > mosty siegaja ponad high limit
-    3 > cala mapa jest wypelniona blokami a kilofy one tapuja (do przemyslenia)
+## Block Party
+1. **Kolory wełny są b2b**
+2. **Dostajesz kilka wełn**, część nie istnieje na patternie
+3. **Dzwon sprawia, że wszyscy dostają itemy**
+
+## Battle Box
+- *(empty)*
+
+## The Bridge
+1. **Infinite reach**
+2. **Mosty sięgają ponad high limit**
+3. **Cała mapa jest wypełniona blokami**, a kilofy one-tapują *(do przemyślenia)*
