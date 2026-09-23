@@ -85,7 +85,7 @@ execute if score arb AC_running matches 1 run execute if score arb1 AC_functions
 
 execute if score arb AC_running matches 1 unless score randomizer dev_silly matches 2 unless score randomizer dev_silly matches 4 run execute if score arb1 AC_functions matches 1 run item replace entity @a[tag=InGame,gamemode=adventure] weapon.mainhand with white_wool[can_place_on={blocks:"#ac:allblocks"}] 64
 execute if score arb AC_running matches 1 if score randomizer dev_silly matches 2 run execute if score arb1 AC_functions matches 1 run item replace entity @a[gamemode=adventure,tag=InGame] weapon.mainhand with white_wool[can_place_on=[{blocks:"#ac:allblocks"}],can_break=[{blocks:"white_wool"}],attribute_modifiers=[{id:"block_break_speed",type:"block_break_speed",amount:128,operation:"add_value",slot:"hand",display:{type:"hidden"}},{id:"block_interaction_range",type:"block_interaction_range",amount:1,operation:"add_value",slot:"hand"}]] 64
-execute if score arb AC_running matches 1 if score randomizer dev_silly matches 4 run execute if score arb1 AC_functions matches 1 run item replace entity @a[gamemode=adventure,tag=InGame] weapon.mainhand with wind_charge[use_cooldown={seconds:0.01}] 64
+execute if score arb AC_running matches 1 if score randomizer dev_silly matches 4 run execute if score arb1 AC_functions matches 1 run item replace entity @a[gamemode=adventure,tag=InGame] weapon.mainhand with wind_charge 64
 
 
 
