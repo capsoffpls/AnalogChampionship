@@ -20,8 +20,10 @@ execute if score asp AC_running matches 1 if score asp1 AC_functions matches 1 u
 execute if score asp AC_running matches 1 if score asp1 AC_functions matches 1 if score randomizer AC_silly matches 2 run function airconditioner:games/asp/spawn-low
 execute if score asp AC_running matches 1 if score asp1 AC_functions matches 1 unless score randomizer AC_silly matches 2 run function airconditioner:games/asp/spawn
 
-execute if score asp AC_running matches 1 if score asp1 AC_function matches 1 if score randomizer AC_silly matches 3 run effect give @a[gamemode=adventure,tag=Ingame] blindness 10 10 true
+execute if score asp AC_running matches 1 if score asp1 AC_functions matches 1 if score randomizer AC_silly matches 4 run effect give @a[gamemode=adventure,tag=InGame] blindness 10 10 true
 
+execute positioned -500 60 -2000 run kill @e[type=item,distance=..96]
+##########################################################################################################################################
 
 execute if score asp AC_running matches 1 if score asp1 AC_functions matches 1 run execute as @a[tag=InGame,gamemode=adventure] if entity @s[x=-560,dx=110,z=-2050,dz=100,y=50,dy=-50] run kill @s
 execute if score asp AC_running matches 1 if score asp1 AC_functions matches 1 run execute if score timer AC_aspScores matches 2 run execute unless blocks -547 57 -2047 -453 57 -1953 -547 58 -2047 all run fill -547 57 -2047 -453 57 -1953 air replace #anvil

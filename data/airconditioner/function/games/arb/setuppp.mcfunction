@@ -1,5 +1,5 @@
 execute store result score randomizer AC_silly run random value 1..4
-execute if score randomizer_prio dev_silly matches 1.. run scoreboard players operation randomizer AC_silly = randomizer_prio dev_silly
+execute if score randomizer_prio AC_silly matches 1.. run scoreboard players operation randomizer AC_silly = randomizer_prio AC_silly
 
 execute if score randomizer AC_silly matches 1 run tellraw @a [{"text":"[silly] ","bold":true,"color":"light_purple"},{"text":"PvP jest włączone !!!","color":"white","bold":false}]
 execute if score randomizer AC_silly matches 2 run tellraw @a [{"text":"[silly] ","bold":true,"color":"light_purple"},{"text":"Destrukcja blokow jest dozwolona.","color":"white","bold":false}]
