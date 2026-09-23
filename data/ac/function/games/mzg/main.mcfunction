@@ -9,6 +9,7 @@ execute if score mzg AC_running matches 1 if score mzg AC_time matches 24020 if 
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24000 if score lang AC_lang matches 0 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"Gra rozpoczyna się! Za 60 sekund zakończy się okres pokoju!","color":"green","bold":false}]
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24000 if score lang AC_lang matches 1 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"The game has begun! Grace period ends in 60 seconds","color":"green","bold":false}]
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24000 run fill 2459 48 959 2541 48 1041 air replace polished_cinnabar_wall
+execute if score mzg AC_running matches 1 if score mzg AC_time matches 24000 positioned 2500 50 1000 run kill @e[type=item,distance=..200]
 
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 22860 as @a at @s run playsound minecraft:ac.jingles.countdown-aggressive record @s ~ ~ ~
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 22860 if score lang AC_lang matches 0 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"Okres pokoju zakończy się za 3 sekundy...","color":"yellow","bold":false}]
