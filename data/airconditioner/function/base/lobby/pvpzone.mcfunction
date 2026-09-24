@@ -57,7 +57,7 @@ clear @a[tag=pvpZone] *[!custom_data~{chuj:3},!custom_data~{lobbyPersistent:1}]
 execute as @a[tag=pvpZone] run team join pvpzone @s
 execute as @a[tag=pvpZone] run spawnpoint @s 68 48 0 -90 0
 
-execute as @a[tag=pvpZone] unless entity @s[x=74,y=44,z=-27,dx=41,dy=19,dz=55] run clear @s #ac:pvpzone_eq
+execute as @a[tag=pvpZone] unless entity @s[x=74,y=44,z=-27,dx=41,dy=19,dz=55] run clear @s #airconditioner:pvpzone_eq
 
 execute as @a[tag=pvpZone] if score @s AC_lobbyPvpKill matches 1.. if score NowPlaying AC_running matches 0 run effect give @s instant_health 1 10 true
 execute as @a[tag=pvpZone] if score @s AC_lobbyPvpKill matches 1.. run scoreboard players set @s AC_lobbyPvpKill 0

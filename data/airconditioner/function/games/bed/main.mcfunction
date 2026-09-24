@@ -119,18 +119,18 @@ execute if score bed AC_running matches 1 run execute if score bed2 AC_functions
 execute if score bed AC_running matches 1 run execute if score bed2 AC_functions matches 1 run execute if score diamondgen AC_bedTimer matches 0 if score bed AC_time matches 18001..30000 run scoreboard players set diamondgen AC_bedTimer 45
 execute if score bed AC_running matches 1 run execute if score bed2 AC_functions matches 1 run execute if score diamondgen AC_bedTimer matches 0 if score bed AC_time matches 1..18000 run scoreboard players set diamondgen AC_bedTimer 30
 
-execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:red_wool"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#ac:allblocks'}}}}
-execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:lime_wool"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#ac:allblocks'}}}}
-execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:yellow_wool"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#ac:allblocks'}}}}
-execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:blue_wool"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#ac:allblocks'}}}}
-execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:red_terracotta"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#ac:allblocks'}}}}
-execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:lime_terracotta"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#ac:allblocks'}}}}
-execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:yellow_terracotta"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#ac:allblocks'}}}}
-execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:blue_terracotta"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#ac:allblocks'}}}}
-execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:ladder"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#ac:allblocks'}}}}
-execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:end_stone"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#ac:allblocks'}}}}
-execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:obsidian"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#ac:allblocks'}}}}
-execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:oak_planks"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#ac:allblocks'}}}}
+execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:red_wool"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#airconditioner:allblocks'}}}}
+execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:lime_wool"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#airconditioner:allblocks'}}}}
+execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:yellow_wool"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#airconditioner:allblocks'}}}}
+execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:blue_wool"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#airconditioner:allblocks'}}}}
+execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:red_terracotta"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#airconditioner:allblocks'}}}}
+execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:lime_terracotta"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#airconditioner:allblocks'}}}}
+execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:yellow_terracotta"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#airconditioner:allblocks'}}}}
+execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:blue_terracotta"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#airconditioner:allblocks'}}}}
+execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:ladder"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#airconditioner:allblocks'}}}}
+execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:end_stone"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#airconditioner:allblocks'}}}}
+execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:obsidian"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#airconditioner:allblocks'}}}}
+execute if score bed AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:oak_planks"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:'#airconditioner:allblocks'}}}}
 
 execute if score bed AC_running matches 1 run execute if score bed3 AC_functions matches 1 run function airconditioner:games/bed/team_specific_functions
 execute if score bed AC_running matches 1 run execute if score bed3 AC_functions matches 1 run execute as @a[tag=InGame] if score @s AC_bedUsedBridgeEgg matches 1.. run function airconditioner:games/bed/bridge_egg

@@ -155,7 +155,7 @@ execute if score box AC_chosenMap matches 4 run execute if score lang AC_lang ma
 execute if score box AC_chosenMap matches 0 run item replace entity @a[tag=InGame,scores={AC_boxKit=5}] hotbar.0 with wooden_sword[unbreakable={},can_break={blocks:["minecraft:cobweb"]}]
 execute if score box AC_chosenMap matches 0 run item replace entity @a[tag=InGame,scores={AC_boxKit=5}] hotbar.1 with bow[unbreakable={}]
 execute if score box AC_chosenMap matches 0 run item replace entity @a[tag=InGame,scores={AC_boxKit=5}] hotbar.2 with tipped_arrow[potion_contents={potion:harming}] 3
-execute if score box AC_chosenMap matches 0 run item replace entity @a[tag=InGame,scores={AC_boxKit=5}] hotbar.3 with cobweb[can_place_on={blocks:"#ac:allblocks"}] 3
+execute if score box AC_chosenMap matches 0 run item replace entity @a[tag=InGame,scores={AC_boxKit=5}] hotbar.3 with cobweb[can_place_on={blocks:"#airconditioner:allblocks"}] 3
 execute if score box AC_chosenMap matches 0 run execute if score lang AC_lang matches 0 run item replace entity @a[tag=InGame,scores={AC_boxKit=5}] hotbar.4 with flint[item_model="ac:levit_bubble",custom_name={"text":"Bańka lewitacji","italic":false},consumable={consume_seconds:65535}]
 execute if score box AC_chosenMap matches 0 run execute if score lang AC_lang matches 1 run item replace entity @a[tag=InGame,scores={AC_boxKit=5}] hotbar.4 with flint[item_model="ac:levit_bubble",custom_name={"text":"Bubble of Levitation","italic":false},consumable={consume_seconds:65535}]
 

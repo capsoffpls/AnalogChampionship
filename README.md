@@ -15,7 +15,7 @@
 ## Assassins
 - *murder mystery ???*
 
-## Anvil Spleef `(Done 4/5)`
+## Anvil Spleef `(Done 4/6)`
 1. **Kowadła nie mają żadnego cooldownu**
 2. **Kowadła spadają z wysokości 3 bloków**
 3. **Kowadła są niewidzialne** *(problematyczne do stworzenia)*

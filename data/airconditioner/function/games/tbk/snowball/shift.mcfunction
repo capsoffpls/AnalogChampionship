@@ -1,2 +1,2 @@
-$execute positioned ~$(x) ~$(y) ~$(z) if block ~ ~ ~ #ac:tobiko1 run return run setblock ~ ~ ~ minecraft:air
-$execute positioned ~$(x) ~$(y) ~$(z) positioned ~$(x) ~$(y) ~$(z) if block ~ ~ ~ #ac:tobiko1 run return run setblock ~ ~ ~ minecraft:air
+$execute positioned ~$(x) ~$(y) ~$(z) if block ~ ~ ~ #airconditioner:tobiko1 run return run setblock ~ ~ ~ minecraft:air
+$execute positioned ~$(x) ~$(y) ~$(z) positioned ~$(x) ~$(y) ~$(z) if block ~ ~ ~ #airconditioner:tobiko1 run return run setblock ~ ~ ~ minecraft:air

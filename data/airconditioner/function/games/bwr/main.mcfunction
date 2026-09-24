@@ -1,5 +1,5 @@
 execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run function airconditioner:games/bwr/bossbar
-execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:white_wool"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:"#ac:allblocks"}}}}
+execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:white_wool"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:"#airconditioner:allblocks"}}}}
 
 execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute as @a[scores={AC_bwrWoolDetection=1..}] at @s run function airconditioner:games/bwr/blocktimer
 execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run scoreboard players add @e[tag=in_wool] AC_bwrBlockTimer 1
@@ -11,7 +11,7 @@ execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 r
 execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute as @e[type=arrow,nbt={inBlockState:{Name:"minecraft:white_wool"}}] at @s run kill @s
 
 execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute if score bwr AC_time matches 9820 run execute as @a at @s run playsound minecraft:ac.jingles.cd-buildup2 record @s ~ ~ ~
-execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute if score bwr AC_time matches 0..9600 run item replace entity @a[tag=InGame,gamemode=adventure] hotbar.8 with white_wool[can_place_on={blocks:"#ac:allblocks"}] 64
+execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute if score bwr AC_time matches 0..9600 run item replace entity @a[tag=InGame,gamemode=adventure] hotbar.8 with white_wool[can_place_on={blocks:"#airconditioner:allblocks"}] 64
 execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute if score bwr AC_time matches 9600 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[BWR] ","bold":true,"color":"dark_green"},{"text":"Strefa zmniejszy się za 60 sekund.","color":"yellow","bold":false}]
 execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute if score bwr AC_time matches 9600 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[BWR] ","bold":true,"color":"dark_green"},{"text":"Border will shrink in 60 seconds.","color":"yellow","bold":false}]
 execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute if score bwr AC_time matches 9600 run team modify gracz friendlyFire true

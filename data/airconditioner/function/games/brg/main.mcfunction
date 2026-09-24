@@ -25,11 +25,11 @@ execute if score brg AC_running matches 1 run setblock 1546 112 0 air destroy
 execute if score brg AC_running matches 1 run setblock 1500 112 46 air destroy
 execute if score brg AC_running matches 1 run setblock 1454 112 0 air destroy
 
-execute if score brg AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:red_concrete"}}] run data merge entity @s {Item:{id:"minecraft:white_concrete",components:{can_place_on:{blocks:"#ac:allblocks"}}}}
-execute if score brg AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:yellow_concrete"}}] run data merge entity @s {Item:{id:"minecraft:white_concrete",components:{can_place_on:{blocks:"#ac:allblocks"}}}}
-execute if score brg AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:lime_concrete"}}] run data merge entity @s {Item:{id:"minecraft:white_concrete",components:{can_place_on:{blocks:"#ac:allblocks"}}}}
-execute if score brg AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:blue_concrete"}}] run data merge entity @s {Item:{id:"minecraft:white_concrete",components:{can_place_on:{blocks:"#ac:allblocks"}}}}
-execute if score brg AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:white_concrete"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:"#ac:allblocks"}}}}
+execute if score brg AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:red_concrete"}}] run data merge entity @s {Item:{id:"minecraft:white_concrete",components:{can_place_on:{blocks:"#airconditioner:allblocks"}}}}
+execute if score brg AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:yellow_concrete"}}] run data merge entity @s {Item:{id:"minecraft:white_concrete",components:{can_place_on:{blocks:"#airconditioner:allblocks"}}}}
+execute if score brg AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:lime_concrete"}}] run data merge entity @s {Item:{id:"minecraft:white_concrete",components:{can_place_on:{blocks:"#airconditioner:allblocks"}}}}
+execute if score brg AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:blue_concrete"}}] run data merge entity @s {Item:{id:"minecraft:white_concrete",components:{can_place_on:{blocks:"#airconditioner:allblocks"}}}}
+execute if score brg AC_running matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:white_concrete"}}] run data merge entity @s {Item:{components:{can_place_on:{blocks:"#airconditioner:allblocks"}}}}
 
 execute if score brg AC_running matches 1 if score brg1 AC_functions matches 1 run execute as @a unless entity @s[nbt={Inventory:[{id:"minecraft:arrow"}]}] run function airconditioner:games/brg/bow-cooldown
 execute if score brg AC_running matches 1 if score brg1 AC_functions matches 1 run kill @e[type=arrow,nbt={inGround:1b}]

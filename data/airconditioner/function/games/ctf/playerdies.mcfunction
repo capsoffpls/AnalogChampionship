@@ -22,16 +22,16 @@ execute as @a[tag=InGame] if score @s AC_ctfDeath matches 1.. run item replace e
 execute as @a[tag=InGame] if score @s AC_ctfDeath matches 1.. run item replace entity @s hotbar.2 with golden_apple 3
 execute as @a[tag=InGame] if score @s AC_ctfDeath matches 1.. run item replace entity @s hotbar.3 with bow[unbreakable={}]
 execute as @a[tag=InGame] if score @s AC_ctfDeath matches 1.. run item replace entity @s hotbar.4 with arrow 8
-execute as @a[tag=ctfNorth,tag=InGame] if score @s AC_ctfDeath matches 1.. run item replace entity @s hotbar.8 with red_wool[can_place_on={blocks:"#ac:allblocks"}] 64
-execute as @a[tag=ctfNorth,tag=InGame] if score @s AC_ctfDeath matches 1.. run item replace entity @s hotbar.7 with red_wool[can_place_on={blocks:"#ac:allblocks"}] 64
-execute as @a[tag=ctfSouth,tag=InGame] if score @s AC_ctfDeath matches 1.. run item replace entity @s hotbar.8 with blue_wool[can_place_on={blocks:"#ac:allblocks"}] 64
-execute as @a[tag=ctfSouth,tag=InGame] if score @s AC_ctfDeath matches 1.. run item replace entity @s hotbar.7 with blue_wool[can_place_on={blocks:"#ac:allblocks"}] 64
+execute as @a[tag=ctfNorth,tag=InGame] if score @s AC_ctfDeath matches 1.. run item replace entity @s hotbar.8 with red_wool[can_place_on={blocks:"#airconditioner:allblocks"}] 64
+execute as @a[tag=ctfNorth,tag=InGame] if score @s AC_ctfDeath matches 1.. run item replace entity @s hotbar.7 with red_wool[can_place_on={blocks:"#airconditioner:allblocks"}] 64
+execute as @a[tag=ctfSouth,tag=InGame] if score @s AC_ctfDeath matches 1.. run item replace entity @s hotbar.8 with blue_wool[can_place_on={blocks:"#airconditioner:allblocks"}] 64
+execute as @a[tag=ctfSouth,tag=InGame] if score @s AC_ctfDeath matches 1.. run item replace entity @s hotbar.7 with blue_wool[can_place_on={blocks:"#airconditioner:allblocks"}] 64
 
 execute as @a[scores={AC_ctfKills=1..}] if entity @s run scoreboard players add @s AC_sillyPointsHeld 5
 execute as @a[scores={AC_ctfKills=1..}] if entity @s run tellraw @s [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"+5≡","color":"gold","bold":false}]
 
-execute as @a[tag=ctfSouth,tag=InGame,tag=ctfOneLife] if score @s AC_ctfKills matches 1.. run give @s blue_wool[can_place_on={blocks:"#ac:allblocks"}] 32
-execute as @a[tag=ctfNorth,tag=InGame,tag=ctfOneLife] if score @s AC_ctfKills matches 1.. run give @s red_wool[can_place_on={blocks:"#ac:allblocks"}] 32
+execute as @a[tag=ctfSouth,tag=InGame,tag=ctfOneLife] if score @s AC_ctfKills matches 1.. run give @s blue_wool[can_place_on={blocks:"#airconditioner:allblocks"}] 32
+execute as @a[tag=ctfNorth,tag=InGame,tag=ctfOneLife] if score @s AC_ctfKills matches 1.. run give @s red_wool[can_place_on={blocks:"#airconditioner:allblocks"}] 32
 execute as @a[tag=InGame,tag=ctfOneLife] if score @s AC_ctfKills matches 1.. run give @s minecraft:golden_apple 1
 execute as @a[tag=InGame,tag=ctfOneLife] if score @s AC_ctfKills matches 1.. run give @s minecraft:arrow 4
 

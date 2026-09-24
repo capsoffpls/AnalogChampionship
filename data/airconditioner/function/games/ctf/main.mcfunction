@@ -13,10 +13,10 @@ execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run
 execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run item replace entity @a[tag=InGame] hotbar.2 with golden_apple 3
 execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run item replace entity @a[tag=InGame] hotbar.3 with bow[unbreakable={}]
 execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run item replace entity @a[tag=InGame] hotbar.4 with arrow 8
-execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run item replace entity @a[tag=InGame,tag=ctfNorth] hotbar.8 with red_wool[can_place_on={blocks:"#ac:allblocks"}] 64
-execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run item replace entity @a[tag=InGame,tag=ctfNorth] hotbar.7 with red_wool[can_place_on={blocks:"#ac:allblocks"}] 64
-execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run item replace entity @a[tag=InGame,tag=ctfSouth] hotbar.8 with blue_wool[can_place_on={blocks:"#ac:allblocks"}] 64
-execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run item replace entity @a[tag=InGame,tag=ctfSouth] hotbar.7 with blue_wool[can_place_on={blocks:"#ac:allblocks"}] 64
+execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run item replace entity @a[tag=InGame,tag=ctfNorth] hotbar.8 with red_wool[can_place_on={blocks:"#airconditioner:allblocks"}] 64
+execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run item replace entity @a[tag=InGame,tag=ctfNorth] hotbar.7 with red_wool[can_place_on={blocks:"#airconditioner:allblocks"}] 64
+execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run item replace entity @a[tag=InGame,tag=ctfSouth] hotbar.8 with blue_wool[can_place_on={blocks:"#airconditioner:allblocks"}] 64
+execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run item replace entity @a[tag=InGame,tag=ctfSouth] hotbar.7 with blue_wool[can_place_on={blocks:"#airconditioner:allblocks"}] 64
 execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run scoreboard players set ctf1 AC_functions 1
 execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run scoreboard players set ctf2 AC_functions 1
 execute if score ctf AC_running matches 1 if score ctf AC_time matches 24000 run scoreboard players set ctf3 AC_functions 1
@@ -50,8 +50,8 @@ execute if score ctf AC_running matches 1 if score ctf AC_time matches -6061 run
 #execute if score ctf AC_running matches 1 run execute as @a[tag=InGame] if score @s[tag=ctfBuildLimit,advancements={ac:ctf_buildlimit=true}] AC_BuildLimitTimer matches 100.. run advancement revoke @s only ac:ctf_buildlimit
 #execute if score ctf AC_running matches 1 run execute as @a[tag=InGame] if entity @s[tag=ctfBuildLimit,advancements={ac:ctf_buildlimit=false}] run tag @s remove ctfBuildLimit
 
-execute if score ctf AC_running matches 1 if score ctf1 AC_functions matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:red_wool"}}] unless data entity @s {Item:{components:{can_place_on:{blocks:"#ac:allblocks"}}}} run data merge entity @s {Item:{components:{can_place_on:{blocks:"#ac:allblocks"}}}}
-execute if score ctf AC_running matches 1 if score ctf1 AC_functions matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:blue_wool"}}] unless data entity @s {Item:{components:{can_place_on:{blocks:"#ac:allblocks"}}}} run data merge entity @s {Item:{components:{can_place_on:{blocks:"#ac:allblocks"}}}}
+execute if score ctf AC_running matches 1 if score ctf1 AC_functions matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:red_wool"}}] unless data entity @s {Item:{components:{can_place_on:{blocks:"#airconditioner:allblocks"}}}} run data merge entity @s {Item:{components:{can_place_on:{blocks:"#airconditioner:allblocks"}}}}
+execute if score ctf AC_running matches 1 if score ctf1 AC_functions matches 1 run execute as @e[type=item,nbt={Item:{id:"minecraft:blue_wool"}}] unless data entity @s {Item:{components:{can_place_on:{blocks:"#airconditioner:allblocks"}}}} run data merge entity @s {Item:{components:{can_place_on:{blocks:"#airconditioner:allblocks"}}}}
 
 execute if score ctf AC_running matches 1 if score ctf2 AC_functions matches 1 run function airconditioner:games/ctf/death-cooldown
 execute if score ctf AC_running matches 1 if score ctf2 AC_functions matches 1 run function airconditioner:games/ctf/playerdies
@@ -63,6 +63,6 @@ execute if score ctf AC_running matches 1 if score ctf2 AC_functions matches 1 r
 
 execute if score ctf AC_running matches 1 if score ctf3 AC_functions matches 1 run function airconditioner:games/ctf/own-flag-room
 execute if score ctf AC_running matches 1 if score ctf3 AC_functions matches 1 run function airconditioner:games/ctf/conquering
-execute if score ctf AC_running matches 1 if score ctf3 AC_functions matches 1 if score ctf AC_chosenMap matches 1 run function #ac:ctf-map1flags
-#execute if score ctf AC_running matches 1 if score ctf3 AC_functions matches 1 if score ctf AC_chosenMap matches 1 run function #ac:ctf-map1flags
+execute if score ctf AC_running matches 1 if score ctf3 AC_functions matches 1 if score ctf AC_chosenMap matches 1 run function #airconditioner:ctf-map1flags
+#execute if score ctf AC_running matches 1 if score ctf3 AC_functions matches 1 if score ctf AC_chosenMap matches 1 run function #airconditioner:ctf-map1flags
 execute if score ctf AC_running matches 1 if score ctf3 AC_functions matches 1 run function airconditioner:games/ctf/team-status
