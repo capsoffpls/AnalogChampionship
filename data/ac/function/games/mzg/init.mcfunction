@@ -8,15 +8,9 @@ execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[MZG] ","bold":
 tp @a 2500 53 1000
 gamemode spectator @a
 team join gracz @a[tag=InGame]
-kill @e[type=marker,tag=mzgMarker]
+execute as @e[type=marker,tag=mzgMarker] unless entity @s[x=2650,y=-60,z=1350,dx=-300,dz=-300,dy=370] run kill @s
 execute positioned 2500 50 1000 run kill @e[type=item,distance=..200]
 
-execute store result storage ac:mzg.generate x int 1 run random value 2468..2488
-execute store result storage ac:mzg.generate z int 1 run random value 980..1020
-fill 2350 -63 850 2650 319 1150 air
-function ac:games/mzg/generate with storage ac:mzg.generate
-
-function ac:games/mzg/fill-chests
 function ac:base/add-spawntags
 function ac:base/protip
 
