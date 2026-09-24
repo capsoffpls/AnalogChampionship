@@ -4,7 +4,7 @@ execute if score mzg AC_running matches 1 if score mzg AC_time matches 24499 run
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24499 run function ac:games/mzg/generate with storage ac:mzg.generate
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24499 run function ac:games/mzg/fill-chests
 
-execute if score mzg AC_running matches 1 if score mzg AC_time matches 24220 run function ac:games/mzg/prepare
+execute if score mzg AC_running matches 1 if score mzg AC_time matches 24220 positioned 2500 50 1000 run function ac:games/mzg/prepare
 
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24060 if score lang AC_lang matches 0 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"Gra rozpocznie się za 3 sekundy...","color":"green","bold":false}]
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24060 if score lang AC_lang matches 1 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"Game begins in 3 seconds...","color":"green","bold":false}]
@@ -15,7 +15,6 @@ execute if score mzg AC_running matches 1 if score mzg AC_time matches 24020 if 
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24000 if score lang AC_lang matches 0 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"Gra rozpoczyna się! Za 60 sekund zakończy się okres pokoju!","color":"green","bold":false}]
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24000 if score lang AC_lang matches 1 run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"The game has begun! Grace period ends in 60 seconds","color":"green","bold":false}]
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24000 run fill 2449 48 949 2551 48 1051 air replace polished_cinnabar_wall
-execute if score mzg AC_running matches 1 if score mzg AC_time matches 24000 positioned 2500 50 1000 run kill @e[type=item,distance=..200]
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24000 run scoreboard players set mzg_survival AC_misc 0
 
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 22860 as @a at @s run playsound minecraft:ac.jingles.countdown-aggressive record @s ~ ~ ~
