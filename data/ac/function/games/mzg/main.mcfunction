@@ -52,6 +52,7 @@ execute if score mzg AC_running matches 1 if score mzg AC_time matches 1..24000 
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run function ac:base/endsound
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run function ac:base/remove-spawn-tags
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run gamemode spectator @a
+execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run difficulty peaceful
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run clear @a
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run gamerule fall_damage false
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run team modify gracz friendlyFire false
