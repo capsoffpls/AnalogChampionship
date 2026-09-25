@@ -12,23 +12,25 @@
 3. **Strzały strzelają z każdej strony**
 4. **Wind Charge**
 
-## Assassins
-- *murder mystery ???*
+## Assassins `(Done 99%)`
+- **Particle nad celem zostały usunięte**
+1. **Ability są delikatnie zbuffowane, oraz losowe**
+2. **Gracze to mrówki**
 
-## Anvil Spleef `(Done 4/6)`
+## Anvil Spleef `(Done)`
 1. **Kowadła nie mają żadnego cooldownu**
 2. **Kowadła spadają z wysokości 3 bloków**
-3. **Kowadła są niewidzialne** *(problematyczne do stworzenia)*
+3. **Pvp on**
 4. **Jesteś ślepy**
 5. **Spleef**
-6. ** pvp ??**
 
 ## Avalanche `(Done)`
 1. **Śnieżki spadają 0.000002s**
 2. **Śnieżki są niewidzialne**
 3. **Slab zamienia się w barierę po jakimś czasie**
 
-## Bedwars
+## Bedwars `(1/2 Done)`
+- **Reverted punkty za kille**
 1. **Respawn jest kompletnie losowy** *(+32 wełny)*
 2. **Generatory dają losowe itemy**
 

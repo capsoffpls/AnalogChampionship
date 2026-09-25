@@ -1,5 +1,5 @@
 gamemode adventure @a[tag=InGame]
-execute unless score IGOverall AC_playercount matches 3.. run return run function airconditioner:base/not-enough-people
+#execute unless score IGOverall AC_playercount matches 3.. run return run function airconditioner:base/not-enough-people
 
 execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[ASN] ","bold":true,"color":"dark_green"},{"text":"Uruchamiam Assassins...","color":"green","bold":false}]
 execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[ASN] ","bold":true,"color":"dark_green"},{"text":"Launching Assassins...","color":"green","bold":false}]
