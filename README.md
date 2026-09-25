@@ -14,6 +14,7 @@
 
 ## Assassins `(Done 99%)`
 - **Particle nad celem zostały usunięte**
+- **Miecze dawane są /give zamiast /item więc nie nadpiszą istniejących już itemów**
 1. **Ability są delikatnie zbuffowane, oraz losowe**
 2. **Gracze to mrówki**
 

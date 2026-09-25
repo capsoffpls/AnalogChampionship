@@ -1,30 +1,32 @@
-execute as @a run attribute @s armor base reset
-execute as @a run attribute @s armor_toughness base reset
-execute as @a run attribute @s attack_damage base reset
-execute as @a run attribute @s attack_knockback base reset
-execute as @a run attribute @s attack_speed base reset
-execute as @a run attribute @s flying_speed base reset
-execute as @a run attribute @s follow_range base reset
-execute as @a run attribute @s knockback_resistance base reset
-execute as @a run attribute @s luck base reset
-execute as @a run attribute @s max_absorption base reset
-execute as @a run attribute @s max_health base reset
-execute as @a run attribute @s movement_speed base reset
-execute as @a run attribute @s scale base reset
-execute as @a run attribute @s step_height base reset
-execute as @a run attribute @s jump_strength base reset
-execute as @a run attribute @s block_interaction_range base reset
-execute as @a run attribute @s entity_interaction_range base reset
-execute as @a run attribute @s block_break_speed base reset
-execute as @a run attribute @s gravity base reset
-execute as @a run attribute @s safe_fall_distance base reset
-execute as @a run attribute @s fall_damage_multiplier base reset
-execute as @a run attribute @s burning_time base reset
-execute as @a run attribute @s explosion_knockback_resistance base reset
-execute as @a run attribute @s mining_efficiency base reset
-execute as @a run attribute @s movement_efficiency base reset
-execute as @a run attribute @s oxygen_bonus base reset
-execute as @a run attribute @s sneaking_speed base reset
-execute as @a run attribute @s submerged_mining_speed base reset
-execute as @a run attribute @s sweeping_damage_ratio base reset
-execute as @a run attribute @s water_movement_efficiency base reset
+tellraw @a[tag=debug] "resetting attributes"
+
+attribute @s armor base reset
+attribute @s armor_toughness base reset
+attribute @s attack_damage base reset
+attribute @s attack_knockback base reset
+attribute @s attack_speed base reset
+attribute @s flying_speed base reset
+attribute @s follow_range base reset
+attribute @s knockback_resistance base reset
+attribute @s luck base reset
+attribute @s max_absorption base reset
+attribute @s max_health base reset
+attribute @s movement_speed base reset
+attribute @s scale base reset
+attribute @s step_height base reset
+attribute @s jump_strength base reset
+attribute @s block_interaction_range base reset
+attribute @s entity_interaction_range base reset
+attribute @s block_break_speed base reset
+attribute @s gravity base reset
+attribute @s safe_fall_distance base reset
+attribute @s fall_damage_multiplier base reset
+attribute @s burning_time base reset
+attribute @s explosion_knockback_resistance base reset
+attribute @s mining_efficiency base reset
+attribute @s movement_efficiency base reset
+attribute @s oxygen_bonus base reset
+attribute @s sneaking_speed base reset
+attribute @s submerged_mining_speed base reset
+attribute @s sweeping_damage_ratio base reset
+attribute @s water_movement_efficiency base reset

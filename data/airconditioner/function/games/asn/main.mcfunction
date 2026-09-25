@@ -8,14 +8,16 @@ execute if score asn AC_running matches 1 if score asn AC_time matches 6020 run 
 execute if score asn AC_running matches 1 if score asn AC_time matches 6000 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[ASN] ","bold":true,"color":"dark_green"},{"text":"Gra rozpoczyna się. Twoje cele wyświetlony jest na actionbarze. Rozpoznasz go w terenie dzięki cząsteczkom.","color":"green","bold":false}]
 execute if score asn AC_running matches 1 if score asn AC_time matches 6000 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[ASN] ","bold":true,"color":"dark_green"},{"text":"The game begins. Your targets's nickname is shown on the actionbar. Particles will let you know who are your targets.","color":"green","bold":false}]
 execute if score asn AC_running matches 1 if score asn AC_time matches 6000 run execute as @a[tag=InGame] run function airconditioner:games/asn/switch-target
-execute if score asn AC_running matches 1 if score asn AC_time matches 6000 run item replace entity @a[tag=InGame] hotbar.1 with iron_sword[unbreakable={},attribute_modifiers=[{id:"sgsgafaga",type:"attack_damage",amount:20.0,operation:"add_multiplied_base"},{id:"asfagsdas",type:"attack_speed",amount:1020,operation:"add_value"}]] 1
+execute if score asn AC_running matches 1 if score asn AC_time matches 6000 run give @a[tag=InGame] iron_sword[unbreakable={},attribute_modifiers=[{id:"sgsgafaga",type:"attack_damage",amount:20.0,operation:"add_multiplied_base"},{id:"asfagsdas",type:"attack_speed",amount:1020,operation:"add_value"}]] 1
 execute if score asn AC_running matches 1 if score asn AC_time matches 6000 run scoreboard players set asn1 AC_functions 1
 execute if score asn AC_running matches 1 if score asn AC_time matches 6000 run scoreboard players set asn2 AC_functions 1
 execute if score asn AC_running matches 1 if score asn AC_time matches 6000 run scoreboard players set asn3 AC_functions 1
 
 ##########################################################################################
-execute if score asn AC_running matches 1 if score asn AC_functions matches 1 if score randomizer AC_silly matches 2 as @a run attribute @s minecraft:scale base set 0.2
 
+execute if score asn AC_running matches 1 if score asn AC_time matches 0.. if score randomizer AC_silly matches 2 as @a run attribute @s minecraft:scale base set 0.2
+
+###########################################################################################
 
 #spawnpointy
 execute if score asn AC_running matches 1 if score asn1 AC_functions matches 1 run summon area_effect_cloud 0 0 0 {Tags:["spawn"],Radius:0,WaitTime:0,Duration:2}
