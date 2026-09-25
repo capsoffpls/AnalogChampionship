@@ -65,7 +65,21 @@
           "type": "minecraft:item",
           "name": "minecraft:crossbow",
           "weight": 5,
-          "functions": []
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -75,7 +89,22 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:bow",
-          "weight": 10
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -124,42 +153,162 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:netherite_spear",
-          "weight": 1
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:netherite_axe",
-          "weight": 1
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:netherite_sword",
-          "weight": 1
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_axe",
-          "weight": 13
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:netherite_boots",
-          "weight": 1
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:netherite_leggings",
-          "weight": 1
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:netherite_chestplate",
-          "weight": 1
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:netherite_helmet",
-          "weight": 1
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -174,27 +323,102 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_sword",
-          "weight": 2
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_helmet",
-          "weight": 5
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_chestplate",
-          "weight": 2
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_leggings",
-          "weight": 4
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_boots",
-          "weight": 5
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -243,28 +467,102 @@
           "name": "minecraft:iron_boots",
           "weight": 10,
           "conditions": [],
-          "functions": []
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_leggings",
-          "weight": 10
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_helmet",
-          "weight": 10
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_chestplate",
           "weight": 10,
-          "conditions": []
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_sword",
-          "weight": 20
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:constant",
+                "value": 20
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         }
       ]
     }

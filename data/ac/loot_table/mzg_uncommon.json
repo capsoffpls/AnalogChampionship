@@ -69,7 +69,22 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:crossbow",
-          "weight": 1
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -79,7 +94,22 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:bow",
-          "weight": 5
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -133,37 +163,142 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:copper_axe",
-          "weight": 5
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:copper_sword",
-          "weight": 10
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_sword",
-          "weight": 4
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_boots",
-          "weight": 3
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_leggings",
-          "weight": 2
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_chestplate",
-          "weight": 1
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_helmet",
-          "weight": 3
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -176,22 +311,82 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:chainmail_helmet",
-          "weight": 5
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:chainmail_chestplate",
-          "weight": 2
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:chainmail_leggings",
-          "weight": 4
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:chainmail_boots",
-          "weight": 5
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -234,23 +429,82 @@
           "name": "minecraft:copper_boots",
           "weight": 10,
           "conditions": [],
-          "functions": []
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:copper_leggings",
-          "weight": 10
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:copper_helmet",
-          "weight": 10
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:copper_chestplate",
           "weight": 10,
-          "conditions": []
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+               "type": "minecraft:constant",
+                "value": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",

@@ -1,5 +1,3 @@
-execute if score mzg AC_running matches 1 if score mzg AC_time matches 24499 run execute store result storage ac:mzg.generate x int 1 run random value 2488..2508
-execute if score mzg AC_running matches 1 if score mzg AC_time matches 24499 run execute store result storage ac:mzg.generate z int 1 run random value 980..1020
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24499 run fill 2340 -63 840 2660 319 1160 air
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24499 run function ac:games/mzg/generate with storage ac:mzg.generate
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 24499 run function ac:games/mzg/fill-chests
