@@ -1,6 +1,6 @@
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches 9999 run dialog clear @s
-execute as @a[scores={AC_hasBanned=0}] if score @s AC_banDetect matches 9999 run dialog show @s ac:tournament-ban1
-execute as @a[scores={AC_hasBanned=1}] if score @s AC_banDetect matches 9999 run dialog show @s ac:tournament-ban2
+execute as @a[scores={AC_hasBanned=0}] if score @s AC_banDetect matches 9999 run dialog show @s airconditioner:tournament-ban1
+execute as @a[scores={AC_hasBanned=1}] if score @s AC_banDetect matches 9999 run dialog show @s airconditioner:tournament-ban2
 
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches 1 run function airconditioner:base/gm-ban-mode {"mode":"TNT","next_page":"ban2"}
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches 2 run function airconditioner:base/gm-ban-mode {"mode":"ASN","next_page":"ban2"}
@@ -94,50 +94,50 @@ execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -42 u
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -43 unless score @s AC_FirstBan matches 43 run function airconditioner:base/gm-ban-mode {"mode":"MTL","next_page":"finished"}
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -44 unless score @s AC_FirstBan matches 44 run function airconditioner:base/gm-ban-mode {"mode":"TTR","next_page":"finished"}
 
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -1 if score @s AC_FirstBan matches 1 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -2 if score @s AC_FirstBan matches 2 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -3 if score @s AC_FirstBan matches 3 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -4 if score @s AC_FirstBan matches 4 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -5 if score @s AC_FirstBan matches 5 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -6 if score @s AC_FirstBan matches 6 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -7 if score @s AC_FirstBan matches 7 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -8 if score @s AC_FirstBan matches 8 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -9 if score @s AC_FirstBan matches 9 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -10 if score @s AC_FirstBan matches 10 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -11 if score @s AC_FirstBan matches 11 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -12 if score @s AC_FirstBan matches 12 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -13 if score @s AC_FirstBan matches 13 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -14 if score @s AC_FirstBan matches 14 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -15 if score @s AC_FirstBan matches 15 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -16 if score @s AC_FirstBan matches 16 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -17 if score @s AC_FirstBan matches 17 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -18 if score @s AC_FirstBan matches 18 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -19 if score @s AC_FirstBan matches 19 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -20 if score @s AC_FirstBan matches 20 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -21 if score @s AC_FirstBan matches 21 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -22 if score @s AC_FirstBan matches 22 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -23 if score @s AC_FirstBan matches 23 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -24 if score @s AC_FirstBan matches 24 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -25 if score @s AC_FirstBan matches 25 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -26 if score @s AC_FirstBan matches 26 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -27 if score @s AC_FirstBan matches 27 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -28 if score @s AC_FirstBan matches 28 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -29 if score @s AC_FirstBan matches 29 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -30 if score @s AC_FirstBan matches 30 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -31 if score @s AC_FirstBan matches 31 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -32 if score @s AC_FirstBan matches 32 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -33 if score @s AC_FirstBan matches 33 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -34 if score @s AC_FirstBan matches 34 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -35 if score @s AC_FirstBan matches 35 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -36 if score @s AC_FirstBan matches 36 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -37 if score @s AC_FirstBan matches 37 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -38 if score @s AC_FirstBan matches 38 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -39 if score @s AC_FirstBan matches 39 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -40 if score @s AC_FirstBan matches 40 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -41 if score @s AC_FirstBan matches 41 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -42 if score @s AC_FirstBan matches 42 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -43 if score @s AC_FirstBan matches 43 run dialog show @s ac:tournament-duplicate
-execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -44 if score @s AC_FirstBan matches 44 run dialog show @s ac:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -1 if score @s AC_FirstBan matches 1 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -2 if score @s AC_FirstBan matches 2 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -3 if score @s AC_FirstBan matches 3 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -4 if score @s AC_FirstBan matches 4 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -5 if score @s AC_FirstBan matches 5 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -6 if score @s AC_FirstBan matches 6 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -7 if score @s AC_FirstBan matches 7 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -8 if score @s AC_FirstBan matches 8 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -9 if score @s AC_FirstBan matches 9 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -10 if score @s AC_FirstBan matches 10 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -11 if score @s AC_FirstBan matches 11 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -12 if score @s AC_FirstBan matches 12 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -13 if score @s AC_FirstBan matches 13 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -14 if score @s AC_FirstBan matches 14 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -15 if score @s AC_FirstBan matches 15 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -16 if score @s AC_FirstBan matches 16 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -17 if score @s AC_FirstBan matches 17 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -18 if score @s AC_FirstBan matches 18 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -19 if score @s AC_FirstBan matches 19 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -20 if score @s AC_FirstBan matches 20 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -21 if score @s AC_FirstBan matches 21 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -22 if score @s AC_FirstBan matches 22 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -23 if score @s AC_FirstBan matches 23 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -24 if score @s AC_FirstBan matches 24 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -25 if score @s AC_FirstBan matches 25 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -26 if score @s AC_FirstBan matches 26 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -27 if score @s AC_FirstBan matches 27 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -28 if score @s AC_FirstBan matches 28 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -29 if score @s AC_FirstBan matches 29 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -30 if score @s AC_FirstBan matches 30 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -31 if score @s AC_FirstBan matches 31 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -32 if score @s AC_FirstBan matches 32 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -33 if score @s AC_FirstBan matches 33 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -34 if score @s AC_FirstBan matches 34 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -35 if score @s AC_FirstBan matches 35 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -36 if score @s AC_FirstBan matches 36 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -37 if score @s AC_FirstBan matches 37 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -38 if score @s AC_FirstBan matches 38 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -39 if score @s AC_FirstBan matches 39 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -40 if score @s AC_FirstBan matches 40 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -41 if score @s AC_FirstBan matches 41 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -42 if score @s AC_FirstBan matches 42 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -43 if score @s AC_FirstBan matches 43 run dialog show @s airconditioner:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -44 if score @s AC_FirstBan matches 44 run dialog show @s airconditioner:tournament-duplicate
 
 scoreboard players reset @a AC_banDetect
 execute as @a if score @s AC_hasBanned matches 0..1 run scoreboard players enable @a AC_banDetect

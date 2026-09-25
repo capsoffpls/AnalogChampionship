@@ -103,6 +103,10 @@ execute if score mtl AC_running matches 1 run function airconditioner:games/mtl/
 
 execute if score ttr AC_running matches 1 run function airconditioner:games/ttr/main
 
+execute if score c24 AC_running matches 1 run function airconditioner:games/c24/main
+
+
+
 ##wycofane
 #execute if score tcb AC_running matches 1 run function airconditioner:games/tcb/start
 #execute if score tcb AC_running matches 1 run function airconditioner:games/tcb/streak

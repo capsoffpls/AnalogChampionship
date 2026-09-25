@@ -17,3 +17,4 @@ execute at @a[scores={AC_killmessage=1}] unless score @s AC_bedEmerald matches 0
 execute store result entity @e[type=item,limit=1,tag=inherit-emerald] Item.count int 1 run scoreboard players get @s AC_bedEmerald
 execute unless score @s AC_bedEmerald matches ..0 run execute if score lang AC_lang matches 0 run tellraw @a[scores={AC_killmessage=1}] [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"+ ","color":"gray","bold":false},{"score":{"name":"@s","objective":"AC_bedEmerald"},"color":"green","bold":false},{"text":" Szmaragdów","color":"gray","bold":false}]
 execute unless score @s AC_bedEmerald matches ..0 run execute if score lang AC_lang matches 1 run tellraw @a[scores={AC_killmessage=1}] [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"+ ","color":"gray","bold":false},{"score":{"name":"@s","objective":"AC_bedEmerald"},"color":"green","bold":false},{"text":" Emeralds","color":"gray","bold":false}]
+

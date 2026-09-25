@@ -1,9 +1,9 @@
 gamemode spectator @s
 function airconditioner:games/bed/inherit
 
-#execute unless entity @s[tag=bedDestroyed] run execute if score lang AC_lang matches 0 run tellraw @a[scores={AC_killmessage=1..}] [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"+5≡ (Zabójstwo)","color":"gold","bold":false}]
-#execute unless entity @s[tag=bedDestroyed] run execute if score lang AC_lang matches 1 run tellraw @a[scores={AC_killmessage=1..}] [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"+5≡ (Kill)","color":"gold","bold":false}]
-#execute unless entity @s[tag=bedDestroyed] run scoreboard players add @a[scores={AC_killmessage=1..}] AC_sillyPointsHeld 5
+execute unless entity @s[tag=bedDestroyed] run execute if score lang AC_lang matches 0 run tellraw @a[scores={AC_killmessage=1..}] [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"+5≡ (Zabójstwo)","color":"gold","bold":false}]
+execute unless entity @s[tag=bedDestroyed] run execute if score lang AC_lang matches 1 run tellraw @a[scores={AC_killmessage=1..}] [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"+5≡ (Kill)","color":"gold","bold":false}]
+execute unless entity @s[tag=bedDestroyed] run scoreboard players add @a[scores={AC_killmessage=1..}] AC_sillyPointsHeld 5
 
 execute if entity @s[tag=bedDestroyed,tag=!bedDead] run execute as @a[tag=InGame,team=ac_bedRed] if score @s AC_killmessage matches 1.. run execute if score lang AC_lang matches 0 run tellraw @a[team=ac_bedRed,tag=!bedDead] [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"+5≡ (Ostateczne Zabójstwo - Drużynowo)","color":"gold","bold":false}]
 execute if entity @s[tag=bedDestroyed,tag=!bedDead] run execute as @a[tag=InGame,team=ac_bedRed] if score @s AC_killmessage matches 1.. run execute if score lang AC_lang matches 1 run tellraw @a[team=ac_bedRed,tag=!bedDead] [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"+5≡ (Final Kill - Team points)","color":"gold","bold":false}]

@@ -26,3 +26,5 @@ scoreboard players set no-q AC_misc 1
 
 scoreboard players set @a[tag=InGame] AC_CurrentlyPlayed 2
 scoreboard players set NowPlaying AC_CurrentlyPlayed 2
+
+function airconditioner:games/asn/setuppp

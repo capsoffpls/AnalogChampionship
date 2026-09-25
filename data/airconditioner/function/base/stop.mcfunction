@@ -13,6 +13,7 @@ worldborder center 0 0
 worldborder set 6000 0
 effect clear @a
 execute as @a run function airconditioner:menu/reset-attributes
+function airconditioner:base/reset_essential
 stopsound @a * minecraft:ac.jingles.last-30s
 scoreboard objectives setdisplay sidebar AC_sillyPoints
 scoreboard objectives setdisplay list AC_sillyPointsRanked
@@ -252,3 +253,6 @@ bossbar set minecraft:ac_mtl visible false
 # // Through The Rings //
 scoreboard players set ttr AC_running 0
 bossbar set minecraft:ac_ttr visible false
+
+# // C24 //
+scoreboard players set c24 AC_running 0

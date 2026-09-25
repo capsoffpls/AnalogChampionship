@@ -2,21 +2,21 @@ execute as @a[tag=InGame] run execute store result score @s AC_GrenadeUUID run d
 
 execute as @e[type=snowball] at @s run particle smoke ~ ~ ~ 0 0 0 0 1
 
-execute as @e[type=area_effect_cloud,tag=bombDamage] unless predicate ac:base/is_riding_snowball at @s run function airconditioner:base/bombs/landed_damage
-execute as @e[type=area_effect_cloud,tag=bombGlow] unless predicate ac:base/is_riding_snowball at @s run function airconditioner:base/bombs/landed_glow
-execute as @e[type=area_effect_cloud,tag=bombBlind] unless predicate ac:base/is_riding_snowball at @s run function airconditioner:base/bombs/landed_blind
-execute as @e[type=area_effect_cloud,tag=bombHeal] unless predicate ac:base/is_riding_snowball at @s run function airconditioner:base/bombs/landed_heal
-execute as @e[type=area_effect_cloud,tag=bombLevitate] unless predicate ac:base/is_riding_snowball at @s run function airconditioner:base/bombs/landed_levitate
+execute as @e[type=area_effect_cloud,tag=bombDamage] unless predicate airconditioner:base/is_riding_snowball at @s run function airconditioner:base/bombs/landed_damage
+execute as @e[type=area_effect_cloud,tag=bombGlow] unless predicate airconditioner:base/is_riding_snowball at @s run function airconditioner:base/bombs/landed_glow
+execute as @e[type=area_effect_cloud,tag=bombBlind] unless predicate airconditioner:base/is_riding_snowball at @s run function airconditioner:base/bombs/landed_blind
+execute as @e[type=area_effect_cloud,tag=bombHeal] unless predicate airconditioner:base/is_riding_snowball at @s run function airconditioner:base/bombs/landed_heal
+execute as @e[type=area_effect_cloud,tag=bombLevitate] unless predicate airconditioner:base/is_riding_snowball at @s run function airconditioner:base/bombs/landed_levitate
 execute as @e[type=snowball,tag=!Grenade,nbt={Item:{components:{"minecraft:item_model":"ac:bomb_damage"}}}] at @s run function airconditioner:base/bombs/found_damage
 execute as @e[type=snowball,tag=!Grenade,nbt={Item:{components:{"minecraft:item_model":"ac:bomb_glow"}}}] at @s run function airconditioner:base/bombs/found_glow
 execute as @e[type=snowball,tag=!Grenade,nbt={Item:{components:{"minecraft:item_model":"ac:bomb_blind"}}}] at @s run function airconditioner:base/bombs/found_blind
 execute as @e[type=snowball,tag=!Grenade,nbt={Item:{components:{"minecraft:item_model":"ac:bomb_heal"}}}] at @s run function airconditioner:base/bombs/found_heal
 execute as @e[type=snowball,tag=!Grenade,nbt={Item:{components:{"minecraft:item_model":"ac:bomb_levitate"}}}] at @s run function airconditioner:base/bombs/found_levitate
 
-execute as @a[tag=boxRed] if score @s AC_GrenadeUUID = @s AC_GrenadeThrower run execute as @e[type=area_effect_cloud,tag=bombHeal,tag=!healRed,tag=!healYellow,tag=!healGreen,tag=!healBlue] if predicate ac:base/is_riding_snowball run tag @s add healRed
-execute as @a[tag=boxYellow] if score @s AC_GrenadeUUID = @s AC_GrenadeThrower run execute as @e[type=area_effect_cloud,tag=bombHeal,tag=!healRed,tag=!healYellow,tag=!healGreen,tag=!healBlue] if predicate ac:base/is_riding_snowball run tag @s add healYellow
-execute as @a[tag=boxGreen] if score @s AC_GrenadeUUID = @s AC_GrenadeThrower run execute as @e[type=area_effect_cloud,tag=bombHeal,tag=!healRed,tag=!healYellow,tag=!healGreen,tag=!healBlue] if predicate ac:base/is_riding_snowball run tag @s add healGreen
-execute as @a[tag=boxBlue] if score @s AC_GrenadeUUID = @s AC_GrenadeThrower run execute as @e[type=area_effect_cloud,tag=bombHeal,tag=!healRed,tag=!healYellow,tag=!healGreen,tag=!healBlue] if predicate ac:base/is_riding_snowball run tag @s add healBlue
+execute as @a[tag=boxRed] if score @s AC_GrenadeUUID = @s AC_GrenadeThrower run execute as @e[type=area_effect_cloud,tag=bombHeal,tag=!healRed,tag=!healYellow,tag=!healGreen,tag=!healBlue] if predicate airconditioner:base/is_riding_snowball run tag @s add healRed
+execute as @a[tag=boxYellow] if score @s AC_GrenadeUUID = @s AC_GrenadeThrower run execute as @e[type=area_effect_cloud,tag=bombHeal,tag=!healRed,tag=!healYellow,tag=!healGreen,tag=!healBlue] if predicate airconditioner:base/is_riding_snowball run tag @s add healYellow
+execute as @a[tag=boxGreen] if score @s AC_GrenadeUUID = @s AC_GrenadeThrower run execute as @e[type=area_effect_cloud,tag=bombHeal,tag=!healRed,tag=!healYellow,tag=!healGreen,tag=!healBlue] if predicate airconditioner:base/is_riding_snowball run tag @s add healGreen
+execute as @a[tag=boxBlue] if score @s AC_GrenadeUUID = @s AC_GrenadeThrower run execute as @e[type=area_effect_cloud,tag=bombHeal,tag=!healRed,tag=!healYellow,tag=!healGreen,tag=!healBlue] if predicate airconditioner:base/is_riding_snowball run tag @s add healBlue
 
 execute as @e[type=snowball,tag=Grenade] run function airconditioner:base/bombs/vis_fix
 scoreboard players operation .global AC_GrenadeVisFix *= .-1 AC_GrenadeVisFix

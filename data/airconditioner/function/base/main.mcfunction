@@ -47,8 +47,8 @@ execute if block 2 49 -3 mangrove_button[powered=true] run setblock 2 49 -3 mang
 #execute as @e[type=armor_stand] on passengers ride @s dismount
 #execute as @e[type=area_effect_cloud] on passengers ride @s dismount
 
-execute as @a[scores={AC_lobbyTeleporters=1..}] if items entity @s weapon.* carrot_on_a_stick[item_model="ac:portal"] if score lang AC_lang matches 0 run dialog show @s ac:lobby_tp
-execute as @a[scores={AC_lobbyTeleporters=1..}] if items entity @s weapon.* carrot_on_a_stick[item_model="ac:portal"] if score lang AC_lang matches 1 run dialog show @s ac:lobby_tp_en
+execute as @a[scores={AC_lobbyTeleporters=1..}] if items entity @s weapon.* carrot_on_a_stick[item_model="ac:portal"] if score lang AC_lang matches 0 run dialog show @s airconditioner:lobby_tp
+execute as @a[scores={AC_lobbyTeleporters=1..}] if items entity @s weapon.* carrot_on_a_stick[item_model="ac:portal"] if score lang AC_lang matches 1 run dialog show @s airconditioner:lobby_tp_en
 execute as @a[scores={AC_lobbyTeleporters=1..}] if items entity @s weapon.* carrot_on_a_stick[item_model="ac:practice"] run tp @s -100 27 0 90 0
 execute as @a[scores={AC_lobbyTeleporters=1..}] if items entity @s weapon.* carrot_on_a_stick[item_model="ac:parkour"] run tp @s 0 47 47 0 0
 execute as @a[scores={AC_lobbyTeleporters=1..}] if items entity @s weapon.* carrot_on_a_stick[item_model="ac:transporter"] run function airconditioner:menu/camera
@@ -71,12 +71,12 @@ execute unless score NowPlaying AC_CurrentlyPlayed matches 0 run clear @a *[cust
 
 execute as @a if score @s AC_trigger matches -1 run function airconditioner:menu/queue-sortby {sort:1}
 execute as @a if score @s AC_trigger matches -2 run function airconditioner:menu/queue-sortby {sort:2}
-execute as @a if score @s AC_trigger matches -3 if score @s AC_QueueSort matches 1 if score lang AC_lang matches 0 run dialog show @s ac:queue-up-arbitrary
-execute as @a if score @s AC_trigger matches -3 if score @s AC_QueueSort matches 1 if score lang AC_lang matches 1 run dialog show @s ac:queue-up-arbitrary-en
-execute as @a if score @s AC_trigger matches -3 if score @s AC_QueueSort matches 2 if score lang AC_lang matches 0 run dialog show @s ac:queue-up-alphabetical
-execute as @a if score @s AC_trigger matches -3 if score @s AC_QueueSort matches 2 if score lang AC_lang matches 1 run dialog show @s ac:queue-up-alphabetical-en
-execute as @a if score @s AC_trigger matches -4 if score @s AC_QueueSort matches 1 run dialog show @s ac:queue-up-unlisted-arbitrary
-execute as @a if score @s AC_trigger matches -4 if score @s AC_QueueSort matches 2 run dialog show @s ac:queue-up-unlisted-alphabetical
+execute as @a if score @s AC_trigger matches -3 if score @s AC_QueueSort matches 1 if score lang AC_lang matches 0 run dialog show @s airconditioner:queue-up-arbitrary
+execute as @a if score @s AC_trigger matches -3 if score @s AC_QueueSort matches 1 if score lang AC_lang matches 1 run dialog show @s airconditioner:queue-up-arbitrary-en
+execute as @a if score @s AC_trigger matches -3 if score @s AC_QueueSort matches 2 if score lang AC_lang matches 0 run dialog show @s airconditioner:queue-up-alphabetical
+execute as @a if score @s AC_trigger matches -3 if score @s AC_QueueSort matches 2 if score lang AC_lang matches 1 run dialog show @s airconditioner:queue-up-alphabetical-en
+execute as @a if score @s AC_trigger matches -4 if score @s AC_QueueSort matches 1 run dialog show @s airconditioner:queue-up-unlisted-arbitrary
+execute as @a if score @s AC_trigger matches -4 if score @s AC_QueueSort matches 2 run dialog show @s airconditioner:queue-up-unlisted-alphabetical
 execute as @a if score @s AC_trigger matches ..-1 run scoreboard players reset @s AC_trigger
 
 execute as @a[tag=!.] run function airconditioner:base/new-player

@@ -4,6 +4,10 @@ execute if score ddb AC_running matches 1 run function airconditioner:base/compe
 
 scoreboard players add @a[tag=InGame] AC_statsGamesPlayed 1
 
+execute as @a run function airconditioner:menu/reset-attributes
+function airconditioner:base/reset_essential
+team modify gracz friendlyFire false
+
 scoreboard players operation @a AC_sillyPointsHeld *= multiplier AC_misc
 execute if score no-points AC_misc matches 0 as @a run scoreboard players operation @s AC_sillyPoints += @s AC_sillyPointsHeld
 
@@ -215,6 +219,8 @@ worldborder center 0 0
 worldborder set 6000 0
 
 tag @a remove ac-compensate
+
+scoreboard players set randomizer_prio AC_silly 0
 
 execute if score isRanked AC_CurrentlyPlayed matches 1 run scoreboard players operation spawntag AC_misc = spawntag-last AC_misc
 execute if score isRanked AC_CurrentlyPlayed matches 1 run scoreboard players reset spawntag-last AC_misc

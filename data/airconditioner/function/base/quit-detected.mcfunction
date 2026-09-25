@@ -41,7 +41,9 @@ execute if score @s AC_CurrentlyPlayed matches 40 run tellraw @s [{"text":"[LEAV
 execute if score @s AC_CurrentlyPlayed matches 41 run tellraw @s [{"text":"[LEAVERBUSTER] ","bold":true,"color":"red"},{"text":"Wykryliśmy opuszczenie serwera podczas twojej ostatniej gry w: ","color":"red","bold":false},{"text":"[JGT] Juggernaut","color":"dark_red","bold":true}]
 execute if score @s AC_CurrentlyPlayed matches 42 run tellraw @s [{"text":"[LEAVERBUSTER] ","bold":true,"color":"red"},{"text":"Wykryliśmy opuszczenie serwera podczas twojej ostatniej gry w: ","color":"red","bold":false},{"text":"[UWS] Underwater Skewers","color":"dark_red","bold":true}]
 execute if score @s AC_CurrentlyPlayed matches 43 run tellraw @s [{"text":"[LEAVERBUSTER] ","bold":true,"color":"red"},{"text":"Wykryliśmy opuszczenie serwera podczas twojej ostatniej gry w: ","color":"red","bold":false},{"text":"[MTL] Mow The Lawn","color":"dark_red","bold":true}]
-execute if score @s AC_CurrentlyPlayed matches 43 run tellraw @s [{"text":"[LEAVERBUSTER] ","bold":true,"color":"red"},{"text":"Wykryliśmy opuszczenie serwera podczas twojej ostatniej gry w: ","color":"red","bold":false},{"text":"[TTR] Through The Rings","color":"dark_red","bold":true}]
+execute if score @s AC_CurrentlyPlayed matches 44 run tellraw @s [{"text":"[LEAVERBUSTER] ","bold":true,"color":"red"},{"text":"Wykryliśmy opuszczenie serwera podczas twojej ostatniej gry w: ","color":"red","bold":false},{"text":"[TTR] Through The Rings","color":"dark_red","bold":true}]
+execute if score @s AC_CurrentlyPlayed matches 45 run tellraw @s [{"text":"[LEAVERBUSTER] ","bold":true,"color":"red"},{"text":"Wykryliśmy opuszczenie serwera podczas twojej ostatniej gry w: ","color":"red","bold":false},{"text":"[C24] Floor 7 bossfight","color":"dark_red","bold":true}]
+
 
 execute if score @s AC_CurrentlyPlayed matches 1 run scoreboard players remove @s AC_sillyPoints 50
 execute if score @s AC_CurrentlyPlayed matches 1 run tellraw @s [{"text":"[AC] ","bold":true,"color":"white"},{"text":"-50≡","color":"red","bold":false}]
