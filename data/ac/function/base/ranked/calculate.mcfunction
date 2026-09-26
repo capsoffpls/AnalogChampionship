@@ -76,7 +76,7 @@ scoreboard players operation @s AC_pointsRankedHeld /= 10 int
 # dolicz admin-set global multiplier z konsoli administracyjnej
 scoreboard players operation @s AC_pointsRankedHeld *= #global-multiplier AC_pointsRankedHeld
 
-scoreboard players operation @s AC_pointsRanked += @s AC_pointsRankedHeld
+execute unless score @s AC_rankedPromotionStatus matches 1.. run scoreboard players operation @s AC_pointsRanked += @s AC_pointsRankedHeld
 
 tellraw @a[tag=debug] [{text:"",bold:false},{text:"[DEBUG] ",bold:true,color:"red"},{text:"global: ",color:"red"},{score:{name:"#global-multiplier",objective:"AC_pointsRankedHeld"},color:"red"},{text:" players: ",color:"red"},{score:{name:"IGOverall",objective:"AC_playercount"},color:"red"},{text:" avg: ",color:"red"},{score:{name:"#average",objective:"AC_pointsRankedHeld"},color:"red"}]
 execute as @s run function ac:base/ranked/print-debug

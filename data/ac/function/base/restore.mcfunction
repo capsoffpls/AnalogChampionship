@@ -23,6 +23,7 @@ scoreboard objectives add AC_pointsRankedAvgMultiplier dummy
 scoreboard objectives add AC_pointsRankedTimeMultiplier dummy
 scoreboard objectives add AC_rankedTimeFinished dummy
 scoreboard objectives add AC_rankedPlaceFinished dummy
+scoreboard objectives add AC_rankedPromotionStatus dummy
 #auto
 scoreboard objectives add AC_autoControl dummy
 scoreboard objectives add AC_autoVote dummy
