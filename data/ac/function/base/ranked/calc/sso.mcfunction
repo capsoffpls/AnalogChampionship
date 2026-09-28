@@ -62,4 +62,4 @@ execute if score IGOverall AC_playercount matches 4..7 if score @s AC_rankedPlac
 execute if score IGOverall AC_playercount matches 4..7 if score @s AC_rankedPlaceFinished matches 2..3 run scoreboard players set @s AC_pointsRankedHeld 12
 execute if score IGOverall AC_playercount matches 4..7 if score @s AC_rankedPlaceFinished matches 1 run scoreboard players set @s AC_pointsRankedHeld 13
 
-execute unless score @s AC_ssoBoatDamage matches 5.. run scoreboard players set @s AC_pointsRankedHeld -10
+execute if score @s AC_ssoBoatDamage matches 5.. run scoreboard players set @s AC_pointsRankedHeld -10
