@@ -38,6 +38,7 @@ execute if score mzg AC_running matches 1 if score mzg AC_time matches 6000 if s
 
 execute if score mzg AC_running matches 1 if score mzg AC_time matches ..1200 as @a[tag=InGame,gamemode=adventure] unless score @s AC_CurrentY matches 46..59 run kill @s
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 1..24000 as @a[scores={AC_deathmessage=1..},gamemode=adventure] if entity @s run function ac:games/mzg/death
+execute if score mzg AC_running matches 1 if score mzg AC_time matches 1..24000 as @a[scores={AC_deathmessage=1..},gamemode=spectator] if entity @s run tellraw @a [{"text":"[MZG] ","bold":true,"color":"dark_green"},{selector:"@s",color:dark_red,bold:true},{"text":" został(a) wyeliminowany/a! Pozostało graczy: ","color":"red","bold":false},{score:{name:"InGame",objective:"AC_playercount"},color:dark_red,bold:true}]
 
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 1..22800 run scoreboard players add mzg_survival AC_misc 1
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 1..22800 if score mzg_survival AC_misc matches 600.. run tellraw @a[tag=InGame,gamemode=adventure] [{"text":"[MZG] ","bold":true,"color":"dark_green"},{"text":"+10≡","color":"gold","bold":false}]

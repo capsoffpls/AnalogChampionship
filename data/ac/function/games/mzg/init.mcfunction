@@ -26,6 +26,8 @@ gamerule keep_inventory false
 team modify gracz friendlyFire false
 team modify gracz nametagVisibility never
 
+scoreboard players reset @a AC_mzgRankedKillCount
+
 scoreboard players set mzg AC_time 24500
 scoreboard players set @a[tag=InGame] AC_CurrentlyPlayed 46
 scoreboard players set NowPlaying AC_CurrentlyPlayed 46

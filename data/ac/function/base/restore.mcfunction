@@ -529,6 +529,7 @@ bossbar add ac_mzg [{"text":"Maze Games","color":"#8800ff","bold":true},{"text":
 bossbar set ac_mzg color purple
 bossbar set ac_mzg max 24000
 bossbar set ac_mzg style notched_20
+scoreboard objectives add AC_mzgRankedKillCount dummy
 bossbar add ac_omc [{"text":"One-Minute Craft","color":"light_purple","bold":true},{"text":" - Czas do końca rundy","color":"dark_purple","bold":false}]
 bossbar set ac_omc color pink
 bossbar set ac_omc max 1200

@@ -58,6 +58,8 @@ execute if score NowPlaying AC_CurrentlyPlayed matches 34 as @s run function ac:
 execute if score NowPlaying AC_CurrentlyPlayed matches 36 as @s run function ac:base/ranked/calc/hkn
 execute if score NowPlaying AC_CurrentlyPlayed matches 38 as @s run function ac:base/ranked/calc/tbk
 execute if score NowPlaying AC_CurrentlyPlayed matches 41 as @s run function ac:base/ranked/calc/jgt
+execute if score NowPlaying AC_CurrentlyPlayed matches 45 as @s run function ac:base/ranked/calc/sso
+execute if score NowPlaying AC_CurrentlyPlayed matches 46 as @s run function ac:base/ranked/calc/mzg
 
 # rekalkulacja średniej jeżeli twoje punkty są ujemne
 # jeżeli mniej lub równe średniej - multi x0.9
