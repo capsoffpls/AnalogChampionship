@@ -3,3 +3,9 @@ execute if score lang AC_lang matches 1 if score wait AC_running matches 1 as @a
 
 execute if score queued_3 AC_QueuedCount matches 1.. unless score queued_1 AC_QueuedCount matches 4.. unless score queued_2 AC_QueuedCount matches 4.. run scoreboard players set wait AC_time 0
 execute if score queued_3 AC_QueuedCount matches 1.. unless score queued_1 AC_QueuedCount matches 4.. unless score queued_2 AC_QueuedCount matches 4.. run scoreboard players set wait AC_running 0
+
+execute if score queued_3 AC_QueuedCount matches 1.. if score queued_1 AC_QueuedCount matches 4.. run scoreboard players set wait AC_time 300
+execute if score queued_3 AC_QueuedCount matches 1.. if score queued_1 AC_QueuedCount matches 4.. run function ac:base/start-from-queue {"queue":1}
+
+execute if score queued_3 AC_QueuedCount matches 1.. if score queued_2 AC_QueuedCount matches 4.. run scoreboard players set wait AC_time 300
+execute if score queued_3 AC_QueuedCount matches 1.. if score queued_2 AC_QueuedCount matches 4.. run function ac:base/start-from-queue {"queue":2}
