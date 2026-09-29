@@ -1,7 +1,7 @@
 execute as @s run function ac:base/ranked/calculate
 
-execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[R] ","bold":true,"color":"white"},{"text":"Twój ranking zmienił się o ","color":"#0059ff","bold":false},{"score":{"objective":"AC_pointsRankedHeld","name":"@s"},"color":"#00bfff"},{"text":"Ⓡ","bold":false,"color":"#00bfff"}]
-execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[R] ","bold":true,"color":"white"},{"text":"Your ranking has changed by ","color":"#0059ff","bold":false},{"score":{"objective":"AC_pointsRankedHeld","name":"@s"},"color":"#00bfff"},{"text":"Ⓡ","bold":false,"color":"#00bfff"},{"text":" after this game","color":"#0059ff","bold":false}]
+execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[R] ","bold":true,"color":"white"},{"text":"Twój ranking zmienił się o ","color":"#0059ff","bold":false},{"score":{"objective":"AC_pointsRankedHeld","name":"@s"},"color":"#00bfff"},{"text":"Ⓡ","bold":false,"color":"#00bfff"},{"text":" [Szczegóły]","color":"#0059ff","bold":true,click_event:{action:"run_command",command:"trigger AC_trigger set -10"}}]
+execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[R] ","bold":true,"color":"white"},{"text":"Your ranking has changed by ","color":"#0059ff","bold":false},{"score":{"objective":"AC_pointsRankedHeld","name":"@s"},"color":"#00bfff"},{"text":"Ⓡ","bold":false,"color":"#00bfff"},{"text":" after this game","color":"#0059ff","bold":false},{"text":" [Details]","color":"#0059ff","bold":true,click_event:{action:"run_command",command:"trigger AC_trigger set -10"}}]
 
 execute if score @s AC_rankedPromotionStatus matches 1.. if score @s AC_pointsRankedHeld matches 1.. run function ac:base/ranked/promotion-continue
 execute if score @s AC_rankedPromotionStatus matches 1.. if score @s AC_pointsRankedHeld matches ..-1 run function ac:base/ranked/promotion-failed

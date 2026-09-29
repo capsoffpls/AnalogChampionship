@@ -77,6 +77,7 @@ execute as @a if score @s AC_trigger matches -3 if score @s AC_QueueSort matches
 execute as @a if score @s AC_trigger matches -3 if score @s AC_QueueSort matches 2 if score lang AC_lang matches 1 run dialog show @s ac:queue-up-alphabetical-en
 execute as @a if score @s AC_trigger matches -4 if score @s AC_QueueSort matches 1 run dialog show @s ac:queue-up-unlisted-arbitrary
 execute as @a if score @s AC_trigger matches -4 if score @s AC_QueueSort matches 2 run dialog show @s ac:queue-up-unlisted-alphabetical
+execute as @a if score @s AC_trigger matches -10 run function ac:base/ranked/show-details with entity @s bukkit
 execute as @a if score @s AC_trigger matches ..-1 run scoreboard players reset @s AC_trigger
 
 execute as @a[tag=!.] run function ac:base/new-player

@@ -1,1 +1,5 @@
 tellraw @a[tag=debug] [{selector:"@s","bold":false,"color":"red"},{"text":":\n- avg-multiplier: ","bold":false,"color":"red"},{"score":{"name":"@s","objective":"AC_pointsRankedAvgMultiplier"},"bold":false,"color":"red"},{"text":"\n- score: ","bold":false,"color":"red"},{"score":{"name":"@s","objective":"AC_pointsRankedHeld"},"bold":false,"color":"red"},{"text":"\n- after: ","bold":false,"color":"red"},{"score":{"name":"@s","objective":"AC_pointsRanked"},"bold":false,"color":"red"},{"text":"\n- time: ","bold":false,"color":"red"},{"score":{"name":"@s","objective":"AC_rankedTimeFinished"},"bold":false,"color":"red"},{"text":"\n- place: ","bold":false,"color":"red"},{"score":{"name":"@s","objective":"AC_rankedPlaceFinished"},"bold":false,"color":"red"}]
+
+execute as @s run data modify storage ac:ranked.lastgame players prepend value {name:"abc"}
+execute as @s run data modify storage ac:ranked.lastgame players[0].name set from entity @s bukkit.lastKnownName
+execute as @s run function ac:base/ranked/save-details with entity @s bukkit

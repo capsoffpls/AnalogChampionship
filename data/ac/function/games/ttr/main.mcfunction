@@ -32,7 +32,7 @@ execute if score ttr AC_time matches 0..1800 unless entity @a[tag=InGame,gamemod
 execute if score ttr AC_time matches 0..1800 unless entity @a[tag=InGame,gamemode=adventure] if score lang AC_lang matches 1 run tellraw @a [{"text":"[TTR] ","bold":true,"color":"dark_green"},{"text":"All players have ended their flight!","color":"yellow","bold":false}]
 execute if score ttr AC_time matches 0..1800 unless entity @a[tag=InGame,gamemode=adventure] run scoreboard players set ttr AC_time -1
 
-execute as @a[tag=InGame,gamemode=adventure] if entity @s[x=1983,y=71,z=-1101,dx=34,dy=12,dz=1] run function ac:games/ttr/metamfetamina
+execute as @a[tag=InGame,gamemode=adventure] if entity @s[x=1983,y=71,z=-1100,dx=34,dy=12,dz=-10] run function ac:games/ttr/metamfetamina
 
 ############################# end
 execute if score ttr AC_time matches 0 if score lang AC_lang matches 0 run tellraw @a [{"text":"[TTR] ","bold":true,"color":"dark_green"},{"text":"Czas gry zakończył się!","color":"red","bold":false}]

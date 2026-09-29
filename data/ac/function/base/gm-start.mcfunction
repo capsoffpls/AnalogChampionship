@@ -77,7 +77,7 @@ execute if score gm AC_gamemode matches -4 run function ac:games/legacy/bed/init
 execute if score gm AC_gamemode matches -5 run function ac:games/legacy/pkn-inf/init
 
 execute as @a run scoreboard players operation @s AC_pointsBackup = @s AC_points
-execute as @a run scoreboard players operation @s AC_pointsRankedBackup = @s AC_pointsRanked
+execute as @a unless score @s AC_rankedPromotionStatus matches 1.. run scoreboard players operation @s AC_pointsRankedBackup = @s AC_pointsRanked
 scoreboard objectives setdisplay sidebar AC_pointsHeld
 
 scoreboard players add GameID AC_CurrentGameID 1
