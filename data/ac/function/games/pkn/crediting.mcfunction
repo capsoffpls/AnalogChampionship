@@ -130,8 +130,8 @@ $execute if score $(pos) AC_pknScores matches 2013 run title @s subtitle [{"text
 $execute if score $(pos) AC_pknScores matches 2014 run title @s subtitle [{"text":"Ender Temple","bold":true,"color":"red"},{"text":" ~ apom","bold":false,"color":"gray"}]
 $execute if score $(pos) AC_pknScores matches 2015 run title @s subtitle [{"text":"Parkour Box","bold":true,"color":"red"},{"text":" ~ apom","bold":false,"color":"gray"}]
 $execute if score $(pos) AC_pknScores matches 2016 run title @s subtitle [{"text":"Poj***ło mnie do reszty","bold":true,"color":"red"},{"text":" ~ Analog","bold":false,"color":"gray"}]
-$execute if score $(pos) AC_pknScores matches 2016 run title @s subtitle [{"text":"L Jumper","bold":true,"color":"red"},{"text":" ~ apom","bold":false,"color":"gray"}]
-$execute if score $(pos) AC_pknScores matches 2016 run title @s subtitle [{"text":"Diorytowe sople","bold":true,"color":"red"},{"text":" ~ apom","bold":false,"color":"gray"}]
-$execute if score $(pos) AC_pknScores matches 2016 run title @s subtitle [{"text":"Plus Jeden","bold":true,"color":"red"},{"text":" ~ apom","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 2017 run title @s subtitle [{"text":"L Jumper","bold":true,"color":"red"},{"text":" ~ apom","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 2018 run title @s subtitle [{"text":"Diorytowe sople","bold":true,"color":"red"},{"text":" ~ apom","bold":false,"color":"gray"}]
+$execute if score $(pos) AC_pknScores matches 2019 run title @s subtitle [{"text":"Plus Jeden","bold":true,"color":"red"},{"text":" ~ apom","bold":false,"color":"gray"}]
 
 scoreboard players add @s AC_pknCrediting 1
