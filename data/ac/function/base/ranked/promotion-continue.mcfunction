@@ -10,4 +10,3 @@ execute if score @s AC_rankedPromotionStatus matches 4 if score lang AC_lang mat
 execute if score @s AC_rankedPromotionStatus matches 4 if score lang AC_lang matches 1 run tellraw @s [{"text":"[R] ","bold":true,"color":"white"},{"text":"Promotion series: ","color":"green","bold":false},{"text":"3/3","bold":false,"color":"dark_green"}]
 
 execute if score @s AC_rankedPromotionStatus matches 4 run function ac:base/ranked/division-update
-execute if score @s AC_rankedPromotionStatus matches 4 run scoreboard players reset @s AC_rankedPromotionStatus
