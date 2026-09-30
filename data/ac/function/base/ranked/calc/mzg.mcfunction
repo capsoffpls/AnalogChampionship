@@ -1,4 +1,4 @@
-scoreboard players set @a[tag=InGame] AC_pointsRankedHeld 10
+scoreboard players set @a[tag=InGame] AC_pointsRankedHeld 5
 scoreboard players add @a[tag=InGame] AC_mzgRankedKillCount 10
 
 execute as @a[tag=InGame] run scoreboard players operation @s AC_pointsRankedHeld *= @s AC_mzgRankedKillCount
