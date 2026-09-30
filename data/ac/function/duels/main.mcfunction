@@ -39,6 +39,13 @@ execute store result bossbar ac_duel1 value run scoreboard players get duel_1 AC
 execute store result bossbar ac_duel2 value run scoreboard players get duel_2 AC_QueuedCount
 execute store result bossbar ac_duel3 value run scoreboard players get duel_3 AC_QueuedCount
 
-execute if score duel_1 AC_QueuedCount matches 2 run function ac:duels/init
-execute if score duel_2 AC_QueuedCount matches 2 run function ac:duels/init
-execute if score duel_3 AC_QueuedCount matches 2 run function ac:duels/init
+## odpalanie duela UNFINISHED nie wiem kurwa jak to optymalnie zrobic wez cos tu ogarnij caps
+execute if score duel_1 AC_QueuedCount matches 2 run data modify storage ac:duels mode set from storage ac:queue.duels.1 mode
+execute if score duel_1 AC_QueuedCount matches 2 run data modify storage ac:duels queue set value 1
+execute if score duel_1 AC_QueuedCount matches 2 run function ac:duels/init {queue:1}
+execute if score duel_2 AC_QueuedCount matches 2 run data modify storage ac:duels mode set from storage ac:queue.duels.2 mode
+execute if score duel_2 AC_QueuedCount matches 2 run data modify storage ac:duels queue set value 2
+execute if score duel_2 AC_QueuedCount matches 2 run function ac:duels/init {queue:2}
+execute if score duel_3 AC_QueuedCount matches 2 run data modify storage ac:duels mode set from storage ac:queue.duels.3 mode
+execute if score duel_3 AC_QueuedCount matches 2 run data modify storage ac:duels queue set value 3
+execute if score duel_3 AC_QueuedCount matches 2 run function ac:duels/init {queue:3}

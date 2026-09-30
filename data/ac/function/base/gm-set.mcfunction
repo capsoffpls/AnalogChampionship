@@ -52,12 +52,6 @@ execute if score gm AC_gamemode matches 46 run data modify storage ac_modes set 
 #execute if score gm AC_gamemode matches 47 run data modify storage ac_modes set set value "Air Force Royale"
 #execute if score gm AC_gamemode matches 48 run data modify storage ac_modes set set value "Dropper"
 
-execute if score gm AC_gamemode matches -1 run data modify storage ac_modes set set value "Arrow Barrage (Legacy)"
-execute if score gm AC_gamemode matches -2 run data modify storage ac_modes set set value "Hoe Hoe Hoe (Legacy)"
-execute if score gm AC_gamemode matches -3 run data modify storage ac_modes set set value "Capture The Flag (4v12)"
-execute if score gm AC_gamemode matches -4 run data modify storage ac_modes set set value "Bed Wars (4v12)"
-execute if score gm AC_gamemode matches -5 run data modify storage ac_modes set set value "Parkour Knockout Endless"
-execute if score gm AC_gamemode matches -6 run data modify storage ac_modes set set value "Parkour Racing (Experimental)"
 
 execute if score gm AC_gamemode matches 999 if score lang AC_lang matches 0 run data modify storage ac_modes set set value "Szybka gra"
 execute if score gm AC_gamemode matches 999 if score lang AC_lang matches 1 run data modify storage ac_modes set set value "Quickplay"

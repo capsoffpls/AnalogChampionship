@@ -1,0 +1,2 @@
+$execute as @r[tag=InDuel,scores={AC_DuelQueue=1}] if score Duel$(queue) AC_QueuedCount matches 1 run tag @s add duel1-1
+$execute as @a[tag=InDuel,scores={AC_DuelQueue=1},tag=!duel1-1] if score Duel$(queue) AC_QueuedCount matches 1 run tag @s add duel1-2
