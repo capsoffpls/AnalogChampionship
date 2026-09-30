@@ -221,9 +221,9 @@ execute if score isRanked AC_CurrentlyPlayed matches 1 run scoreboard players re
 
 scoreboard players set no-q AC_misc 0
 scoreboard players set NowPlaying AC_CurrentlyPlayed 0
-scoreboard players set @a[tag=InGame] AC_CurrentlyPlayed 0
+scoreboard players set @a AC_CurrentlyPlayed 0
 scoreboard players set isRanked AC_CurrentlyPlayed 0
-scoreboard players set @a[tag=InGame] AC_IsGameRanked 0
+scoreboard players set @a AC_IsGameRanked 0
 scoreboard players set forcemap AC_misc 0
 scoreboard players reset @a AC_CurrentGameID
 

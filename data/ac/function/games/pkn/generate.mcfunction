@@ -124,7 +124,7 @@ execute if score gen AC_pknScores matches 136 run function ac:games/pkn/patterns
 execute if score gen AC_pknScores matches 137 run function ac:games/pkn/patterns/easy/137
 execute if score gen AC_pknScores matches 138 run function ac:games/pkn/patterns/medium/138
 execute if score gen AC_pknScores matches 139 run function ac:games/pkn/patterns/easy/139
-execute if score gen AC_pknScores matches 140..143 run function ac:games/pkn/patterns/medium/140-43
+execute if score gen AC_pknScores matches 140..143 run function ac:games/pkn/patterns/medium/140-143
 execute if score gen AC_pknScores matches 144 run function ac:games/pkn/patterns/hard/144
 execute if score gen AC_pknScores matches 145 run function ac:games/pkn/patterns/medium/145
 execute if score gen AC_pknScores matches 146 run function ac:games/pkn/patterns/hard/146

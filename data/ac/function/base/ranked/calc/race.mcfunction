@@ -55,7 +55,7 @@ execute if score NowPlaying AC_CurrentlyPlayed matches 30 if score IGOverall AC_
 execute if score NowPlaying AC_CurrentlyPlayed matches 30 if score IGOverall AC_playercount matches 8..11 if score @s AC_rankedPlaceFinished matches 9..10 run scoreboard players set @s AC_pointsRankedHeld 7
 execute if score NowPlaying AC_CurrentlyPlayed matches 30 if score IGOverall AC_playercount matches 8..11 if score @s AC_rankedPlaceFinished matches 11 run scoreboard players set @s AC_pointsRankedHeld 9
 
-execute if score NowPlaying AC_CurrentlyPlayed matches 30 if score IGOverall AC_playercount matches 4..7 if score @s AC_rankedPlaceFinished matches 1..4 run scoreboard players set @s AC_pointsRankedHeld 0
+execute if score NowPlaying AC_CurrentlyPlayed matches 30 if score IGOverall AC_playercount matches 4..7 if score @s AC_rankedPlaceFinished matches 1..4 run scoreboard players set @s AC_pointsRankedHeld 1
 execute if score NowPlaying AC_CurrentlyPlayed matches 30 if score IGOverall AC_playercount matches 4..7 if score @s AC_rankedPlaceFinished matches 5..6 run scoreboard players set @s AC_pointsRankedHeld 4
 execute if score NowPlaying AC_CurrentlyPlayed matches 30 if score IGOverall AC_playercount matches 4..7 if score @s AC_rankedPlaceFinished matches 7 run scoreboard players set @s AC_pointsRankedHeld 6
 
