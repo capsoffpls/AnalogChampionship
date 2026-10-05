@@ -7,7 +7,7 @@
           "type": {
             "tags": [
               {
-                "id": "minecraft:is_freezing",
+                "id": "#minecraft:is_freezing",
                 "expected": true
               }
             ]

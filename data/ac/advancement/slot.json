@@ -3,16 +3,16 @@
     "requirement": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "player": [
+        "player": 
           {
-            "condition": "minecraft:entity_properties",
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {}
           }
-        ],
-        "location": [
+        ,
+        "location": 
           {
-            "condition": "minecraft:entity_properties",
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "location": {
@@ -25,7 +25,7 @@
               }
             }
           }
-        ]
+        
       }
     }
   },

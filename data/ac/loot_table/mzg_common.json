@@ -3,6 +3,7 @@
   "pools": [
     {
       "rolls": {
+        "type": "uniform",
         "min": 0,
         "max": 3
       },
@@ -26,6 +27,7 @@
     },
     {
       "rolls": {
+        "type": "uniform",
         "min": 0,
         "max": 2
       },
@@ -39,14 +41,17 @@
           "type": "minecraft:item",
           "name": "minecraft:lapis_lazuli",
           "weight": 7,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:limit_count",
-              "limit": 3
+              "type": "minecraft:limit_count",
+              "limit": {
+                "max": 3
+              }
             },
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type": "uniform",
                 "min": 1,
                 "max": 2
               }
@@ -57,6 +62,7 @@
     },
     {
       "rolls": {
+        "type": "uniform",
         "min": 0,
         "max": 2
       },
@@ -75,15 +81,17 @@
           "type": "minecraft:item",
           "name": "minecraft:arrow",
           "weight": 10,
-          "conditions": [],
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:limit_count",
-              "limit": 4
+              "type": "minecraft:limit_count",
+              "limit": {
+                "max": 3
+              }
             },
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type": "uniform",
                 "min": 1,
                 "max": 4
               }
@@ -94,6 +102,7 @@
     },
     {
       "rolls": {
+        "type": "uniform",
         "min": 0,
         "max": 1
       },
@@ -147,6 +156,7 @@
     },
     {
       "rolls": {
+        "type": "uniform",
         "min": 0,
         "max": 1
       },
@@ -175,6 +185,7 @@
     },
     {
       "rolls": {
+        "type": "uniform",
         "min": 1,
         "max": 5
       },
@@ -198,6 +209,7 @@
     },
     {
       "rolls": {
+        "type": "uniform",
         "min": 0,
         "max": 2
       },
@@ -205,9 +217,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:leather_boots",
-          "weight": 10,
-          "conditions": [],
-          "functions": []
+          "weight": 10
         },
         {
           "type": "minecraft:item",
@@ -222,8 +232,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:leather_chestplate",
-          "weight": 10,
-          "conditions": []
+          "weight": 10
         },
         {
           "type": "minecraft:item",

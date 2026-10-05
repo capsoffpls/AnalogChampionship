@@ -7,7 +7,7 @@
           "type": {
             "tags": [
               {
-                "id": "minecraft:damages_helmet",
+                "id": "#minecraft:damages_helmet",
                 "expected": true
               }
             ]

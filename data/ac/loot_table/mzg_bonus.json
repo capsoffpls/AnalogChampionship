@@ -38,19 +38,19 @@
           "type": "minecraft:item",
           "name": "minecraft:mace",
           "weight": 1,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:constant",
                 "value": 30
               },
-              "conditions": [
+              "condition": 
                 {
-                  "condition": "minecraft:random_chance",
+                  "type": "minecraft:random_chance",
                   "chance": 0.3
                 }
-              ]
+              
             }
           ]
         },
@@ -58,13 +58,14 @@
           "type": "minecraft:item",
           "name": "minecraft:wind_charge",
           "weight": 10,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
-                "min": 1,
-                "max": 4
-              }
+                "type": "uniform",
+                  "min": 1,
+                  "max": 4
+                }
             }
           ]
         },
@@ -72,19 +73,19 @@
           "type": "minecraft:item",
           "name": "minecraft:netherite_sword",
           "weight": 1,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "enchant_with_levels",
               "levels": {
                 "type": "minecraft:constant",
                 "value": 30
               },
-              "conditions": [
+              "condition": 
                 {
-                  "condition": "minecraft:random_chance",
+                  "type": "minecraft:random_chance",
                   "chance": 0.3
                 }
-              ]
+              
             }
           ]
         },
@@ -92,19 +93,19 @@
           "type": "minecraft:item",
           "name": "minecraft:diamond_sword",
           "weight": 3,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:constant",
                 "value": 30
               },
-              "conditions": [
+              "condition": 
                 {
-                  "condition": "minecraft:random_chance",
+                  "type": "minecraft:random_chance",
                   "chance": 0.3
                 }
-              ]
+              
             }
           ]
         },
@@ -112,19 +113,19 @@
           "type": "minecraft:item",
           "name": "minecraft:iron_sword",
           "weight": 6,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:constant",
                 "value": 30
               },
-              "conditions": [
+              "condition": 
                 {
-                  "condition": "minecraft:random_chance",
+                  "type": "minecraft:random_chance",
                   "chance": 0.3
                 }
-              ]
+              
             }
           ]
         },
@@ -132,19 +133,19 @@
           "type": "minecraft:item",
           "name": "minecraft:copper_sword",
           "weight": 10,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:constant",
                 "value": 30
               },
-              "conditions": [
+              "condition": 
                 {
-                  "condition": "minecraft:random_chance",
+                  "type": "minecraft:random_chance",
                   "chance": 0.3
                 }
-              ]
+              
             }
           ]
         },
