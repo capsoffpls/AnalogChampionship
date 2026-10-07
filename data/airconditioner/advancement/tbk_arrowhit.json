@@ -1,24 +1,32 @@
 {
-    "criteria": {
-        "requirement": {
-            "trigger": "player_hurt_entity",
-            "conditions": {
-                "player": {
-                    "team": "gracz"
-                },
-                "entity": {
-                    "entity_type": "player",
-                    "team": "ac_tbkTobiko"
-                },
-                "damage": {
-                    "type": {
-                        "direct_entity": {
-                            "entity_type": "#minecraft:arrows"
-                        }
-                    }
-                }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "team": "gracz"
+          }
+        },
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:team": "ac_tbkTobiko",
+            "minecraft:entity_type": "minecraft:player"
+          }
+        },
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "entity_type": "#minecraft:arrows"
             }
+          }
         }
-    },
-    "sends_telemetry_event": false
+      }
+    }
+  },
+  "sends_telemetry_event": false
 }

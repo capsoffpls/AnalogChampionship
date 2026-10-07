@@ -6,9 +6,9 @@ execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 r
 execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute as @e[tag=in_wool] at @s if score @s AC_bwrBlockTimer matches 600.. run setblock ~ ~ ~ air destroy
 execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run kill @e[tag=in_wool,scores={AC_bwrBlockTimer=601..}]
 
-execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute as @e[type=arrow,nbt={inBlockState:{Name:"minecraft:white_wool"}}] at @s run fill ^ ^ ^0.1 ^ ^ ^-0.1 air replace white_wool
-execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute as @e[type=arrow,nbt={inBlockState:{Name:"minecraft:white_wool"}}] at @s run particle minecraft:block{block_state:"minecraft:white_wool"} ~ ~ ~ 0.1 0.1 0.1 0.2 64 normal
-execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute as @e[type=arrow,nbt={inBlockState:{Name:"minecraft:white_wool"}}] at @s run kill @s
+execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute as @e[type=arrow,nbt={inBlockState:{id:"minecraft:white_wool"}}] at @s run fill ^ ^ ^0.1 ^ ^ ^-0.1 air replace white_wool
+execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute as @e[type=arrow,nbt={inBlockState:{id:"minecraft:white_wool"}}] at @s run particle minecraft:block{block_state:"minecraft:white_wool"} ~ ~ ~ 0.1 0.1 0.1 0.2 64 normal
+execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute as @e[type=arrow,nbt={inBlockState:{id:"minecraft:white_wool"}}] at @s run kill @s
 
 execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute if score bwr AC_time matches 9820 run execute as @a at @s run playsound minecraft:ac.jingles.cd-buildup2 record @s ~ ~ ~
 execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute if score bwr AC_time matches 0..9600 run item replace entity @a[tag=InGame,gamemode=adventure] hotbar.8 with white_wool[can_place_on={blocks:"#airconditioner:allblocks"}] 64

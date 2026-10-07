@@ -56,7 +56,7 @@ execute if score arb AC_running matches 1 run execute if score arb1 AC_functions
 execute if score arb AC_running matches 1 run execute if score arb1 AC_functions matches 1 run scoreboard players add tick AC_arbArrow 1
 execute if score arb AC_running matches 1 run execute if score arb1 AC_functions matches 1 if score tick AC_arbArrow matches 19 run scoreboard players add second AC_arbArrow 1
 
-execute if score arb AC_running matches 1 run execute if score arb1 AC_functions matches 1 run execute if score shootspeed AC_arbRNG matches 31 as @e[type=arrow,nbt={inBlockState:{Name:"minecraft:white_wool"}}] at @s run fill ^ ^ ^0.2 ^ ^ ^-0.2 air replace white_wool
+execute if score arb AC_running matches 1 run execute if score arb1 AC_functions matches 1 run execute if score shootspeed AC_arbRNG matches 31 as @e[type=arrow,nbt={inBlockState:{id:"minecraft:white_wool"}}] at @s run fill ^ ^ ^0.2 ^ ^ ^-0.2 air replace white_wool
 execute if score arb AC_running matches 1 run execute if score arb1 AC_functions matches 1 run execute as @e[type=arrow,nbt={inGround:true}] at @s run kill @s
 execute if score arb AC_running matches 1 run execute if score arb1 AC_functions matches 1 run execute as @e[type=arrow] positioned -2020 13 -1012 if entity @s[dx=-15,dz=200,dy=100] run kill @s
 

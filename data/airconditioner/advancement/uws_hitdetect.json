@@ -11,11 +11,15 @@
           }
         },
         "entity": {
-          "entity_type": "minecraft:nautilus",
-          "nbt": {
-            "Tags": [
-              "uws"
-            ]
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:nautilus",
+            "minecraft:entity_tags": {
+              "all_of": [
+                "uws"
+              ]
+            }
           }
         }
       }
