@@ -1,3 +1,6 @@
+scoreboard players add time_since_reload AC_misc 1
+execute if score time_since_reload AC_misc matches 1 run function ac:base/ping-plugin
+
 execute as @a store result score @s AC_CurrentX run data get entity @s Pos[0]
 execute as @a store result score @s AC_CurrentY run data get entity @s Pos[1]
 execute as @a store result score @s AC_CurrentZ run data get entity @s Pos[2]
@@ -38,11 +41,11 @@ execute if score NowPlaying AC_CurrentlyPlayed matches 0 if score scoreboard-car
 
 scoreboard players enable @a AC_trigger
 
-execute if block 2 49 -6 mangrove_button[powered=true] run function ac:base/gm-infoboard-minus
-execute if block 2 49 -6 mangrove_button[powered=true] run setblock 2 49 -6 mangrove_button[face=floor,powered=false,facing=east]
+execute if block 2 49 -6 poplar_button[powered=true] run function ac:base/gm-infoboard-minus
+execute if block 2 49 -6 poplar_button[powered=true] run setblock 2 49 -6 poplar_button[face=floor,powered=false,facing=east]
 
-execute if block 2 49 -3 mangrove_button[powered=true] run function ac:base/gm-infoboard-plus
-execute if block 2 49 -3 mangrove_button[powered=true] run setblock 2 49 -3 mangrove_button[face=floor,powered=false,facing=east]
+execute if block 2 49 -3 poplar_button[powered=true] run function ac:base/gm-infoboard-plus
+execute if block 2 49 -3 poplar_button[powered=true] run setblock 2 49 -3 poplar_button[face=floor,powered=false,facing=east]
 
 #execute as @e[type=armor_stand] on passengers ride @s dismount
 #execute as @e[type=area_effect_cloud] on passengers ride @s dismount

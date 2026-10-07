@@ -53,7 +53,7 @@ execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run fun
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run gamemode spectator @a
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run difficulty peaceful
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run clear @a
-execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run gamerule keep_inventory false
+execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run gamerule keep_inventory true
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run gamerule fall_damage false
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run team modify gracz friendlyFire false
 execute if score mzg AC_running matches 1 if score mzg AC_time matches 0 run team modify gracz nametagVisibility always

@@ -8,6 +8,9 @@ execute unless items entity @s weapon.* diamond_sword unless items entity @s wea
 
 execute if score @s AC_cstCoreAttackCooldown matches 1.. run scoreboard players remove baseHealth AC_cstScores 1
 
+execute as @e[type=arrow,nbt={inBlockState:"minecraft:barrier"}] if entity @s run scoreboard players remove baseHealth AC_cstScores 10
+execute as @e[type=arrow,nbt={inBlockState:"minecraft:barrier"}] if entity @s run kill @s
+
 execute if items entity @s weapon.* diamond_sword run scoreboard players set @s AC_cstCoreAttackCooldown 12
 execute if items entity @s weapon.* iron_sword run scoreboard players set @s AC_cstCoreAttackCooldown 12
 execute if items entity @s weapon.* stone_sword run scoreboard players set @s AC_cstCoreAttackCooldown 12

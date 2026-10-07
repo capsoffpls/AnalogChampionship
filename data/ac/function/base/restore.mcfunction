@@ -985,7 +985,7 @@ execute unless score duel06 AC_gamemode matches -1..0 run scoreboard players set
 execute unless score duel07 AC_gamemode matches -1..0 run scoreboard players set duel07 AC_gamemode 0
 execute unless score duel08 AC_gamemode matches -1..0 run scoreboard players set duel08 AC_gamemode 0
 
-function ac:base/ping-plugin {ping:"ping"}
+scoreboard players set time_since_reload AC_misc 0
 
 execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Komponenty minigier zostały załadowane.","color":"gray","bold":false}]
 execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Minigame components have been loaded.","color":"gray","bold":false}]
