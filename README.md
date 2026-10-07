@@ -12,11 +12,13 @@
 3. **Strzały strzelają z każdej strony**
 4. **Wind Charge**
 
-## Assassins `(Done 99%)`
-- **Particle nad celem zostały usunięte**
+## Assassins `(Done)`
+- **Particle nad celem zostały usunięte (oprocz modifier 3)**
 - **Miecze dawane są /give zamiast /item więc nie nadpiszą istniejących już itemów**
 1. **Ability są delikatnie zbuffowane, oraz losowe**
 2. **Gracze to mrówki**
+3. **Gracze są niewidzialni**
+4. **Grasz losowym kitem z cst**
 
 ## Anvil Spleef `(Done)`
 1. **Kowadła nie mają żadnego cooldownu**

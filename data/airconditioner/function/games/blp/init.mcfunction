@@ -28,3 +28,5 @@ kill @e[tag=blpMarkerBell]
 
 scoreboard players set @a[tag=InGame] AC_CurrentlyPlayed 6
 scoreboard players set NowPlaying AC_CurrentlyPlayed 6
+
+function airconditioner:games/blp/setuppp

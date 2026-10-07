@@ -1,4 +1,4 @@
-execute unless score IGOverall AC_playercount matches 4.. run return run function airconditioner:base/not-enough-people
+#execute unless score IGOverall AC_playercount matches 4.. run return run function airconditioner:base/not-enough-people
 
 execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Uruchamiam Bed Wars...","color":"green","bold":false}]
 execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Launching Bed Wars...","color":"green","bold":false}]
