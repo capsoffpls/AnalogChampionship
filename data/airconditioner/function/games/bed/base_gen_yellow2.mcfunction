@@ -1,0 +1,12 @@
+execute if score bed AC_chosenMap matches 0 run execute store result score yellowIron AC_bedBaseGenControl run execute at @s if entity @e[distance=..4,type=item,tag=genIronYellow]
+execute if score bed AC_chosenMap matches 0 run execute store result score yellowGold AC_bedBaseGenControl run execute at @s if entity @e[distance=..4,type=item,tag=genGoldYellow]
+execute if score bed AC_chosenMap matches 0 run execute if score second AC_bedTimer matches 18 store result score yellow AC_bedPlayersInGen run execute if entity @a[tag=InGame,x=1431,y=55,z=-1054,dx=2,dz=4,dy=3,gamemode=!spectator]
+
+execute if score bed AC_chosenMap matches 0 run execute if score second AC_bedTimer matches 4 positioned 1500 60 -1000 if entity @s[distance=..200] unless score yellowIron AC_bedBaseGenControl matches 48.. run execute at @s run loot spawn ~ ~ ~ loot airconditioner:bed_random
+execute if score bed AC_chosenMap matches 0 run execute if score second AC_bedTimer matches 7 positioned 1500 60 -1000 if entity @s[distance=..200] unless score yellowIron AC_bedBaseGenControl matches 48.. run execute at @s run loot spawn ~ ~ ~ loot airconditioner:bed_random
+execute if score bed AC_chosenMap matches 0 run execute if score second AC_bedTimer matches 10 positioned 1500 60 -1000 if entity @s[distance=..200] unless score yellowIron AC_bedBaseGenControl matches 48.. run execute at @s run loot spawn ~ ~ ~ loot airconditioner:bed_random
+
+execute if score bed AC_chosenMap matches 0 run execute if score second AC_bedTimer matches 10 if score goldgen AC_bedTimer matches 5 positioned 1500 60 -1000 if entity @s[distance=..200] unless score yellowGold AC_bedBaseGenControl matches 16.. run execute at @s run loot spawn ~ ~ ~ loot airconditioner:bed_random
+
+execute if score bed AC_chosenMap matches 0 run execute as @a[tag=InGame,x=1431,y=55,z=-1054,dx=2,dz=4,dy=3] if score yellow AC_bedPlayersInGen matches 2.. if score @s AC_bedPickingIron matches 1.. run execute as @a[tag=InGame,x=1431,y=55,z=-1054,dx=2,dz=4,dy=3,gamemode=!spectator] if score @s AC_bedPickingIron matches ..0 run loot give @s loot airconditioner:bed_random
+execute if score bed AC_chosenMap matches 0 run execute as @a[tag=InGame,x=1431,y=55,z=-1054,dx=2,dz=4,dy=3] if score yellow AC_bedPlayersInGen matches 2.. if score @s AC_bedPickingGold matches 1.. run execute as @a[tag=InGame,x=1431,y=55,z=-1054,dx=2,dz=4,dy=3,gamemode=!spectator] if score @s AC_bedPickingGold matches ..0 run loot give @s loot airconditioner:bed_random

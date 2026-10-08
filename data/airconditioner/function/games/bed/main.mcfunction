@@ -148,10 +148,15 @@ execute if score bed AC_running matches 1 run execute if score bed4 AC_functions
 execute if score bed AC_running matches 1 run execute if score bed4 AC_functions matches 1 run execute as @a[tag=InGame] if score @s AC_bedDeathCheck matches 1.. run function airconditioner:games/bed/death
 execute if score bed AC_running matches 1 run execute if score bed4 AC_functions matches 1 run execute as @a[tag=bedDeathCooldown] run function airconditioner:games/bed/death_cooldown
 
-execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 run execute as @e[type=item_display,tag=bedBaseGenRed] run function airconditioner:games/bed/base_gen_red
-execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 run execute as @e[type=item_display,tag=bedBaseGenYellow] run function airconditioner:games/bed/base_gen_yellow
-execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 run execute as @e[type=item_display,tag=bedBaseGenGreen] run function airconditioner:games/bed/base_gen_green
-execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 run execute as @e[type=item_display,tag=bedBaseGenBlue] run function airconditioner:games/bed/base_gen_blue
+execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 unless score randomizer AC_silly matches 2 run execute as @e[type=item_display,tag=bedBaseGenRed] run function airconditioner:games/bed/base_gen_red
+execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 unless score randomizer AC_silly matches 2 run execute as @e[type=item_display,tag=bedBaseGenYellow] run function airconditioner:games/bed/base_gen_yellow
+execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 unless score randomizer AC_silly matches 2 run execute as @e[type=item_display,tag=bedBaseGenGreen] run function airconditioner:games/bed/base_gen_green
+execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 unless score randomizer AC_silly matches 2 run execute as @e[type=item_display,tag=bedBaseGenBlue] run function airconditioner:games/bed/base_gen_blue
+execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 if score randomizer AC_silly matches 2 run execute as @e[type=item_display,tag=bedBaseGenRed] run function airconditioner:games/bed/base_gen_red2
+execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 if score randomizer AC_silly matches 2 run execute as @e[type=item_display,tag=bedBaseGenYellow] run function airconditioner:games/bed/base_gen_yellow2
+execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 if score randomizer AC_silly matches 2 run execute as @e[type=item_display,tag=bedBaseGenGreen] run function airconditioner:games/bed/base_gen_green2
+execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 if score randomizer AC_silly matches 2 run execute as @e[type=item_display,tag=bedBaseGenBlue] run function airconditioner:games/bed/base_gen_blue2
+
 
 execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 run execute as @a[tag=InGame] if score @s AC_bedPickingIron matches 1.. run scoreboard players remove @s AC_bedPickingIron 1
 execute if score bed AC_running matches 1 run execute if score bed5 AC_functions matches 1 run execute as @a[tag=InGame] if score @s AC_bedPickingGold matches 1.. run scoreboard players remove @s AC_bedPickingGold 1

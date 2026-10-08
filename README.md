@@ -1,6 +1,7 @@
 # Zmiany Globalne
 
 - Punkty są osobne od main AC
+- Wiekszosc gier nie potrzebuje 4 graczy do startu
 
 ---
 
@@ -32,10 +33,10 @@
 2. **Śnieżki są niewidzialne**
 3. **Slab zamienia się w barierę po jakimś czasie**
 
-## Bedwars `(1/2 Done)`
+## Bedwars `(Done)`
 - **Reverted punkty za kille**
 1. **Respawn jest kompletnie losowy** *(+32 wełny)*
-2. **Generatory dają losowe itemy**
+2. **Generatory dają losowe minerały**
 
 ## Block Party
 1. **Kolory wełny są b2b**
