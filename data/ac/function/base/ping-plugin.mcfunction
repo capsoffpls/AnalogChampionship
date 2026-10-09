@@ -1,2 +1,5 @@
-scoreboard players set plugin_active AC_misc 0
-execute store success score plugin_active AC_misc run ping
+execute if score lang AC_lang matches 0 if score plugin_active AC_misc matches 1 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Plugin działa i jest responsywny","color":"green","bold":false}]
+execute if score lang AC_lang matches 1 if score plugin_active AC_misc matches 1 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Plugin works and is responsive","color":"green","bold":false}]
+
+execute if score lang AC_lang matches 0 if score plugin_active AC_misc matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Plugin nie działa! Funkcjonalność serwera będzie ograniczona","color":"red","bold":false}]
+execute if score lang AC_lang matches 1 if score plugin_active AC_misc matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Plugin is not working! Server functionality will be limited","color":"red","bold":false}]

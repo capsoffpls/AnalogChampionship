@@ -1,0 +1,1 @@
+scoreboard players operation border-distance AC_test -= shrinkrate AC_test

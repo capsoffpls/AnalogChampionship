@@ -1,5 +1,6 @@
 scoreboard players add time_since_reload AC_misc 1
-execute if score time_since_reload AC_misc matches 1 run function ac:base/ping-plugin
+## ping pluginu
+execute if score time_since_reload AC_misc matches 1 run setblock -19 36 23 redstone_block
 
 execute as @a store result score @s AC_CurrentX run data get entity @s Pos[0]
 execute as @a store result score @s AC_CurrentY run data get entity @s Pos[1]

@@ -985,13 +985,8 @@ execute unless score duel06 AC_gamemode matches -1..0 run scoreboard players set
 execute unless score duel07 AC_gamemode matches -1..0 run scoreboard players set duel07 AC_gamemode 0
 execute unless score duel08 AC_gamemode matches -1..0 run scoreboard players set duel08 AC_gamemode 0
 
+setblock -19 36 23 air
 scoreboard players set time_since_reload AC_misc 0
 
 execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Komponenty minigier zostały załadowane.","color":"gray","bold":false}]
 execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Minigame components have been loaded.","color":"gray","bold":false}]
-
-execute if score lang AC_lang matches 0 if score plugin_active AC_misc matches 1 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Plugin działa i jest responsywny","color":"green","bold":false}]
-execute if score lang AC_lang matches 1 if score plugin_active AC_misc matches 1 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Plugin works and is responsive","color":"green","bold":false}]
-
-execute if score lang AC_lang matches 0 if score plugin_active AC_misc matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Plugin nie działa! Funkcjonalność serwera będzie ograniczona","color":"red","bold":false}]
-execute if score lang AC_lang matches 1 if score plugin_active AC_misc matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Plugin is not working! Server functionality will be limited","color":"red","bold":false}]
